@@ -2,6 +2,8 @@
 
 [![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-blue?style=for-the-badge)](./docs/index.html)
 
+![OpenRouter Model Dashboard](./images/dashboard.png)
+
 This project fetches model data from the OpenRouter API and generates interactive HTML tables for comparing pricing, capabilities, and context windows of **Text**, **Image**, and **Embedding** models.
 
 ## Usage
