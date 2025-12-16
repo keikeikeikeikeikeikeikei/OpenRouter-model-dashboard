@@ -1,6 +1,6 @@
 # OpenRouter Pricing & Model List
 
-[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-blue?style=for-the-badge)](./docs/index.html)
+[![Live Dashboard](https://img.shields.io/badge/Live-Dashboard-blue?style=for-the-badge)](https://keikeikeikeikeikeikeikei.github.io/OpenRouter-model-dashboard/)
 
 ![OpenRouter Model Dashboard](./images/dashboard.png)
 
