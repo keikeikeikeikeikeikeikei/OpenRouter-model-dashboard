@@ -9,9 +9,8 @@ const filters = {
     text: [
         { id: 'isFree', label: 'Free' },
         { id: 'excludeFree', label: 'Paid Only' },
-        { id: 'supportsReasoning', label: 'Reasoning' },
-        { id: 'supportsVision', label: 'Vision' },
-        { id: 'supportsFunctionCalling', label: 'Function Calling' }
+        { id: 'supportsFunctionCalling', label: 'Function Calling' },
+        { id: 'supportsJSON', label: 'JSON Mode' }
     ],
     image: [
         { id: 'isFree', label: 'Free' }
@@ -95,13 +94,14 @@ const strategies = {
             const modal = arch.input_modalities || [];
 
             const caps = [
-                { k: 'reasoning', i: '🧠', t: 'Reasoning', check: () => p.includes('reasoning') || m.id.includes('reasoning') },
-                { k: 'vision', i: '👁️', t: 'Vision', check: () => modal.includes('image') || m.id.includes('vision') },
-                { k: 'func', i: '🛠️', t: 'Function Calling', check: () => p.includes('tools') || p.includes('tool_choice') },
-                { k: 'web', i: '🌐', t: 'Web Search', check: () => m.pricing && parseFloat(m.pricing.web_search) > 0 }
+                { k: 'reasoning', label: 'Reasoning', cls: 'feat-reasoning', check: () => p.includes('reasoning') || m.id.includes('reasoning') },
+                { k: 'vision', label: 'Vision', cls: 'feat-vision', check: () => modal.includes('image') || m.id.includes('vision') },
+                { k: 'func', label: 'Function Call', cls: 'feat-func', check: () => p.includes('tools') || p.includes('tool_choice') },
+                { k: 'web', label: 'Web Search', cls: 'feat-search', check: () => m.pricing && parseFloat(m.pricing.web_search) > 0 },
+                { k: 'json', label: 'JSON Mode', cls: 'feat-json', check: () => p.includes('json_schema') || p.includes('structured_outputs') }
             ];
-            return `<div class="cap-icons">
-            ${caps.map(cap => `<span class="cap-icon ${cap.check() ? 'cap-active' : ''}" title="${cap.t}">${cap.i}</span>`).join('')}
+            return `<div class="feature-tags">
+            ${caps.filter(cap => cap.check()).map(cap => `<span class="feature-badge ${cap.cls}">${cap.label}</span>`).join('')}
         </div>`;
         },
         renderCtx: (m) => {
@@ -122,6 +122,7 @@ const strategies = {
             if (fid === 'supportsReasoning') return p.includes('reasoning') || m.id.includes('reasoning');
             if (fid === 'supportsVision') return modal.includes('image');
             if (fid === 'supportsFunctionCalling') return p.includes('tools');
+            if (fid === 'supportsJSON') return p.includes('json_schema') || p.includes('structured_outputs');
             return false;
         }
     },
