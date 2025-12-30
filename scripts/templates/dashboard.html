@@ -521,6 +521,7 @@
             try { return path.split('.').reduce((acc, part) => acc[part], obj) ?? def; } catch (e) { return def; }
         };
 
+
         const formatPrice = (p) => {
             if (p === 0) return 'Free';
             if (p < 0.01) return '$' + p.toFixed(6);
@@ -543,30 +544,30 @@
                     const avg = strategies.text.getPrice(m, 'avg');
                     const pct = max > 0 ? (avg / max) * 100 : 0;
                     return `<div class="price-bridge" title="Avg: ${formatPrice(avg)}">
-                        <div class="price-bridge-top">
-                            <div class="price-value-group">
-                                <span class="price-value-num">${formatPrice(inp)}</span>
-                                <span class="price-value-label">In</span>
-                            </div>
-                            <div class="price-bridge-avg-info">Avg ${formatPrice(avg)}</div>
-                            <div class="price-value-group" style="text-align: right;">
-                                <span class="price-value-num">${formatPrice(out)}</span>
-                                <span class="price-value-label">Out</span>
-                            </div>
-                        </div>
-                        <div class="rel-bar-container">
-                            <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
-                        </div>
-                    </div>`;
+                <div class="price-bridge-top">
+                    <div class="price-value-group">
+                        <span class="price-value-num">${formatPrice(inp)}</span>
+                        <span class="price-value-label">In</span>
+                    </div>
+                    <div class="price-bridge-avg-info">Avg ${formatPrice(avg)}</div>
+                    <div class="price-value-group" style="text-align: right;">
+                        <span class="price-value-num">${formatPrice(out)}</span>
+                        <span class="price-value-label">Out</span>
+                    </div>
+                </div>
+                <div class="rel-bar-container">
+                    <div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div>
+                </div>
+            </div>`;
                 },
                 renderCache: (m, max) => {
                     const cache = strategies.text.getCachePrice(m);
                     if (cache === null) return `<span style="opacity:0.3">—</span>`;
                     const pct = max > 0 ? (cache / max) * 100 : 0;
                     return `<div class="price-cell">
-                        <div class="price-val">${formatPrice(cache)}</div>
-                        <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
-                    </div>`;
+                <div class="price-val">${formatPrice(cache)}</div>
+                <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
+            </div>`;
                 },
                 renderCaps: (m) => {
                     const p = get(m, 'supported_parameters', []);
@@ -593,9 +594,9 @@
                     const p = strategies.image.getPrice(m);
                     const pct = max > 0 ? (p / max) * 100 : 0;
                     return `<div class="price-cell">
-                        <div class="price-val">${formatPrice(p)} / img</div>
-                        <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
-                    </div>`;
+                <div class="price-val">${formatPrice(p)} / img</div>
+                <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
+            </div>`;
                 }
             },
             embedding: {
@@ -604,9 +605,9 @@
                     const p = strategies.embedding.getPrice(m);
                     const pct = max > 0 ? (p / max) * 100 : 0;
                     return `<div class="price-cell">
-                        <div class="price-val">${formatPrice(p)} / 1M</div>
-                        <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
-                    </div>`;
+                <div class="price-val">${formatPrice(p)} / 1M</div>
+                <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
+            </div>`;
                 }
             }
         };
