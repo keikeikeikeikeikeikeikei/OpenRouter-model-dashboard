@@ -484,7 +484,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-01-07 00:00)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-01-07 09:32)</div>
         </header>
 
         <div class="controls">
@@ -19594,10 +19594,13 @@
             if (cont.innerHTML) return;
             cont.innerHTML = '<div class="loading-text">Fetching live data...</div>';
             try {
-                const res = await fetch(`https://openrouter.ai/api/v1/models/${modelId}/endpoints`), json = await res.json(), eps = json.data || [];
+                const res = await fetch(`https://openrouter.ai/api/v1/models/${modelId}/endpoints`);
+                const json = await res.json();
+                const eps = (json.data && json.data.endpoints) ? json.data.endpoints : [];
+                
                 cont.innerHTML = eps.length ? `<table class="provider-table"><thead><tr><th>Provider</th><th>Price (In/Out)</th><th>Ctx</th><th>Quant</th></tr></thead><tbody>${eps.map(ep => `
                     <tr><td>${ep.provider_name}</td><td>${formatPrice(parseFloat(ep.pricing.prompt) * 1000000)} / ${formatPrice(parseFloat(ep.pricing.completion) * 1000000)}</td><td>${Math.round(ep.context_length / 1024)}k</td><td>${ep.quantization || '—'}</td></tr>`).join('')}</tbody></table>` : 'No details available.';
-            } catch (e) { cont.innerHTML = 'Error loading.'; }
+            } catch (e) { console.error(e); cont.innerHTML = 'Error loading.'; }
         }
         switchTab('text');
     </script>
