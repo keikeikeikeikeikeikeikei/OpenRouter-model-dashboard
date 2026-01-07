@@ -177,6 +177,50 @@
             box-shadow: var(--shadow-sm);
         }
 
+        .range-controls {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .range-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .range-group select,
+        .range-group input {
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            background: var(--bg-body);
+            color: var(--text-main);
+            font-family: inherit;
+            font-size: 0.95rem;
+            min-width: 160px;
+        }
+
+        .ghost-btn {
+            padding: 10px 14px;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-color);
+            background: transparent;
+            color: var(--text-main);
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .ghost-btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: var(--shadow-sm);
+        }
+
         .table-container {
             background: var(--card-bg);
             border-radius: var(--radius-lg);
@@ -484,7 +528,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-01-07 09:32)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-01-07 18:06)</div>
         </header>
 
         <div class="controls">
@@ -500,6 +544,29 @@
                 </div>
             </div>
             <div id="filterBar" class="filter-bar"></div>
+
+            <div id="rangeControls" class="range-controls">
+                <div class="range-group">
+                    <label for="minContext">Context min</label>
+                    <select id="minContext" onchange="renderTable()">
+                        <option value="0">Any</option>
+                        <option value="29696">29k+</option>
+                        <option value="60416">59k+</option>
+                        <option value="131072">128k+</option>
+                        <option value="199680">195k+</option>
+                        <option value="400384">391k+</option>
+                        <option value="1047552">1023k+</option>
+                        <option value="1999872">1.9M+</option>
+                    </select>
+                </div>
+                <div class="range-group">
+                    <label for="maxAvgPrice">Max avg ($/1M)</label>
+                    <input type="number" id="maxAvgPrice" min="0" step="0.01" placeholder="No limit"
+                        oninput="renderTable()">
+                </div>
+                <button class="ghost-btn" type="button" onclick="setCheapestSort()">Cheapest first</button>
+                <button class="ghost-btn" type="button" onclick="setContextPriceSort()">Big context → cheap</button>
+            </div>
         </div>
 
         <div class="table-container">
@@ -19488,9 +19555,42 @@
 
         function getBarColor(p) { return p < 20 ? 'bar-low' : p < 60 ? 'bar-med' : 'bar-high'; }
 
+        const getMinContext = () => {
+            const el = document.getElementById('minContext');
+            const val = el ? parseInt(el.value, 10) : 0;
+            return Number.isFinite(val) ? val : 0;
+        };
+
+        const getMaxAvgPrice = () => {
+            const el = document.getElementById('maxAvgPrice');
+            if (!el) return null;
+            const val = parseFloat(el.value);
+            return Number.isFinite(val) ? val : null;
+        };
+
+        function updateRangeControlsVisibility() {
+            const range = document.getElementById('rangeControls');
+            if (!range) return;
+            range.style.display = currentTab === 'text' ? 'flex' : 'none';
+        }
+
+        function setCheapestSort() {
+            if (currentTab !== 'text') return;
+            sortKey = 'price_avg';
+            sortAsc = true;
+            renderTable();
+        }
+
+        function setContextPriceSort() {
+            if (currentTab !== 'text') return;
+            sortKey = 'context_price';
+            sortAsc = true;
+            renderTable();
+        }
+
         function switchTab(t) {
             currentTab = t; activeFilters.clear(); sortKey = t === 'text' ? 'price_avg' : 'price';
-            renderFilters(); renderTable();
+            renderFilters(); updateRangeControlsVisibility(); renderTable();
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.innerText.toLowerCase().includes(t)));
         }
 
@@ -19523,6 +19623,8 @@
             const term = document.getElementById('searchInput').value.toLowerCase();
             const models = window.openRouterModels[currentTab] || [];
             const strat = strategies[currentTab];
+            const minContext = currentTab === 'text' ? getMinContext() : 0;
+            const maxAvgPrice = currentTab === 'text' ? getMaxAvgPrice() : null;
             const cols = headers[currentTab];
 
             thead.innerHTML = `<tr>${cols.map(c => {
@@ -19546,6 +19648,12 @@
             let data = models.filter(m => {
                 const searchStr = (m.name + m.id).toLowerCase();
                 if (!searchStr.includes(term)) return false;
+                if (currentTab === 'text') {
+                    const ctx = m.context_length || 0;
+                    if (ctx < minContext) return false;
+                    const avg = strat.getPrice(m, 'avg');
+                    if (maxAvgPrice !== null && avg > maxAvgPrice) return false;
+                }
                 for (let fid of activeFilters) if (!strat.checkFilter(m, fid)) return false;
                 return true;
             });
@@ -19554,6 +19662,10 @@
             const maxCache = currentTab === 'text' ? Math.max(0.000001, ...data.map(m => strat.getCachePrice(m) || 0)) : 0;
 
             data.sort((a, b) => {
+                if (sortKey === 'context_price') {
+                    if ((a.context_length || 0) !== (b.context_length || 0)) return (b.context_length || 0) - (a.context_length || 0);
+                    return strat.getPrice(a, 'avg') - strat.getPrice(b, 'avg');
+                }
                 let vA, vB;
                 if (sortKey === 'price_input') { vA = strat.getPrice(a, 'input'); vB = strat.getPrice(b, 'input'); }
                 else if (sortKey === 'price_output') { vA = strat.getPrice(a, 'output'); vB = strat.getPrice(b, 'output'); }
@@ -19602,6 +19714,7 @@
                     <tr><td>${ep.provider_name}</td><td>${formatPrice(parseFloat(ep.pricing.prompt) * 1000000)} / ${formatPrice(parseFloat(ep.pricing.completion) * 1000000)}</td><td>${Math.round(ep.context_length / 1024)}k</td><td>${ep.quantization || '—'}</td></tr>`).join('')}</tbody></table>` : 'No details available.';
             } catch (e) { console.error(e); cont.innerHTML = 'Error loading.'; }
         }
+        updateRangeControlsVisibility();
         switchTab('text');
     </script>
 </body>

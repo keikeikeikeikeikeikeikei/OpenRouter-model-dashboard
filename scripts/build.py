@@ -6,6 +6,58 @@ import json
 import pathlib
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+
+def _round_to_1024(value: int) -> int:
+    return int(round(value / 1024.0) * 1024)
+
+
+def _format_context_label(value: int) -> str:
+    if value >= 1024 * 1024:
+        m = value / (1024 * 1024)
+        label = f"{int(m)}M+" if m.is_integer() else f"{m:.1f}M+"
+        return label
+    k = int(round(value / 1024.0))
+    return f"{k}k+"
+
+
+def _percentile(sorted_vals, pct: int) -> int:
+    if not sorted_vals:
+        return 0
+    n = len(sorted_vals)
+    idx = int(round((pct / 100) * (n - 1)))
+    return sorted_vals[max(0, min(idx, n - 1))]
+
+
+def compute_context_options(models) -> list[dict]:
+    contexts = []
+    for m in models:
+        ctx = m.get("context_length")
+        if ctx:
+            contexts.append(int(ctx))
+
+    if not contexts:
+        return [{"value": 0, "label": "Any"}]
+
+    contexts.sort()
+    unique = sorted(set(contexts))
+    if len(unique) <= 10:
+        values = unique
+    else:
+        candidates = [
+            _percentile(contexts, 10),
+            _percentile(contexts, 25),
+            _percentile(contexts, 50),
+            _percentile(contexts, 75),
+            _percentile(contexts, 90),
+            _percentile(contexts, 95),
+            contexts[-1],
+        ]
+        values = sorted(set(_round_to_1024(v) for v in candidates if v > 0))
+
+    options = [{"value": 0, "label": "Any"}]
+    options.extend({"value": v, "label": _format_context_label(v)} for v in values)
+    return options
+
 def generate_dashboard():
     # Paths
     # scripts/build.py
@@ -41,9 +93,11 @@ def generate_dashboard():
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     
     template = env.get_template('dashboard.html')
+    context_options = compute_context_options(data.get("text", []))
     html_content = template.render(
         models_json=json.dumps(data, indent=2),
-        generated_at=now
+        generated_at=now,
+        context_options=context_options,
     )
     
     import shutil
