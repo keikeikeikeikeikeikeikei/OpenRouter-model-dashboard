@@ -58,6 +58,27 @@ def compute_context_options(models) -> list[dict]:
     options.extend({"value": v, "label": _format_context_label(v)} for v in values)
     return options
 
+def compute_provider_options(data) -> list[str]:
+    providers = set()
+    for cat in data.values():
+        for m in cat:
+            model_id = m.get("id", "")
+            if "/" in model_id:
+                provider = model_id.split("/")[0]
+                providers.add(provider)
+    
+    # Sort by number of models per provider to show most important ones first
+    provider_counts = {}
+    for cat in data.values():
+        for m in cat:
+            model_id = m.get("id", "")
+            if "/" in model_id:
+                provider = model_id.split("/")[0]
+                provider_counts[provider] = provider_counts.get(provider, 0) + 1
+    
+    sorted_providers = sorted(providers, key=lambda p: provider_counts.get(p, 0), reverse=True)
+    return sorted_providers
+
 def generate_dashboard():
     # Paths
     # scripts/build.py
@@ -94,10 +115,13 @@ def generate_dashboard():
     
     template = env.get_template('dashboard.html')
     context_options = compute_context_options(data.get("text", []))
+    provider_options = compute_provider_options(data)
+    
     html_content = template.render(
         models_json=json.dumps(data, indent=2),
         generated_at=now,
         context_options=context_options,
+        provider_options=provider_options,
     )
     
     import shutil

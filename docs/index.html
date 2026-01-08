@@ -41,6 +41,21 @@
             }
         }
 
+        @media (max-width: 768px) {
+            body { padding: 15px 8px; }
+            h1 { font-size: 1.6rem; }
+            .controls { padding: 15px; gap: 15px; }
+            .main-controls { flex-direction: column; align-items: stretch; gap: 15px; }
+            .search-box { max-width: none; }
+            .filter-bar { gap: 10px; }
+            .filter-group { flex-direction: row; align-items: center; gap: 8px; }
+            .filter-group-label { min-width: 0; font-size: 0.6rem; opacity: 0.7; border-right: 1px solid var(--border-color); padding-right: 8px; margin-right: 2px; }
+            .range-controls { flex-direction: column; align-items: stretch; gap: 20px; }
+            .range-item { flex: 1; }
+            .range-group div { flex-wrap: wrap; }
+            .tab-btn { padding: 8px 12px; font-size: 0.85rem; flex: 1; text-align: center; }
+        }
+
         * {
             box-sizing: border-box;
         }
@@ -153,8 +168,24 @@
 
         .filter-bar {
             display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
             gap: 10px;
             flex-wrap: wrap;
+        }
+
+        .filter-group-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            min-width: 90px;
+            letter-spacing: 0.05em;
         }
 
         .filter-item {
@@ -170,39 +201,85 @@
             font-weight: 500;
         }
 
-        .filter-item.active {
+        .filter-item:hover {
+            background: var(--border-color);
+        }
+
+        /* Segmented Control Styling */
+        .filter-segment {
+            display: inline-flex;
+            background: var(--bg-body);
+            padding: 2px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            gap: 2px;
+        }
+
+        .filter-segment-item {
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 8px;
+            color: var(--text-muted);
+            transition: all 0.2s ease;
+            user-select: none;
+        }
+
+        .filter-segment-item:hover {
+            color: var(--text-main);
+        }
+
+        .filter-segment-item.active {
             background: var(--card-bg);
-            border-color: var(--primary);
             color: var(--primary);
-            box-shadow: var(--shadow-sm);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+            border: 1px solid var(--border-color);
+            font-weight: 800;
+        }
+
+        .filter-item.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-weight: 700;
         }
 
         .range-controls {
             display: flex;
-            gap: 16px;
+            gap: 24px;
             flex-wrap: wrap;
-            align-items: flex-end;
+            align-items: flex-start;
+            padding-top: 10px;
+            border-top: 1px solid var(--border-color);
         }
 
         .range-group {
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            font-size: 0.85rem;
+            gap: 8px;
+        }
+
+        .range-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            font-size: 0.75rem;
             color: var(--text-muted);
             font-weight: 600;
         }
 
         .range-group select,
         .range-group input {
-            padding: 10px 12px;
+            padding: 8px 12px;
             border: 1px solid var(--border-color);
             border-radius: var(--radius-md);
             background: var(--bg-body);
             color: var(--text-main);
             font-family: inherit;
-            font-size: 0.95rem;
-            min-width: 160px;
+            font-size: 0.9rem;
+            min-width: 140px;
         }
 
         .ghost-btn {
@@ -302,6 +379,35 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        .new-badge {
+            background: #6366f1; /* Indigo */
+            color: white;
+            padding: 1px 6px;
+            border-radius: 4px;
+            font-size: 0.65rem;
+            font-weight: 800;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        .model-description {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin-top: 4px;
+            line-height: 1.4;
+            max-width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            white-space: normal;
+            cursor: pointer;
+        }
+
+        .model-description.expanded {
+            -webkit-line-clamp: unset;
         }
 
         .model-id {
@@ -528,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-01-08 00:00)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-01-09 00:00)</div>
         </header>
 
         <div class="controls">
@@ -547,25 +653,37 @@
 
             <div id="rangeControls" class="range-controls">
                 <div class="range-group">
-                    <label for="minContext">Context min</label>
-                    <select id="minContext" onchange="renderTable()">
-                        <option value="0">Any</option>
-                        <option value="29696">29k+</option>
-                        <option value="40960">40k+</option>
-                        <option value="131072">128k+</option>
-                        <option value="199680">195k+</option>
-                        <option value="400384">391k+</option>
-                        <option value="1047552">1023k+</option>
-                        <option value="1999872">1.9M+</option>
-                    </select>
+                    <label class="filter-group-label" style="min-width:0; margin-bottom:4px;">Constraints</label>
+                    <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                        <div class="range-item">
+                            <label for="minContext">Context min</label>
+                            <select id="minContext" onchange="renderTable()">
+                                <option value="0">Any</option>
+                                <option value="29696">29k+</option>
+                                <option value="40960">40k+</option>
+                                <option value="131072">128k+</option>
+                                <option value="199680">195k+</option>
+                                <option value="400384">391k+</option>
+                                <option value="1047552">1023k+</option>
+                                <option value="1999872">1.9M+</option>
+                            </select>
+                        </div>
+                        <div class="range-item">
+                            <label for="maxAvgPrice">Max avg ($/1M)</label>
+                            <input type="number" id="maxAvgPrice" min="0" step="0.01" placeholder="No limit"
+                                oninput="renderTable()">
+                        </div>
+                    </div>
                 </div>
+
                 <div class="range-group">
-                    <label for="maxAvgPrice">Max avg ($/1M)</label>
-                    <input type="number" id="maxAvgPrice" min="0" step="0.01" placeholder="No limit"
-                        oninput="renderTable()">
+                    <label class="filter-group-label" style="min-width:0; margin-bottom:4px;">Quick Sort</label>
+                    <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                        <button class="ghost-btn" type="button" onclick="setCheapestSort()">💰 Cheapest</button>
+                        <button class="ghost-btn" type="button" onclick="setNewestSort()">✨ Newest</button>
+                        <button class="ghost-btn" type="button" onclick="setContextPriceSort()">🧠 Context/Price</button>
+                    </div>
                 </div>
-                <button class="ghost-btn" type="button" onclick="setCheapestSort()">Cheapest first</button>
-                <button class="ghost-btn" type="button" onclick="setContextPriceSort()">Big context → cheap</button>
             </div>
         </div>
 
@@ -706,12 +824,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000012",
-        "completion": "0.00000048",
+        "prompt": "0.00000028",
+        "completion": "0.0000012",
         "request": "0",
         "image": "0",
         "web_search": "0",
-        "internal_reasoning": "0"
+        "internal_reasoning": "0",
+        "input_cache_read": "0.00000014"
       },
       "top_provider": {
         "context_length": 196608,
@@ -766,8 +885,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000016",
-        "completion": "0.0000008",
+        "prompt": "0.0000004",
+        "completion": "0.0000015",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -775,7 +894,7 @@
       },
       "top_provider": {
         "context_length": 202752,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 65535,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3071,8 +3190,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000032",
-        "completion": "0.00000048",
+        "prompt": "0.0000004",
+        "completion": "0.00000175",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -3080,7 +3199,7 @@
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 65535,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4816,8 +4935,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000012",
-        "completion": "0.00000056",
+        "prompt": "0.0000002",
+        "completion": "0.0000012",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -5411,8 +5530,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000006",
-        "completion": "0.0000006",
+        "prompt": "0.00000009",
+        "completion": "0.0000011",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -6816,8 +6935,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000002",
-        "completion": "0.0000001",
+        "prompt": "0.000000039",
+        "completion": "0.00000019",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -6983,8 +7102,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000016",
-        "completion": "0.00000006",
+        "prompt": "0.00000002",
+        "completion": "0.0000001",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -6992,7 +7111,7 @@
       },
       "top_provider": {
         "context_length": 131072,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10529,7 +10648,7 @@
         "output_modalities": [
           "text"
         ],
-        "tokenizer": "Other",
+        "tokenizer": "GPT",
         "instruct_type": null
       },
       "pricing": {
@@ -10557,7 +10676,11 @@
         "tool_choice",
         "tools"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "openai/o3",
@@ -11862,7 +11985,7 @@
       "name": "Google: Gemma 3 27B",
       "created": 1741756359,
       "description": "Gemma 3 introduces multimodality, supporting vision-language input and text outputs. It handles context windows up to 128k tokens, understands over 140 languages, and offers improved math, reasoning, and chat capabilities, including structured outputs and function calling. Gemma 3 27B is Google's latest open source model, successor to [Gemma 2](google/gemma-2-27b-it)",
-      "context_length": 131072,
+      "context_length": 96000,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -11876,16 +11999,16 @@
         "instruct_type": "gemma"
       },
       "pricing": {
-        "prompt": "0.000000036",
-        "completion": "0.000000064",
+        "prompt": "0.00000004",
+        "completion": "0.00000015",
         "request": "0",
         "image": "0",
         "web_search": "0",
         "internal_reasoning": "0"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
+        "context_length": 96000,
+        "max_completion_tokens": 96000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -12503,7 +12626,11 @@
         "tool_choice",
         "tools"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "google/gemini-2.0-flash-001",
@@ -19325,6 +19452,7 @@
   ],
   "other": []
 };
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'nvidia', 'z-ai', 'x-ai', 'nousresearch', 'tngtech', 'arcee-ai', 'moonshotai', 'allenai', 'sentence-transformers', 'perplexity', 'baidu', 'amazon', 'sao10k', 'microsoft', 'cohere', 'deepcogito', 'minimax', 'thedrummer', 'intfloat', 'baai', 'aion-labs', 'kwaipilot', 'ai21', 'inception', 'liquid', 'bytedance-seed', 'thenlper', 'neversleep', 'inflection', 'openrouter', 'morph', 'relace', 'meituan', 'eleutherai', 'opengvlab', 'alfredpros', 'bytedance', 'thudm', 'raifle', 'cognitivecomputations', 'undi95', 'tencent', 'ibm-granite', 'gryphe', 'nex-agi', 'alibaba', 'prime-intellect', 'alpindale', 'switchpoint', 'mancer', 'xiaomi', 'anthracite-org', 'stepfun-ai', 'essentialai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
@@ -19334,6 +19462,20 @@
             try { return path.split('.').reduce((acc, part) => acc[part], obj) ?? def; } catch (e) { return def; }
         };
 
+        const getProvider = (m) => {
+            const id = m.id.toLowerCase();
+            if (id.includes('llama') || id.includes('meta/')) return 'meta';
+            if (id.includes('google/') || id.includes('gemini') || id.includes('palm')) return 'google';
+            if (id.includes('openai/') || id.includes('gpt-')) return 'openai';
+            if (id.includes('anthropic/') || id.includes('claude')) return 'anthropic';
+            if (id.includes('deepseek/')) return 'deepseek';
+            if (id.includes('mistral/') || id.includes('mixtral')) return 'mistral';
+            if (id.includes('qwen/')) return 'qwen';
+            if (id.includes('perplexity/')) return 'perplexity';
+            if (id.includes('x-ai/') || id.includes('grok')) return 'xai';
+            if (id.includes('cohere/')) return 'cohere';
+            return 'other';
+        };
 
         const formatPrice = (p) => {
             if (p === 0) return 'Free';
@@ -19395,9 +19537,19 @@
                 },
                 checkFilter: (m, fid) => {
                     if (fid === 'isFree') return strategies.text.getPrice(m, 'input') === 0;
+                    if (fid === 'isPaid') return strategies.text.getPrice(m, 'input') > 0;
                     if (fid === 'hasReasoning') return get(m, 'supported_parameters', []).includes('reasoning') || m.id.includes('reasoning');
                     if (fid === 'hasVision') return get(m, 'architecture.input_modalities', []).includes('image');
+                    if (fid === 'hasAudio') return get(m, 'architecture.input_modalities', []).includes('audio');
+                    if (fid === 'hasVideo') return get(m, 'architecture.input_modalities', []).includes('video');
+                    if (fid === 'hasTools') return get(m, 'supported_parameters', []).includes('tools');
+                    if (fid === 'hasJSON') return get(m, 'supported_parameters', []).includes('structured_outputs');
                     if (fid === 'hasCache') return !!strategies.text.getCachePrice(m);
+                    if (fid === 'hasLogprobs') return get(m, 'supported_parameters', []).includes('logprobs');
+                    if (fid.startsWith('prov_')) {
+                        const prov = fid.replace('prov_', '');
+                        return m.id.startsWith(prov + '/');
+                    }
                     return false;
                 }
             },
@@ -19410,6 +19562,12 @@
                 <div class="price-val">${formatPrice(p)} / img</div>
                 <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
             </div>`;
+                },
+                checkFilter: (m, fid) => {
+                    const p = strategies.image.getPrice(m);
+                    if (fid === 'isFree') return p === 0;
+                    if (fid === 'isPaid') return p > 0;
+                    return false;
                 }
             },
             embedding: {
@@ -19421,14 +19579,14 @@
                 <div class="price-val">${formatPrice(p)} / 1M</div>
                 <div class="rel-bar-container"><div class="rel-bar-bg"><div class="rel-bar-fill ${getBarColor(pct)}" style="width:${pct}%"></div></div></div>
             </div>`;
+                },
+                checkFilter: (m, fid) => {
+                    const p = strategies.embedding.getPrice(m);
+                    if (fid === 'isFree') return p === 0;
+                    if (fid === 'isPaid') return p > 0;
+                    return false;
                 }
             }
-        };
-
-        const filters = {
-            text: [{ id: 'isFree', label: '🆓 Free' }, { id: 'hasReasoning', label: '🧠 Reasoning' }, { id: 'hasVision', label: '👁️ Vision' }, { id: 'hasCache', label: '⚡ Caching' }],
-            image: [{ id: 'isFree', label: '🆓 Free' }],
-            embedding: [{ id: 'isFree', label: '🆓 Free' }]
         };
 
         const headers = {
@@ -19471,6 +19629,12 @@
             renderTable();
         }
 
+        function setNewestSort() {
+            sortKey = 'created';
+            sortAsc = false;
+            renderTable();
+        }
+
         function setContextPriceSort() {
             if (currentTab !== 'text') return;
             sortKey = 'context_price';
@@ -19479,20 +19643,89 @@
         }
 
         function switchTab(t) {
-            currentTab = t; activeFilters.clear(); sortKey = t === 'text' ? 'price_avg' : 'price';
-            renderFilters(); updateRangeControlsVisibility(); renderTable();
+            currentTab = t; 
+            activeFilters.clear(); 
+            sortKey = t === 'text' ? 'price_avg' : 'price';
+            sortAsc = true;
+            renderFilters(); 
+            updateRangeControlsVisibility(); 
+            renderTable();
             document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.innerText.toLowerCase().includes(t)));
         }
 
         function toggleFilter(fid) {
-            if (activeFilters.has(fid)) activeFilters.delete(fid); else activeFilters.add(fid);
-            renderFilters(); renderTable();
+            if (activeFilters.has(fid)) {
+                activeFilters.delete(fid);
+            } else {
+                // Exclusivity logic
+                if (fid === 'isFree') activeFilters.delete('isPaid');
+                if (fid === 'isPaid') activeFilters.delete('isFree');
+                
+                activeFilters.add(fid);
+            }
+            renderFilters(); 
+            renderTable();
         }
 
-        function renderFilters() {
-            document.getElementById('filterBar').innerHTML = (filters[currentTab] || []).map(f => `
-                <div class="filter-item ${activeFilters.has(f.id) ? 'active' : ''}" onclick="toggleFilter('${f.id}')">${f.label}</div>
-            `).join('');
+        const renderFilters = () => {
+            const bar = document.getElementById('filterBar');
+            const groups = [];
+            
+            if (currentTab === 'text') {
+                // Text Features
+                groups.push({ group: 'Pricing', items: [
+                    { id: 'isFree', label: '🆓 Free' }, 
+                    { id: 'isPaid', label: '💰 Paid' }
+                ]});
+                groups.push({ group: 'Features', items: [
+                    { id: 'hasReasoning', label: '🧠 Reasoning' }, 
+                    { id: 'hasVision', label: '👁️ Vision' }, 
+                    { id: 'hasAudio', label: '🎵 Audio' },
+                    { id: 'hasVideo', label: '📺 Video' },
+                    { id: 'hasTools', label: '🛠️ Tools' },
+                    { id: 'hasJSON', label: '📋 JSON' },
+                    { id: 'hasCache', label: '⚡ Caching' },
+                    { id: 'hasLogprobs', label: '📊 Logprobs' }
+                ]});
+
+                // dynamic providers
+                const providers = window.providerOptions.slice(0, 30).map(p => ({
+                    id: 'prov_' + p,
+                    label: p.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+                }));
+                groups.push({ group: 'Providers', items: providers });
+            } else {
+                groups.push({ group: 'Status', items: [
+                    { id: 'isFree', label: '🆓 Free' },
+                    { id: 'isPaid', label: '💰 Paid' }
+                ] });
+            }
+            
+            bar.innerHTML = groups.map(g => {
+                if (g.group === 'Pricing') {
+                    return `
+                        <div class="filter-group">
+                            <div class="filter-group-label">${g.group}</div>
+                            <div class="filter-segment">
+                                ${g.items.map(f => `
+                                    <div class="filter-segment-item ${activeFilters.has(f.id) ? 'active' : ''}" 
+                                         onclick="toggleFilter('${f.id}')">
+                                        ${f.label}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+                return `
+                    <div class="filter-group">
+                        <div class="filter-group-label">${g.group}</div>
+                        ${g.items.map(f => `
+                            <div class="filter-item ${activeFilters.has(f.id) ? 'active' : ''}" onclick="toggleFilter('${f.id}')">${f.label}</div>
+                        `).join('')}
+                    </div>
+                `;
+            }).join('');
         }
 
         function handleSort(key) {
@@ -19536,7 +19769,7 @@
             }).join('')}</tr>`;
 
             let data = models.filter(m => {
-                const searchStr = (m.name + m.id).toLowerCase();
+                const searchStr = (m.name + m.id + (m.description || '')).toLowerCase();
                 if (!searchStr.includes(term)) return false;
                 if (currentTab === 'text') {
                     const ctx = m.context_length || 0;
@@ -19570,39 +19803,70 @@
 
             tbody.innerHTML = data.map(m => {
                 const idSafe = m.id.replace(/[^a-z0-9]/gi, '_');
+                const created = m.created || 0;
+                const isNew = created > (Date.now() / 1000 - 30 * 24 * 60 * 60);
+                const desc = m.description || '';
+                
+                const modelCell = `
+                    <td>
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <a href="https://openrouter.ai/models/${m.id}" target="_blank" class="model-name" onclick="event.stopPropagation()">${m.name}</a>
+                            ${isNew ? '<span class="new-badge">NEW</span>' : ''}
+                        </div>
+                        <div class="model-id">${m.id}</div>
+                        ${desc ? `<div class="model-description" title="Click to expand" onclick="event.stopPropagation(); this.classList.toggle('expanded')">${desc}</div>` : ''}
+                    </td>
+                `;
+
                 let row = `<tr class="model-row" onclick="toggleDetails('${m.id}', '${idSafe}')">`;
                 if (currentTab === 'text') {
-                    row += `<td><a href="https://openrouter.ai/models/${m.id}" target="_blank" class="model-name" onclick="event.stopPropagation()">${m.name}</a><div class="model-id">${m.id}</div></td>
+                    row += `${modelCell}
                             <td>${strat.renderPrice(m, maxPrice)}</td>
                             <td>${strat.renderCache(m, maxCache)}</td>
                             <td>${Math.round(m.context_length / 1024)}k</td>
                             <td>${strat.renderCaps(m)}</td>`;
                 } else if (currentTab === 'image') {
-                    row += `<td><a href="https://openrouter.ai/models/${m.id}" target="_blank" class="model-name" onclick="event.stopPropagation()">${m.name}</a><div class="model-id">${m.id}</div></td>
+                    row += `${modelCell}
                             <td>${strat.renderPrice(m, maxPrice)}</td>`;
                 } else {
-                    row += `<td><a href="https://openrouter.ai/models/${m.id}" target="_blank" class="model-name" onclick="event.stopPropagation()">${m.name}</a><div class="model-id">${m.id}</div></td>
+                    row += `${modelCell}
                             <td>${strat.renderPrice(m, maxPrice)}</td>
                             <td>${Math.round(m.context_length / 1024)}k</td>`;
                 }
-                return row + `</tr><tr class="details-row" id="det-${idSafe}"><td colspan="${cols.length}"><div class="details-content" id="cont-${idSafe}"></div></td></tr>`;
+                return row + `</tr><tr class="details-row" id="det-${idSafe}"><td colspan="${cols.length}"><div class="details-content" id="cont-${idSafe}"><div class="desc-area"></div><div class="provider-area"></div></div></td></tr>`;
             }).join('');
         }
 
         async function toggleDetails(modelId, idSafe) {
-            const row = document.getElementById('det-' + idSafe), cont = document.getElementById('cont-' + idSafe);
+            const row = document.getElementById('det-' + idSafe);
+            const cont = document.getElementById('cont-' + idSafe);
+            const descArea = cont.querySelector('.desc-area');
+            const provArea = cont.querySelector('.provider-area');
+
             if (row.classList.contains('expanded')) { row.classList.remove('expanded'); return; }
             row.classList.add('expanded');
-            if (cont.innerHTML) return;
-            cont.innerHTML = '<div class="loading-text">Fetching live data...</div>';
+            
+            // 1. Always show description immediately if not already there
+            if (!descArea.innerHTML) {
+                const m = window.openRouterModels[currentTab].find(x => x.id === modelId);
+                descArea.innerHTML = m ? `<div style="margin-bottom: 20px; color: var(--text-main); line-height: 1.6;"><strong>Description:</strong><br>${m.description || 'No description available.'}</div>` : '';
+            }
+
+            // 2. Fetch provider data only once
+            if (provArea.innerHTML && provArea.innerHTML !== '<div class="loading-text">Fetching live provider data...</div>') return;
+            
+            provArea.innerHTML = '<div class="loading-text">Fetching live provider data...</div>';
             try {
                 const res = await fetch(`https://openrouter.ai/api/v1/models/${modelId}/endpoints`);
                 const json = await res.json();
                 const eps = (json.data && json.data.endpoints) ? json.data.endpoints : [];
                 
-                cont.innerHTML = eps.length ? `<table class="provider-table"><thead><tr><th>Provider</th><th>Price (In/Out)</th><th>Ctx</th><th>Quant</th></tr></thead><tbody>${eps.map(ep => `
+                provArea.innerHTML = eps.length ? `<table class="provider-table"><thead><tr><th>Provider</th><th>Price (In/Out)</th><th>Ctx</th><th>Quant</th></tr></thead><tbody>${eps.map(ep => `
                     <tr><td>${ep.provider_name}</td><td>${formatPrice(parseFloat(ep.pricing.prompt) * 1000000)} / ${formatPrice(parseFloat(ep.pricing.completion) * 1000000)}</td><td>${Math.round(ep.context_length / 1024)}k</td><td>${ep.quantization || '—'}</td></tr>`).join('')}</tbody></table>` : 'No details available.';
-            } catch (e) { console.error(e); cont.innerHTML = 'Error loading.'; }
+            } catch (e) { 
+                console.error(e); 
+                provArea.innerHTML = '<div style="color:var(--secondary); padding:10px;">Error loading live data. Please try again.</div>'; 
+            }
         }
         updateRangeControlsVisibility();
         switchTab('text');
