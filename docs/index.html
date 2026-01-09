@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-01-09 11:33)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-01-10 00:14)</div>
         </header>
 
         <div class="controls">
@@ -662,7 +662,7 @@
                             <select id="minContext" onchange="renderTable()">
                                 <option value="0">Any</option>
                                 <option value="29696">29k+</option>
-                                <option value="40960">40k+</option>
+                                <option value="60416">59k+</option>
                                 <option value="131072">128k+</option>
                                 <option value="199680">195k+</option>
                                 <option value="400384">391k+</option>
@@ -700,6 +700,61 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "allenai/olmo-3.1-32b-instruct",
+      "canonical_slug": "allenai/olmo-3.1-32b-instruct-20251215",
+      "hugging_face_id": "allenai/Olmo-3.1-32B-Instruct",
+      "name": "AllenAI: Olmo 3.1 32B Instruct",
+      "created": 1767728554,
+      "description": "Olmo 3.1 32B Instruct is a large-scale, 32-billion-parameter instruction-tuned language model engineered for high-performance conversational AI, multi-turn dialogue, and practical instruction following. As part of the Olmo 3.1 family, this variant emphasizes responsiveness to complex user directions and robust chat interactions while retaining strong capabilities on reasoning and coding benchmarks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Instruct reflects the Olmo initiative\u2019s commitment to openness and transparency.",
+      "context_length": 65536,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.0000006",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0"
+      },
+      "top_provider": {
+        "context_length": 65536,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      }
+    },
     {
       "id": "bytedance-seed/seed-1.6-flash",
       "canonical_slug": "bytedance-seed/seed-1.6-flash-20250625",
@@ -3678,8 +3733,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000001",
+        "prompt": "0.00000001",
+        "completion": "0.00000002",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -3725,8 +3780,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.0000001",
+        "prompt": "0.00000001",
+        "completion": "0.00000002",
         "request": "0",
         "image": "0",
         "web_search": "0",
@@ -7562,7 +7617,11 @@
         "top_k",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "z-ai/glm-4-32b",
@@ -9105,7 +9164,11 @@
         "top_logprobs",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "x-ai/grok-3",
@@ -9305,7 +9368,11 @@
         "repetition_penalty",
         "temperature"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "deepseek/deepseek-r1-0528",
@@ -9361,7 +9428,11 @@
         "top_logprobs",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "anthropic/claude-opus-4",
@@ -10313,7 +10384,11 @@
         "top_k",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "qwen/qwen3-8b",
@@ -10368,7 +10443,11 @@
         "top_logprobs",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "qwen/qwen3-14b",
@@ -11112,7 +11191,11 @@
         "top_logprobs",
         "top_p"
       ],
-      "default_parameters": {}
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
     },
     {
       "id": "x-ai/grok-3-beta",
@@ -14752,6 +14835,8 @@
         "seed",
         "stop",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
@@ -19454,7 +19539,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'tngtech', 'arcee-ai', 'moonshotai', 'baidu', 'allenai', 'perplexity', 'sentence-transformers', 'sao10k', 'amazon', 'thedrummer', 'microsoft', 'cohere', 'minimax', 'deepcogito', 'aion-labs', 'baai', 'intfloat', 'neversleep', 'thenlper', 'openrouter', 'inflection', 'bytedance-seed', 'kwaipilot', 'relace', 'liquid', 'morph', 'ai21', 'inception', 'stepfun-ai', 'mancer', 'bytedance', 'gryphe', 'undi95', 'eleutherai', 'tencent', 'nex-agi', 'thudm', 'prime-intellect', 'alibaba', 'meituan', 'alpindale', 'xiaomi', 'raifle', 'cognitivecomputations', 'switchpoint', 'ibm-granite', 'anthracite-org', 'alfredpros', 'opengvlab', 'essentialai'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'nvidia', 'z-ai', 'x-ai', 'nousresearch', 'moonshotai', 'allenai', 'tngtech', 'arcee-ai', 'sentence-transformers', 'sao10k', 'amazon', 'baidu', 'perplexity', 'deepcogito', 'thedrummer', 'cohere', 'microsoft', 'minimax', 'intfloat', 'aion-labs', 'baai', 'relace', 'morph', 'liquid', 'bytedance-seed', 'neversleep', 'ai21', 'kwaipilot', 'inception', 'openrouter', 'thenlper', 'inflection', 'prime-intellect', 'anthracite-org', 'ibm-granite', 'eleutherai', 'gryphe', 'xiaomi', 'opengvlab', 'tencent', 'thudm', 'essentialai', 'meituan', 'cognitivecomputations', 'mancer', 'alfredpros', 'bytedance', 'nex-agi', 'undi95', 'alibaba', 'switchpoint', 'raifle', 'alpindale', 'stepfun-ai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
