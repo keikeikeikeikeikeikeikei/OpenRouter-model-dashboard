@@ -644,6 +644,8 @@
                     <button class="tab-btn" onclick="switchTab('image')">Image</button>
                     <button class="tab-btn" onclick="switchTab('embedding')">Embedding</button>
                 </div>
+                <button class="ghost-btn" style="font-size: 0.7rem; padding: 4px 10px; align-self: flex-start; margin-top: -10px;" onclick="clearFilters()">🧹 Clear All Filters</button>
+
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search (Model, ID, Arch)..."
                         oninput="renderTable()">
@@ -907,6 +909,12 @@
             renderTable();
         }
 
+        function clearFilters() {
+            activeFilters.clear();
+            renderFilters();
+            renderTable();
+        }
+
         const renderFilters = () => {
             const bar = document.getElementById('filterBar');
             const groups = [];
@@ -1020,6 +1028,13 @@
                 for (let fid of activeFilters) if (!strat.checkFilter(m, fid)) return false;
                 return true;
             });
+
+            // Update visible count in UI
+            const countInfo = document.querySelector('.meta');
+            if (countInfo) {
+                const baseText = countInfo.innerHTML.split(' | ')[0];
+                countInfo.innerHTML = `${baseText} | <strong>Showing ${data.length} models</strong>`;
+            }
 
             const maxPrice = Math.max(0.000001, ...data.map(m => strat.getPrice(m, 'avg') || strat.getPrice(m) || 0));
             const maxCache = currentTab === 'text' ? Math.max(0.000001, ...data.map(m => strat.getCachePrice(m) || 0)) : 0;

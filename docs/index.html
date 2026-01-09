@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-01-09 00:00)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-01-09 11:33)</div>
         </header>
 
         <div class="controls">
@@ -644,6 +644,8 @@
                     <button class="tab-btn" onclick="switchTab('image')">Image</button>
                     <button class="tab-btn" onclick="switchTab('embedding')">Embedding</button>
                 </div>
+                <button class="ghost-btn" style="font-size: 0.7rem; padding: 4px 10px; align-self: flex-start; margin-top: -10px;" onclick="clearFilters()">🧹 Clear All Filters</button>
+
                 <div class="search-box">
                     <input type="text" id="searchInput" placeholder="Search (Model, ID, Arch)..."
                         oninput="renderTable()">
@@ -19452,7 +19454,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'nvidia', 'z-ai', 'x-ai', 'nousresearch', 'tngtech', 'arcee-ai', 'moonshotai', 'allenai', 'sentence-transformers', 'perplexity', 'baidu', 'amazon', 'sao10k', 'microsoft', 'cohere', 'deepcogito', 'minimax', 'thedrummer', 'intfloat', 'baai', 'aion-labs', 'kwaipilot', 'ai21', 'inception', 'liquid', 'bytedance-seed', 'thenlper', 'neversleep', 'inflection', 'openrouter', 'morph', 'relace', 'meituan', 'eleutherai', 'opengvlab', 'alfredpros', 'bytedance', 'thudm', 'raifle', 'cognitivecomputations', 'undi95', 'tencent', 'ibm-granite', 'gryphe', 'nex-agi', 'alibaba', 'prime-intellect', 'alpindale', 'switchpoint', 'mancer', 'xiaomi', 'anthracite-org', 'stepfun-ai', 'essentialai'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'tngtech', 'arcee-ai', 'moonshotai', 'baidu', 'allenai', 'perplexity', 'sentence-transformers', 'sao10k', 'amazon', 'thedrummer', 'microsoft', 'cohere', 'minimax', 'deepcogito', 'aion-labs', 'baai', 'intfloat', 'neversleep', 'thenlper', 'openrouter', 'inflection', 'bytedance-seed', 'kwaipilot', 'relace', 'liquid', 'morph', 'ai21', 'inception', 'stepfun-ai', 'mancer', 'bytedance', 'gryphe', 'undi95', 'eleutherai', 'tencent', 'nex-agi', 'thudm', 'prime-intellect', 'alibaba', 'meituan', 'alpindale', 'xiaomi', 'raifle', 'cognitivecomputations', 'switchpoint', 'ibm-granite', 'anthracite-org', 'alfredpros', 'opengvlab', 'essentialai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
@@ -19667,6 +19669,12 @@
             renderTable();
         }
 
+        function clearFilters() {
+            activeFilters.clear();
+            renderFilters();
+            renderTable();
+        }
+
         const renderFilters = () => {
             const bar = document.getElementById('filterBar');
             const groups = [];
@@ -19780,6 +19788,13 @@
                 for (let fid of activeFilters) if (!strat.checkFilter(m, fid)) return false;
                 return true;
             });
+
+            // Update visible count in UI
+            const countInfo = document.querySelector('.meta');
+            if (countInfo) {
+                const baseText = countInfo.innerHTML.split(' | ')[0];
+                countInfo.innerHTML = `${baseText} | <strong>Showing ${data.length} models</strong>`;
+            }
 
             const maxPrice = Math.max(0.000001, ...data.map(m => strat.getPrice(m, 'avg') || strat.getPrice(m) || 0));
             const maxCache = currentTab === 'text' ? Math.max(0.000001, ...data.map(m => strat.getCachePrice(m) || 0)) : 0;
