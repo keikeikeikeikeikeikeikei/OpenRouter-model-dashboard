@@ -1,0 +1,5070 @@
+[
+  {
+    "model_name": "ai21/jamba-large-1.7",
+    "provider": "AI21",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.71s",
+    "raw": "\t\nai21/jamba-large-1.7\n\tAI21\t15.0tok/s\t0.71s\t4.06s\t$2.00\t$8.00\t256K\tAug 9, 2025\t3"
+  },
+  {
+    "model_name": "ai21/jamba-mini-1.7",
+    "provider": "AI21",
+    "p50_throughput": "69.0tok/s",
+    "p50_latency": "0.69s",
+    "raw": "\t\nai21/jamba-mini-1.7\n\tAI21\t69.0tok/s\t0.69s\t0.93s\t$0.20\t$0.40\t256K\tAug 9, 2025\t5"
+  },
+  {
+    "model_name": "aion-labs/aion-1.0",
+    "provider": "AionLabs",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "1.52s",
+    "raw": "\t\naion-labs/aion-1.0\n\tAionLabs\t37.0tok/s\t1.52s\t2.06s\t$4.00\t$8.00\t131K\tFeb 5, 2025\t79"
+  },
+  {
+    "model_name": "aion-labs/aion-1.0-mini",
+    "provider": "AionLabs",
+    "p50_throughput": "61.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\naion-labs/aion-1.0-mini\n\tAionLabs\t61.0tok/s\t1.10s\t1.10s\t$0.70\t$1.40\t131K\tFeb 5, 2025\t1"
+  },
+  {
+    "model_name": "aion-labs/aion-rp-llama-3.1-8b",
+    "provider": "AionLabs",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "1.28s",
+    "raw": "\t\naion-labs/aion-rp-llama-3.1-8b\n\tAionLabs\t34.0tok/s\t1.28s\t2.58s\t$0.80\t$1.60\t33K\tFeb 5, 2025\t77"
+  },
+  {
+    "model_name": "alfredpros/codellama-7b-instruct-solidity",
+    "provider": "Featherless",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "0.43s",
+    "raw": "\t\nalfredpros/codellama-7b-instruct-solidity\n\tFeatherless\t14.0tok/s\t0.43s\t0.76s\t$0.80\t$1.20\t4K\tApr 14, 2025\t4"
+  },
+  {
+    "model_name": "alibaba/tongyi-deepresearch-30b-a3b",
+    "provider": "AtlasCloud",
+    "p50_throughput": "112.0tok/s",
+    "p50_latency": "0.53s",
+    "raw": "\t\nalibaba/tongyi-deepresearch-30b-a3b\n\tAtlasCloud\t112.0tok/s\t0.53s\t1.03s\t$0.09\t$0.45\t131K\tSep 19, 2025\t231"
+  },
+  {
+    "model_name": "alibaba/tongyi-deepresearch-30b-a3b",
+    "provider": "nCompass",
+    "p50_throughput": "107.5tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\nalibaba/tongyi-deepresearch-30b-a3b\n\tnCompass\t107.5tok/s\t1.43s\t1.97s\t$0.09\t$0.40\t131K\tSep 19, 2025\t50"
+  },
+  {
+    "model_name": "allenai/olmo-2-0325-32b-instruct",
+    "provider": "Cirrascale",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "4.62s",
+    "raw": "\t\nallenai/olmo-2-0325-32b-instruct\n\tCirrascale\t14.0tok/s\t4.62s\t4.89s\t$0.05\t$0.20\t128K\tMar 15, 2025\t2"
+  },
+  {
+    "model_name": "allenai/olmo-3-7b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "0.43s",
+    "raw": "\t\nallenai/olmo-3-7b-instruct\n\tParasail\t30.0tok/s\t0.43s\t0.58s\t$0.10\t$0.20\t66K\tNov 22, 2025\t2"
+  },
+  {
+    "model_name": "allenai/olmo-3-7b-think",
+    "provider": "Parasail",
+    "p50_throughput": "194.0tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nallenai/olmo-3-7b-think\n\tParasail\t194.0tok/s\t0.27s\t0.38s\t$0.12\t$0.20\t66K\tNov 22, 2025\t7"
+  },
+  {
+    "model_name": "allenai/olmo-3.1-32b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "0.22s",
+    "raw": "\t\nallenai/olmo-3.1-32b-instruct\n\tDeepInfra\t51.0tok/s\t0.22s\t0.78s\t$0.20\t$0.60\t66K\tJan 7, 2026\t107"
+  },
+  {
+    "model_name": "allenai/olmo-3.1-32b-think",
+    "provider": "Parasail",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "0.33s",
+    "raw": "\t\nallenai/olmo-3.1-32b-think\n\tParasail\t48.0tok/s\t0.33s\t0.61s\t$0.15\t$0.50\t66K\tDec 17, 2025\t114"
+  },
+  {
+    "model_name": "alpindale/goliath-120b",
+    "provider": "Mancer",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "1.46s",
+    "raw": "\t\nalpindale/goliath-120b\n\tMancer\t20.0tok/s\t1.46s\t2.30s\t$6.00\t$8.00\t6K\tNov 10, 2023\t8"
+  },
+  {
+    "model_name": "amazon/nova-2-lite-v1",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "130.5tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\namazon/nova-2-lite-v1\n\tAmazon Bedrock\t130.5tok/s\t0.70s\t1.03s\t$0.30\t$2.50\t1.0M\tDec 3, 2025\t40"
+  },
+  {
+    "model_name": "amazon/nova-lite-v1",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "8.0tok/s",
+    "p50_latency": "0.47s",
+    "raw": "\t\namazon/nova-lite-v1\n\tAmazon Bedrock\t8.0tok/s\t0.47s\t0.72s\t$0.06\t$0.24\t300K\tDec 6, 2024\t1,039"
+  },
+  {
+    "model_name": "amazon/nova-micro-v1",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "241.0tok/s",
+    "p50_latency": "0.35s",
+    "raw": "\t\namazon/nova-micro-v1\n\tAmazon Bedrock\t241.0tok/s\t0.35s\t0.42s\t$0.04\t$0.14\t128K\tDec 6, 2024\t10,184"
+  },
+  {
+    "model_name": "amazon/nova-premier-v1",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "0.74s",
+    "raw": "\t\namazon/nova-premier-v1\n\tAmazon Bedrock\t20.0tok/s\t0.74s\t6.31s\t$2.50\t$12.50\t1.0M\tNov 1, 2025\t13"
+  },
+  {
+    "model_name": "amazon/nova-pro-v1",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "66.0tok/s",
+    "p50_latency": "1.03s",
+    "raw": "\t\namazon/nova-pro-v1\n\tAmazon Bedrock\t66.0tok/s\t1.03s\t1.62s\t$0.80\t$3.20\t300K\tDec 6, 2024\t10"
+  },
+  {
+    "model_name": "anthracite-org/magnum-v4-72b",
+    "provider": "Mancer",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "0.51s",
+    "raw": "\t\nanthracite-org/magnum-v4-72b\n\tMancer\t38.0tok/s\t0.51s\t2.21s\t$3.00\t$5.00\t16K\tOct 22, 2024\t16"
+  },
+  {
+    "model_name": "anthropic/claude-3-haiku",
+    "provider": "Anthropic",
+    "p50_throughput": "107.0tok/s",
+    "p50_latency": "0.39s",
+    "raw": "\t\nanthropic/claude-3-haiku\n\tAnthropic\t107.0tok/s\t0.39s\t0.75s\t$0.25\t$1.25\t200K\tMar 13, 2024\t3,564"
+  },
+  {
+    "model_name": "anthropic/claude-3.5-haiku",
+    "provider": "Anthropic",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.84s",
+    "raw": "\t\nanthropic/claude-3.5-haiku\n\tAnthropic\t46.0tok/s\t0.84s\t2.32s\t$0.80\t$4.00\t200K\tNov 4, 2024\t2,433"
+  },
+  {
+    "model_name": "anthropic/claude-3.5-haiku",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.97s",
+    "raw": "\t\nanthropic/claude-3.5-haiku\n\tAmazon Bedrock\t37.0tok/s\t0.97s\t4.07s\t$0.80\t$4.00\t200K\tNov 4, 2024\t1,172"
+  },
+  {
+    "model_name": "anthropic/claude-3.5-haiku",
+    "provider": "Amazon Bedrock (US-WEST)",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "0.95s",
+    "raw": "\t\nanthropic/claude-3.5-haiku\n\tAmazon Bedrock (US-WEST)\t38.0tok/s\t0.95s\t4.20s\t$0.80\t$4.00\t200K\tNov 4, 2024\t1,240"
+  },
+  {
+    "model_name": "anthropic/claude-3.5-sonnet",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.99s",
+    "raw": "\t\nanthropic/claude-3.5-sonnet\n\tAmazon Bedrock\t35.0tok/s\t0.99s\t2.00s\t$6.00\t$30.00\t200K\tOct 22, 2024\t946"
+  },
+  {
+    "model_name": "anthropic/claude-3.7-sonnet",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "1.91s",
+    "raw": "\t\nanthropic/claude-3.7-sonnet\n\tAmazon Bedrock\t46.0tok/s\t1.91s\t3.02s\t$3.00\t$15.00\t200K\tFeb 25, 2025\t186"
+  },
+  {
+    "model_name": "anthropic/claude-3.7-sonnet",
+    "provider": "Anthropic",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.68s",
+    "raw": "\t\nanthropic/claude-3.7-sonnet\n\tAnthropic\t46.0tok/s\t0.68s\t1.75s\t$3.00\t$15.00\t200K\tFeb 25, 2025\t2,438"
+  },
+  {
+    "model_name": "anthropic/claude-3.7-sonnet",
+    "provider": "Google Vertex",
+    "p50_throughput": "43.0tok/s",
+    "p50_latency": "1.09s",
+    "raw": "\t\nanthropic/claude-3.7-sonnet\n\tGoogle Vertex\t43.0tok/s\t1.09s\t2.24s\t$3.00\t$15.00\t200K\tFeb 25, 2025\t4,709"
+  },
+  {
+    "model_name": "anthropic/claude-3.7-sonnet",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "52.5tok/s",
+    "p50_latency": "0.74s",
+    "raw": "\t\nanthropic/claude-3.7-sonnet\n\tGoogle Vertex (Global)\t52.5tok/s\t0.74s\t0.75s\t$3.00\t$15.00\t200K\tFeb 25, 2025\t2"
+  },
+  {
+    "model_name": "anthropic/claude-haiku-4.5",
+    "provider": "Google Vertex",
+    "p50_throughput": "81.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nanthropic/claude-haiku-4.5\n\tGoogle Vertex\t81.0tok/s\t0.44s\t1.15s\t$1.00\t$5.00\t200K\tOct 16, 2025\t4,052"
+  },
+  {
+    "model_name": "anthropic/claude-haiku-4.5",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "67.0tok/s",
+    "p50_latency": "0.91s",
+    "raw": "\t\nanthropic/claude-haiku-4.5\n\tAmazon Bedrock\t67.0tok/s\t0.91s\t1.88s\t$1.00\t$5.00\t200K\tOct 16, 2025\t5,426"
+  },
+  {
+    "model_name": "anthropic/claude-haiku-4.5",
+    "provider": "Anthropic",
+    "p50_throughput": "67.0tok/s",
+    "p50_latency": "0.83s",
+    "raw": "\t\nanthropic/claude-haiku-4.5\n\tAnthropic\t67.0tok/s\t0.83s\t1.95s\t$1.00\t$5.00\t200K\tOct 16, 2025\t4,362"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4",
+    "provider": "Google Vertex",
+    "p50_throughput": "23.0tok/s",
+    "p50_latency": "1.93s",
+    "raw": "\t\nanthropic/claude-opus-4\n\tGoogle Vertex\t23.0tok/s\t1.93s\t2.42s\t$15.00\t$75.00\t200K\tMay 23, 2025\t3"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4",
+    "provider": "Anthropic",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "1.40s",
+    "raw": "\t\nanthropic/claude-opus-4\n\tAnthropic\t27.0tok/s\t1.40s\t1.69s\t$15.00\t$75.00\t200K\tMay 23, 2025\t26"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "3.63s",
+    "raw": "\t\nanthropic/claude-opus-4\n\tAmazon Bedrock\t13.0tok/s\t3.63s\t5.00s\t$15.00\t$75.00\t200K\tMay 23, 2025\t66"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4.1",
+    "provider": "Anthropic",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.66s",
+    "raw": "\t\nanthropic/claude-opus-4.1\n\tAnthropic\t24.0tok/s\t1.66s\t2.48s\t$15.00\t$75.00\t200K\tAug 6, 2025\t13"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4.1",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "21.0tok/s",
+    "p50_latency": "1.19s",
+    "raw": "\t\nanthropic/claude-opus-4.1\n\tGoogle Vertex (Global)\t21.0tok/s\t1.19s\t1.29s\t$15.00\t$75.00\t200K\tAug 6, 2025\t5"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4.1",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "2.79s",
+    "raw": "\t\nanthropic/claude-opus-4.1\n\tAmazon Bedrock\t14.0tok/s\t2.79s\t4.69s\t$15.00\t$75.00\t200K\tAug 6, 2025\t103"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4.5",
+    "provider": "Google Vertex",
+    "p50_throughput": "43.0tok/s",
+    "p50_latency": "1.41s",
+    "raw": "\t\nanthropic/claude-opus-4.5\n\tGoogle Vertex\t43.0tok/s\t1.41s\t2.66s\t$5.00\t$25.00\t200K\tNov 25, 2025\t5,651"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4.5",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "45.0tok/s",
+    "p50_latency": "2.23s",
+    "raw": "\t\nanthropic/claude-opus-4.5\n\tAmazon Bedrock\t45.0tok/s\t2.23s\t3.30s\t$5.00\t$25.00\t200K\tNov 25, 2025\t4,396"
+  },
+  {
+    "model_name": "anthropic/claude-opus-4.5",
+    "provider": "Anthropic",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "2.00s",
+    "raw": "\t\nanthropic/claude-opus-4.5\n\tAnthropic\t38.0tok/s\t2.00s\t3.05s\t$5.00\t$25.00\t200K\tNov 25, 2025\t6,985"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "44.0tok/s",
+    "p50_latency": "1.61s",
+    "raw": "\t\nanthropic/claude-sonnet-4\n\tAmazon Bedrock\t44.0tok/s\t1.61s\t3.29s\t$3.00\t$15.00\t200K\tMay 23, 2025\t390"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4",
+    "provider": "Anthropic",
+    "p50_throughput": "43.0tok/s",
+    "p50_latency": "0.95s",
+    "raw": "\t\nanthropic/claude-sonnet-4\n\tAnthropic\t43.0tok/s\t0.95s\t1.68s\t$3.00\t$15.00\t1.0M\tMay 23, 2025\t1,394"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "1.03s",
+    "raw": "\t\nanthropic/claude-sonnet-4\n\tGoogle Vertex (Global)\t47.0tok/s\t1.03s\t1.83s\t$3.00\t$15.00\t1.0M\tMay 23, 2025\t424"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4",
+    "provider": "Google Vertex",
+    "p50_throughput": "40.0tok/s",
+    "p50_latency": "0.83s",
+    "raw": "\t\nanthropic/claude-sonnet-4\n\tGoogle Vertex\t40.0tok/s\t0.83s\t1.98s\t$3.00\t$15.00\t1.0M\tMay 23, 2025\t4,110"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4.5",
+    "provider": "Google Vertex",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "1.53s",
+    "raw": "\t\nanthropic/claude-sonnet-4.5\n\tGoogle Vertex\t37.0tok/s\t1.53s\t3.08s\t$3.00\t$15.00\t1.0M\tSep 30, 2025\t4,849"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4.5",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "1.30s",
+    "raw": "\t\nanthropic/claude-sonnet-4.5\n\tGoogle Vertex (Global)\t38.0tok/s\t1.30s\t2.27s\t$3.00\t$15.00\t1.0M\tSep 30, 2025\t7,136"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4.5",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "2.39s",
+    "raw": "\t\nanthropic/claude-sonnet-4.5\n\tAmazon Bedrock\t41.0tok/s\t2.39s\t4.00s\t$3.00\t$15.00\t1.0M\tSep 30, 2025\t5,728"
+  },
+  {
+    "model_name": "anthropic/claude-sonnet-4.5",
+    "provider": "Anthropic",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "1.61s",
+    "raw": "\t\nanthropic/claude-sonnet-4.5\n\tAnthropic\t36.0tok/s\t1.61s\t2.64s\t$3.00\t$15.00\t1.0M\tSep 30, 2025\t24,200"
+  },
+  {
+    "model_name": "arcee-ai/trinity-mini",
+    "provider": "Together",
+    "p50_throughput": "221.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\narcee-ai/trinity-mini\n\tTogether\t221.0tok/s\t0.23s\t0.24s\t$0.04\t$0.15\t128K\tDec 2, 2025\t2"
+  },
+  {
+    "model_name": "arcee-ai/trinity-mini",
+    "provider": "Clarifai",
+    "p50_throughput": "212.0tok/s",
+    "p50_latency": "0.09s",
+    "raw": "\t\narcee-ai/trinity-mini\n\tClarifai\t212.0tok/s\t0.09s\t0.13s\t$0.04\t$0.15\t131K\tDec 2, 2025\t302"
+  },
+  {
+    "model_name": "baidu/ernie-4.5-21b-a3b",
+    "provider": "NovitaAI",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "1.38s",
+    "raw": "\t\nbaidu/ernie-4.5-21b-a3b\n\tNovitaAI\t53.0tok/s\t1.38s\t1.93s\t$0.07\t$0.28\t120K\tAug 13, 2025\t73"
+  },
+  {
+    "model_name": "baidu/ernie-4.5-21b-a3b-thinking",
+    "provider": "NovitaAI",
+    "p50_throughput": "81.0tok/s",
+    "p50_latency": "2.03s",
+    "raw": "\t\nbaidu/ernie-4.5-21b-a3b-thinking\n\tNovitaAI\t81.0tok/s\t2.03s\t3.01s\t$0.07\t$0.28\t131K\tOct 10, 2025\t15"
+  },
+  {
+    "model_name": "baidu/ernie-4.5-300b-a47b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "1.47s",
+    "raw": "\t\nbaidu/ernie-4.5-300b-a47b\n\tSiliconFlow\t20.0tok/s\t1.47s\t2.64s\t$0.28\t$1.10\t131K\tJul 1, 2025\t599"
+  },
+  {
+    "model_name": "baidu/ernie-4.5-300b-a47b",
+    "provider": "NovitaAI",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\nbaidu/ernie-4.5-300b-a47b\n\tNovitaAI\t16.0tok/s\t1.43s\t2.09s\t$0.28\t$1.10\t123K\tJul 1, 2025\t694"
+  },
+  {
+    "model_name": "baidu/ernie-4.5-vl-28b-a3b",
+    "provider": "NovitaAI",
+    "p50_throughput": "63.0tok/s",
+    "p50_latency": "0.73s",
+    "raw": "\t\nbaidu/ernie-4.5-vl-28b-a3b\n\tNovitaAI\t63.0tok/s\t0.73s\t0.78s\t$0.14\t$0.56\t30K\tAug 13, 2025\t3"
+  },
+  {
+    "model_name": "baidu/ernie-4.5-vl-424b-a47b",
+    "provider": "NovitaAI",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "37.78s",
+    "raw": "\t\nbaidu/ernie-4.5-vl-424b-a47b\n\tNovitaAI\t5.0tok/s\t37.78s\t50.22s\t$0.42\t$1.25\t123K\tJul 1, 2025\t7"
+  },
+  {
+    "model_name": "bytedance-seed/seed-1.6",
+    "provider": "Seed",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "1.68s",
+    "raw": "\t\nbytedance-seed/seed-1.6\n\tSeed\t41.0tok/s\t1.68s\t7.56s\t$0.25\t$2.00\t262K\tDec 24, 2025\t67"
+  },
+  {
+    "model_name": "bytedance-seed/seed-1.6-flash",
+    "provider": "Seed",
+    "p50_throughput": "136.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\nbytedance-seed/seed-1.6-flash\n\tSeed\t136.0tok/s\t0.58s\t1.35s\t$0.07\t$0.30\t262K\tDec 24, 2025\t133"
+  },
+  {
+    "model_name": "bytedance-seed/seedream-4.5",
+    "provider": "Seed",
+    "p50_throughput": "203.0tok/s",
+    "p50_latency": "20.57s",
+    "raw": "\t\nbytedance-seed/seedream-4.5\n\tSeed\t203.0tok/s\t20.57s\t39.94s\tFree\t$9.58\t4K\tDec 24, 2025\t267"
+  },
+  {
+    "model_name": "bytedance/ui-tars-1.5-7b",
+    "provider": "Parasail",
+    "p50_throughput": "1.0tok/s",
+    "p50_latency": "1.89s",
+    "raw": "\t\nbytedance/ui-tars-1.5-7b\n\tParasail\t1.0tok/s\t1.89s\t2.40s\t$0.10\t$0.20\t128K\tJul 23, 2025\t93"
+  },
+  {
+    "model_name": "cohere/command-a",
+    "provider": "Cohere",
+    "p50_throughput": "36.5tok/s",
+    "p50_latency": "1.74s",
+    "raw": "\t\ncohere/command-a\n\tCohere\t36.5tok/s\t1.74s\t2.34s\t$2.50\t$10.00\t256K\tMar 14, 2025\t16"
+  },
+  {
+    "model_name": "cohere/command-r-08-2024",
+    "provider": "Cohere",
+    "p50_throughput": "61.0tok/s",
+    "p50_latency": "0.21s",
+    "raw": "\t\ncohere/command-r-08-2024\n\tCohere\t61.0tok/s\t0.21s\t0.33s\t$0.15\t$0.60\t128K\tAug 30, 2024\t151"
+  },
+  {
+    "model_name": "cohere/command-r-plus-08-2024",
+    "provider": "Cohere",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\ncohere/command-r-plus-08-2024\n\tCohere\t50.0tok/s\t0.23s\t0.35s\t$2.50\t$10.00\t128K\tAug 30, 2024\t5"
+  },
+  {
+    "model_name": "cohere/command-r7b-12-2024",
+    "provider": "Cohere",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\ncohere/command-r7b-12-2024\n\tCohere\t72.0tok/s\t0.37s\t0.79s\t$0.04\t$0.15\t128K\tDec 14, 2024\t3,503"
+  },
+  {
+    "model_name": "deepcogito/cogito-v2-preview-llama-109b-moe",
+    "provider": "Together",
+    "p50_throughput": "21.0tok/s",
+    "p50_latency": "1.47s",
+    "raw": "\t\ndeepcogito/cogito-v2-preview-llama-109b-moe\n\tTogether\t21.0tok/s\t1.47s\t3.01s\t$0.18\t$0.59\t33K\tSep 3, 2025\t14"
+  },
+  {
+    "model_name": "deepcogito/cogito-v2-preview-llama-405b",
+    "provider": "Together",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "2.00s",
+    "raw": "\t\ndeepcogito/cogito-v2-preview-llama-405b\n\tTogether\t20.0tok/s\t2.00s\t3.94s\t$3.50\t$3.50\t33K\tOct 17, 2025\t4"
+  },
+  {
+    "model_name": "deepcogito/cogito-v2-preview-llama-70b",
+    "provider": "Together",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "1.04s",
+    "raw": "\t\ndeepcogito/cogito-v2-preview-llama-70b\n\tTogether\t14.0tok/s\t1.04s\t1.88s\t$0.88\t$0.88\t33K\tSep 3, 2025\t4"
+  },
+  {
+    "model_name": "deepcogito/cogito-v2.1-671b",
+    "provider": "Together",
+    "p50_throughput": "14.5tok/s",
+    "p50_latency": "0.71s",
+    "raw": "\t\ndeepcogito/cogito-v2.1-671b\n\tTogether\t14.5tok/s\t0.71s\t0.94s\t$1.25\t$1.25\t128K\tNov 14, 2025\t144"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat",
+    "provider": "NovitaAI",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "1.44s",
+    "raw": "\t\ndeepseek/deepseek-chat\n\tNovitaAI\t17.0tok/s\t1.44s\t2.15s\t$0.40\t$1.30\t64K\tDec 27, 2024\t4,188"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat",
+    "provider": "DeepInfra",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "0.39s",
+    "raw": "\t\ndeepseek/deepseek-chat\n\tDeepInfra\t27.0tok/s\t0.39s\t0.89s\t$0.32\t$0.89\t164K\tDec 27, 2024\t6,514"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat",
+    "provider": "Chutes",
+    "p50_throughput": "23.5tok/s",
+    "p50_latency": "2.48s",
+    "raw": "\t\ndeepseek/deepseek-chat\n\tChutes\t23.5tok/s\t2.48s\t5.52s\t$0.30\t$1.20\t164K\tDec 27, 2024\t514"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "SambaNova",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "5.54s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tSambaNova\t51.0tok/s\t5.54s\t18.01s\t$3.00\t$4.50\t131K\tMar 24, 2025\t7"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Together",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tTogether\t27.0tok/s\t1.43s\t2.37s\t$1.25\t$1.25\t131K\tMar 24, 2025\t177"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Hyperbolic",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.53s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tHyperbolic\t25.0tok/s\t1.53s\t2.55s\t$1.25\t$1.25\t164K\tMar 24, 2025\t157"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Weights & Biases",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "0.51s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tWeights & Biases\t53.0tok/s\t0.51s\t1.15s\t$1.14\t$2.75\t161K\tMar 24, 2025\t214"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Fireworks",
+    "p50_throughput": "105.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tFireworks\t105.0tok/s\t0.29s\t0.86s\t$0.90\t$0.90\t164K\tMar 24, 2025\t3,262"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Baseten",
+    "p50_throughput": "91.5tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tBaseten\t91.5tok/s\t0.44s\t0.93s\t$0.77\t$0.77\t164K\tMar 24, 2025\t148"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "104.0tok/s",
+    "p50_latency": "0.97s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tNebius AI Studio (Fast)\t104.0tok/s\t0.97s\t1.76s\t$0.75\t$2.25\t33K\tMar 24, 2025\t560"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tNebius Token Factory\t17.0tok/s\t0.67s\t1.93s\t$0.50\t$1.50\t164K\tMar 24, 2025\t1,192"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Crusoe",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "0.93s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tCrusoe\t31.0tok/s\t0.93s\t2.37s\t$0.50\t$1.50\t164K\tMar 24, 2025\t865"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "GMICloud",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "1.24s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tGMICloud\t26.0tok/s\t1.24s\t3.99s\t$0.28\t$0.88\t164K\tMar 24, 2025\t2,842"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "NovitaAI",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.23s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tNovitaAI\t25.0tok/s\t1.23s\t2.12s\t$0.27\t$1.12\t164K\tMar 24, 2025\t32,881"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "SiliconFlow",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "2.95s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tSiliconFlow\t36.0tok/s\t2.95s\t4.70s\t$0.25\t$1.00\t164K\tMar 24, 2025\t3,537"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "AtlasCloud",
+    "p50_throughput": "21.0tok/s",
+    "p50_latency": "2.69s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tAtlasCloud\t21.0tok/s\t2.69s\t6.95s\t$0.22\t$0.88\t131K\tMar 24, 2025\t4,138"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "DeepInfra",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "0.66s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tDeepInfra\t20.0tok/s\t0.66s\t1.36s\t$0.20\t$0.88\t164K\tMar 24, 2025\t11,380"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3-0324",
+    "provider": "Chutes",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "1.88s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3-0324\n\tChutes\t12.0tok/s\t1.88s\t3.95s\t$0.19\t$0.87\t164K\tMar 24, 2025\t2,781"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "SambaNova",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "3.15s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tSambaNova\t22.0tok/s\t3.15s\t6.52s\t$0.65\t$1.50\t131K\tAug 21, 2025\t1,200"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "Google Vertex",
+    "p50_throughput": "101.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tGoogle Vertex\t101.0tok/s\t0.57s\t1.17s\t$0.60\t$1.70\t164K\tAug 21, 2025\t3,126"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "Fireworks",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.85s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tFireworks\t24.0tok/s\t1.85s\t4.62s\t$0.56\t$1.68\t164K\tAug 21, 2025\t6,260"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "Weights & Biases",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.52s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tWeights & Biases\t32.0tok/s\t0.52s\t3.50s\t$0.55\t$1.65\t161K\tAug 21, 2025\t4,104"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "NovitaAI",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.55s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tNovitaAI\t25.0tok/s\t1.55s\t2.49s\t$0.27\t$1.00\t131K\tAug 21, 2025\t11,406"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "AtlasCloud",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "2.41s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tAtlasCloud\t26.0tok/s\t2.41s\t6.32s\t$0.21\t$0.80\t131K\tAug 21, 2025\t1,426"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "DeepInfra",
+    "p50_throughput": "9.0tok/s",
+    "p50_latency": "0.81s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tDeepInfra\t9.0tok/s\t0.81s\t1.56s\t$0.21\t$0.79\t164K\tAug 21, 2025\t36,638"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "Chutes",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "1.95s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tChutes\t17.0tok/s\t1.95s\t6.54s\t$0.20\t$0.80\t164K\tAug 21, 2025\t772"
+  },
+  {
+    "model_name": "deepseek/deepseek-chat-v3.1",
+    "provider": "SambaNova High Throughput",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "7.36s",
+    "raw": "\t\ndeepseek/deepseek-chat-v3.1\n\tSambaNova High Throughput\t5.0tok/s\t7.36s\t11.44s\t$0.15\t$0.75\t33K\tAug 21, 2025\t2,769"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1",
+    "provider": "Azure",
+    "p50_throughput": "67.0tok/s",
+    "p50_latency": "2.00s",
+    "raw": "\t\ndeepseek/deepseek-r1\n\tAzure\t67.0tok/s\t2.00s\t6.56s\t$1.48\t$5.94\t164K\tJan 20, 2025\t29"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1",
+    "provider": "NovitaAI",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "1.39s",
+    "raw": "\t\ndeepseek/deepseek-r1\n\tNovitaAI\t30.0tok/s\t1.39s\t2.82s\t$0.70\t$2.50\t64K\tJan 20, 2025\t2,774"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "SambaNova",
+    "p50_throughput": "162.5tok/s",
+    "p50_latency": "1.38s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tSambaNova\t162.5tok/s\t1.38s\t1.96s\t$5.00\t$7.00\t131K\tMay 29, 2025\t2"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "Together",
+    "p50_throughput": "54.5tok/s",
+    "p50_latency": "1.29s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tTogether\t54.5tok/s\t1.29s\t3.12s\t$3.00\t$7.00\t164K\tMay 29, 2025\t50"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "Hyperbolic",
+    "p50_throughput": "45.0tok/s",
+    "p50_latency": "2.35s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tHyperbolic\t45.0tok/s\t2.35s\t3.63s\t$3.00\t$3.00\t164K\tMay 29, 2025\t4"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "136.0tok/s",
+    "p50_latency": "1.04s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tNebius AI Studio (Fast)\t136.0tok/s\t1.04s\t2.47s\t$2.00\t$6.00\t33K\tMay 29, 2025\t17"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "Crusoe",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "1.36s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tCrusoe\t34.0tok/s\t1.36s\t3.37s\t$1.35\t$5.40\t164K\tMay 29, 2025\t44"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.56s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tNebius Token Factory\t35.0tok/s\t0.56s\t1.31s\t$0.80\t$2.40\t164K\tMay 29, 2025\t372"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "NovitaAI",
+    "p50_throughput": "82.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tNovitaAI\t82.0tok/s\t0.60s\t1.79s\t$0.70\t$2.50\t164K\tMay 29, 2025\t1,618"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "SiliconFlow",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "1.69s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tSiliconFlow\t53.0tok/s\t1.69s\t4.41s\t$0.50\t$2.18\t164K\tMay 29, 2025\t289"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "DeepInfra",
+    "p50_throughput": "102.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tDeepInfra\t102.0tok/s\t0.45s\t1.11s\t$0.50\t$2.15\t164K\tMay 29, 2025\t367"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "AtlasCloud",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "2.73s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tAtlasCloud\t28.0tok/s\t2.73s\t7.14s\t$0.45\t$2.15\t131K\tMay 29, 2025\t667"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-0528",
+    "provider": "Chutes",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "7.59s",
+    "raw": "\t\ndeepseek/deepseek-r1-0528\n\tChutes\t12.0tok/s\t7.59s\t34.52s\t$0.40\t$1.75\t164K\tMay 29, 2025\t96"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-distill-llama-70b",
+    "provider": "NovitaAI",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\ndeepseek/deepseek-r1-distill-llama-70b\n\tNovitaAI\t46.0tok/s\t0.45s\t0.63s\t$0.80\t$0.80\t8K\tJan 24, 2025\t65"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-distill-llama-70b",
+    "provider": "SambaNova",
+    "p50_throughput": "148.0tok/s",
+    "p50_latency": "1.17s",
+    "raw": "\t\ndeepseek/deepseek-r1-distill-llama-70b\n\tSambaNova\t148.0tok/s\t1.17s\t4.21s\t$0.70\t$1.40\t131K\tJan 24, 2025\t73"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-distill-llama-70b",
+    "provider": "DeepInfra",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\ndeepseek/deepseek-r1-distill-llama-70b\n\tDeepInfra\t46.0tok/s\t0.45s\t1.30s\t$0.60\t$1.20\t131K\tJan 24, 2025\t99"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-distill-llama-70b",
+    "provider": "Chutes",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "0.90s",
+    "raw": "\t\ndeepseek/deepseek-r1-distill-llama-70b\n\tChutes\t31.0tok/s\t0.90s\t1.20s\t$0.03\t$0.11\t131K\tJan 24, 2025\t114"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-distill-qwen-32b",
+    "provider": "Cloudflare",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\ndeepseek/deepseek-r1-distill-qwen-32b\n\tCloudflare\t37.0tok/s\t0.42s\t1.12s\t$0.50\t$4.88\t80K\tJan 30, 2025\t190"
+  },
+  {
+    "model_name": "deepseek/deepseek-r1-distill-qwen-32b",
+    "provider": "NextBit",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.33s",
+    "raw": "\t\ndeepseek/deepseek-r1-distill-qwen-32b\n\tNextBit\t24.0tok/s\t1.33s\t6.76s\t$0.29\t$0.29\t33K\tJan 30, 2025\t712"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.1-terminus",
+    "provider": "SiliconFlow",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "1.28s",
+    "raw": "\t\ndeepseek/deepseek-v3.1-terminus\n\tSiliconFlow\t52.0tok/s\t1.28s\t2.23s\t$0.27\t$1.00\t164K\tSep 22, 2025\t941"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.1-terminus",
+    "provider": "NovitaAI",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.58s",
+    "raw": "\t\ndeepseek/deepseek-v3.1-terminus\n\tNovitaAI\t25.0tok/s\t1.58s\t2.95s\t$0.27\t$1.00\t131K\tSep 22, 2025\t2,600"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.1-terminus",
+    "provider": "Chutes",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "2.05s",
+    "raw": "\t\ndeepseek/deepseek-v3.1-terminus\n\tChutes\t15.0tok/s\t2.05s\t4.15s\t$0.23\t$0.90\t164K\tSep 22, 2025\t184"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.1-terminus",
+    "provider": "AtlasCloud",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "1.36s",
+    "raw": "\t\ndeepseek/deepseek-v3.1-terminus\n\tAtlasCloud\t18.0tok/s\t1.36s\t2.68s\t$0.21\t$0.80\t131K\tSep 22, 2025\t1,479"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.1-terminus",
+    "provider": "DeepInfra",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.07s",
+    "raw": "\t\ndeepseek/deepseek-v3.1-terminus\n\tDeepInfra\t24.0tok/s\t1.07s\t1.81s\t$0.21\t$0.79\t164K\tSep 22, 2025\t1,691"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.1-terminus",
+    "provider": "SambaNova",
+    "p50_throughput": "7.0tok/s",
+    "p50_latency": "4.47s",
+    "raw": "\t\ndeepseek/deepseek-v3.1-terminus\n\tSambaNova\t7.0tok/s\t4.47s\t4.51s\t$3.00\t$4.50\t131K\tSep 22, 2025\t3"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "Google Vertex",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.76s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tGoogle Vertex\t41.0tok/s\t0.76s\t2.23s\t$0.56\t$1.68\t164K\tDec 1, 2025\t2,672"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "Baseten",
+    "p50_throughput": "45.0tok/s",
+    "p50_latency": "2.66s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tBaseten\t45.0tok/s\t2.66s\t8.26s\t$0.30\t$0.45\t131K\tDec 1, 2025\t906"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "Parasail",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "1.12s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tParasail\t13.0tok/s\t1.12s\t4.12s\t$0.28\t$0.45\t164K\tDec 1, 2025\t5,224"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "DeepSeek",
+    "p50_throughput": "23.0tok/s",
+    "p50_latency": "1.50s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tDeepSeek\t23.0tok/s\t1.50s\t44.35s\t$0.28\t$0.42\t131K\tDec 1, 2025\t60,927"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "SiliconFlow",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "1.99s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tSiliconFlow\t31.0tok/s\t1.99s\t5.21s\t$0.27\t$0.42\t164K\tDec 1, 2025\t7,892"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "Phala",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "1.49s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tPhala\t35.0tok/s\t1.49s\t4.30s\t$0.27\t$0.40\t164K\tDec 1, 2025\t383"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "NovitaAI",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.74s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tNovitaAI\t25.0tok/s\t1.74s\t3.54s\t$0.27\t$0.40\t164K\tDec 1, 2025\t19,583"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "DeepInfra",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "0.79s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tDeepInfra\t13.0tok/s\t0.79s\t1.92s\t$0.26\t$0.39\t164K\tDec 1, 2025\t3,240"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "AtlasCloud",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "2.83s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tAtlasCloud\t22.0tok/s\t2.83s\t5.61s\t$0.26\t$0.38\t164K\tDec 1, 2025\t9,391"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2",
+    "provider": "Chutes",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "3.77s",
+    "raw": "\t\ndeepseek/deepseek-v3.2\n\tChutes\t10.0tok/s\t3.77s\t15.85s\t$0.25\t$0.38\t164K\tDec 1, 2025\t907"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2-exp",
+    "provider": "SiliconFlow",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "2.13s",
+    "raw": "\t\ndeepseek/deepseek-v3.2-exp\n\tSiliconFlow\t31.0tok/s\t2.13s\t5.58s\t$0.27\t$0.41\t164K\tSep 29, 2025\t1,814"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2-exp",
+    "provider": "NovitaAI",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "1.02s",
+    "raw": "\t\ndeepseek/deepseek-v3.2-exp\n\tNovitaAI\t19.0tok/s\t1.02s\t2.40s\t$0.27\t$0.41\t164K\tSep 29, 2025\t3,403"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2-exp",
+    "provider": "AtlasCloud",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "3.27s",
+    "raw": "\t\ndeepseek/deepseek-v3.2-exp\n\tAtlasCloud\t10.0tok/s\t3.27s\t5.94s\t$0.21\t$0.32\t164K\tSep 29, 2025\t2,413"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2-speciale",
+    "provider": "AtlasCloud",
+    "p50_throughput": "43.0tok/s",
+    "p50_latency": "0.99s",
+    "raw": "\t\ndeepseek/deepseek-v3.2-speciale\n\tAtlasCloud\t43.0tok/s\t0.99s\t1.04s\t$0.28\t$0.40\t164K\tDec 1, 2025\t3"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2-speciale",
+    "provider": "Parasail",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.28s",
+    "raw": "\t\ndeepseek/deepseek-v3.2-speciale\n\tParasail\t25.0tok/s\t1.28s\t9.51s\t$0.40\t$1.20\t164K\tDec 1, 2025\t148"
+  },
+  {
+    "model_name": "deepseek/deepseek-v3.2-speciale",
+    "provider": "Chutes",
+    "p50_throughput": "22.5tok/s",
+    "p50_latency": "1.37s",
+    "raw": "\t\ndeepseek/deepseek-v3.2-speciale\n\tChutes\t22.5tok/s\t1.37s\t4.98s\t$0.27\t$0.41\t164K\tDec 1, 2025\t58"
+  },
+  {
+    "model_name": "essentialai/rnj-1-instruct",
+    "provider": "Together",
+    "p50_throughput": "103.0tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nessentialai/rnj-1-instruct\n\tTogether\t103.0tok/s\t0.30s\t0.61s\t$0.15\t$0.15\t33K\tDec 7, 2025\t3"
+  },
+  {
+    "model_name": "google/gemini-2.0-flash-001",
+    "provider": "Google Vertex",
+    "p50_throughput": "87.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\ngoogle/gemini-2.0-flash-001\n\tGoogle Vertex\t87.0tok/s\t0.31s\t1.02s\t$0.10\t$0.40\t1.0M\tFeb 6, 2025\t135,133"
+  },
+  {
+    "model_name": "google/gemini-2.0-flash-001",
+    "provider": "Google AI Studio",
+    "p50_throughput": "90.0tok/s",
+    "p50_latency": "0.39s",
+    "raw": "\t\ngoogle/gemini-2.0-flash-001\n\tGoogle AI Studio\t90.0tok/s\t0.39s\t0.67s\t$0.10\t$0.40\t1.0M\tFeb 6, 2025\t192,642"
+  },
+  {
+    "model_name": "google/gemini-2.0-flash-lite-001",
+    "provider": "Google AI Studio",
+    "p50_throughput": "21.0tok/s",
+    "p50_latency": "0.46s",
+    "raw": "\t\ngoogle/gemini-2.0-flash-lite-001\n\tGoogle AI Studio\t21.0tok/s\t0.46s\t1.10s\t$0.07\t$0.30\t1.0M\tFeb 26, 2025\t16"
+  },
+  {
+    "model_name": "google/gemini-2.0-flash-lite-001",
+    "provider": "Google Vertex",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\ngoogle/gemini-2.0-flash-lite-001\n\tGoogle Vertex\t47.0tok/s\t0.45s\t1.46s\t$0.07\t$0.30\t1.0M\tFeb 26, 2025\t29,911"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash",
+    "provider": "Google Vertex",
+    "p50_throughput": "101.0tok/s",
+    "p50_latency": "0.69s",
+    "raw": "\t\ngoogle/gemini-2.5-flash\n\tGoogle Vertex\t101.0tok/s\t0.69s\t2.13s\t$0.30\t$2.50\t1.0M\tJun 18, 2025\t10,308"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash",
+    "provider": "Google AI Studio",
+    "p50_throughput": "33.0tok/s",
+    "p50_latency": "0.85s",
+    "raw": "\t\ngoogle/gemini-2.5-flash\n\tGoogle AI Studio\t33.0tok/s\t0.85s\t1.55s\t$0.30\t$2.50\t1.0M\tJun 18, 2025\t17,393"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "89.0tok/s",
+    "p50_latency": "0.53s",
+    "raw": "\t\ngoogle/gemini-2.5-flash\n\tGoogle Vertex (Global)\t89.0tok/s\t0.53s\t1.89s\t$0.30\t$2.50\t1.0M\tJun 18, 2025\t147,076"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-image",
+    "provider": "Google Vertex",
+    "p50_throughput": "145.0tok/s",
+    "p50_latency": "4.78s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-image\n\tGoogle Vertex\t145.0tok/s\t4.78s\t10.43s\t$0.30\t$2.50\t33K\tOct 8, 2025\t1,497"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-image",
+    "provider": "Google AI Studio",
+    "p50_throughput": "139.0tok/s",
+    "p50_latency": "5.75s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-image\n\tGoogle AI Studio\t139.0tok/s\t5.75s\t10.30s\t$0.30\t$2.50\t33K\tOct 8, 2025\t512"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-lite",
+    "provider": "Google AI Studio",
+    "p50_throughput": "181.0tok/s",
+    "p50_latency": "0.59s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-lite\n\tGoogle AI Studio\t181.0tok/s\t0.59s\t0.96s\t$0.10\t$0.40\t1.0M\tJul 23, 2025\t2,395"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-lite",
+    "provider": "Google Vertex",
+    "p50_throughput": "90.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-lite\n\tGoogle Vertex\t90.0tok/s\t0.42s\t1.28s\t$0.10\t$0.40\t1.0M\tJul 23, 2025\t163,594"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-lite-preview-09-2025",
+    "provider": "Google Vertex",
+    "p50_throughput": "126.0tok/s",
+    "p50_latency": "1.28s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-lite-preview-09-2025\n\tGoogle Vertex\t126.0tok/s\t1.28s\t5.93s\t$0.10\t$0.40\t1.0M\tSep 26, 2025\t10,678"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-lite-preview-09-2025",
+    "provider": "Google AI Studio",
+    "p50_throughput": "239.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-lite-preview-09-2025\n\tGoogle AI Studio\t239.0tok/s\t0.44s\t1.50s\t$0.10\t$0.40\t1.0M\tSep 26, 2025\t10,396"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-preview-09-2025",
+    "provider": "Google AI Studio",
+    "p50_throughput": "163.0tok/s",
+    "p50_latency": "0.80s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-preview-09-2025\n\tGoogle AI Studio\t163.0tok/s\t0.80s\t7.06s\t$0.30\t$2.50\t1.0M\tSep 26, 2025\t700"
+  },
+  {
+    "model_name": "google/gemini-2.5-flash-preview-09-2025",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "62.0tok/s",
+    "p50_latency": "0.51s",
+    "raw": "\t\ngoogle/gemini-2.5-flash-preview-09-2025\n\tGoogle Vertex (Global)\t62.0tok/s\t0.51s\t1.58s\t$0.30\t$2.50\t1.0M\tSep 26, 2025\t1,473"
+  },
+  {
+    "model_name": "google/gemini-2.5-pro",
+    "provider": "Google Vertex (US)",
+    "p50_throughput": "76.0tok/s",
+    "p50_latency": "3.37s",
+    "raw": "\t\ngoogle/gemini-2.5-pro\n\tGoogle Vertex (US)\t76.0tok/s\t3.37s\t5.18s\t$1.25\t$10.00\t1.0M\tJun 17, 2025\t6,872"
+  },
+  {
+    "model_name": "google/gemini-2.5-pro",
+    "provider": "Google AI Studio",
+    "p50_throughput": "100.0tok/s",
+    "p50_latency": "3.37s",
+    "raw": "\t\ngoogle/gemini-2.5-pro\n\tGoogle AI Studio\t100.0tok/s\t3.37s\t5.44s\t$1.25\t$10.00\t1.0M\tJun 17, 2025\t31,885"
+  },
+  {
+    "model_name": "google/gemini-2.5-pro",
+    "provider": "Google Vertex (Global)",
+    "p50_throughput": "98.0tok/s",
+    "p50_latency": "2.40s",
+    "raw": "\t\ngoogle/gemini-2.5-pro\n\tGoogle Vertex (Global)\t98.0tok/s\t2.40s\t5.75s\t$1.25\t$10.00\t1.0M\tJun 17, 2025\t13,009"
+  },
+  {
+    "model_name": "google/gemini-3-flash-preview",
+    "provider": "Google AI Studio",
+    "p50_throughput": "88.0tok/s",
+    "p50_latency": "0.88s",
+    "raw": "\t\ngoogle/gemini-3-flash-preview\n\tGoogle AI Studio\t88.0tok/s\t0.88s\t1.89s\t$0.50\t$3.00\t1.0M\tDec 18, 2025\t63,114"
+  },
+  {
+    "model_name": "google/gemini-3-flash-preview",
+    "provider": "Google Vertex",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "1.28s",
+    "raw": "\t\ngoogle/gemini-3-flash-preview\n\tGoogle Vertex\t48.0tok/s\t1.28s\t3.03s\t$0.50\t$3.00\t1.0M\tDec 18, 2025\t81,203"
+  },
+  {
+    "model_name": "google/gemini-3-pro-image-preview",
+    "provider": "Google AI Studio",
+    "p50_throughput": "79.0tok/s",
+    "p50_latency": "3.48s",
+    "raw": "\t\ngoogle/gemini-3-pro-image-preview\n\tGoogle AI Studio\t79.0tok/s\t3.48s\t18.47s\t$2.00\t$12.00\t66K\tNov 21, 2025\t737"
+  },
+  {
+    "model_name": "google/gemini-3-pro-image-preview",
+    "provider": "Google Vertex",
+    "p50_throughput": "42.0tok/s",
+    "p50_latency": "22.98s",
+    "raw": "\t\ngoogle/gemini-3-pro-image-preview\n\tGoogle Vertex\t42.0tok/s\t22.98s\t36.96s\t$2.00\t$12.00\t66K\tNov 21, 2025\t3,993"
+  },
+  {
+    "model_name": "google/gemini-3-pro-preview",
+    "provider": "Google AI Studio",
+    "p50_throughput": "67.0tok/s",
+    "p50_latency": "3.14s",
+    "raw": "\t\ngoogle/gemini-3-pro-preview\n\tGoogle AI Studio\t67.0tok/s\t3.14s\t6.49s\t$2.00\t$12.00\t1.0M\tNov 18, 2025\t6,290"
+  },
+  {
+    "model_name": "google/gemini-3-pro-preview",
+    "provider": "Google Vertex",
+    "p50_throughput": "74.0tok/s",
+    "p50_latency": "4.13s",
+    "raw": "\t\ngoogle/gemini-3-pro-preview\n\tGoogle Vertex\t74.0tok/s\t4.13s\t9.11s\t$2.00\t$12.00\t1.0M\tNov 18, 2025\t22,294"
+  },
+  {
+    "model_name": "google/gemma-2-27b-it",
+    "provider": "NextBit",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.57s",
+    "raw": "\t\ngoogle/gemma-2-27b-it\n\tNextBit\t24.0tok/s\t1.57s\t2.51s\t$0.65\t$0.65\t8K\tJul 13, 2024\t7"
+  },
+  {
+    "model_name": "google/gemma-2-9b-it",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "110.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\ngoogle/gemma-2-9b-it\n\tNebius AI Studio (Fast)\t110.0tok/s\t0.29s\t0.51s\t$0.03\t$0.09\t8K\tJun 28, 2024\t3,858"
+  },
+  {
+    "model_name": "google/gemma-3-12b-it",
+    "provider": "Cloudflare",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\ngoogle/gemma-3-12b-it\n\tCloudflare\t24.0tok/s\t0.29s\t1.67s\t$0.35\t$0.56\t80K\tMar 14, 2025\t48"
+  },
+  {
+    "model_name": "google/gemma-3-12b-it",
+    "provider": "Crusoe",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "3.86s",
+    "raw": "\t\ngoogle/gemma-3-12b-it\n\tCrusoe\t19.0tok/s\t3.86s\t9.08s\t$0.08\t$0.30\t131K\tMar 14, 2025\t4,539"
+  },
+  {
+    "model_name": "google/gemma-3-12b-it",
+    "provider": "DeepInfra",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\ngoogle/gemma-3-12b-it\n\tDeepInfra\t34.0tok/s\t0.70s\t1.25s\t$0.04\t$0.13\t131K\tMar 14, 2025\t10,570"
+  },
+  {
+    "model_name": "google/gemma-3-12b-it",
+    "provider": "Chutes",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "0.89s",
+    "raw": "\t\ngoogle/gemma-3-12b-it\n\tChutes\t19.0tok/s\t0.89s\t2.56s\t$0.03\t$0.10\t131K\tMar 14, 2025\t230"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "NovitaAI",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "0.83s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tNovitaAI\t28.0tok/s\t0.83s\t1.62s\t$0.12\t$0.20\t98K\tMar 12, 2025\t362"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "Phala",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "0.77s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tPhala\t28.0tok/s\t0.77s\t1.36s\t$0.11\t$0.40\t54K\tMar 12, 2025\t385"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tNebius Token Factory\t46.0tok/s\t0.36s\t0.66s\t$0.10\t$0.30\t110K\tMar 12, 2025\t8,970"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "GMICloud",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "1.22s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tGMICloud\t18.0tok/s\t1.22s\t2.28s\t$0.09\t$0.16\t131K\tMar 12, 2025\t119"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "nCompass",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "1.65s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tnCompass\t27.0tok/s\t1.65s\t2.87s\t$0.09\t$0.16\t131K\tMar 12, 2025\t651"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "DeepInfra",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.80s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tDeepInfra\t32.0tok/s\t0.80s\t3.48s\t$0.09\t$0.16\t131K\tMar 12, 2025\t8,345"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "Parasail",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.62s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tParasail\t41.0tok/s\t0.62s\t1.16s\t$0.08\t$0.45\t131K\tMar 12, 2025\t2,983"
+  },
+  {
+    "model_name": "google/gemma-3-27b-it",
+    "provider": "Chutes",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.19s",
+    "raw": "\t\ngoogle/gemma-3-27b-it\n\tChutes\t25.0tok/s\t1.19s\t3.53s\t$0.04\t$0.15\t96K\tMar 12, 2025\t1,069"
+  },
+  {
+    "model_name": "google/gemma-3-4b-it",
+    "provider": "DeepInfra",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\ngoogle/gemma-3-4b-it\n\tDeepInfra\t25.0tok/s\t0.58s\t0.91s\t$0.04\t$0.08\t131K\tMar 14, 2025\t51,165"
+  },
+  {
+    "model_name": "google/gemma-3-4b-it",
+    "provider": "Chutes",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "0.40s",
+    "raw": "\t\ngoogle/gemma-3-4b-it\n\tChutes\t47.0tok/s\t0.40s\t0.65s\t$0.02\t$0.07\t96K\tMar 14, 2025\t4,350"
+  },
+  {
+    "model_name": "google/gemma-3n-e4b-it",
+    "provider": "Together",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "0.22s",
+    "raw": "\t\ngoogle/gemma-3n-e4b-it\n\tTogether\t48.0tok/s\t0.22s\t0.56s\t$0.02\t$0.04\t33K\tMay 21, 2025\t1,598"
+  },
+  {
+    "model_name": "gryphe/mythomax-l2-13b",
+    "provider": "Mancer",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\ngryphe/mythomax-l2-13b\n\tMancer\t38.0tok/s\t0.42s\t0.73s\t$0.50\t$0.75\t8K\tJul 2, 2023\t242"
+  },
+  {
+    "model_name": "gryphe/mythomax-l2-13b",
+    "provider": "DeepInfra",
+    "p50_throughput": "33.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\ngryphe/mythomax-l2-13b\n\tDeepInfra\t33.0tok/s\t0.28s\t0.49s\t$0.08\t$0.08\t4K\tJul 2, 2023\t2,387"
+  },
+  {
+    "model_name": "gryphe/mythomax-l2-13b",
+    "provider": "NextBit",
+    "p50_throughput": "11.0tok/s",
+    "p50_latency": "2.00s",
+    "raw": "\t\ngryphe/mythomax-l2-13b\n\tNextBit\t11.0tok/s\t2.00s\t4.10s\t$0.06\t$0.06\t4K\tJul 2, 2023\t2,074"
+  },
+  {
+    "model_name": "ibm-granite/granite-4.0-h-micro",
+    "provider": "Cloudflare",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nibm-granite/granite-4.0-h-micro\n\tCloudflare\t29.0tok/s\t0.50s\t1.00s\t$0.02\t$0.11\t131K\tOct 20, 2025\t809"
+  },
+  {
+    "model_name": "inception/mercury",
+    "provider": "Inception",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "1.44s",
+    "raw": "\t\ninception/mercury\n\tInception\t31.0tok/s\t1.44s\t2.27s\t$0.25\t$1.00\t128K\tJun 27, 2025\t19"
+  },
+  {
+    "model_name": "inception/mercury-coder",
+    "provider": "Inception",
+    "p50_throughput": "219.0tok/s",
+    "p50_latency": "2.06s",
+    "raw": "\t\ninception/mercury-coder\n\tInception\t219.0tok/s\t2.06s\t6.53s\t$0.25\t$1.00\t128K\tMay 1, 2025\t5"
+  },
+  {
+    "model_name": "inflection/inflection-3-pi",
+    "provider": "Inflection",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "4.15s",
+    "raw": "\t\ninflection/inflection-3-pi\n\tInflection\t16.0tok/s\t4.15s\t7.37s\t$2.50\t$10.00\t8K\tOct 11, 2024\t4"
+  },
+  {
+    "model_name": "inflection/inflection-3-productivity",
+    "provider": "Inflection",
+    "p50_throughput": "65.0tok/s",
+    "p50_latency": "2.84s",
+    "raw": "\t\ninflection/inflection-3-productivity\n\tInflection\t65.0tok/s\t2.84s\t2.84s\t$2.50\t$10.00\t8K\tOct 11, 2024\t1"
+  },
+  {
+    "model_name": "kwaipilot/kat-coder-pro",
+    "provider": "NovitaAI",
+    "p50_throughput": "24.5tok/s",
+    "p50_latency": "2.07s",
+    "raw": "\t\nkwaipilot/kat-coder-pro\n\tNovitaAI\t24.5tok/s\t2.07s\t3.07s\t$0.21\t$0.83\t256K\tNov 10, 2025\t38"
+  },
+  {
+    "model_name": "kwaipilot/kat-coder-pro",
+    "provider": "AtlasCloud",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "1.73s",
+    "raw": "\t\nkwaipilot/kat-coder-pro\n\tAtlasCloud\t32.0tok/s\t1.73s\t4.13s\t$0.21\t$0.83\t256K\tNov 10, 2025\t8"
+  },
+  {
+    "model_name": "kwaipilot/kat-coder-pro",
+    "provider": "StreamLake",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "1.62s",
+    "raw": "\t\nkwaipilot/kat-coder-pro\n\tStreamLake\t47.0tok/s\t1.62s\t3.31s\t$0.21\t$0.83\t256K\tNov 10, 2025\t129"
+  },
+  {
+    "model_name": "liquid/lfm-2.2-6b",
+    "provider": "Liquid",
+    "p50_throughput": "140.5tok/s",
+    "p50_latency": "0.21s",
+    "raw": "\t\nliquid/lfm-2.2-6b\n\tLiquid\t140.5tok/s\t0.21s\t0.24s\t$0.01\t$0.02\t33K\tOct 20, 2025\t4"
+  },
+  {
+    "model_name": "liquid/lfm2-8b-a1b",
+    "provider": "Liquid",
+    "p50_throughput": "97.5tok/s",
+    "p50_latency": "0.41s",
+    "raw": "\t\nliquid/lfm2-8b-a1b\n\tLiquid\t97.5tok/s\t0.41s\t0.43s\t$0.01\t$0.02\t33K\tOct 20, 2025\t12"
+  },
+  {
+    "model_name": "mancer/weaver",
+    "provider": "Mancer",
+    "p50_throughput": "42.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nmancer/weaver\n\tMancer\t42.0tok/s\t1.10s\t1.19s\t$0.75\t$1.00\t8K\tAug 2, 2023\t5"
+  },
+  {
+    "model_name": "meituan/longcat-flash-chat",
+    "provider": "AtlasCloud",
+    "p50_throughput": "65.0tok/s",
+    "p50_latency": "0.79s",
+    "raw": "\t\nmeituan/longcat-flash-chat\n\tAtlasCloud\t65.0tok/s\t0.79s\t1.14s\t$0.20\t$0.80\t131K\tSep 9, 2025\t542"
+  },
+  {
+    "model_name": "meta-llama/llama-3-70b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nmeta-llama/llama-3-70b-instruct\n\tNovitaAI\t17.0tok/s\t1.10s\t1.41s\t$0.51\t$0.74\t8K\tApr 18, 2024\t1,333"
+  },
+  {
+    "model_name": "meta-llama/llama-3-8b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "12.5tok/s",
+    "p50_latency": "0.49s",
+    "raw": "\t\nmeta-llama/llama-3-8b-instruct\n\tCloudflare\t12.5tok/s\t0.49s\t1.29s\t$0.28\t$0.83\t8K\tApr 18, 2024\t8"
+  },
+  {
+    "model_name": "meta-llama/llama-3-8b-instruct",
+    "provider": "Together",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nmeta-llama/llama-3-8b-instruct\n\tTogether\t46.0tok/s\t0.44s\t1.30s\t$0.10\t$0.10\t8K\tApr 18, 2024\t769"
+  },
+  {
+    "model_name": "meta-llama/llama-3-8b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.66s",
+    "raw": "\t\nmeta-llama/llama-3-8b-instruct\n\tNovitaAI\t35.0tok/s\t0.66s\t0.92s\t$0.04\t$0.04\t8K\tApr 18, 2024\t32"
+  },
+  {
+    "model_name": "meta-llama/llama-3-8b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "40.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmeta-llama/llama-3-8b-instruct\n\tDeepInfra\t40.0tok/s\t0.28s\t0.38s\t$0.03\t$0.06\t8K\tApr 18, 2024\t1,699"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-405b",
+    "provider": "Hyperbolic",
+    "p50_throughput": "7.0tok/s",
+    "p50_latency": "1.14s",
+    "raw": "\t\nmeta-llama/llama-3.1-405b\n\tHyperbolic\t7.0tok/s\t1.14s\t1.56s\t$4.00\t$4.00\t33K\tAug 2, 2024\t141"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-405b-instruct",
+    "provider": "Google Vertex",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "0.49s",
+    "raw": "\t\nmeta-llama/llama-3.1-405b-instruct\n\tGoogle Vertex\t16.0tok/s\t0.49s\t1.83s\t$5.00\t$16.00\t128K\tJul 23, 2024\t69"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-405b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.95s",
+    "raw": "\t\nmeta-llama/llama-3.1-405b-instruct\n\tHyperbolic\t15.0tok/s\t0.95s\t1.46s\t$4.00\t$4.00\t131K\tJul 23, 2024\t74"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-405b-instruct",
+    "provider": "Together",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "0.52s",
+    "raw": "\t\nmeta-llama/llama-3.1-405b-instruct\n\tTogether\t20.0tok/s\t0.52s\t1.77s\t$3.50\t$3.50\t10K\tJul 23, 2024\t186"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Together",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "0.35s",
+    "raw": "\t\nmeta-llama/llama-3.1-70b-instruct\n\tTogether\t46.0tok/s\t0.35s\t1.29s\t$0.88\t$0.88\t131K\tJul 23, 2024\t207"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "DeepInfra (Turbo)",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.22s",
+    "raw": "\t\nmeta-llama/llama-3.1-70b-instruct\n\tDeepInfra (Turbo)\t29.0tok/s\t0.22s\t0.49s\t$0.40\t$0.40\t131K\tJul 23, 2024\t1,182"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nmeta-llama/llama-3.1-70b-instruct\n\tDeepInfra\t25.0tok/s\t0.45s\t0.91s\t$0.40\t$0.40\t131K\tJul 23, 2024\t2,687"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-70b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "49.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nmeta-llama/llama-3.1-70b-instruct\n\tHyperbolic\t49.0tok/s\t0.60s\t1.30s\t$0.40\t$0.40\t131K\tJul 23, 2024\t1,140"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tCloudflare\t17.0tok/s\t0.50s\t0.96s\t$0.15\t$0.29\t32K\tJul 23, 2024\t136"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "SambaNova",
+    "p50_throughput": "61.5tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tSambaNova\t61.5tok/s\t0.67s\t2.44s\t$0.10\t$0.20\t16K\tJul 23, 2024\t248"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Cerebras",
+    "p50_throughput": "128.0tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tCerebras\t128.0tok/s\t0.27s\t0.49s\t$0.10\t$0.10\t32K\tJul 23, 2024\t548"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Friendli",
+    "p50_throughput": "165.0tok/s",
+    "p50_latency": "0.10s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tFriendli\t165.0tok/s\t0.10s\t0.14s\t$0.10\t$0.10\t131K\tJul 23, 2024\t14,927"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "60.0tok/s",
+    "p50_latency": "0.66s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tHyperbolic\t60.0tok/s\t0.66s\t1.03s\t$0.10\t$0.10\t131K\tJul 23, 2024\t251"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "SiliconFlow",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.83s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tSiliconFlow\t34.0tok/s\t0.83s\t1.20s\t$0.06\t$0.06\t33K\tJul 23, 2024\t707"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Groq",
+    "p50_throughput": "140.0tok/s",
+    "p50_latency": "0.35s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tGroq\t140.0tok/s\t0.35s\t0.74s\t$0.05\t$0.08\t131K\tJul 23, 2024\t615"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "115.0tok/s",
+    "p50_latency": "0.20s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tNebius AI Studio (Fast)\t115.0tok/s\t0.20s\t0.43s\t$0.03\t$0.09\t131K\tJul 23, 2024\t7,927"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tDeepInfra\t17.0tok/s\t0.26s\t3.40s\t$0.03\t$0.05\t131K\tJul 23, 2024\t1,541"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tNebius Token Factory\t30.0tok/s\t0.28s\t0.58s\t$0.02\t$0.06\t131K\tJul 23, 2024\t17,564"
+  },
+  {
+    "model_name": "meta-llama/llama-3.1-8b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "0.69s",
+    "raw": "\t\nmeta-llama/llama-3.1-8b-instruct\n\tNovitaAI\t30.0tok/s\t0.69s\t1.19s\t$0.02\t$0.05\t16K\tJul 23, 2024\t8,104"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-11b-vision-instruct",
+    "provider": "Together",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nmeta-llama/llama-3.2-11b-vision-instruct\n\tTogether\t5.0tok/s\t0.48s\t0.63s\t$0.18\t$0.18\t131K\tSep 25, 2024\t9"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-11b-vision-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\nmeta-llama/llama-3.2-11b-vision-instruct\n\tCloudflare\t28.0tok/s\t0.42s\t0.84s\t$0.05\t$0.68\t128K\tSep 25, 2024\t221"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-11b-vision-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "0.77s",
+    "raw": "\t\nmeta-llama/llama-3.2-11b-vision-instruct\n\tDeepInfra\t26.0tok/s\t0.77s\t2.27s\t$0.05\t$0.05\t131K\tSep 25, 2024\t577"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-1b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "170.0tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nmeta-llama/llama-3.2-1b-instruct\n\tCloudflare\t170.0tok/s\t0.37s\t0.61s\t$0.03\t$0.20\t60K\tSep 25, 2024\t9"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-3b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nmeta-llama/llama-3.2-3b-instruct\n\tHyperbolic\t36.0tok/s\t0.60s\t1.24s\t$0.10\t$0.10\t131K\tSep 25, 2024\t69"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-3b-instruct",
+    "provider": "Together",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nmeta-llama/llama-3.2-3b-instruct\n\tTogether\t48.0tok/s\t0.26s\t0.60s\t$0.06\t$0.06\t131K\tSep 25, 2024\t166"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-3b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "116.0tok/s",
+    "p50_latency": "0.13s",
+    "raw": "\t\nmeta-llama/llama-3.2-3b-instruct\n\tCloudflare\t116.0tok/s\t0.13s\t0.28s\t$0.05\t$0.34\t128K\tSep 25, 2024\t4,633"
+  },
+  {
+    "model_name": "meta-llama/llama-3.2-3b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nmeta-llama/llama-3.2-3b-instruct\n\tDeepInfra\t18.0tok/s\t0.60s\t0.86s\t$0.02\t$0.02\t131K\tSep 25, 2024\t11,744"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Fireworks",
+    "p50_throughput": "34.5tok/s",
+    "p50_latency": "0.55s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tFireworks\t34.5tok/s\t0.55s\t1.26s\t$0.90\t$0.90\t131K\tDec 7, 2024\t124"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Together",
+    "p50_throughput": "66.5tok/s",
+    "p50_latency": "0.56s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tTogether\t66.5tok/s\t0.56s\t1.23s\t$0.88\t$0.88\t131K\tDec 7, 2024\t254"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Cerebras",
+    "p50_throughput": "270.0tok/s",
+    "p50_latency": "0.20s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tCerebras\t270.0tok/s\t0.20s\t0.36s\t$0.85\t$1.20\t131K\tDec 7, 2024\t3,430"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Google Vertex",
+    "p50_throughput": "28.5tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tGoogle Vertex\t28.5tok/s\t0.27s\t0.41s\t$0.72\t$0.72\t128K\tDec 7, 2024\t176"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Weights & Biases",
+    "p50_throughput": "70.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tWeights & Biases\t70.0tok/s\t0.26s\t0.41s\t$0.71\t$0.71\t128K\tDec 7, 2024\t309"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "SambaNova",
+    "p50_throughput": "44.0tok/s",
+    "p50_latency": "0.64s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tSambaNova\t44.0tok/s\t0.64s\t1.21s\t$0.60\t$1.20\t131K\tDec 7, 2024\t156"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Friendli",
+    "p50_throughput": "92.0tok/s",
+    "p50_latency": "0.10s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tFriendli\t92.0tok/s\t0.10s\t0.25s\t$0.60\t$0.60\t131K\tDec 7, 2024\t2,013"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Groq",
+    "p50_throughput": "194.0tok/s",
+    "p50_latency": "0.20s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tGroq\t194.0tok/s\t0.20s\t0.31s\t$0.59\t$0.79\t131K\tDec 7, 2024\t3,015"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "SambaNova Turbo",
+    "p50_throughput": "49.0tok/s",
+    "p50_latency": "0.64s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tSambaNova Turbo\t49.0tok/s\t0.64s\t1.19s\t$0.45\t$0.90\t16K\tDec 7, 2024\t264"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "0.66s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tHyperbolic\t25.0tok/s\t0.66s\t1.10s\t$0.40\t$0.40\t131K\tDec 7, 2024\t461"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.41s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tCloudflare\t15.0tok/s\t0.41s\t1.12s\t$0.29\t$2.25\t24K\tDec 7, 2024\t485"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Crusoe",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "2.16s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tCrusoe\t5.0tok/s\t2.16s\t5.66s\t$0.25\t$0.75\t131K\tDec 7, 2024\t33,034"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "61.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tNebius AI Studio (Fast)\t61.0tok/s\t0.31s\t0.57s\t$0.25\t$0.75\t131K\tDec 7, 2024\t2,116"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "23.0tok/s",
+    "p50_latency": "0.38s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tParasail\t23.0tok/s\t0.38s\t1.39s\t$0.22\t$0.50\t131K\tDec 7, 2024\t1,626"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "1.01s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tNovitaAI\t14.0tok/s\t1.01s\t2.35s\t$0.14\t$0.40\t131K\tDec 7, 2024\t7,261"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.64s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tNebius Token Factory\t15.0tok/s\t0.64s\t1.64s\t$0.13\t$0.40\t131K\tDec 7, 2024\t8,283"
+  },
+  {
+    "model_name": "meta-llama/llama-3.3-70b-instruct",
+    "provider": "DeepInfra (Turbo)",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.38s",
+    "raw": "\t\nmeta-llama/llama-3.3-70b-instruct\n\tDeepInfra (Turbo)\t15.0tok/s\t0.38s\t2.96s\t$0.10\t$0.32\t131K\tDec 7, 2024\t32,041"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "SambaNova",
+    "p50_throughput": "213.0tok/s",
+    "p50_latency": "1.09s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tSambaNova\t213.0tok/s\t1.09s\t1.72s\t$0.63\t$1.80\t131K\tApr 6, 2025\t144"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "Google Vertex",
+    "p50_throughput": "44.0tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tGoogle Vertex\t44.0tok/s\t0.70s\t1.69s\t$0.35\t$1.15\t524K\tApr 6, 2025\t350"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "Parasail",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "0.35s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tParasail\t36.0tok/s\t0.35s\t0.59s\t$0.35\t$1.00\t524K\tApr 6, 2025\t1,018"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "Together",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "0.47s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tTogether\t31.0tok/s\t0.47s\t1.44s\t$0.27\t$0.85\t1.0M\tApr 6, 2025\t2,505"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "NovitaAI",
+    "p50_throughput": "45.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tNovitaAI\t45.0tok/s\t0.36s\t1.30s\t$0.27\t$0.85\t1.0M\tApr 6, 2025\t5,248"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "Fireworks",
+    "p50_throughput": "56.0tok/s",
+    "p50_latency": "0.25s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tFireworks\t56.0tok/s\t0.25s\t0.73s\t$0.22\t$0.88\t1.0M\tApr 6, 2025\t2,338"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "Groq",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tGroq\t51.0tok/s\t0.37s\t0.81s\t$0.20\t$0.60\t131K\tApr 6, 2025\t3,643"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "Friendli",
+    "p50_throughput": "60.0tok/s",
+    "p50_latency": "0.20s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tFriendli\t60.0tok/s\t0.20s\t0.35s\t$0.20\t$0.60\t378K\tApr 6, 2025\t1,675"
+  },
+  {
+    "model_name": "meta-llama/llama-4-maverick",
+    "provider": "DeepInfra",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nmeta-llama/llama-4-maverick\n\tDeepInfra\t27.0tok/s\t0.32s\t0.70s\t$0.15\t$0.60\t1.0M\tApr 6, 2025\t20,775"
+  },
+  {
+    "model_name": "meta-llama/llama-4-scout",
+    "provider": "Google Vertex",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "0.81s",
+    "raw": "\t\nmeta-llama/llama-4-scout\n\tGoogle Vertex\t16.0tok/s\t0.81s\t4.09s\t$0.25\t$0.70\t1.3M\tApr 6, 2025\t213"
+  },
+  {
+    "model_name": "meta-llama/llama-4-scout",
+    "provider": "Together",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nmeta-llama/llama-4-scout\n\tTogether\t15.0tok/s\t0.30s\t1.17s\t$0.18\t$0.59\t1.0M\tApr 6, 2025\t178"
+  },
+  {
+    "model_name": "meta-llama/llama-4-scout",
+    "provider": "NovitaAI",
+    "p50_throughput": "13.5tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nmeta-llama/llama-4-scout\n\tNovitaAI\t13.5tok/s\t0.37s\t1.38s\t$0.18\t$0.59\t131K\tApr 6, 2025\t156"
+  },
+  {
+    "model_name": "meta-llama/llama-4-scout",
+    "provider": "Groq",
+    "p50_throughput": "152.0tok/s",
+    "p50_latency": "0.41s",
+    "raw": "\t\nmeta-llama/llama-4-scout\n\tGroq\t152.0tok/s\t0.41s\t0.91s\t$0.11\t$0.34\t131K\tApr 6, 2025\t5,174"
+  },
+  {
+    "model_name": "meta-llama/llama-4-scout",
+    "provider": "Friendli",
+    "p50_throughput": "60.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\nmeta-llama/llama-4-scout\n\tFriendli\t60.0tok/s\t0.29s\t0.42s\t$0.10\t$0.60\t447K\tApr 6, 2025\t2,238"
+  },
+  {
+    "model_name": "meta-llama/llama-4-scout",
+    "provider": "DeepInfra",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "0.21s",
+    "raw": "\t\nmeta-llama/llama-4-scout\n\tDeepInfra\t31.0tok/s\t0.21s\t0.94s\t$0.08\t$0.30\t328K\tApr 6, 2025\t1,286"
+  },
+  {
+    "model_name": "meta-llama/llama-guard-2-8b",
+    "provider": "Together",
+    "p50_throughput": "8.0tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nmeta-llama/llama-guard-2-8b\n\tTogether\t8.0tok/s\t0.27s\t0.42s\t$0.20\t$0.20\t8K\tMay 13, 2024\t495"
+  },
+  {
+    "model_name": "meta-llama/llama-guard-3-8b",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nmeta-llama/llama-guard-3-8b\n\tNebius Token Factory\t25.0tok/s\t0.30s\t0.63s\t$0.02\t$0.06\t131K\tFeb 13, 2025\t95"
+  },
+  {
+    "model_name": "meta-llama/llama-guard-4-12b",
+    "provider": "Groq",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.07s",
+    "raw": "\t\nmeta-llama/llama-guard-4-12b\n\tGroq\t37.0tok/s\t0.07s\t0.11s\t$0.20\t$0.20\t131K\tApr 30, 2025\t3,264"
+  },
+  {
+    "model_name": "meta-llama/llama-guard-4-12b",
+    "provider": "DeepInfra",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "0.17s",
+    "raw": "\t\nmeta-llama/llama-guard-4-12b\n\tDeepInfra\t17.0tok/s\t0.17s\t0.29s\t$0.18\t$0.18\t164K\tApr 30, 2025\t4,589"
+  },
+  {
+    "model_name": "microsoft/phi-4",
+    "provider": "DeepInfra",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmicrosoft/phi-4\n\tDeepInfra\t34.0tok/s\t0.28s\t0.54s\t$0.07\t$0.14\t16K\tJan 10, 2025\t1,274"
+  },
+  {
+    "model_name": "microsoft/phi-4",
+    "provider": "NextBit",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nmicrosoft/phi-4\n\tNextBit\t36.0tok/s\t1.10s\t2.20s\t$0.06\t$0.14\t16K\tJan 10, 2025\t70"
+  },
+  {
+    "model_name": "microsoft/wizardlm-2-8x22b",
+    "provider": "NovitaAI",
+    "p50_throughput": "58.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nmicrosoft/wizardlm-2-8x22b\n\tNovitaAI\t58.0tok/s\t0.48s\t1.10s\t$0.62\t$0.62\t66K\tApr 16, 2024\t121"
+  },
+  {
+    "model_name": "microsoft/wizardlm-2-8x22b",
+    "provider": "DeepInfra",
+    "p50_throughput": "60.0tok/s",
+    "p50_latency": "0.40s",
+    "raw": "\t\nmicrosoft/wizardlm-2-8x22b\n\tDeepInfra\t60.0tok/s\t0.40s\t0.69s\t$0.48\t$0.48\t66K\tApr 16, 2024\t497"
+  },
+  {
+    "model_name": "minimax/minimax-01",
+    "provider": "MiniMax",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.18s",
+    "raw": "\t\nminimax/minimax-01\n\tMiniMax\t25.0tok/s\t1.18s\t1.57s\t$0.20\t$1.10\t1.0M\tJan 15, 2025\t284"
+  },
+  {
+    "model_name": "minimax/minimax-m1",
+    "provider": "SiliconFlow",
+    "p50_throughput": "44.5tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\nminimax/minimax-m1\n\tSiliconFlow\t44.5tok/s\t0.67s\t0.75s\t$0.55\t$2.20\t131K\tJun 18, 2025\t4"
+  },
+  {
+    "model_name": "minimax/minimax-m1",
+    "provider": "NovitaAI",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "2.46s",
+    "raw": "\t\nminimax/minimax-m1\n\tNovitaAI\t18.0tok/s\t2.46s\t3.34s\t$0.44\t$1.76\t1.0M\tJun 18, 2025\t2"
+  },
+  {
+    "model_name": "minimax/minimax-m1",
+    "provider": "MiniMax",
+    "p50_throughput": "40.5tok/s",
+    "p50_latency": "3.84s",
+    "raw": "\t\nminimax/minimax-m1\n\tMiniMax\t40.5tok/s\t3.84s\t6.36s\t$0.40\t$2.20\t1.0M\tJun 18, 2025\t2"
+  },
+  {
+    "model_name": "minimax/minimax-m2",
+    "provider": "Google Vertex",
+    "p50_throughput": "131.0tok/s",
+    "p50_latency": "0.49s",
+    "raw": "\t\nminimax/minimax-m2\n\tGoogle Vertex\t131.0tok/s\t0.49s\t2.50s\t$0.30\t$1.20\t197K\tOct 24, 2025\t19"
+  },
+  {
+    "model_name": "minimax/minimax-m2",
+    "provider": "NovitaAI",
+    "p50_throughput": "64.0tok/s",
+    "p50_latency": "1.27s",
+    "raw": "\t\nminimax/minimax-m2\n\tNovitaAI\t64.0tok/s\t1.27s\t4.52s\t$0.30\t$1.20\t205K\tOct 24, 2025\t1,005"
+  },
+  {
+    "model_name": "minimax/minimax-m2",
+    "provider": "MiniMax",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "1.84s",
+    "raw": "\t\nminimax/minimax-m2\n\tMiniMax\t52.0tok/s\t1.84s\t4.93s\t$0.26\t$1.02\t205K\tOct 24, 2025\t22"
+  },
+  {
+    "model_name": "minimax/minimax-m2",
+    "provider": "DeepInfra",
+    "p50_throughput": "86.0tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nminimax/minimax-m2\n\tDeepInfra\t86.0tok/s\t0.32s\t1.39s\t$0.25\t$1.02\t262K\tOct 24, 2025\t20"
+  },
+  {
+    "model_name": "minimax/minimax-m2",
+    "provider": "AtlasCloud",
+    "p50_throughput": "79.0tok/s",
+    "p50_latency": "0.68s",
+    "raw": "\t\nminimax/minimax-m2\n\tAtlasCloud\t79.0tok/s\t0.68s\t1.20s\t$0.20\t$1.00\t197K\tOct 24, 2025\t226"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "MiniMax Lightning",
+    "p50_throughput": "45.0tok/s",
+    "p50_latency": "3.13s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tMiniMax Lightning\t45.0tok/s\t3.13s\t7.21s\t$0.30\t$2.40\t205K\tDec 23, 2025\t3,944"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "63.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tNebius Token Factory\t63.0tok/s\t0.26s\t0.75s\t$0.30\t$1.20\t197K\tDec 23, 2025\t286"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "Friendli",
+    "p50_throughput": "115.5tok/s",
+    "p50_latency": "0.43s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tFriendli\t115.5tok/s\t0.43s\t1.82s\t$0.30\t$1.20\t197K\tDec 23, 2025\t48"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "NovitaAI",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "1.48s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tNovitaAI\t51.0tok/s\t1.48s\t3.48s\t$0.30\t$1.20\t205K\tDec 23, 2025\t461"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "AtlasCloud",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "0.63s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tAtlasCloud\t31.0tok/s\t0.63s\t1.94s\t$0.30\t$1.20\t197K\tDec 23, 2025\t3,461"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "Fireworks",
+    "p50_throughput": "125.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tFireworks\t125.0tok/s\t0.45s\t2.09s\t$0.30\t$1.20\t205K\tDec 23, 2025\t357"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "MiniMax",
+    "p50_throughput": "43.5tok/s",
+    "p50_latency": "2.75s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tMiniMax\t43.5tok/s\t2.75s\t6.71s\t$0.30\t$1.20\t205K\tDec 23, 2025\t722"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "DeepInfra",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tDeepInfra\t72.0tok/s\t0.26s\t1.39s\t$0.28\t$1.20\t197K\tDec 23, 2025\t368"
+  },
+  {
+    "model_name": "minimax/minimax-m2.1",
+    "provider": "Chutes",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\nminimax/minimax-m2.1\n\tChutes\t47.0tok/s\t0.67s\t0.92s\t$0.27\t$1.12\t197K\tDec 23, 2025\t31"
+  },
+  {
+    "model_name": "mistralai/codestral-2508",
+    "provider": "Mistral",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\nmistralai/codestral-2508\n\tMistral\t50.0tok/s\t0.29s\t0.38s\t$0.30\t$0.90\t256K\tAug 2, 2025\t4,498"
+  },
+  {
+    "model_name": "mistralai/devstral-2512",
+    "provider": "Chutes",
+    "p50_throughput": "58.0tok/s",
+    "p50_latency": "0.61s",
+    "raw": "\t\nmistralai/devstral-2512\n\tChutes\t58.0tok/s\t0.61s\t1.81s\t$0.05\t$0.22\t262K\tDec 9, 2025\t339"
+  },
+  {
+    "model_name": "mistralai/devstral-medium",
+    "provider": "Mistral",
+    "p50_throughput": "100.0tok/s",
+    "p50_latency": "0.21s",
+    "raw": "\t\nmistralai/devstral-medium\n\tMistral\t100.0tok/s\t0.21s\t0.26s\t$0.40\t$2.00\t131K\tJul 11, 2025\t5"
+  },
+  {
+    "model_name": "mistralai/devstral-small",
+    "provider": "Mistral",
+    "p50_throughput": "122.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nmistralai/devstral-small\n\tMistral\t122.0tok/s\t0.26s\t0.29s\t$0.10\t$0.30\t131K\tJul 11, 2025\t101"
+  },
+  {
+    "model_name": "mistralai/ministral-14b-2512",
+    "provider": "Together",
+    "p50_throughput": "85.0tok/s",
+    "p50_latency": "0.55s",
+    "raw": "\t\nmistralai/ministral-14b-2512\n\tTogether\t85.0tok/s\t0.55s\t3.38s\t$0.20\t$0.20\t262K\tDec 2, 2025\t65"
+  },
+  {
+    "model_name": "mistralai/ministral-14b-2512",
+    "provider": "Mistral",
+    "p50_throughput": "106.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\nmistralai/ministral-14b-2512\n\tMistral\t106.0tok/s\t0.31s\t0.68s\t$0.20\t$0.20\t262K\tDec 2, 2025\t825"
+  },
+  {
+    "model_name": "mistralai/ministral-3b",
+    "provider": "Mistral",
+    "p50_throughput": "92.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\nmistralai/ministral-3b\n\tMistral\t92.0tok/s\t0.29s\t0.33s\t$0.04\t$0.04\t131K\tOct 17, 2024\t18,148"
+  },
+  {
+    "model_name": "mistralai/ministral-3b-2512",
+    "provider": "Mistral",
+    "p50_throughput": "294.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\nmistralai/ministral-3b-2512\n\tMistral\t294.0tok/s\t0.23s\t0.28s\t$0.10\t$0.10\t131K\tDec 2, 2025\t3,035"
+  },
+  {
+    "model_name": "mistralai/ministral-8b",
+    "provider": "Mistral",
+    "p50_throughput": "107.5tok/s",
+    "p50_latency": "0.18s",
+    "raw": "\t\nmistralai/ministral-8b\n\tMistral\t107.5tok/s\t0.18s\t0.27s\t$0.10\t$0.10\t131K\tOct 17, 2024\t2,302"
+  },
+  {
+    "model_name": "mistralai/ministral-8b-2512",
+    "provider": "Mistral",
+    "p50_throughput": "112.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nmistralai/ministral-8b-2512\n\tMistral\t112.0tok/s\t0.26s\t0.40s\t$0.15\t$0.15\t262K\tDec 2, 2025\t467"
+  },
+  {
+    "model_name": "mistralai/mistral-7b-instruct",
+    "provider": "Together",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.17s",
+    "raw": "\t\nmistralai/mistral-7b-instruct\n\tTogether\t37.0tok/s\t0.17s\t0.56s\t$0.20\t$0.20\t33K\tMay 27, 2024\t345"
+  },
+  {
+    "model_name": "mistralai/mistral-7b-instruct-v0.1",
+    "provider": "Cloudflare",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "0.40s",
+    "raw": "\t\nmistralai/mistral-7b-instruct-v0.1\n\tCloudflare\t15.0tok/s\t0.40s\t0.40s\t$0.11\t$0.19\t3K\tSep 28, 2023\t1"
+  },
+  {
+    "model_name": "mistralai/mistral-7b-instruct-v0.2",
+    "provider": "Together",
+    "p50_throughput": "56.0tok/s",
+    "p50_latency": "0.24s",
+    "raw": "\t\nmistralai/mistral-7b-instruct-v0.2\n\tTogether\t56.0tok/s\t0.24s\t1.08s\t$0.20\t$0.20\t33K\tDec 28, 2023\t170"
+  },
+  {
+    "model_name": "mistralai/mistral-7b-instruct-v0.3",
+    "provider": "Together",
+    "p50_throughput": "148.0tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nmistralai/mistral-7b-instruct-v0.3\n\tTogether\t148.0tok/s\t0.32s\t0.66s\t$0.20\t$0.20\t33K\tMay 27, 2024\t17"
+  },
+  {
+    "model_name": "mistralai/mistral-large",
+    "provider": "Mistral",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.47s",
+    "raw": "\t\nmistralai/mistral-large\n\tMistral\t34.0tok/s\t0.47s\t1.90s\t$2.00\t$6.00\t128K\tFeb 26, 2024\t149"
+  },
+  {
+    "model_name": "mistralai/mistral-large-2407",
+    "provider": "Mistral",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\nmistralai/mistral-large-2407\n\tMistral\t35.0tok/s\t0.70s\t1.07s\t$2.00\t$6.00\t131K\tNov 19, 2024\t40"
+  },
+  {
+    "model_name": "mistralai/mistral-large-2411",
+    "provider": "Mistral",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nmistralai/mistral-large-2411\n\tMistral\t50.0tok/s\t0.37s\t0.62s\t$2.00\t$6.00\t131K\tNov 19, 2024\t139"
+  },
+  {
+    "model_name": "mistralai/mistral-large-2512",
+    "provider": "Mistral",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.59s",
+    "raw": "\t\nmistralai/mistral-large-2512\n\tMistral\t34.0tok/s\t0.59s\t13.78s\t$0.50\t$1.50\t262K\tDec 2, 2025\t1,075"
+  },
+  {
+    "model_name": "mistralai/mistral-medium-3",
+    "provider": "Mistral",
+    "p50_throughput": "114.0tok/s",
+    "p50_latency": "0.18s",
+    "raw": "\t\nmistralai/mistral-medium-3\n\tMistral\t114.0tok/s\t0.18s\t0.33s\t$0.40\t$2.00\t131K\tMay 7, 2025\t1,254"
+  },
+  {
+    "model_name": "mistralai/mistral-medium-3.1",
+    "provider": "Mistral",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "0.74s",
+    "raw": "\t\nmistralai/mistral-medium-3.1\n\tMistral\t27.0tok/s\t0.74s\t2.59s\t$0.40\t$2.00\t131K\tAug 13, 2025\t680"
+  },
+  {
+    "model_name": "mistralai/mistral-nemo",
+    "provider": "Azure",
+    "p50_throughput": "73.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nmistralai/mistral-nemo\n\tAzure\t73.0tok/s\t0.26s\t0.41s\t$0.30\t$0.30\t128K\tJul 19, 2024\t1,175"
+  },
+  {
+    "model_name": "mistralai/mistral-nemo",
+    "provider": "Mistral",
+    "p50_throughput": "91.0tok/s",
+    "p50_latency": "0.34s",
+    "raw": "\t\nmistralai/mistral-nemo\n\tMistral\t91.0tok/s\t0.34s\t0.46s\t$0.15\t$0.15\t131K\tJul 19, 2024\t14,440"
+  },
+  {
+    "model_name": "mistralai/mistral-nemo",
+    "provider": "NovitaAI",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nmistralai/mistral-nemo\n\tNovitaAI\t22.0tok/s\t0.60s\t1.27s\t$0.04\t$0.17\t60K\tJul 19, 2024\t41,111"
+  },
+  {
+    "model_name": "mistralai/mistral-nemo",
+    "provider": "Chutes",
+    "p50_throughput": "61.0tok/s",
+    "p50_latency": "0.72s",
+    "raw": "\t\nmistralai/mistral-nemo\n\tChutes\t61.0tok/s\t0.72s\t2.07s\t$0.02\t$0.04\t131K\tJul 19, 2024\t13,815"
+  },
+  {
+    "model_name": "mistralai/mistral-saba",
+    "provider": "Mistral",
+    "p50_throughput": "74.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmistralai/mistral-saba\n\tMistral\t74.0tok/s\t0.28s\t0.28s\t$0.20\t$0.60\t33K\tFeb 17, 2025\t1"
+  },
+  {
+    "model_name": "mistralai/mistral-small-24b-instruct-2501",
+    "provider": "Together",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nmistralai/mistral-small-24b-instruct-2501\n\tTogether\t50.0tok/s\t0.32s\t0.68s\t$0.10\t$0.30\t33K\tJan 31, 2025\t605"
+  },
+  {
+    "model_name": "mistralai/mistral-small-24b-instruct-2501",
+    "provider": "DeepInfra",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\nmistralai/mistral-small-24b-instruct-2501\n\tDeepInfra\t32.0tok/s\t0.58s\t1.00s\t$0.05\t$0.08\t33K\tJan 31, 2025\t6,835"
+  },
+  {
+    "model_name": "mistralai/mistral-small-24b-instruct-2501",
+    "provider": "Chutes",
+    "p50_throughput": "7.0tok/s",
+    "p50_latency": "9.14s",
+    "raw": "\t\nmistralai/mistral-small-24b-instruct-2501\n\tChutes\t7.0tok/s\t9.14s\t48.49s\t$0.03\t$0.11\t33K\tJan 31, 2025\t80"
+  },
+  {
+    "model_name": "mistralai/mistral-small-3.1-24b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "35.5tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nmistralai/mistral-small-3.1-24b-instruct\n\tCloudflare\t35.5tok/s\t0.32s\t0.62s\t$0.35\t$0.56\t128K\tMar 18, 2025\t720"
+  },
+  {
+    "model_name": "mistralai/mistral-small-3.1-24b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "1.87s",
+    "raw": "\t\nmistralai/mistral-small-3.1-24b-instruct\n\tChutes\t37.0tok/s\t1.87s\t4.75s\t$0.03\t$0.11\t131K\tMar 18, 2025\t59"
+  },
+  {
+    "model_name": "mistralai/mistral-small-3.2-24b-instruct",
+    "provider": "Mistral",
+    "p50_throughput": "104.0tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nmistralai/mistral-small-3.2-24b-instruct\n\tMistral\t104.0tok/s\t0.27s\t0.76s\t$0.10\t$0.30\t131K\tJun 21, 2025\t6,063"
+  },
+  {
+    "model_name": "mistralai/mistral-small-3.2-24b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "0.88s",
+    "raw": "\t\nmistralai/mistral-small-3.2-24b-instruct\n\tParasail\t14.0tok/s\t0.88s\t2.02s\t$0.09\t$0.60\t131K\tJun 21, 2025\t1,858"
+  },
+  {
+    "model_name": "mistralai/mistral-small-3.2-24b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\nmistralai/mistral-small-3.2-24b-instruct\n\tDeepInfra\t48.0tok/s\t0.31s\t1.44s\t$0.07\t$0.20\t128K\tJun 21, 2025\t2,420"
+  },
+  {
+    "model_name": "mistralai/mistral-small-3.2-24b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "46.0tok/s",
+    "p50_latency": "1.35s",
+    "raw": "\t\nmistralai/mistral-small-3.2-24b-instruct\n\tChutes\t46.0tok/s\t1.35s\t2.19s\t$0.06\t$0.18\t131K\tJun 21, 2025\t1,459"
+  },
+  {
+    "model_name": "mistralai/mistral-small-creative",
+    "provider": "Mistral",
+    "p50_throughput": "190.0tok/s",
+    "p50_latency": "0.25s",
+    "raw": "\t\nmistralai/mistral-small-creative\n\tMistral\t190.0tok/s\t0.25s\t0.55s\t$0.10\t$0.30\t33K\tDec 17, 2025\t1,378"
+  },
+  {
+    "model_name": "mistralai/mistral-tiny",
+    "provider": "Mistral",
+    "p50_throughput": "11.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmistralai/mistral-tiny\n\tMistral\t11.0tok/s\t0.28s\t0.32s\t$0.25\t$0.25\t33K\tJan 10, 2024\t6,904"
+  },
+  {
+    "model_name": "mistralai/mixtral-8x22b-instruct",
+    "provider": "Mistral",
+    "p50_throughput": "113.5tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nmistralai/mixtral-8x22b-instruct\n\tMistral\t113.5tok/s\t0.30s\t0.47s\t$2.00\t$6.00\t66K\tApr 17, 2024\t66"
+  },
+  {
+    "model_name": "mistralai/mixtral-8x7b-instruct",
+    "provider": "Together",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "0.16s",
+    "raw": "\t\nmistralai/mixtral-8x7b-instruct\n\tTogether\t48.0tok/s\t0.16s\t0.29s\t$0.60\t$0.60\t33K\tDec 10, 2023\t241"
+  },
+  {
+    "model_name": "mistralai/mixtral-8x7b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "81.0tok/s",
+    "p50_latency": "0.15s",
+    "raw": "\t\nmistralai/mixtral-8x7b-instruct\n\tDeepInfra\t81.0tok/s\t0.15s\t0.34s\t$0.54\t$0.54\t33K\tDec 10, 2023\t781"
+  },
+  {
+    "model_name": "mistralai/pixtral-12b",
+    "provider": "Mistral",
+    "p50_throughput": "110.0tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nmistralai/pixtral-12b\n\tMistral\t110.0tok/s\t0.30s\t0.46s\t$0.15\t$0.15\t131K\tSep 10, 2024\t97"
+  },
+  {
+    "model_name": "mistralai/pixtral-12b",
+    "provider": "Hyperbolic",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "0.88s",
+    "raw": "\t\nmistralai/pixtral-12b\n\tHyperbolic\t30.0tok/s\t0.88s\t1.22s\t$0.10\t$0.10\t33K\tSep 10, 2024\t98"
+  },
+  {
+    "model_name": "mistralai/pixtral-large-2411",
+    "provider": "Mistral",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "1.40s",
+    "raw": "\t\nmistralai/pixtral-large-2411\n\tMistral\t32.0tok/s\t1.40s\t2.14s\t$2.00\t$6.00\t131K\tNov 19, 2024\t17"
+  },
+  {
+    "model_name": "mistralai/voxtral-small-24b-2507",
+    "provider": "Mistral",
+    "p50_throughput": "75.0tok/s",
+    "p50_latency": "1.22s",
+    "raw": "\t\nmistralai/voxtral-small-24b-2507\n\tMistral\t75.0tok/s\t1.22s\t1.72s\t$0.10\t$0.30\t32K\tOct 30, 2025\t115"
+  },
+  {
+    "model_name": "moonshotai/kimi-dev-72b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nmoonshotai/kimi-dev-72b\n\tSiliconFlow\t26.0tok/s\t1.10s\t1.66s\t$0.29\t$1.15\t131K\tJun 17, 2025\t7"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2",
+    "provider": "AtlasCloud",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "1.48s",
+    "raw": "\t\nmoonshotai/kimi-k2\n\tAtlasCloud\t12.0tok/s\t1.48s\t2.21s\t$0.70\t$2.50\t131K\tJul 12, 2025\t129"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2",
+    "provider": "Moonshot AI",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.18s",
+    "raw": "\t\nmoonshotai/kimi-k2\n\tMoonshot AI\t25.0tok/s\t1.18s\t2.58s\t$0.60\t$2.50\t131K\tJul 12, 2025\t999"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2",
+    "provider": "NovitaAI",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\nmoonshotai/kimi-k2\n\tNovitaAI\t35.0tok/s\t0.58s\t2.01s\t$0.57\t$2.30\t131K\tJul 12, 2025\t200"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2",
+    "provider": "DeepInfra",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\nmoonshotai/kimi-k2\n\tDeepInfra\t29.0tok/s\t0.57s\t1.17s\t$0.55\t$2.20\t131K\tJul 12, 2025\t212"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "55.5tok/s",
+    "p50_latency": "0.33s",
+    "raw": "\t\nmoonshotai/kimi-k2\n\tNebius Token Factory\t55.5tok/s\t0.33s\t1.04s\t$0.50\t$2.40\t131K\tJul 12, 2025\t300"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Moonshot AI Turbo",
+    "p50_throughput": "44.0tok/s",
+    "p50_latency": "0.94s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tMoonshot AI Turbo\t44.0tok/s\t0.94s\t1.66s\t$1.15\t$8.00\t262K\tSep 5, 2025\t13"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Groq",
+    "p50_throughput": "198.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tGroq\t198.0tok/s\t0.36s\t0.48s\t$1.00\t$3.00\t262K\tSep 5, 2025\t4,212"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Together",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tTogether\t29.0tok/s\t0.57s\t1.39s\t$1.00\t$3.00\t262K\tSep 5, 2025\t42"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "AtlasCloud",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "0.72s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tAtlasCloud\t20.0tok/s\t0.72s\t1.79s\t$0.60\t$2.50\t66K\tSep 5, 2025\t19"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Fireworks",
+    "p50_throughput": "110.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tFireworks\t110.0tok/s\t0.28s\t0.78s\t$0.60\t$2.50\t262K\tSep 5, 2025\t546"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "NovitaAI",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "1.03s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tNovitaAI\t18.0tok/s\t1.03s\t3.84s\t$0.60\t$2.50\t262K\tSep 5, 2025\t163"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Moonshot AI",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "2.54s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tMoonshot AI\t14.0tok/s\t2.54s\t5.05s\t$0.60\t$2.50\t262K\tSep 5, 2025\t2,034"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Parasail",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tParasail\t50.0tok/s\t0.48s\t0.69s\t$0.59\t$2.99\t262K\tSep 5, 2025\t200"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "SiliconFlow",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "2.77s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tSiliconFlow\t13.0tok/s\t2.77s\t5.38s\t$0.40\t$2.00\t262K\tSep 5, 2025\t50"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "DeepInfra",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "0.59s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tDeepInfra\t72.0tok/s\t0.59s\t1.07s\t$0.40\t$2.00\t131K\tSep 5, 2025\t363"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Chutes",
+    "p50_throughput": "73.0tok/s",
+    "p50_latency": "0.77s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tChutes\t73.0tok/s\t0.77s\t1.29s\t$0.39\t$1.90\t262K\tSep 5, 2025\t271"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-0905",
+    "provider": "Baseten",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nmoonshotai/kimi-k2-0905\n\tBaseten\t10.0tok/s\t0.28s\t0.28s\t$0.60\t$2.50\t262K\tSep 5, 2025\t1"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Together",
+    "p50_throughput": "104.0tok/s",
+    "p50_latency": "1.61s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tTogether\t104.0tok/s\t1.61s\t5.60s\t$1.20\t$4.00\t262K\tNov 6, 2025\t9"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Moonshot AI Turbo",
+    "p50_throughput": "57.0tok/s",
+    "p50_latency": "1.84s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tMoonshot AI Turbo\t57.0tok/s\t1.84s\t6.43s\t$1.15\t$8.00\t262K\tNov 6, 2025\t119"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "GMICloud",
+    "p50_throughput": "106.0tok/s",
+    "p50_latency": "1.27s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tGMICloud\t106.0tok/s\t1.27s\t1.96s\t$0.80\t$1.20\t262K\tNov 6, 2025\t26"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Google Vertex",
+    "p50_throughput": "117.0tok/s",
+    "p50_latency": "2.12s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tGoogle Vertex\t117.0tok/s\t2.12s\t29.95s\t$0.60\t$2.50\t262K\tNov 6, 2025\t372"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "NovitaAI",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "2.79s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tNovitaAI\t17.0tok/s\t2.79s\t10.72s\t$0.60\t$2.50\t262K\tNov 6, 2025\t67"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "85.0tok/s",
+    "p50_latency": "0.62s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tNebius Token Factory\t85.0tok/s\t0.62s\t1.91s\t$0.60\t$2.50\t262K\tNov 6, 2025\t70"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "AtlasCloud",
+    "p50_throughput": "16.5tok/s",
+    "p50_latency": "1.72s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tAtlasCloud\t16.5tok/s\t1.72s\t7.20s\t$0.60\t$2.50\t262K\tNov 6, 2025\t58"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Baseten",
+    "p50_throughput": "129.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tBaseten\t129.0tok/s\t0.48s\t1.06s\t$0.60\t$2.50\t262K\tNov 6, 2025\t54"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Moonshot AI",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "1.66s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tMoonshot AI\t20.0tok/s\t1.66s\t4.18s\t$0.60\t$2.50\t262K\tNov 6, 2025\t623"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "SiliconFlow",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "1.56s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tSiliconFlow\t32.0tok/s\t1.56s\t5.86s\t$0.55\t$2.50\t262K\tNov 6, 2025\t75"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Parasail",
+    "p50_throughput": "69.0tok/s",
+    "p50_latency": "0.56s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tParasail\t69.0tok/s\t0.56s\t2.40s\t$0.50\t$2.50\t262K\tNov 6, 2025\t54"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "DeepInfra",
+    "p50_throughput": "75.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tDeepInfra\t75.0tok/s\t1.10s\t2.35s\t$0.47\t$2.00\t131K\tNov 6, 2025\t84"
+  },
+  {
+    "model_name": "moonshotai/kimi-k2-thinking",
+    "provider": "Chutes",
+    "p50_throughput": "35.5tok/s",
+    "p50_latency": "1.06s",
+    "raw": "\t\nmoonshotai/kimi-k2-thinking\n\tChutes\t35.5tok/s\t1.06s\t2.68s\t$0.40\t$1.75\t262K\tNov 6, 2025\t32"
+  },
+  {
+    "model_name": "morph/morph-v3-fast",
+    "provider": "Morph",
+    "p50_throughput": "5464.0tok/s",
+    "p50_latency": "0.41s",
+    "raw": "\t\nmorph/morph-v3-fast\n\tMorph\t5464.0tok/s\t0.41s\t0.78s\t$0.80\t$1.20\t82K\tJul 8, 2025\t21"
+  },
+  {
+    "model_name": "morph/morph-v3-large",
+    "provider": "Morph",
+    "p50_throughput": "2960.5tok/s",
+    "p50_latency": "0.34s",
+    "raw": "\t\nmorph/morph-v3-large\n\tMorph\t2960.5tok/s\t0.34s\t0.65s\t$0.90\t$1.90\t262K\tJul 8, 2025\t110"
+  },
+  {
+    "model_name": "neversleep/llama-3.1-lumimaid-8b",
+    "provider": "NextBit",
+    "p50_throughput": "42.0tok/s",
+    "p50_latency": "1.00s",
+    "raw": "\t\nneversleep/llama-3.1-lumimaid-8b\n\tNextBit\t42.0tok/s\t1.00s\t1.40s\t$0.09\t$0.60\t33K\tSep 15, 2024\t57"
+  },
+  {
+    "model_name": "neversleep/noromaid-20b",
+    "provider": "Mancer",
+    "p50_throughput": "21.5tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nneversleep/noromaid-20b\n\tMancer\t21.5tok/s\t0.45s\t0.63s\t$1.00\t$2.00\t8K\tNov 26, 2023\t48"
+  },
+  {
+    "model_name": "neversleep/noromaid-20b",
+    "provider": "NextBit",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "1.49s",
+    "raw": "\t\nneversleep/noromaid-20b\n\tNextBit\t28.0tok/s\t1.49s\t1.76s\t$1.00\t$1.75\t4K\tNov 26, 2023\t42"
+  },
+  {
+    "model_name": "nex-agi/deepseek-v3.1-nex-n1",
+    "provider": "SiliconFlow",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "2.33s",
+    "raw": "\t\nnex-agi/deepseek-v3.1-nex-n1\n\tSiliconFlow\t27.0tok/s\t2.33s\t9.08s\t$0.27\t$1.00\t131K\tDec 8, 2025\t674"
+  },
+  {
+    "model_name": "nousresearch/deephermes-3-mistral-24b-preview",
+    "provider": "Chutes",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nnousresearch/deephermes-3-mistral-24b-preview\n\tChutes\t35.0tok/s\t0.36s\t0.36s\t$0.02\t$0.10\t33K\tMay 10, 2025\t1"
+  },
+  {
+    "model_name": "nousresearch/hermes-2-pro-llama-3-8b",
+    "provider": "NovitaAI",
+    "p50_throughput": "74.0tok/s",
+    "p50_latency": "0.90s",
+    "raw": "\t\nnousresearch/hermes-2-pro-llama-3-8b\n\tNovitaAI\t74.0tok/s\t0.90s\t1.14s\t$0.14\t$0.14\t8K\tMay 27, 2024\t4"
+  },
+  {
+    "model_name": "nousresearch/hermes-2-pro-llama-3-8b",
+    "provider": "NextBit",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "1.13s",
+    "raw": "\t\nnousresearch/hermes-2-pro-llama-3-8b\n\tNextBit\t36.0tok/s\t1.13s\t1.73s\t$0.02\t$0.08\t8K\tMay 27, 2024\t68"
+  },
+  {
+    "model_name": "nousresearch/hermes-3-llama-3.1-405b",
+    "provider": "DeepInfra",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "0.53s",
+    "raw": "\t\nnousresearch/hermes-3-llama-3.1-405b\n\tDeepInfra\t19.0tok/s\t0.53s\t2.18s\t$1.00\t$1.00\t131K\tAug 16, 2024\t1,481"
+  },
+  {
+    "model_name": "nousresearch/hermes-3-llama-3.1-70b",
+    "provider": "DeepInfra",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\nnousresearch/hermes-3-llama-3.1-70b\n\tDeepInfra\t51.0tok/s\t0.23s\t0.98s\t$0.30\t$0.30\t131K\tAug 18, 2024\t270"
+  },
+  {
+    "model_name": "nousresearch/hermes-3-llama-3.1-70b",
+    "provider": "NextBit",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "7.05s",
+    "raw": "\t\nnousresearch/hermes-3-llama-3.1-70b\n\tNextBit\t5.0tok/s\t7.05s\t45.92s\t$0.30\t$0.30\t66K\tAug 18, 2024\t352"
+  },
+  {
+    "model_name": "nousresearch/hermes-4-405b",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nnousresearch/hermes-4-405b\n\tNebius Token Factory\t34.0tok/s\t0.32s\t0.73s\t$1.00\t$3.00\t131K\tAug 27, 2025\t192"
+  },
+  {
+    "model_name": "nousresearch/hermes-4-70b",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nnousresearch/hermes-4-70b\n\tNebius Token Factory\t72.0tok/s\t0.26s\t0.67s\t$0.13\t$0.40\t131K\tAug 27, 2025\t710"
+  },
+  {
+    "model_name": "nousresearch/hermes-4-70b",
+    "provider": "Chutes",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.76s",
+    "raw": "\t\nnousresearch/hermes-4-70b\n\tChutes\t37.0tok/s\t0.76s\t1.34s\t$0.11\t$0.38\t131K\tAug 27, 2025\t4"
+  },
+  {
+    "model_name": "nvidia/llama-3.1-nemotron-70b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "9.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\nnvidia/llama-3.1-nemotron-70b-instruct\n\tDeepInfra\t9.0tok/s\t0.23s\t0.61s\t$1.20\t$1.20\t131K\tOct 15, 2024\t44"
+  },
+  {
+    "model_name": "nvidia/llama-3.1-nemotron-ultra-253b-v1",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "0.14s",
+    "raw": "\t\nnvidia/llama-3.1-nemotron-ultra-253b-v1\n\tNebius Token Factory\t19.0tok/s\t0.14s\t0.34s\t$0.60\t$1.80\t131K\tApr 8, 2025\t11,658"
+  },
+  {
+    "model_name": "nvidia/llama-3.3-nemotron-super-49b-v1.5",
+    "provider": "DeepInfra",
+    "p50_throughput": "82.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nnvidia/llama-3.3-nemotron-super-49b-v1.5\n\tDeepInfra\t82.0tok/s\t0.28s\t0.53s\t$0.10\t$0.40\t131K\tOct 10, 2025\t73"
+  },
+  {
+    "model_name": "nvidia/nemotron-3-nano-30b-a3b",
+    "provider": "DeepInfra",
+    "p50_throughput": "101.0tok/s",
+    "p50_latency": "0.73s",
+    "raw": "\t\nnvidia/nemotron-3-nano-30b-a3b\n\tDeepInfra\t101.0tok/s\t0.73s\t1.40s\t$0.06\t$0.24\t262K\tDec 15, 2025\t170"
+  },
+  {
+    "model_name": "nvidia/nemotron-3-nano-30b-a3b",
+    "provider": "Chutes",
+    "p50_throughput": "266.5tok/s",
+    "p50_latency": "0.85s",
+    "raw": "\t\nnvidia/nemotron-3-nano-30b-a3b\n\tChutes\t266.5tok/s\t0.85s\t1.57s\t$0.06\t$0.24\t262K\tDec 15, 2025\t8"
+  },
+  {
+    "model_name": "nvidia/nemotron-nano-12b-v2-vl",
+    "provider": "DeepInfra",
+    "p50_throughput": "134.0tok/s",
+    "p50_latency": "0.11s",
+    "raw": "\t\nnvidia/nemotron-nano-12b-v2-vl\n\tDeepInfra\t134.0tok/s\t0.11s\t0.76s\t$0.20\t$0.60\t131K\tOct 29, 2025\t17"
+  },
+  {
+    "model_name": "nvidia/nemotron-nano-9b-v2",
+    "provider": "Together",
+    "p50_throughput": "104.0tok/s",
+    "p50_latency": "1.54s",
+    "raw": "\t\nnvidia/nemotron-nano-9b-v2\n\tTogether\t104.0tok/s\t1.54s\t2.12s\t$0.06\t$0.25\t131K\tSep 6, 2025\t44"
+  },
+  {
+    "model_name": "nvidia/nemotron-nano-9b-v2",
+    "provider": "DeepInfra",
+    "p50_throughput": "117.0tok/s",
+    "p50_latency": "1.24s",
+    "raw": "\t\nnvidia/nemotron-nano-9b-v2\n\tDeepInfra\t117.0tok/s\t1.24s\t1.45s\t$0.04\t$0.16\t131K\tSep 6, 2025\t81"
+  },
+  {
+    "model_name": "openai/chatgpt-4o-latest",
+    "provider": "OpenAI",
+    "p50_throughput": "88.0tok/s",
+    "p50_latency": "0.39s",
+    "raw": "\t\nopenai/chatgpt-4o-latest\n\tOpenAI\t88.0tok/s\t0.39s\t0.99s\t$5.00\t$15.00\t128K\tAug 14, 2024\t895"
+  },
+  {
+    "model_name": "openai/gpt-3.5-turbo",
+    "provider": "OpenAI",
+    "p50_throughput": "68.0tok/s",
+    "p50_latency": "0.46s",
+    "raw": "\t\nopenai/gpt-3.5-turbo\n\tOpenAI\t68.0tok/s\t0.46s\t0.71s\t$0.50\t$1.50\t16K\tMay 28, 2023\t862"
+  },
+  {
+    "model_name": "openai/gpt-3.5-turbo-0613",
+    "provider": "Azure",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "1.06s",
+    "raw": "\t\nopenai/gpt-3.5-turbo-0613\n\tAzure\t51.0tok/s\t1.06s\t1.72s\t$1.00\t$2.00\t4K\tJan 25, 2024\t184"
+  },
+  {
+    "model_name": "openai/gpt-3.5-turbo-16k",
+    "provider": "Azure",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "0.90s",
+    "raw": "\t\nopenai/gpt-3.5-turbo-16k\n\tAzure\t22.0tok/s\t0.90s\t0.90s\t$3.00\t$4.00\t16K\tAug 28, 2023\t1"
+  },
+  {
+    "model_name": "openai/gpt-3.5-turbo-16k",
+    "provider": "OpenAI",
+    "p50_throughput": "77.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\nopenai/gpt-3.5-turbo-16k\n\tOpenAI\t77.0tok/s\t0.23s\t0.38s\t$3.00\t$4.00\t16K\tAug 28, 2023\t203"
+  },
+  {
+    "model_name": "openai/gpt-3.5-turbo-instruct",
+    "provider": "OpenAI",
+    "p50_throughput": "76.0tok/s",
+    "p50_latency": "0.86s",
+    "raw": "\t\nopenai/gpt-3.5-turbo-instruct\n\tOpenAI\t76.0tok/s\t0.86s\t1.11s\t$1.50\t$2.00\t4K\tSep 28, 2023\t31"
+  },
+  {
+    "model_name": "openai/gpt-4",
+    "provider": "OpenAI",
+    "p50_throughput": "28.5tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nopenai/gpt-4\n\tOpenAI\t28.5tok/s\t0.60s\t0.94s\t$30.00\t$60.00\t8K\tMay 28, 2023\t72"
+  },
+  {
+    "model_name": "openai/gpt-4",
+    "provider": "Azure",
+    "p50_throughput": "141.0tok/s",
+    "p50_latency": "0.53s",
+    "raw": "\t\nopenai/gpt-4\n\tAzure\t141.0tok/s\t0.53s\t0.77s\t$30.00\t$60.00\t8K\tMay 28, 2023\t10"
+  },
+  {
+    "model_name": "openai/gpt-4-0314",
+    "provider": "OpenAI",
+    "p50_throughput": "9.0tok/s",
+    "p50_latency": "0.88s",
+    "raw": "\t\nopenai/gpt-4-0314\n\tOpenAI\t9.0tok/s\t0.88s\t0.88s\t$30.00\t$60.00\t8K\tMay 28, 2023\t1"
+  },
+  {
+    "model_name": "openai/gpt-4-1106-preview",
+    "provider": "OpenAI",
+    "p50_throughput": "4.0tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\nopenai/gpt-4-1106-preview\n\tOpenAI\t4.0tok/s\t0.70s\t1.03s\t$10.00\t$30.00\t128K\tNov 6, 2023\t41"
+  },
+  {
+    "model_name": "openai/gpt-4-turbo",
+    "provider": "OpenAI",
+    "p50_throughput": "40.0tok/s",
+    "p50_latency": "0.81s",
+    "raw": "\t\nopenai/gpt-4-turbo\n\tOpenAI\t40.0tok/s\t0.81s\t1.50s\t$10.00\t$30.00\t128K\tApr 9, 2024\t71"
+  },
+  {
+    "model_name": "openai/gpt-4-turbo-preview",
+    "provider": "OpenAI",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "2.14s",
+    "raw": "\t\nopenai/gpt-4-turbo-preview\n\tOpenAI\t27.0tok/s\t2.14s\t2.70s\t$10.00\t$30.00\t128K\tJan 25, 2024\t28"
+  },
+  {
+    "model_name": "openai/gpt-4.1",
+    "provider": "Azure",
+    "p50_throughput": "80.5tok/s",
+    "p50_latency": "0.93s",
+    "raw": "\t\nopenai/gpt-4.1\n\tAzure\t80.5tok/s\t0.93s\t1.81s\t$2.00\t$8.00\t1.0M\tApr 15, 2025\t116"
+  },
+  {
+    "model_name": "openai/gpt-4.1",
+    "provider": "OpenAI",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nopenai/gpt-4.1\n\tOpenAI\t36.0tok/s\t0.50s\t1.13s\t$2.00\t$8.00\t1.0M\tApr 15, 2025\t13,800"
+  },
+  {
+    "model_name": "openai/gpt-4.1-mini",
+    "provider": "Azure",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "1.23s",
+    "raw": "\t\nopenai/gpt-4.1-mini\n\tAzure\t41.0tok/s\t1.23s\t3.06s\t$0.40\t$1.60\t1.0M\tApr 15, 2025\t766"
+  },
+  {
+    "model_name": "openai/gpt-4.1-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "36.0tok/s",
+    "p50_latency": "0.52s",
+    "raw": "\t\nopenai/gpt-4.1-mini\n\tOpenAI\t36.0tok/s\t0.52s\t0.86s\t$0.40\t$1.60\t1.0M\tApr 15, 2025\t39,519"
+  },
+  {
+    "model_name": "openai/gpt-4.1-nano",
+    "provider": "Azure",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\nopenai/gpt-4.1-nano\n\tAzure\t5.0tok/s\t0.31s\t0.71s\t$0.10\t$0.40\t1.0M\tApr 15, 2025\t468"
+  },
+  {
+    "model_name": "openai/gpt-4.1-nano",
+    "provider": "OpenAI",
+    "p50_throughput": "6.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nopenai/gpt-4.1-nano\n\tOpenAI\t6.0tok/s\t0.36s\t0.56s\t$0.10\t$0.40\t1.0M\tApr 15, 2025\t23,986"
+  },
+  {
+    "model_name": "openai/gpt-4o",
+    "provider": "Azure",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "5.47s",
+    "raw": "\t\nopenai/gpt-4o\n\tAzure\t13.0tok/s\t5.47s\t7.66s\t$2.50\t$10.00\t128K\tMay 13, 2024\t133"
+  },
+  {
+    "model_name": "openai/gpt-4o",
+    "provider": "OpenAI",
+    "p50_throughput": "60.0tok/s",
+    "p50_latency": "0.39s",
+    "raw": "\t\nopenai/gpt-4o\n\tOpenAI\t60.0tok/s\t0.39s\t0.66s\t$2.50\t$10.00\t128K\tMay 13, 2024\t23,964"
+  },
+  {
+    "model_name": "openai/gpt-4o-2024-05-13",
+    "provider": "Azure",
+    "p50_throughput": "47.5tok/s",
+    "p50_latency": "1.08s",
+    "raw": "\t\nopenai/gpt-4o-2024-05-13\n\tAzure\t47.5tok/s\t1.08s\t1.71s\t$5.00\t$15.00\t128K\tMay 13, 2024\t2"
+  },
+  {
+    "model_name": "openai/gpt-4o-2024-05-13",
+    "provider": "OpenAI",
+    "p50_throughput": "143.0tok/s",
+    "p50_latency": "0.23s",
+    "raw": "\t\nopenai/gpt-4o-2024-05-13\n\tOpenAI\t143.0tok/s\t0.23s\t0.60s\t$5.00\t$15.00\t128K\tMay 13, 2024\t18"
+  },
+  {
+    "model_name": "openai/gpt-4o-2024-08-06",
+    "provider": "OpenAI",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "0.33s",
+    "raw": "\t\nopenai/gpt-4o-2024-08-06\n\tOpenAI\t27.0tok/s\t0.33s\t0.56s\t$2.50\t$10.00\t128K\tAug 6, 2024\t283"
+  },
+  {
+    "model_name": "openai/gpt-4o-2024-08-06",
+    "provider": "Azure",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "0.62s",
+    "raw": "\t\nopenai/gpt-4o-2024-08-06\n\tAzure\t22.0tok/s\t0.62s\t1.66s\t$2.50\t$10.00\t128K\tAug 6, 2024\t192"
+  },
+  {
+    "model_name": "openai/gpt-4o-2024-11-20",
+    "provider": "OpenAI",
+    "p50_throughput": "110.0tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nopenai/gpt-4o-2024-11-20\n\tOpenAI\t110.0tok/s\t0.32s\t0.63s\t$2.50\t$10.00\t128K\tNov 21, 2024\t1,618"
+  },
+  {
+    "model_name": "openai/gpt-4o-audio-preview",
+    "provider": "OpenAI",
+    "p50_throughput": "94.0tok/s",
+    "p50_latency": "5.42s",
+    "raw": "\t\nopenai/gpt-4o-audio-preview\n\tOpenAI\t94.0tok/s\t5.42s\t5.42s\t$2.50\t$10.00\t128K\tAug 15, 2025\t1"
+  },
+  {
+    "model_name": "openai/gpt-4o-mini",
+    "provider": "Azure",
+    "p50_throughput": "4.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\nopenai/gpt-4o-mini\n\tAzure\t4.0tok/s\t0.58s\t0.88s\t$0.15\t$0.60\t128K\tJul 18, 2024\t12,772"
+  },
+  {
+    "model_name": "openai/gpt-4o-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nopenai/gpt-4o-mini\n\tOpenAI\t37.0tok/s\t0.44s\t0.86s\t$0.15\t$0.60\t128K\tJul 18, 2024\t66,060"
+  },
+  {
+    "model_name": "openai/gpt-4o-mini-2024-07-18",
+    "provider": "OpenAI",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "0.40s",
+    "raw": "\t\nopenai/gpt-4o-mini-2024-07-18\n\tOpenAI\t37.0tok/s\t0.40s\t0.67s\t$0.15\t$0.60\t128K\tJul 18, 2024\t5,921"
+  },
+  {
+    "model_name": "openai/gpt-4o-mini-search-preview",
+    "provider": "OpenAI",
+    "p50_throughput": "118.0tok/s",
+    "p50_latency": "1.64s",
+    "raw": "\t\nopenai/gpt-4o-mini-search-preview\n\tOpenAI\t118.0tok/s\t1.64s\t2.24s\t$0.15\t$0.60\t128K\tMar 13, 2025\t76"
+  },
+  {
+    "model_name": "openai/gpt-4o-search-preview",
+    "provider": "OpenAIAdapter",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "2.49s",
+    "raw": "\t\nopenai/gpt-4o-search-preview\n\tOpenAIAdapter\t52.0tok/s\t2.49s\t3.68s\t$2.50\t$10.00\t128K\tMar 13, 2025\t87"
+  },
+  {
+    "model_name": "openai/gpt-5",
+    "provider": "Azure",
+    "p50_throughput": "49.0tok/s",
+    "p50_latency": "7.72s",
+    "raw": "\t\nopenai/gpt-5\n\tAzure\t49.0tok/s\t7.72s\t22.49s\t$1.25\t$10.00\t400K\tAug 8, 2025\t31"
+  },
+  {
+    "model_name": "openai/gpt-5",
+    "provider": "OpenAI",
+    "p50_throughput": "48.0tok/s",
+    "p50_latency": "8.43s",
+    "raw": "\t\nopenai/gpt-5\n\tOpenAI\t48.0tok/s\t8.43s\t36.45s\t$1.25\t$10.00\t400K\tAug 8, 2025\t5,994"
+  },
+  {
+    "model_name": "openai/gpt-5-chat",
+    "provider": "OpenAI",
+    "p50_throughput": "73.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nopenai/gpt-5-chat\n\tOpenAI\t73.0tok/s\t0.48s\t1.03s\t$1.25\t$10.00\t128K\tAug 8, 2025\t3,018"
+  },
+  {
+    "model_name": "openai/gpt-5-codex",
+    "provider": "OpenAI",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "1.92s",
+    "raw": "\t\nopenai/gpt-5-codex\n\tOpenAI\t41.0tok/s\t1.92s\t10.57s\t$1.25\t$10.00\t400K\tSep 24, 2025\t341"
+  },
+  {
+    "model_name": "openai/gpt-5-image",
+    "provider": "OpenAI",
+    "p50_throughput": "70.0tok/s",
+    "p50_latency": "12.87s",
+    "raw": "\t\nopenai/gpt-5-image\n\tOpenAI\t70.0tok/s\t12.87s\t22.34s\t$10.00\t$10.00\t400K\tOct 14, 2025\t10"
+  },
+  {
+    "model_name": "openai/gpt-5-image-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "85.5tok/s",
+    "p50_latency": "6.48s",
+    "raw": "\t\nopenai/gpt-5-image-mini\n\tOpenAI\t85.5tok/s\t6.48s\t14.12s\t$2.50\t$2.00\t400K\tOct 16, 2025\t10"
+  },
+  {
+    "model_name": "openai/gpt-5-mini",
+    "provider": "Azure",
+    "p50_throughput": "54.0tok/s",
+    "p50_latency": "4.07s",
+    "raw": "\t\nopenai/gpt-5-mini\n\tAzure\t54.0tok/s\t4.07s\t8.40s\t$0.25\t$2.00\t400K\tAug 8, 2025\t2,814"
+  },
+  {
+    "model_name": "openai/gpt-5-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "4.06s",
+    "raw": "\t\nopenai/gpt-5-mini\n\tOpenAI\t51.0tok/s\t4.06s\t12.01s\t$0.25\t$2.00\t400K\tAug 8, 2025\t37,597"
+  },
+  {
+    "model_name": "openai/gpt-5-nano",
+    "provider": "Azure",
+    "p50_throughput": "79.0tok/s",
+    "p50_latency": "1.89s",
+    "raw": "\t\nopenai/gpt-5-nano\n\tAzure\t79.0tok/s\t1.89s\t4.37s\t$0.05\t$0.40\t400K\tAug 8, 2025\t1,209"
+  },
+  {
+    "model_name": "openai/gpt-5-nano",
+    "provider": "OpenAI",
+    "p50_throughput": "90.0tok/s",
+    "p50_latency": "2.38s",
+    "raw": "\t\nopenai/gpt-5-nano\n\tOpenAI\t90.0tok/s\t2.38s\t7.16s\t$0.05\t$0.40\t400K\tAug 8, 2025\t13,586"
+  },
+  {
+    "model_name": "openai/gpt-5-pro",
+    "provider": "OpenAI",
+    "p50_throughput": "11.5tok/s",
+    "p50_latency": "202.72s",
+    "raw": "\t\nopenai/gpt-5-pro\n\tOpenAI\t11.5tok/s\t202.72s\t290.96s\t$15.00\t$120.00\t400K\tOct 7, 2025\t2"
+  },
+  {
+    "model_name": "openai/gpt-5.1",
+    "provider": "Azure",
+    "p50_throughput": "123.0tok/s",
+    "p50_latency": "3.28s",
+    "raw": "\t\nopenai/gpt-5.1\n\tAzure\t123.0tok/s\t3.28s\t7.55s\t$1.25\t$10.00\t400K\tNov 14, 2025\t57"
+  },
+  {
+    "model_name": "openai/gpt-5.1",
+    "provider": "OpenAI",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "3.30s",
+    "raw": "\t\nopenai/gpt-5.1\n\tOpenAI\t41.0tok/s\t3.30s\t14.15s\t$1.25\t$10.00\t400K\tNov 14, 2025\t4,269"
+  },
+  {
+    "model_name": "openai/gpt-5.1-chat",
+    "provider": "Azure",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "6.89s",
+    "raw": "\t\nopenai/gpt-5.1-chat\n\tAzure\t38.0tok/s\t6.89s\t10.46s\t$1.25\t$10.00\t128K\tNov 14, 2025\t21"
+  },
+  {
+    "model_name": "openai/gpt-5.1-chat",
+    "provider": "OpenAI",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "0.72s",
+    "raw": "\t\nopenai/gpt-5.1-chat\n\tOpenAI\t53.0tok/s\t0.72s\t1.59s\t$1.25\t$10.00\t128K\tNov 14, 2025\t952"
+  },
+  {
+    "model_name": "openai/gpt-5.1-codex",
+    "provider": "Azure",
+    "p50_throughput": "8.5tok/s",
+    "p50_latency": "2.91s",
+    "raw": "\t\nopenai/gpt-5.1-codex\n\tAzure\t8.5tok/s\t2.91s\t4.58s\t$1.25\t$10.00\t400K\tNov 14, 2025\t4"
+  },
+  {
+    "model_name": "openai/gpt-5.1-codex",
+    "provider": "OpenAI",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "2.55s",
+    "raw": "\t\nopenai/gpt-5.1-codex\n\tOpenAI\t18.0tok/s\t2.55s\t5.88s\t$1.25\t$10.00\t400K\tNov 14, 2025\t71"
+  },
+  {
+    "model_name": "openai/gpt-5.1-codex-max",
+    "provider": "Azure",
+    "p50_throughput": "68.0tok/s",
+    "p50_latency": "7.77s",
+    "raw": "\t\nopenai/gpt-5.1-codex-max\n\tAzure\t68.0tok/s\t7.77s\t9.67s\t$1.25\t$10.00\t400K\tDec 5, 2025\t5"
+  },
+  {
+    "model_name": "openai/gpt-5.1-codex-max",
+    "provider": "OpenAI",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "6.37s",
+    "raw": "\t\nopenai/gpt-5.1-codex-max\n\tOpenAI\t52.0tok/s\t6.37s\t10.89s\t$1.25\t$10.00\t400K\tDec 5, 2025\t31"
+  },
+  {
+    "model_name": "openai/gpt-5.1-codex-mini",
+    "provider": "Azure",
+    "p50_throughput": "75.5tok/s",
+    "p50_latency": "8.92s",
+    "raw": "\t\nopenai/gpt-5.1-codex-mini\n\tAzure\t75.5tok/s\t8.92s\t15.71s\t$0.25\t$2.00\t400K\tNov 14, 2025\t8"
+  },
+  {
+    "model_name": "openai/gpt-5.1-codex-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\nopenai/gpt-5.1-codex-mini\n\tOpenAI\t31.0tok/s\t1.43s\t5.95s\t$0.25\t$2.00\t400K\tNov 14, 2025\t532"
+  },
+  {
+    "model_name": "openai/gpt-5.2",
+    "provider": "Azure",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "2.65s",
+    "raw": "\t\nopenai/gpt-5.2\n\tAzure\t32.0tok/s\t2.65s\t9.35s\t$1.75\t$14.00\t400K\tDec 11, 2025\t1,110"
+  },
+  {
+    "model_name": "openai/gpt-5.2",
+    "provider": "OpenAI",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "2.46s",
+    "raw": "\t\nopenai/gpt-5.2\n\tOpenAI\t37.0tok/s\t2.46s\t9.53s\t$1.75\t$14.00\t400K\tDec 11, 2025\t17,777"
+  },
+  {
+    "model_name": "openai/gpt-5.2-chat",
+    "provider": "Azure",
+    "p50_throughput": "42.0tok/s",
+    "p50_latency": "2.34s",
+    "raw": "\t\nopenai/gpt-5.2-chat\n\tAzure\t42.0tok/s\t2.34s\t3.84s\t$1.75\t$14.00\t128K\tDec 11, 2025\t31"
+  },
+  {
+    "model_name": "openai/gpt-5.2-chat",
+    "provider": "OpenAI",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "1.98s",
+    "raw": "\t\nopenai/gpt-5.2-chat\n\tOpenAI\t50.0tok/s\t1.98s\t4.36s\t$1.75\t$14.00\t128K\tDec 11, 2025\t2,219"
+  },
+  {
+    "model_name": "openai/gpt-5.2-codex",
+    "provider": "OpenAI",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "2.53s",
+    "raw": "\t\nopenai/gpt-5.2-codex\n\tOpenAI\t31.0tok/s\t2.53s\t7.57s\t$1.75\t$14.00\t400K\tJan 15, 2026\t1,504"
+  },
+  {
+    "model_name": "openai/gpt-5.2-pro",
+    "provider": "OpenAI",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "56.77s",
+    "raw": "\t\nopenai/gpt-5.2-pro\n\tOpenAI\t10.0tok/s\t56.77s\t152.59s\t$21.00\t$168.00\t400K\tDec 11, 2025\t139"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Cerebras",
+    "p50_throughput": "890.0tok/s",
+    "p50_latency": "0.35s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tCerebras\t890.0tok/s\t0.35s\t1.01s\t$0.35\t$0.75\t131K\tAug 6, 2025\t3,469"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "DeepInfra (Turbo)",
+    "p50_throughput": "252.0tok/s",
+    "p50_latency": "0.15s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tDeepInfra (Turbo)\t252.0tok/s\t0.15s\t1.42s\t$0.15\t$0.60\t131K\tAug 6, 2025\t6,270"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Crusoe",
+    "p50_throughput": "115.0tok/s",
+    "p50_latency": "0.74s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tCrusoe\t115.0tok/s\t0.74s\t2.56s\t$0.15\t$0.60\t131K\tAug 6, 2025\t3,815"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Groq",
+    "p50_throughput": "399.0tok/s",
+    "p50_latency": "0.15s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tGroq\t399.0tok/s\t0.15s\t0.62s\t$0.15\t$0.60\t131K\tAug 6, 2025\t17,571"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Weights & Biases",
+    "p50_throughput": "137.0tok/s",
+    "p50_latency": "0.53s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tWeights & Biases\t137.0tok/s\t0.53s\t1.02s\t$0.15\t$0.60\t131K\tAug 6, 2025\t29"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "237.0tok/s",
+    "p50_latency": "0.22s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tNebius Token Factory\t237.0tok/s\t0.22s\t0.64s\t$0.15\t$0.60\t131K\tAug 6, 2025\t532"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Together",
+    "p50_throughput": "116.5tok/s",
+    "p50_latency": "0.65s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tTogether\t116.5tok/s\t0.65s\t1.58s\t$0.15\t$0.60\t131K\tAug 6, 2025\t58"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "143.5tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tAmazon Bedrock\t143.5tok/s\t0.67s\t1.30s\t$0.15\t$0.60\t131K\tAug 6, 2025\t84"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Fireworks",
+    "p50_throughput": "266.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tFireworks\t266.0tok/s\t0.36s\t0.75s\t$0.15\t$0.60\t131K\tAug 6, 2025\t310"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "SambaNova",
+    "p50_throughput": "206.0tok/s",
+    "p50_latency": "0.91s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tSambaNova\t206.0tok/s\t0.91s\t1.74s\t$0.14\t$0.95\t131K\tAug 6, 2025\t46"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Parasail",
+    "p50_throughput": "224.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tParasail\t224.0tok/s\t0.42s\t0.90s\t$0.12\t$0.75\t131K\tAug 6, 2025\t67"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Baseten",
+    "p50_throughput": "251.0tok/s",
+    "p50_latency": "0.25s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tBaseten\t251.0tok/s\t0.25s\t0.30s\t$0.10\t$0.50\t128K\tAug 6, 2025\t1,920"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Phala",
+    "p50_throughput": "95.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tPhala\t95.0tok/s\t0.57s\t1.43s\t$0.10\t$0.49\t131K\tAug 6, 2025\t109"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "AtlasCloud",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "0.87s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tAtlasCloud\t72.0tok/s\t0.87s\t1.83s\t$0.10\t$0.20\t131K\tAug 6, 2025\t69"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Clarifai",
+    "p50_throughput": "245.5tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tClarifai\t245.5tok/s\t0.48s\t1.17s\t$0.09\t$0.36\t131K\tAug 6, 2025\t170"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Google Vertex",
+    "p50_throughput": "152.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tGoogle Vertex\t152.0tok/s\t0.28s\t0.43s\t$0.09\t$0.36\t131K\tAug 6, 2025\t76,110"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "1.39s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tSiliconFlow\t53.0tok/s\t1.39s\t3.22s\t$0.05\t$0.45\t131K\tAug 6, 2025\t293"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "nCompass",
+    "p50_throughput": "93.0tok/s",
+    "p50_latency": "1.61s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tnCompass\t93.0tok/s\t1.61s\t3.09s\t$0.05\t$0.28\t131K\tAug 6, 2025\t1,128"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "NovitaAI",
+    "p50_throughput": "92.0tok/s",
+    "p50_latency": "0.51s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tNovitaAI\t92.0tok/s\t0.51s\t2.26s\t$0.05\t$0.25\t131K\tAug 6, 2025\t1,609"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "Chutes",
+    "p50_throughput": "96.0tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tChutes\t96.0tok/s\t0.67s\t1.13s\t$0.04\t$0.18\t131K\tAug 6, 2025\t520"
+  },
+  {
+    "model_name": "openai/gpt-oss-120b",
+    "provider": "DeepInfra",
+    "p50_throughput": "66.0tok/s",
+    "p50_latency": "0.46s",
+    "raw": "\t\nopenai/gpt-oss-120b\n\tDeepInfra\t66.0tok/s\t0.46s\t3.12s\t$0.04\t$0.19\t131K\tAug 6, 2025\t2,365"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "NextBit",
+    "p50_throughput": "58.0tok/s",
+    "p50_latency": "0.92s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tNextBit\t58.0tok/s\t0.92s\t1.77s\t$0.10\t$0.45\t131K\tAug 6, 2025\t252"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Groq",
+    "p50_throughput": "500.0tok/s",
+    "p50_latency": "0.12s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tGroq\t500.0tok/s\t0.12s\t0.42s\t$0.07\t$0.30\t131K\tAug 6, 2025\t15,227"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Fireworks",
+    "p50_throughput": "116.0tok/s",
+    "p50_latency": "0.43s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tFireworks\t116.0tok/s\t0.43s\t0.81s\t$0.07\t$0.30\t131K\tAug 6, 2025\t596"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Google Vertex",
+    "p50_throughput": "241.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tGoogle Vertex\t241.0tok/s\t0.28s\t0.89s\t$0.07\t$0.25\t131K\tAug 6, 2025\t847"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Amazon Bedrock",
+    "p50_throughput": "166.0tok/s",
+    "p50_latency": "0.65s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tAmazon Bedrock\t166.0tok/s\t0.65s\t1.16s\t$0.07\t$0.15\t131K\tAug 6, 2025\t663"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Weights & Biases",
+    "p50_throughput": "116.0tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tWeights & Biases\t116.0tok/s\t0.27s\t0.85s\t$0.05\t$0.20\t131K\tAug 6, 2025\t623"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "234.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tNebius Token Factory\t234.0tok/s\t0.28s\t0.81s\t$0.05\t$0.20\t131K\tAug 6, 2025\t1,097"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Together",
+    "p50_throughput": "99.0tok/s",
+    "p50_latency": "0.27s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tTogether\t99.0tok/s\t0.27s\t1.12s\t$0.05\t$0.20\t131K\tAug 6, 2025\t744"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Clarifai",
+    "p50_throughput": "314.5tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tClarifai\t314.5tok/s\t0.30s\t0.70s\t$0.04\t$0.18\t131K\tAug 6, 2025\t1,414"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Parasail",
+    "p50_throughput": "144.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tParasail\t144.0tok/s\t0.45s\t0.81s\t$0.04\t$0.20\t131K\tAug 6, 2025\t1,506"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "56.0tok/s",
+    "p50_latency": "1.18s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tSiliconFlow\t56.0tok/s\t1.18s\t2.57s\t$0.04\t$0.18\t131K\tAug 6, 2025\t1,340"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "GMICloud",
+    "p50_throughput": "126.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tGMICloud\t126.0tok/s\t0.45s\t2.08s\t$0.04\t$0.15\t131K\tAug 6, 2025\t1,055"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "NovitaAI",
+    "p50_throughput": "114.0tok/s",
+    "p50_latency": "1.04s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tNovitaAI\t114.0tok/s\t1.04s\t1.72s\t$0.04\t$0.15\t131K\tAug 6, 2025\t2,817"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Phala",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tPhala\t50.0tok/s\t0.44s\t1.19s\t$0.04\t$0.15\t131K\tAug 6, 2025\t1,575"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "nCompass",
+    "p50_throughput": "80.0tok/s",
+    "p50_latency": "1.33s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tnCompass\t80.0tok/s\t1.33s\t2.11s\t$0.04\t$0.15\t131K\tAug 6, 2025\t4,181"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Hyperbolic",
+    "p50_throughput": "109.0tok/s",
+    "p50_latency": "0.64s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tHyperbolic\t109.0tok/s\t0.64s\t1.10s\t$0.04\t$0.04\t131K\tAug 6, 2025\t7,804"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "DeepInfra",
+    "p50_throughput": "165.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tDeepInfra\t165.0tok/s\t0.60s\t1.86s\t$0.03\t$0.14\t131K\tAug 6, 2025\t3,402"
+  },
+  {
+    "model_name": "openai/gpt-oss-20b",
+    "provider": "Chutes",
+    "p50_throughput": "186.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nopenai/gpt-oss-20b\n\tChutes\t186.0tok/s\t0.48s\t0.86s\t$0.02\t$0.10\t131K\tAug 6, 2025\t636"
+  },
+  {
+    "model_name": "openai/gpt-oss-safeguard-20b",
+    "provider": "Groq",
+    "p50_throughput": "916.0tok/s",
+    "p50_latency": "0.12s",
+    "raw": "\t\nopenai/gpt-oss-safeguard-20b\n\tGroq\t916.0tok/s\t0.12s\t0.20s\t$0.07\t$0.30\t131K\tOct 30, 2025\t4,256"
+  },
+  {
+    "model_name": "openai/o1",
+    "provider": "OpenAI",
+    "p50_throughput": "103.5tok/s",
+    "p50_latency": "5.49s",
+    "raw": "\t\nopenai/o1\n\tOpenAI\t103.5tok/s\t5.49s\t12.54s\t$15.00\t$60.00\t200K\tDec 18, 2024\t6"
+  },
+  {
+    "model_name": "openai/o1-pro",
+    "provider": "OpenAI",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "9.59s",
+    "raw": "\t\nopenai/o1-pro\n\tOpenAI\t14.0tok/s\t9.59s\t10.08s\t$150.00\t$600.00\t200K\tMar 20, 2025\t2"
+  },
+  {
+    "model_name": "openai/o3",
+    "provider": "OpenAI",
+    "p50_throughput": "86.5tok/s",
+    "p50_latency": "3.10s",
+    "raw": "\t\nopenai/o3\n\tOpenAI\t86.5tok/s\t3.10s\t14.37s\t$2.00\t$8.00\t200K\tApr 17, 2025\t258"
+  },
+  {
+    "model_name": "openai/o3-deep-research",
+    "provider": "OpenAI",
+    "p50_throughput": "141.0tok/s",
+    "p50_latency": "9.57s",
+    "raw": "\t\nopenai/o3-deep-research\n\tOpenAI\t141.0tok/s\t9.57s\t19.78s\t$10.00\t$40.00\t200K\tOct 11, 2025\t7"
+  },
+  {
+    "model_name": "openai/o3-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "140.0tok/s",
+    "p50_latency": "8.32s",
+    "raw": "\t\nopenai/o3-mini\n\tOpenAI\t140.0tok/s\t8.32s\t24.58s\t$1.10\t$4.40\t200K\tFeb 1, 2025\t620"
+  },
+  {
+    "model_name": "openai/o3-mini-high",
+    "provider": "OpenAI",
+    "p50_throughput": "31.5tok/s",
+    "p50_latency": "0.20s",
+    "raw": "\t\nopenai/o3-mini-high\n\tOpenAI\t31.5tok/s\t0.20s\t25.95s\t$1.10\t$4.40\t200K\tFeb 13, 2025\t4"
+  },
+  {
+    "model_name": "openai/o3-pro",
+    "provider": "OpenAI",
+    "p50_throughput": "28.5tok/s",
+    "p50_latency": "54.55s",
+    "raw": "\t\nopenai/o3-pro\n\tOpenAI\t28.5tok/s\t54.55s\t54.89s\t$20.00\t$80.00\t200K\tJun 11, 2025\t2"
+  },
+  {
+    "model_name": "openai/o4-mini",
+    "provider": "OpenAI",
+    "p50_throughput": "98.0tok/s",
+    "p50_latency": "3.87s",
+    "raw": "\t\nopenai/o4-mini\n\tOpenAI\t98.0tok/s\t3.87s\t7.73s\t$1.10\t$4.40\t200K\tApr 17, 2025\t647"
+  },
+  {
+    "model_name": "openai/o4-mini-deep-research",
+    "provider": "OpenAI",
+    "p50_throughput": "58.0tok/s",
+    "p50_latency": "3.31s",
+    "raw": "\t\nopenai/o4-mini-deep-research\n\tOpenAI\t58.0tok/s\t3.31s\t7.59s\t$2.00\t$8.00\t200K\tOct 11, 2025\t26"
+  },
+  {
+    "model_name": "openai/o4-mini-high",
+    "provider": "OpenAI",
+    "p50_throughput": "112.0tok/s",
+    "p50_latency": "2.75s",
+    "raw": "\t\nopenai/o4-mini-high\n\tOpenAI\t112.0tok/s\t2.75s\t11.47s\t$1.10\t$4.40\t200K\tApr 17, 2025\t148"
+  },
+  {
+    "model_name": "opengvlab/internvl3-78b",
+    "provider": "Chutes",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "0.52s",
+    "raw": "\t\nopengvlab/internvl3-78b\n\tChutes\t14.0tok/s\t0.52s\t0.73s\t$0.10\t$0.39\t33K\tSep 16, 2025\t6,269"
+  },
+  {
+    "model_name": "perplexity/sonar",
+    "provider": "Perplexity",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "1.47s",
+    "raw": "\t\nperplexity/sonar\n\tPerplexity\t72.0tok/s\t1.47s\t2.16s\t$1.00\t$1.00\t127K\tJan 28, 2025\t1,532"
+  },
+  {
+    "model_name": "perplexity/sonar-deep-research",
+    "provider": "Perplexity",
+    "p50_throughput": "1642.0tok/s",
+    "p50_latency": "26.77s",
+    "raw": "\t\nperplexity/sonar-deep-research\n\tPerplexity\t1642.0tok/s\t26.77s\t29.21s\t$2.00\t$8.00\t128K\tMar 7, 2025\t73"
+  },
+  {
+    "model_name": "perplexity/sonar-pro",
+    "provider": "Perplexity",
+    "p50_throughput": "65.0tok/s",
+    "p50_latency": "1.58s",
+    "raw": "\t\nperplexity/sonar-pro\n\tPerplexity\t65.0tok/s\t1.58s\t2.19s\t$3.00\t$15.00\t200K\tMar 7, 2025\t567"
+  },
+  {
+    "model_name": "perplexity/sonar-pro-search",
+    "provider": "Perplexity",
+    "p50_throughput": "58.0tok/s",
+    "p50_latency": "2.14s",
+    "raw": "\t\nperplexity/sonar-pro-search\n\tPerplexity\t58.0tok/s\t2.14s\t7.86s\t$3.00\t$15.00\t200K\tOct 31, 2025\t99"
+  },
+  {
+    "model_name": "perplexity/sonar-reasoning-pro",
+    "provider": "Perplexity",
+    "p50_throughput": "80.5tok/s",
+    "p50_latency": "1.71s",
+    "raw": "\t\nperplexity/sonar-reasoning-pro\n\tPerplexity\t80.5tok/s\t1.71s\t2.69s\t$2.00\t$8.00\t128K\tMar 7, 2025\t26"
+  },
+  {
+    "model_name": "prime-intellect/intellect-3",
+    "provider": "Parasail",
+    "p50_throughput": "96.0tok/s",
+    "p50_latency": "0.26s",
+    "raw": "\t\nprime-intellect/intellect-3\n\tParasail\t96.0tok/s\t0.26s\t1.56s\t$0.20\t$1.10\t131K\tNov 27, 2025\t15"
+  },
+  {
+    "model_name": "prime-intellect/intellect-3",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "87.5tok/s",
+    "p50_latency": "0.90s",
+    "raw": "\t\nprime-intellect/intellect-3\n\tNebius Token Factory\t87.5tok/s\t0.90s\t1.78s\t$0.20\t$1.10\t131K\tNov 27, 2025\t6"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-72b-instruct",
+    "provider": "Together",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "0.24s",
+    "raw": "\t\nqwen/qwen-2.5-72b-instruct\n\tTogether\t16.0tok/s\t0.24s\t0.60s\t$1.20\t$1.20\t131K\tSep 19, 2024\t3"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-72b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "33.0tok/s",
+    "p50_latency": "0.55s",
+    "raw": "\t\nqwen/qwen-2.5-72b-instruct\n\tHyperbolic\t33.0tok/s\t0.55s\t0.69s\t$0.40\t$0.40\t131K\tSep 19, 2024\t32"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-72b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "0.51s",
+    "raw": "\t\nqwen/qwen-2.5-72b-instruct\n\tNovitaAI\t26.0tok/s\t0.51s\t0.76s\t$0.38\t$0.40\t32K\tSep 19, 2024\t223"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-72b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nqwen/qwen-2.5-72b-instruct\n\tChutes\t29.0tok/s\t0.44s\t0.84s\t$0.13\t$0.52\t33K\tSep 19, 2024\t147"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-72b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "0.25s",
+    "raw": "\t\nqwen/qwen-2.5-72b-instruct\n\tDeepInfra\t38.0tok/s\t0.25s\t0.66s\t$0.12\t$0.39\t33K\tSep 19, 2024\t2,508"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-7b-instruct",
+    "provider": "Together",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "0.49s",
+    "raw": "\t\nqwen/qwen-2.5-7b-instruct\n\tTogether\t51.0tok/s\t0.49s\t0.93s\t$0.30\t$0.30\t33K\tOct 16, 2024\t27"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-7b-instruct",
+    "provider": "AtlasCloud",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "1.01s",
+    "raw": "\t\nqwen/qwen-2.5-7b-instruct\n\tAtlasCloud\t26.0tok/s\t1.01s\t1.85s\t$0.04\t$0.10\t128K\tOct 16, 2024\t2,997"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-7b-instruct",
+    "provider": "Phala",
+    "p50_throughput": "71.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nqwen/qwen-2.5-7b-instruct\n\tPhala\t71.0tok/s\t0.45s\t0.93s\t$0.04\t$0.10\t33K\tOct 16, 2024\t3,110"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-coder-32b-instruct",
+    "provider": "Cloudflare",
+    "p50_throughput": "32.5tok/s",
+    "p50_latency": "0.32s",
+    "raw": "\t\nqwen/qwen-2.5-coder-32b-instruct\n\tCloudflare\t32.5tok/s\t0.32s\t0.74s\t$0.66\t$1.00\t33K\tNov 12, 2024\t34"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-coder-32b-instruct",
+    "provider": "Hyperbolic",
+    "p50_throughput": "39.5tok/s",
+    "p50_latency": "0.46s",
+    "raw": "\t\nqwen/qwen-2.5-coder-32b-instruct\n\tHyperbolic\t39.5tok/s\t0.46s\t0.98s\t$0.20\t$0.20\t33K\tNov 12, 2024\t42"
+  },
+  {
+    "model_name": "qwen/qwen-2.5-coder-32b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "0.75s",
+    "raw": "\t\nqwen/qwen-2.5-coder-32b-instruct\n\tChutes\t12.0tok/s\t0.75s\t1.40s\t$0.03\t$0.11\t33K\tNov 12, 2024\t1,344"
+  },
+  {
+    "model_name": "qwen/qwen-max",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nqwen/qwen-max\n\tAlibaba Cloud Int.\t19.0tok/s\t0.60s\t1.08s\t$1.60\t$6.40\t33K\tFeb 1, 2025\t7"
+  },
+  {
+    "model_name": "qwen/qwen-plus",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "61.0tok/s",
+    "p50_latency": "0.68s",
+    "raw": "\t\nqwen/qwen-plus\n\tAlibaba Cloud Int.\t61.0tok/s\t0.68s\t1.02s\t$0.40\t$1.20\t131K\tFeb 1, 2025\t69"
+  },
+  {
+    "model_name": "qwen/qwen-plus-2025-07-28",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "0.66s",
+    "raw": "\t\nqwen/qwen-plus-2025-07-28\n\tAlibaba Cloud Int.\t51.0tok/s\t0.66s\t0.75s\t$0.40\t$1.20\t1.0M\tSep 9, 2025\t9"
+  },
+  {
+    "model_name": "qwen/qwen-turbo",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "55.0tok/s",
+    "p50_latency": "0.46s",
+    "raw": "\t\nqwen/qwen-turbo\n\tAlibaba Cloud Int.\t55.0tok/s\t0.46s\t0.89s\t$0.05\t$0.20\t1.0M\tFeb 1, 2025\t694"
+  },
+  {
+    "model_name": "qwen/qwen-vl-max",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "2.54s",
+    "raw": "\t\nqwen/qwen-vl-max\n\tAlibaba Cloud Int.\t20.0tok/s\t2.54s\t2.68s\t$0.80\t$3.20\t131K\tFeb 2, 2025\t3"
+  },
+  {
+    "model_name": "qwen/qwen-vl-plus",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "66.5tok/s",
+    "p50_latency": "0.89s",
+    "raw": "\t\nqwen/qwen-vl-plus\n\tAlibaba Cloud Int.\t66.5tok/s\t0.89s\t1.61s\t$0.21\t$0.63\t8K\tFeb 5, 2025\t60"
+  },
+  {
+    "model_name": "qwen/qwen2.5-coder-7b-instruct",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "234.0tok/s",
+    "p50_latency": "0.29s",
+    "raw": "\t\nqwen/qwen2.5-coder-7b-instruct\n\tNebius AI Studio (Fast)\t234.0tok/s\t0.29s\t0.41s\t$0.03\t$0.09\t33K\tApr 16, 2025\t11"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-32b-instruct",
+    "provider": "Fireworks",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "0.69s",
+    "raw": "\t\nqwen/qwen2.5-vl-32b-instruct\n\tFireworks\t47.0tok/s\t0.69s\t2.09s\t$0.90\t$0.90\t128K\tMar 25, 2025\t92"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-32b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.41s",
+    "raw": "\t\nqwen/qwen2.5-vl-32b-instruct\n\tDeepInfra\t29.0tok/s\t0.41s\t1.51s\t$0.20\t$0.60\t128K\tMar 25, 2025\t917"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-32b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "1.30s",
+    "raw": "\t\nqwen/qwen2.5-vl-32b-instruct\n\tChutes\t72.0tok/s\t1.30s\t3.09s\t$0.05\t$0.22\t16K\tMar 25, 2025\t55"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-72b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "2.70s",
+    "raw": "\t\nqwen/qwen2.5-vl-72b-instruct\n\tParasail\t22.0tok/s\t2.70s\t4.83s\t$0.80\t$1.00\t128K\tFeb 1, 2025\t152"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-72b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "2.19s",
+    "raw": "\t\nqwen/qwen2.5-vl-72b-instruct\n\tNovitaAI\t17.0tok/s\t2.19s\t3.55s\t$0.80\t$0.80\t33K\tFeb 1, 2025\t28"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-72b-instruct",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nqwen/qwen2.5-vl-72b-instruct\n\tNebius Token Factory\t19.0tok/s\t1.10s\t3.02s\t$0.25\t$0.75\t32K\tFeb 1, 2025\t362"
+  },
+  {
+    "model_name": "qwen/qwen2.5-vl-72b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "1.39s",
+    "raw": "\t\nqwen/qwen2.5-vl-72b-instruct\n\tChutes\t37.0tok/s\t1.39s\t2.45s\t$0.15\t$0.60\t33K\tFeb 1, 2025\t173"
+  },
+  {
+    "model_name": "qwen/qwen3-14b",
+    "provider": "DeepInfra",
+    "p50_throughput": "73.0tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nqwen/qwen3-14b\n\tDeepInfra\t73.0tok/s\t0.37s\t0.87s\t$0.08\t$0.24\t41K\tApr 29, 2025\t112"
+  },
+  {
+    "model_name": "qwen/qwen3-14b",
+    "provider": "NextBit",
+    "p50_throughput": "42.5tok/s",
+    "p50_latency": "1.44s",
+    "raw": "\t\nqwen/qwen3-14b\n\tNextBit\t42.5tok/s\t1.44s\t2.17s\t$0.06\t$0.24\t41K\tApr 29, 2025\t154"
+  },
+  {
+    "model_name": "qwen/qwen3-14b",
+    "provider": "Chutes",
+    "p50_throughput": "93.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\nqwen/qwen3-14b\n\tChutes\t93.0tok/s\t0.42s\t0.73s\t$0.05\t$0.22\t41K\tApr 29, 2025\t2,095"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b",
+    "provider": "Chutes",
+    "p50_throughput": "56.0tok/s",
+    "p50_latency": "0.86s",
+    "raw": "\t\nqwen/qwen3-235b-a22b\n\tChutes\t56.0tok/s\t0.86s\t1.06s\t$0.30\t$1.20\t41K\tApr 29, 2025\t13"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b",
+    "provider": "Fireworks",
+    "p50_throughput": "89.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nqwen/qwen3-235b-a22b\n\tFireworks\t89.0tok/s\t0.36s\t0.92s\t$0.22\t$0.88\t131K\tApr 29, 2025\t486"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b",
+    "provider": "Together",
+    "p50_throughput": "56.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nqwen/qwen3-235b-a22b\n\tTogether\t56.0tok/s\t0.36s\t0.78s\t$0.20\t$0.60\t41K\tApr 29, 2025\t562"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Cerebras",
+    "p50_throughput": "173.5tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tCerebras\t173.5tok/s\t0.37s\t1.41s\t$0.60\t$1.20\t131K\tJul 22, 2025\t2,444"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Google Vertex",
+    "p50_throughput": "63.0tok/s",
+    "p50_latency": "0.41s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tGoogle Vertex\t63.0tok/s\t0.41s\t1.86s\t$0.22\t$0.88\t262K\tJul 22, 2025\t2,895"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.56s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tAlibaba Cloud Int.\t41.0tok/s\t0.56s\t1.38s\t$0.23\t$0.92\t131K\tJul 22, 2025\t216"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Fireworks",
+    "p50_throughput": "27.5tok/s",
+    "p50_latency": "1.04s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tFireworks\t27.5tok/s\t1.04s\t3.97s\t$0.22\t$0.88\t262K\tJul 22, 2025\t200"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Crusoe",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tCrusoe\t5.0tok/s\t0.45s\t0.76s\t$0.22\t$0.80\t262K\tJul 22, 2025\t11,888"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "AtlasCloud",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "1.88s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tAtlasCloud\t12.0tok/s\t1.88s\t9.01s\t$0.20\t$0.88\t131K\tJul 22, 2025\t147"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Friendli",
+    "p50_throughput": "79.0tok/s",
+    "p50_latency": "0.16s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tFriendli\t79.0tok/s\t0.16s\t0.74s\t$0.20\t$0.80\t262K\tJul 22, 2025\t311"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "62.0tok/s",
+    "p50_latency": "0.49s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tNebius Token Factory\t62.0tok/s\t0.49s\t1.39s\t$0.20\t$0.60\t262K\tJul 22, 2025\t305"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Together",
+    "p50_throughput": "42.0tok/s",
+    "p50_latency": "0.72s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tTogether\t42.0tok/s\t0.72s\t1.51s\t$0.20\t$0.60\t262K\tJul 22, 2025\t394"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Parasail",
+    "p50_throughput": "60.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tParasail\t60.0tok/s\t0.48s\t0.88s\t$0.19\t$1.40\t131K\tJul 22, 2025\t277"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Weights & Biases",
+    "p50_throughput": "49.0tok/s",
+    "p50_latency": "0.13s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tWeights & Biases\t49.0tok/s\t0.13s\t0.47s\t$0.10\t$0.10\t262K\tJul 22, 2025\t2,640"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "SiliconFlow",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "1.90s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tSiliconFlow\t13.0tok/s\t1.90s\t4.48s\t$0.09\t$0.60\t262K\tJul 22, 2025\t1,095"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "NovitaAI",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.22s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tNovitaAI\t25.0tok/s\t1.22s\t2.66s\t$0.09\t$0.58\t131K\tJul 22, 2025\t4,141"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "Chutes",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "1.13s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tChutes\t28.0tok/s\t1.13s\t1.81s\t$0.08\t$0.55\t262K\tJul 22, 2025\t863"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-2507",
+    "provider": "DeepInfra",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-2507\n\tDeepInfra\t25.0tok/s\t0.50s\t1.54s\t$0.07\t$0.46\t262K\tJul 22, 2025\t5,032"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "Together",
+    "p50_throughput": "70.0tok/s",
+    "p50_latency": "0.87s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tTogether\t70.0tok/s\t0.87s\t0.92s\t$0.65\t$3.00\t262K\tJul 25, 2025\t3"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "Friendli",
+    "p50_throughput": "65.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tFriendli\t65.0tok/s\t0.48s\t1.79s\t$0.60\t$2.40\t262K\tJul 25, 2025\t5"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "NovitaAI",
+    "p50_throughput": "51.0tok/s",
+    "p50_latency": "0.86s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tNovitaAI\t51.0tok/s\t0.86s\t2.22s\t$0.30\t$3.00\t131K\tJul 25, 2025\t141"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "DeepInfra",
+    "p50_throughput": "55.0tok/s",
+    "p50_latency": "0.34s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tDeepInfra\t55.0tok/s\t0.34s\t0.61s\t$0.23\t$2.39\t262K\tJul 25, 2025\t17"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "AtlasCloud",
+    "p50_throughput": "53.5tok/s",
+    "p50_latency": "0.77s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tAtlasCloud\t53.5tok/s\t0.77s\t1.73s\t$0.20\t$2.30\t128K\tJul 25, 2025\t10"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "SiliconFlow",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "1.87s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tSiliconFlow\t15.0tok/s\t1.87s\t3.25s\t$0.13\t$0.60\t262K\tJul 25, 2025\t480"
+  },
+  {
+    "model_name": "qwen/qwen3-235b-a22b-thinking-2507",
+    "provider": "Chutes",
+    "p50_throughput": "79.0tok/s",
+    "p50_latency": "1.00s",
+    "raw": "\t\nqwen/qwen3-235b-a22b-thinking-2507\n\tChutes\t79.0tok/s\t1.00s\t5.60s\t$0.11\t$0.60\t262K\tJul 25, 2025\t281"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "Fireworks",
+    "p50_throughput": "186.0tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tFireworks\t186.0tok/s\t0.37s\t1.05s\t$0.15\t$0.60\t131K\tApr 29, 2025\t44"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "Friendli",
+    "p50_throughput": "152.0tok/s",
+    "p50_latency": "0.20s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tFriendli\t152.0tok/s\t0.20s\t0.74s\t$0.15\t$0.60\t131K\tApr 29, 2025\t57"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "NextBit",
+    "p50_throughput": "54.5tok/s",
+    "p50_latency": "1.78s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tNextBit\t54.5tok/s\t1.78s\t3.10s\t$0.14\t$0.55\t33K\tApr 29, 2025\t62"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "NovitaAI",
+    "p50_throughput": "133.0tok/s",
+    "p50_latency": "0.88s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tNovitaAI\t133.0tok/s\t0.88s\t1.23s\t$0.09\t$0.45\t41K\tApr 29, 2025\t133"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "1.83s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tSiliconFlow\t30.0tok/s\t1.83s\t2.98s\t$0.09\t$0.45\t131K\tApr 29, 2025\t140"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "AtlasCloud",
+    "p50_throughput": "72.0tok/s",
+    "p50_latency": "1.26s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tAtlasCloud\t72.0tok/s\t1.26s\t2.37s\t$0.08\t$0.45\t32K\tApr 29, 2025\t163"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "DeepInfra",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tDeepInfra\t41.0tok/s\t0.36s\t1.11s\t$0.08\t$0.29\t41K\tApr 29, 2025\t208"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "nCompass",
+    "p50_throughput": "105.0tok/s",
+    "p50_latency": "1.78s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tnCompass\t105.0tok/s\t1.78s\t2.92s\t$0.08\t$0.28\t131K\tApr 29, 2025\t203"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b",
+    "provider": "Chutes",
+    "p50_throughput": "139.0tok/s",
+    "p50_latency": "1.03s",
+    "raw": "\t\nqwen/qwen3-30b-a3b\n\tChutes\t139.0tok/s\t1.03s\t1.57s\t$0.06\t$0.22\t41K\tApr 29, 2025\t361"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-instruct-2507",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "37.5tok/s",
+    "p50_latency": "0.85s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-instruct-2507\n\tAlibaba Cloud Int.\t37.5tok/s\t0.85s\t1.01s\t$0.20\t$0.80\t131K\tJul 30, 2025\t8"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-instruct-2507",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "73.0tok/s",
+    "p50_latency": "0.36s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-instruct-2507\n\tNebius Token Factory\t73.0tok/s\t0.36s\t0.83s\t$0.10\t$0.30\t262K\tJul 30, 2025\t547"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-instruct-2507",
+    "provider": "SiliconFlow",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "2.10s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-instruct-2507\n\tSiliconFlow\t14.0tok/s\t2.10s\t4.33s\t$0.09\t$0.30\t262K\tJul 30, 2025\t56"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-instruct-2507",
+    "provider": "AtlasCloud",
+    "p50_throughput": "70.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-instruct-2507\n\tAtlasCloud\t70.0tok/s\t0.57s\t1.31s\t$0.09\t$0.30\t131K\tJul 30, 2025\t571"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-instruct-2507",
+    "provider": "Chutes",
+    "p50_throughput": "66.0tok/s",
+    "p50_latency": "0.85s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-instruct-2507\n\tChutes\t66.0tok/s\t0.85s\t1.26s\t$0.08\t$0.33\t262K\tJul 30, 2025\t287"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-thinking-2507",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "18.0tok/s",
+    "p50_latency": "3.18s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-thinking-2507\n\tNebius Token Factory\t18.0tok/s\t3.18s\t84.92s\t$0.10\t$0.30\t262K\tAug 29, 2025\t46"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-thinking-2507",
+    "provider": "SiliconFlow",
+    "p50_throughput": "34.5tok/s",
+    "p50_latency": "1.58s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-thinking-2507\n\tSiliconFlow\t34.5tok/s\t1.58s\t1.65s\t$0.09\t$0.30\t262K\tAug 29, 2025\t2"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-thinking-2507",
+    "provider": "AtlasCloud",
+    "p50_throughput": "177.0tok/s",
+    "p50_latency": "0.59s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-thinking-2507\n\tAtlasCloud\t177.0tok/s\t0.59s\t0.98s\t$0.08\t$0.40\t128K\tAug 29, 2025\t7"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-thinking-2507",
+    "provider": "Cloudflare",
+    "p50_throughput": "102.0tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-thinking-2507\n\tCloudflare\t102.0tok/s\t0.44s\t0.74s\t$0.05\t$0.34\t33K\tAug 29, 2025\t135"
+  },
+  {
+    "model_name": "qwen/qwen3-30b-a3b-thinking-2507",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "150.0tok/s",
+    "p50_latency": "0.75s",
+    "raw": "\t\nqwen/qwen3-30b-a3b-thinking-2507\n\tAlibaba Cloud Int.\t150.0tok/s\t0.75s\t2.96s\t$0.20\t$2.40\t131K\tAug 29, 2025\t6"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "Cerebras",
+    "p50_throughput": "668.0tok/s",
+    "p50_latency": "0.84s",
+    "raw": "\t\nqwen/qwen3-32b\n\tCerebras\t668.0tok/s\t0.84s\t1.90s\t$0.40\t$0.80\t131K\tApr 29, 2025\t1,368"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "SambaNova",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "0.81s",
+    "raw": "\t\nqwen/qwen3-32b\n\tSambaNova\t53.0tok/s\t0.81s\t2.25s\t$0.40\t$0.80\t33K\tApr 29, 2025\t29"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "Groq",
+    "p50_throughput": "389.5tok/s",
+    "p50_latency": "0.34s",
+    "raw": "\t\nqwen/qwen3-32b\n\tGroq\t389.5tok/s\t0.34s\t0.52s\t$0.29\t$0.59\t131K\tApr 29, 2025\t514"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "Nebius AI Studio (Fast)",
+    "p50_throughput": "128.0tok/s",
+    "p50_latency": "0.43s",
+    "raw": "\t\nqwen/qwen3-32b\n\tNebius AI Studio (Fast)\t128.0tok/s\t0.43s\t0.79s\t$0.20\t$0.60\t41K\tApr 29, 2025\t576"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "Friendli",
+    "p50_throughput": "102.5tok/s",
+    "p50_latency": "0.37s",
+    "raw": "\t\nqwen/qwen3-32b\n\tFriendli\t102.5tok/s\t0.37s\t0.67s\t$0.15\t$0.50\t131K\tApr 29, 2025\t848"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "4.51s",
+    "raw": "\t\nqwen/qwen3-32b\n\tSiliconFlow\t12.0tok/s\t4.51s\t9.02s\t$0.14\t$0.57\t131K\tApr 29, 2025\t769"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "AtlasCloud",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "1.40s",
+    "raw": "\t\nqwen/qwen3-32b\n\tAtlasCloud\t19.0tok/s\t1.40s\t2.33s\t$0.10\t$0.45\t41K\tApr 29, 2025\t378"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "NovitaAI",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "1.76s",
+    "raw": "\t\nqwen/qwen3-32b\n\tNovitaAI\t19.0tok/s\t1.76s\t8.89s\t$0.10\t$0.45\t41K\tApr 29, 2025\t354"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nqwen/qwen3-32b\n\tNebius Token Factory\t32.0tok/s\t0.60s\t1.05s\t$0.10\t$0.30\t41K\tApr 29, 2025\t2,150"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "nCompass",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "2.01s",
+    "raw": "\t\nqwen/qwen3-32b\n\tnCompass\t26.0tok/s\t2.01s\t3.55s\t$0.10\t$0.28\t41K\tApr 29, 2025\t472"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "DeepInfra",
+    "p50_throughput": "37.0tok/s",
+    "p50_latency": "2.23s",
+    "raw": "\t\nqwen/qwen3-32b\n\tDeepInfra\t37.0tok/s\t2.23s\t7.58s\t$0.08\t$0.28\t41K\tApr 29, 2025\t321"
+  },
+  {
+    "model_name": "qwen/qwen3-32b",
+    "provider": "Chutes",
+    "p50_throughput": "54.0tok/s",
+    "p50_latency": "0.82s",
+    "raw": "\t\nqwen/qwen3-32b\n\tChutes\t54.0tok/s\t0.82s\t2.05s\t$0.08\t$0.24\t41K\tApr 29, 2025\t1,437"
+  },
+  {
+    "model_name": "qwen/qwen3-8b",
+    "provider": "Fireworks",
+    "p50_throughput": "163.0tok/s",
+    "p50_latency": "0.33s",
+    "raw": "\t\nqwen/qwen3-8b\n\tFireworks\t163.0tok/s\t0.33s\t4.92s\t$0.20\t$0.20\t41K\tApr 29, 2025\t631"
+  },
+  {
+    "model_name": "qwen/qwen3-8b",
+    "provider": "AtlasCloud",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "1.08s",
+    "raw": "\t\nqwen/qwen3-8b\n\tAtlasCloud\t17.0tok/s\t1.08s\t2.97s\t$0.05\t$0.25\t32K\tApr 29, 2025\t1,041"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Together",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "1.05s",
+    "raw": "\t\nqwen/qwen3-coder\n\tTogether\t52.0tok/s\t1.05s\t2.50s\t$2.00\t$2.00\t262K\tJul 23, 2025\t97"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Hyperbolic",
+    "p50_throughput": "133.0tok/s",
+    "p50_latency": "0.56s",
+    "raw": "\t\nqwen/qwen3-coder\n\tHyperbolic\t133.0tok/s\t0.56s\t0.73s\t$2.00\t$2.00\t262K\tJul 23, 2025\t3"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Alibaba OpenSource",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "2.79s",
+    "raw": "\t\nqwen/qwen3-coder\n\tAlibaba OpenSource\t26.0tok/s\t2.79s\t5.75s\t$1.50\t$7.50\t262K\tJul 23, 2025\t101"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Weights & Biases",
+    "p50_throughput": "55.0tok/s",
+    "p50_latency": "0.72s",
+    "raw": "\t\nqwen/qwen3-coder\n\tWeights & Biases\t55.0tok/s\t0.72s\t1.71s\t$1.00\t$1.50\t262K\tJul 23, 2025\t363"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "AtlasCloud",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "5.59s",
+    "raw": "\t\nqwen/qwen3-coder\n\tAtlasCloud\t16.0tok/s\t5.59s\t11.73s\t$0.69\t$2.70\t262K\tJul 23, 2025\t475"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Fireworks",
+    "p50_throughput": "40.0tok/s",
+    "p50_latency": "2.56s",
+    "raw": "\t\nqwen/qwen3-coder\n\tFireworks\t40.0tok/s\t2.56s\t9.57s\t$0.45\t$1.80\t262K\tJul 23, 2025\t1,305"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "1.01s",
+    "raw": "\t\nqwen/qwen3-coder\n\tNebius Token Factory\t29.0tok/s\t1.01s\t2.91s\t$0.40\t$1.80\t262K\tJul 23, 2025\t1,683"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "DeepInfra",
+    "p50_throughput": "8.0tok/s",
+    "p50_latency": "14.50s",
+    "raw": "\t\nqwen/qwen3-coder\n\tDeepInfra\t8.0tok/s\t14.50s\t26.11s\t$0.40\t$1.60\t262K\tJul 23, 2025\t74"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "NovitaAI",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "2.25s",
+    "raw": "\t\nqwen/qwen3-coder\n\tNovitaAI\t28.0tok/s\t2.25s\t5.41s\t$0.30\t$1.30\t262K\tJul 23, 2025\t2,428"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "DeepInfra (Turbo)",
+    "p50_throughput": "65.0tok/s",
+    "p50_latency": "0.49s",
+    "raw": "\t\nqwen/qwen3-coder\n\tDeepInfra (Turbo)\t65.0tok/s\t0.49s\t1.43s\t$0.28\t$1.20\t262K\tJul 23, 2025\t3,300"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "SiliconFlow",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "4.35s",
+    "raw": "\t\nqwen/qwen3-coder\n\tSiliconFlow\t15.0tok/s\t4.35s\t13.24s\t$0.25\t$1.00\t262K\tJul 23, 2025\t458"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Google Vertex",
+    "p50_throughput": "101.0tok/s",
+    "p50_latency": "0.76s",
+    "raw": "\t\nqwen/qwen3-coder\n\tGoogle Vertex\t101.0tok/s\t0.76s\t1.91s\t$0.22\t$1.80\t262K\tJul 23, 2025\t2,663"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Chutes",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\nqwen/qwen3-coder\n\tChutes\t20.0tok/s\t1.43s\t2.58s\t$0.22\t$0.95\t262K\tJul 23, 2025\t265"
+  },
+  {
+    "model_name": "qwen/qwen3-coder",
+    "provider": "Baseten",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "0.42s",
+    "raw": "\t\nqwen/qwen3-coder\n\tBaseten\t20.0tok/s\t0.42s\t0.42s\t$0.38\t$1.53\t262K\tJul 23, 2025\t1"
+  },
+  {
+    "model_name": "qwen/qwen3-coder-30b-a3b-instruct",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "79.0tok/s",
+    "p50_latency": "0.25s",
+    "raw": "\t\nqwen/qwen3-coder-30b-a3b-instruct\n\tNebius Token Factory\t79.0tok/s\t0.25s\t0.67s\t$0.10\t$0.30\t262K\tJul 31, 2025\t285"
+  },
+  {
+    "model_name": "qwen/qwen3-coder-30b-a3b-instruct",
+    "provider": "SiliconFlow",
+    "p50_throughput": "23.0tok/s",
+    "p50_latency": "1.84s",
+    "raw": "\t\nqwen/qwen3-coder-30b-a3b-instruct\n\tSiliconFlow\t23.0tok/s\t1.84s\t3.67s\t$0.07\t$0.28\t262K\tJul 31, 2025\t605"
+  },
+  {
+    "model_name": "qwen/qwen3-coder-30b-a3b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "0.76s",
+    "raw": "\t\nqwen/qwen3-coder-30b-a3b-instruct\n\tNovitaAI\t26.0tok/s\t0.76s\t2.67s\t$0.07\t$0.27\t160K\tJul 31, 2025\t128"
+  },
+  {
+    "model_name": "qwen/qwen3-coder-flash",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "63.5tok/s",
+    "p50_latency": "0.90s",
+    "raw": "\t\nqwen/qwen3-coder-flash\n\tAlibaba Cloud Int.\t63.5tok/s\t0.90s\t1.45s\t$0.30\t$1.50\t128K\tSep 17, 2025\t6"
+  },
+  {
+    "model_name": "qwen/qwen3-coder-plus",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "2.71s",
+    "raw": "\t\nqwen/qwen3-coder-plus\n\tAlibaba Cloud Int.\t50.0tok/s\t2.71s\t11.84s\t$1.00\t$5.00\t128K\tSep 24, 2025\t22"
+  },
+  {
+    "model_name": "qwen/qwen3-max",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "4.0tok/s",
+    "p50_latency": "1.42s",
+    "raw": "\t\nqwen/qwen3-max\n\tAlibaba Cloud Int.\t4.0tok/s\t1.42s\t3.78s\t$1.20\t$6.00\t256K\tSep 24, 2025\t492"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "GMICloud",
+    "p50_throughput": "13.0tok/s",
+    "p50_latency": "0.46s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tGMICloud\t13.0tok/s\t0.46s\t0.95s\t$0.15\t$1.50\t262K\tSep 12, 2025\t1,244"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "AtlasCloud",
+    "p50_throughput": "7.0tok/s",
+    "p50_latency": "0.84s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tAtlasCloud\t7.0tok/s\t0.84s\t1.66s\t$0.15\t$1.50\t262K\tSep 12, 2025\t1,085"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "7.0tok/s",
+    "p50_latency": "0.68s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tNovitaAI\t7.0tok/s\t0.68s\t1.02s\t$0.15\t$1.50\t131K\tSep 12, 2025\t1,049"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "Google Vertex",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tGoogle Vertex\t17.0tok/s\t0.31s\t0.47s\t$0.15\t$1.20\t262K\tSep 12, 2025\t765"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "0.40s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tAlibaba Cloud Int.\t12.0tok/s\t0.40s\t0.60s\t$0.15\t$1.20\t131K\tSep 12, 2025\t1,270"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "SiliconFlow",
+    "p50_throughput": "6.0tok/s",
+    "p50_latency": "1.20s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tSiliconFlow\t6.0tok/s\t1.20s\t3.07s\t$0.14\t$1.40\t262K\tSep 12, 2025\t111"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "0.34s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tParasail\t19.0tok/s\t0.34s\t1.18s\t$0.10\t$1.10\t262K\tSep 12, 2025\t2,324"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "42.0tok/s",
+    "p50_latency": "2.05s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tChutes\t42.0tok/s\t2.05s\t4.25s\t$0.10\t$0.80\t262K\tSep 12, 2025\t225"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "0.22s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-instruct\n\tDeepInfra\t28.0tok/s\t0.22s\t0.69s\t$0.09\t$1.10\t262K\tSep 12, 2025\t2,941"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "180.0tok/s",
+    "p50_latency": "0.79s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tAlibaba Cloud Int.\t180.0tok/s\t0.79s\t0.87s\t$0.50\t$6.00\t262K\tSep 12, 2025\t3"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "Hyperbolic",
+    "p50_throughput": "236.5tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tHyperbolic\t236.5tok/s\t0.70s\t1.16s\t$0.30\t$0.30\t262K\tSep 12, 2025\t188"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "AtlasCloud",
+    "p50_throughput": "105.0tok/s",
+    "p50_latency": "1.40s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tAtlasCloud\t105.0tok/s\t1.40s\t2.79s\t$0.15\t$1.50\t262K\tSep 12, 2025\t122"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "Together",
+    "p50_throughput": "219.0tok/s",
+    "p50_latency": "1.04s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tTogether\t219.0tok/s\t1.04s\t2.16s\t$0.15\t$1.50\t262K\tSep 12, 2025\t141"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "NovitaAI",
+    "p50_throughput": "165.5tok/s",
+    "p50_latency": "1.09s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tNovitaAI\t165.5tok/s\t1.09s\t1.45s\t$0.15\t$1.50\t131K\tSep 12, 2025\t46"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "Google Vertex",
+    "p50_throughput": "182.5tok/s",
+    "p50_latency": "0.44s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tGoogle Vertex\t182.5tok/s\t0.44s\t0.74s\t$0.15\t$1.20\t262K\tSep 12, 2025\t162"
+  },
+  {
+    "model_name": "qwen/qwen3-next-80b-a3b-thinking",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "209.0tok/s",
+    "p50_latency": "0.45s",
+    "raw": "\t\nqwen/qwen3-next-80b-a3b-thinking\n\tNebius Token Factory\t209.0tok/s\t0.45s\t0.75s\t$0.15\t$1.20\t128K\tSep 12, 2025\t117"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "33.0tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tAlibaba Cloud Int.\t33.0tok/s\t1.43s\t2.81s\t$0.40\t$1.60\t131K\tSep 24, 2025\t451"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "SiliconFlow",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "3.80s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tSiliconFlow\t10.0tok/s\t3.80s\t6.07s\t$0.30\t$1.50\t262K\tSep 24, 2025\t57"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "20.0tok/s",
+    "p50_latency": "1.76s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tNovitaAI\t20.0tok/s\t1.76s\t3.87s\t$0.30\t$1.50\t131K\tSep 24, 2025\t777"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "AtlasCloud",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "4.49s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tAtlasCloud\t22.0tok/s\t4.49s\t5.88s\t$0.30\t$1.50\t131K\tSep 24, 2025\t74"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "Chutes",
+    "p50_throughput": "51.5tok/s",
+    "p50_latency": "1.47s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tChutes\t51.5tok/s\t1.47s\t1.90s\t$0.30\t$1.20\t262K\tSep 24, 2025\t12"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "Fireworks",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.80s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tFireworks\t41.0tok/s\t0.80s\t1.53s\t$0.22\t$0.88\t262K\tSep 24, 2025\t3,506"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "1.25s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tParasail\t28.0tok/s\t1.25s\t2.16s\t$0.21\t$1.90\t131K\tSep 24, 2025\t1,209"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "1.33s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-instruct\n\tDeepInfra\t22.0tok/s\t1.33s\t2.45s\t$0.20\t$1.20\t262K\tSep 24, 2025\t657"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-235b-a22b-thinking",
+    "provider": "NovitaAI",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "2.52s",
+    "raw": "\t\nqwen/qwen3-vl-235b-a22b-thinking\n\tNovitaAI\t38.0tok/s\t2.52s\t37.32s\t$0.98\t$3.95\t131K\tSep 24, 2025\t251"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-instruct",
+    "provider": "SiliconFlow",
+    "p50_throughput": "10.5tok/s",
+    "p50_latency": "3.79s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-instruct\n\tSiliconFlow\t10.5tok/s\t3.79s\t5.54s\t$0.29\t$1.00\t262K\tOct 7, 2025\t72"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-instruct",
+    "provider": "Phala",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "1.31s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-instruct\n\tPhala\t27.0tok/s\t1.31s\t2.77s\t$0.20\t$0.70\t128K\tOct 7, 2025\t222"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "1.73s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-instruct\n\tNovitaAI\t22.0tok/s\t1.73s\t5.68s\t$0.20\t$0.70\t131K\tOct 7, 2025\t209"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-instruct",
+    "provider": "DeepInfra",
+    "p50_throughput": "40.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-instruct\n\tDeepInfra\t40.0tok/s\t0.48s\t2.59s\t$0.15\t$0.60\t262K\tOct 7, 2025\t307"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-instruct",
+    "provider": "Fireworks",
+    "p50_throughput": "80.0tok/s",
+    "p50_latency": "0.52s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-instruct\n\tFireworks\t80.0tok/s\t0.52s\t3.07s\t$0.15\t$0.60\t262K\tOct 7, 2025\t2,649"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-thinking",
+    "provider": "SiliconFlow",
+    "p50_throughput": "58.0tok/s",
+    "p50_latency": "5.89s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-thinking\n\tSiliconFlow\t58.0tok/s\t5.89s\t6.33s\t$0.29\t$1.00\t262K\tOct 7, 2025\t5"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-30b-a3b-thinking",
+    "provider": "NovitaAI",
+    "p50_throughput": "61.5tok/s",
+    "p50_latency": "5.71s",
+    "raw": "\t\nqwen/qwen3-vl-30b-a3b-thinking\n\tNovitaAI\t61.5tok/s\t5.71s\t35.58s\t$0.20\t$1.00\t131K\tOct 7, 2025\t38"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-32b-instruct",
+    "provider": "Together",
+    "p50_throughput": "55.0tok/s",
+    "p50_latency": "1.83s",
+    "raw": "\t\nqwen/qwen3-vl-32b-instruct\n\tTogether\t55.0tok/s\t1.83s\t3.06s\t$0.50\t$1.50\t262K\tOct 23, 2025\t124"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-8b-instruct",
+    "provider": "Parasail",
+    "p50_throughput": "74.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\nqwen/qwen3-vl-8b-instruct\n\tParasail\t74.0tok/s\t0.57s\t1.72s\t$0.25\t$0.75\t262K\tOct 15, 2025\t708"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-8b-instruct",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "56.0tok/s",
+    "p50_latency": "0.60s",
+    "raw": "\t\nqwen/qwen3-vl-8b-instruct\n\tAlibaba Cloud Int.\t56.0tok/s\t0.60s\t2.48s\t$0.18\t$0.70\t256K\tOct 15, 2025\t1,134"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-8b-instruct",
+    "provider": "Together",
+    "p50_throughput": "101.0tok/s",
+    "p50_latency": "0.28s",
+    "raw": "\t\nqwen/qwen3-vl-8b-instruct\n\tTogether\t101.0tok/s\t0.28s\t1.64s\t$0.18\t$0.68\t262K\tOct 15, 2025\t1,338"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-8b-instruct",
+    "provider": "NovitaAI",
+    "p50_throughput": "33.0tok/s",
+    "p50_latency": "1.06s",
+    "raw": "\t\nqwen/qwen3-vl-8b-instruct\n\tNovitaAI\t33.0tok/s\t1.06s\t3.11s\t$0.08\t$0.50\t131K\tOct 15, 2025\t3,727"
+  },
+  {
+    "model_name": "qwen/qwen3-vl-8b-thinking",
+    "provider": "Alibaba Cloud Int.",
+    "p50_throughput": "76.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nqwen/qwen3-vl-8b-thinking\n\tAlibaba Cloud Int.\t76.0tok/s\t0.50s\t0.73s\t$0.18\t$2.10\t256K\tOct 15, 2025\t5"
+  },
+  {
+    "model_name": "qwen/qwq-32b",
+    "provider": "Hyperbolic",
+    "p50_throughput": "33.5tok/s",
+    "p50_latency": "2.95s",
+    "raw": "\t\nqwen/qwq-32b\n\tHyperbolic\t33.5tok/s\t2.95s\t3.56s\t$0.40\t$0.40\t131K\tMar 6, 2025\t6"
+  },
+  {
+    "model_name": "qwen/qwq-32b",
+    "provider": "SiliconFlow",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "1.70s",
+    "raw": "\t\nqwen/qwq-32b\n\tSiliconFlow\t31.0tok/s\t1.70s\t3.04s\t$0.15\t$0.58\t131K\tMar 6, 2025\t51"
+  },
+  {
+    "model_name": "qwen/qwq-32b",
+    "provider": "NextBit",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "2.80s",
+    "raw": "\t\nqwen/qwq-32b\n\tNextBit\t26.0tok/s\t2.80s\t4.49s\t$0.15\t$0.40\t33K\tMar 6, 2025\t49"
+  },
+  {
+    "model_name": "raifle/sorcererlm-8x22b",
+    "provider": "Infermatic",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "1.51s",
+    "raw": "\t\nraifle/sorcererlm-8x22b\n\tInfermatic\t47.0tok/s\t1.51s\t1.51s\t$4.50\t$4.50\t16K\tNov 9, 2024\t1"
+  },
+  {
+    "model_name": "relace/relace-apply-3",
+    "provider": "Relace",
+    "p50_throughput": "924.0tok/s",
+    "p50_latency": "0.48s",
+    "raw": "\t\nrelace/relace-apply-3\n\tRelace\t924.0tok/s\t0.48s\t0.67s\t$0.85\t$1.25\t256K\tSep 26, 2025\t67"
+  },
+  {
+    "model_name": "relace/relace-search",
+    "provider": "Relace",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "0.78s",
+    "raw": "\t\nrelace/relace-search\n\tRelace\t52.0tok/s\t0.78s\t1.29s\t$1.00\t$3.00\t256K\tDec 9, 2025\t3"
+  },
+  {
+    "model_name": "sao10k/l3-euryale-70b",
+    "provider": "NovitaAI",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "0.88s",
+    "raw": "\t\nsao10k/l3-euryale-70b\n\tNovitaAI\t30.0tok/s\t0.88s\t1.25s\t$1.48\t$1.48\t8K\tJun 18, 2024\t31"
+  },
+  {
+    "model_name": "sao10k/l3-lunaris-8b",
+    "provider": "NovitaAI",
+    "p50_throughput": "63.0tok/s",
+    "p50_latency": "0.85s",
+    "raw": "\t\nsao10k/l3-lunaris-8b\n\tNovitaAI\t63.0tok/s\t0.85s\t1.06s\t$0.05\t$0.05\t8K\tAug 13, 2024\t1,289"
+  },
+  {
+    "model_name": "sao10k/l3-lunaris-8b",
+    "provider": "DeepInfra (Turbo)",
+    "p50_throughput": "89.0tok/s",
+    "p50_latency": "0.15s",
+    "raw": "\t\nsao10k/l3-lunaris-8b\n\tDeepInfra (Turbo)\t89.0tok/s\t0.15s\t0.23s\t$0.04\t$0.05\t8K\tAug 13, 2024\t5,907"
+  },
+  {
+    "model_name": "sao10k/l3.1-70b-hanami-x1",
+    "provider": "Infermatic",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "9.31s",
+    "raw": "\t\nsao10k/l3.1-70b-hanami-x1\n\tInfermatic\t10.0tok/s\t9.31s\t9.41s\t$3.00\t$3.00\t16K\tJan 8, 2025\t3"
+  },
+  {
+    "model_name": "sao10k/l3.1-euryale-70b",
+    "provider": "NovitaAI",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nsao10k/l3.1-euryale-70b\n\tNovitaAI\t41.0tok/s\t0.50s\t0.83s\t$1.48\t$1.48\t8K\tAug 28, 2024\t29"
+  },
+  {
+    "model_name": "sao10k/l3.1-euryale-70b",
+    "provider": "DeepInfra",
+    "p50_throughput": "41.0tok/s",
+    "p50_latency": "0.24s",
+    "raw": "\t\nsao10k/l3.1-euryale-70b\n\tDeepInfra\t41.0tok/s\t0.24s\t0.58s\t$0.85\t$0.85\t131K\tAug 28, 2024\t143"
+  },
+  {
+    "model_name": "sao10k/l3.1-euryale-70b",
+    "provider": "NextBit",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "1.30s",
+    "raw": "\t\nsao10k/l3.1-euryale-70b\n\tNextBit\t17.0tok/s\t1.30s\t2.53s\t$0.65\t$0.75\t33K\tAug 28, 2024\t237"
+  },
+  {
+    "model_name": "sao10k/l3.3-euryale-70b",
+    "provider": "DeepInfra",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.31s",
+    "raw": "\t\nsao10k/l3.3-euryale-70b\n\tDeepInfra\t32.0tok/s\t0.31s\t0.65s\t$0.85\t$0.85\t131K\tDec 19, 2024\t314"
+  },
+  {
+    "model_name": "sao10k/l3.3-euryale-70b",
+    "provider": "NextBit",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "1.50s",
+    "raw": "\t\nsao10k/l3.3-euryale-70b\n\tNextBit\t14.0tok/s\t1.50s\t3.46s\t$0.65\t$0.75\t131K\tDec 19, 2024\t277"
+  },
+  {
+    "model_name": "sourceful/riverflow-v2-fast-preview",
+    "provider": "Sourceful",
+    "p50_throughput": "176.0tok/s",
+    "p50_latency": "23.74s",
+    "raw": "\t\nsourceful/riverflow-v2-fast-preview\n\tSourceful\t176.0tok/s\t23.74s\t23.74s\tFree\t$7.19\t8K\tDec 9, 2025\t1"
+  },
+  {
+    "model_name": "sourceful/riverflow-v2-max-preview",
+    "provider": "Sourceful",
+    "p50_throughput": "101.0tok/s",
+    "p50_latency": "40.95s",
+    "raw": "\t\nsourceful/riverflow-v2-max-preview\n\tSourceful\t101.0tok/s\t40.95s\t51.04s\tFree\t$17.96\t8K\tDec 9, 2025\t5"
+  },
+  {
+    "model_name": "sourceful/riverflow-v2-standard-preview",
+    "provider": "Sourceful",
+    "p50_throughput": "90.0tok/s",
+    "p50_latency": "45.90s",
+    "raw": "\t\nsourceful/riverflow-v2-standard-preview\n\tSourceful\t90.0tok/s\t45.90s\t54.19s\tFree\t$8.38\t8K\tDec 9, 2025\t3"
+  },
+  {
+    "model_name": "stepfun-ai/step3",
+    "provider": "SiliconFlow",
+    "p50_throughput": "21.5tok/s",
+    "p50_latency": "3.59s",
+    "raw": "\t\nstepfun-ai/step3\n\tSiliconFlow\t21.5tok/s\t3.59s\t6.54s\t$0.57\t$1.42\t66K\tAug 29, 2025\t4"
+  },
+  {
+    "model_name": "switchpoint/router",
+    "provider": "Switchpoint",
+    "p50_throughput": "2.0tok/s",
+    "p50_latency": "4.20s",
+    "raw": "\t\nswitchpoint/router\n\tSwitchpoint\t2.0tok/s\t4.20s\t4.20s\t$0.85\t$3.40\t131K\tJul 12, 2025\t1"
+  },
+  {
+    "model_name": "tencent/hunyuan-a13b-instruct",
+    "provider": "SiliconFlow",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "1.11s",
+    "raw": "\t\ntencent/hunyuan-a13b-instruct\n\tSiliconFlow\t22.0tok/s\t1.11s\t1.90s\t$0.14\t$0.57\t131K\tJul 9, 2025\t7"
+  },
+  {
+    "model_name": "thedrummer/cydonia-24b-v4.1",
+    "provider": "NextBit",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "1.06s",
+    "raw": "\t\nthedrummer/cydonia-24b-v4.1\n\tNextBit\t28.0tok/s\t1.06s\t1.82s\t$0.30\t$0.50\t131K\tSep 27, 2025\t142"
+  },
+  {
+    "model_name": "thedrummer/cydonia-24b-v4.1",
+    "provider": "Parasail",
+    "p50_throughput": "62.0tok/s",
+    "p50_latency": "0.51s",
+    "raw": "\t\nthedrummer/cydonia-24b-v4.1\n\tParasail\t62.0tok/s\t0.51s\t1.17s\t$0.30\t$0.50\t131K\tSep 27, 2025\t508"
+  },
+  {
+    "model_name": "thedrummer/rocinante-12b",
+    "provider": "Infermatic",
+    "p50_throughput": "86.0tok/s",
+    "p50_latency": "0.30s",
+    "raw": "\t\nthedrummer/rocinante-12b\n\tInfermatic\t86.0tok/s\t0.30s\t0.47s\t$0.25\t$0.50\t33K\tSep 30, 2024\t387"
+  },
+  {
+    "model_name": "thedrummer/rocinante-12b",
+    "provider": "NextBit",
+    "p50_throughput": "45.0tok/s",
+    "p50_latency": "1.16s",
+    "raw": "\t\nthedrummer/rocinante-12b\n\tNextBit\t45.0tok/s\t1.16s\t1.75s\t$0.17\t$0.43\t33K\tSep 30, 2024\t871"
+  },
+  {
+    "model_name": "thedrummer/skyfall-36b-v2",
+    "provider": "Parasail",
+    "p50_throughput": "53.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\nthedrummer/skyfall-36b-v2\n\tParasail\t53.0tok/s\t0.58s\t0.93s\t$0.55\t$0.80\t33K\tMar 11, 2025\t1,072"
+  },
+  {
+    "model_name": "thedrummer/unslopnemo-12b",
+    "provider": "NextBit",
+    "p50_throughput": "25.0tok/s",
+    "p50_latency": "1.27s",
+    "raw": "\t\nthedrummer/unslopnemo-12b\n\tNextBit\t25.0tok/s\t1.27s\t4.12s\t$0.40\t$0.40\t33K\tNov 9, 2024\t1,263"
+  },
+  {
+    "model_name": "tngtech/deepseek-r1t-chimera",
+    "provider": "Chutes",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.42s",
+    "raw": "\t\ntngtech/deepseek-r1t-chimera\n\tChutes\t24.0tok/s\t1.42s\t5.29s\t$0.30\t$1.20\t164K\tApr 27, 2025\t847"
+  },
+  {
+    "model_name": "tngtech/deepseek-r1t2-chimera",
+    "provider": "Chutes",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "1.06s",
+    "raw": "\t\ntngtech/deepseek-r1t2-chimera\n\tChutes\t35.0tok/s\t1.06s\t2.38s\t$0.25\t$0.85\t164K\tJul 9, 2025\t1,811"
+  },
+  {
+    "model_name": "tngtech/tng-r1t-chimera",
+    "provider": "Chutes",
+    "p50_throughput": "40.0tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\ntngtech/tng-r1t-chimera\n\tChutes\t40.0tok/s\t0.67s\t1.52s\t$0.25\t$0.85\t164K\tNov 27, 2025\t17"
+  },
+  {
+    "model_name": "undi95/remm-slerp-l2-13b",
+    "provider": "Mancer",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.40s",
+    "raw": "\t\nundi95/remm-slerp-l2-13b\n\tMancer\t34.0tok/s\t0.40s\t0.77s\t$0.50\t$0.75\t6K\tJul 22, 2023\t222"
+  },
+  {
+    "model_name": "undi95/remm-slerp-l2-13b",
+    "provider": "NextBit",
+    "p50_throughput": "14.0tok/s",
+    "p50_latency": "1.43s",
+    "raw": "\t\nundi95/remm-slerp-l2-13b\n\tNextBit\t14.0tok/s\t1.43s\t2.43s\t$0.45\t$0.65\t6K\tJul 22, 2023\t309"
+  },
+  {
+    "model_name": "x-ai/grok-3",
+    "provider": "xAI Fast",
+    "p50_throughput": "19.5tok/s",
+    "p50_latency": "0.96s",
+    "raw": "\t\nx-ai/grok-3\n\txAI Fast\t19.5tok/s\t0.96s\t1.12s\t$5.00\t$25.00\t131K\tJun 11, 2025\t30"
+  },
+  {
+    "model_name": "x-ai/grok-3",
+    "provider": "xAI",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.77s",
+    "raw": "\t\nx-ai/grok-3\n\txAI\t32.0tok/s\t0.77s\t1.24s\t$3.00\t$15.00\t131K\tJun 11, 2025\t718"
+  },
+  {
+    "model_name": "x-ai/grok-3-mini",
+    "provider": "xAI Fast",
+    "p50_throughput": "102.0tok/s",
+    "p50_latency": "0.68s",
+    "raw": "\t\nx-ai/grok-3-mini\n\txAI Fast\t102.0tok/s\t0.68s\t0.88s\t$0.60\t$4.00\t131K\tJun 11, 2025\t4,052"
+  },
+  {
+    "model_name": "x-ai/grok-3-mini",
+    "provider": "xAI",
+    "p50_throughput": "104.0tok/s",
+    "p50_latency": "0.67s",
+    "raw": "\t\nx-ai/grok-3-mini\n\txAI\t104.0tok/s\t0.67s\t0.81s\t$0.30\t$0.50\t131K\tJun 11, 2025\t5,619"
+  },
+  {
+    "model_name": "x-ai/grok-4",
+    "provider": "xAI",
+    "p50_throughput": "47.0tok/s",
+    "p50_latency": "11.13s",
+    "raw": "\t\nx-ai/grok-4\n\txAI\t47.0tok/s\t11.13s\t41.20s\t$3.00\t$15.00\t256K\tJul 10, 2025\t803"
+  },
+  {
+    "model_name": "x-ai/grok-4-fast",
+    "provider": "xAI",
+    "p50_throughput": "109.0tok/s",
+    "p50_latency": "3.18s",
+    "raw": "\t\nx-ai/grok-4-fast\n\txAI\t109.0tok/s\t3.18s\t6.88s\t$0.20\t$0.50\t2.0M\tSep 19, 2025\t57,535"
+  },
+  {
+    "model_name": "x-ai/grok-4.1-fast",
+    "provider": "xAI",
+    "p50_throughput": "94.0tok/s",
+    "p50_latency": "1.05s",
+    "raw": "\t\nx-ai/grok-4.1-fast\n\txAI\t94.0tok/s\t1.05s\t4.39s\t$0.20\t$0.50\t2.0M\tNov 20, 2025\t127,951"
+  },
+  {
+    "model_name": "x-ai/grok-code-fast-1",
+    "provider": "xAI",
+    "p50_throughput": "103.0tok/s",
+    "p50_latency": "0.95s",
+    "raw": "\t\nx-ai/grok-code-fast-1\n\txAI\t103.0tok/s\t0.95s\t3.96s\t$0.20\t$1.50\t256K\tAug 27, 2025\t35,237"
+  },
+  {
+    "model_name": "xiaomi/mimo-v2-flash",
+    "provider": "NovitaAI",
+    "p50_throughput": "28.0tok/s",
+    "p50_latency": "2.12s",
+    "raw": "\t\nxiaomi/mimo-v2-flash\n\tNovitaAI\t28.0tok/s\t2.12s\t3.76s\t$0.10\t$0.30\t262K\tDec 15, 2025\t1,091"
+  },
+  {
+    "model_name": "xiaomi/mimo-v2-flash",
+    "provider": "AtlasCloud",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.81s",
+    "raw": "\t\nxiaomi/mimo-v2-flash\n\tAtlasCloud\t29.0tok/s\t0.81s\t2.17s\t$0.10\t$0.30\t262K\tDec 15, 2025\t1,138"
+  },
+  {
+    "model_name": "xiaomi/mimo-v2-flash",
+    "provider": "Chutes",
+    "p50_throughput": "15.0tok/s",
+    "p50_latency": "3.75s",
+    "raw": "\t\nxiaomi/mimo-v2-flash\n\tChutes\t15.0tok/s\t3.75s\t9.45s\t$0.09\t$0.29\t262K\tDec 15, 2025\t135"
+  },
+  {
+    "model_name": "z-ai/glm-4-32b",
+    "provider": "Z.ai",
+    "p50_throughput": "5.0tok/s",
+    "p50_latency": "0.63s",
+    "raw": "\t\nz-ai/glm-4-32b\n\tZ.ai\t5.0tok/s\t0.63s\t1.13s\t$0.10\t$0.10\t128K\tJul 25, 2025\t53,107"
+  },
+  {
+    "model_name": "z-ai/glm-4.5",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "45.5tok/s",
+    "p50_latency": "0.56s",
+    "raw": "\t\nz-ai/glm-4.5\n\tNebius Token Factory\t45.5tok/s\t0.56s\t1.63s\t$0.60\t$2.20\t131K\tJul 26, 2025\t10"
+  },
+  {
+    "model_name": "z-ai/glm-4.5",
+    "provider": "Z.ai",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "3.73s",
+    "raw": "\t\nz-ai/glm-4.5\n\tZ.ai\t31.0tok/s\t3.73s\t8.95s\t$0.60\t$2.20\t131K\tJul 26, 2025\t267"
+  },
+  {
+    "model_name": "z-ai/glm-4.5",
+    "provider": "NovitaAI",
+    "p50_throughput": "69.0tok/s",
+    "p50_latency": "0.61s",
+    "raw": "\t\nz-ai/glm-4.5\n\tNovitaAI\t69.0tok/s\t0.61s\t1.00s\t$0.60\t$2.20\t131K\tJul 26, 2025\t77"
+  },
+  {
+    "model_name": "z-ai/glm-4.5",
+    "provider": "Weights & Biases",
+    "p50_throughput": "50.0tok/s",
+    "p50_latency": "0.43s",
+    "raw": "\t\nz-ai/glm-4.5\n\tWeights & Biases\t50.0tok/s\t0.43s\t0.59s\t$0.55\t$2.00\t131K\tJul 26, 2025\t31"
+  },
+  {
+    "model_name": "z-ai/glm-4.5",
+    "provider": "Chutes",
+    "p50_throughput": "31.0tok/s",
+    "p50_latency": "1.19s",
+    "raw": "\t\nz-ai/glm-4.5\n\tChutes\t31.0tok/s\t1.19s\t2.22s\t$0.35\t$1.55\t131K\tJul 26, 2025\t13"
+  },
+  {
+    "model_name": "z-ai/glm-4.5-air",
+    "provider": "Nebius Token Factory",
+    "p50_throughput": "92.0tok/s",
+    "p50_latency": "0.24s",
+    "raw": "\t\nz-ai/glm-4.5-air\n\tNebius Token Factory\t92.0tok/s\t0.24s\t12.36s\t$0.20\t$1.20\t131K\tJul 26, 2025\t22"
+  },
+  {
+    "model_name": "z-ai/glm-4.5-air",
+    "provider": "Z.ai",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "1.40s",
+    "raw": "\t\nz-ai/glm-4.5-air\n\tZ.ai\t17.0tok/s\t1.40s\t4.67s\t$0.20\t$1.10\t131K\tJul 26, 2025\t150"
+  },
+  {
+    "model_name": "z-ai/glm-4.5-air",
+    "provider": "SiliconFlow",
+    "p50_throughput": "27.0tok/s",
+    "p50_latency": "1.92s",
+    "raw": "\t\nz-ai/glm-4.5-air\n\tSiliconFlow\t27.0tok/s\t1.92s\t5.13s\t$0.14\t$0.86\t131K\tJul 26, 2025\t14"
+  },
+  {
+    "model_name": "z-ai/glm-4.5-air",
+    "provider": "NovitaAI",
+    "p50_throughput": "33.0tok/s",
+    "p50_latency": "0.69s",
+    "raw": "\t\nz-ai/glm-4.5-air\n\tNovitaAI\t33.0tok/s\t0.69s\t1.69s\t$0.13\t$0.85\t131K\tJul 26, 2025\t4,983"
+  },
+  {
+    "model_name": "z-ai/glm-4.5-air",
+    "provider": "Chutes",
+    "p50_throughput": "35.0tok/s",
+    "p50_latency": "0.64s",
+    "raw": "\t\nz-ai/glm-4.5-air\n\tChutes\t35.0tok/s\t0.64s\t9.84s\t$0.05\t$0.22\t131K\tJul 26, 2025\t26"
+  },
+  {
+    "model_name": "z-ai/glm-4.5v",
+    "provider": "Z.ai",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "0.89s",
+    "raw": "\t\nz-ai/glm-4.5v\n\tZ.ai\t32.0tok/s\t0.89s\t2.62s\t$0.60\t$1.80\t66K\tAug 11, 2025\t5"
+  },
+  {
+    "model_name": "z-ai/glm-4.5v",
+    "provider": "NovitaAI",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "10.47s",
+    "raw": "\t\nz-ai/glm-4.5v\n\tNovitaAI\t24.0tok/s\t10.47s\t26.84s\t$0.60\t$1.80\t66K\tAug 11, 2025\t5"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Cerebras",
+    "p50_throughput": "208.0tok/s",
+    "p50_latency": "0.50s",
+    "raw": "\t\nz-ai/glm-4.6\n\tCerebras\t208.0tok/s\t0.50s\t1.51s\t$2.25\t$2.75\t131K\tSep 30, 2025\t35"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Z.ai",
+    "p50_throughput": "26.0tok/s",
+    "p50_latency": "3.94s",
+    "raw": "\t\nz-ai/glm-4.6\n\tZ.ai\t26.0tok/s\t3.94s\t10.65s\t$0.60\t$2.20\t200K\tSep 30, 2025\t957"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Together",
+    "p50_throughput": "89.0tok/s",
+    "p50_latency": "1.10s",
+    "raw": "\t\nz-ai/glm-4.6\n\tTogether\t89.0tok/s\t1.10s\t2.66s\t$0.60\t$2.20\t203K\tSep 30, 2025\t60"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Friendli",
+    "p50_throughput": "85.0tok/s",
+    "p50_latency": "0.70s",
+    "raw": "\t\nz-ai/glm-4.6\n\tFriendli\t85.0tok/s\t0.70s\t2.07s\t$0.60\t$2.20\t203K\tSep 30, 2025\t43"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "NovitaAI",
+    "p50_throughput": "24.0tok/s",
+    "p50_latency": "1.44s",
+    "raw": "\t\nz-ai/glm-4.6\n\tNovitaAI\t24.0tok/s\t1.44s\t5.28s\t$0.55\t$2.20\t205K\tSep 30, 2025\t582"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Fireworks",
+    "p50_throughput": "152.0tok/s",
+    "p50_latency": "0.58s",
+    "raw": "\t\nz-ai/glm-4.6\n\tFireworks\t152.0tok/s\t0.58s\t2.53s\t$0.55\t$2.19\t203K\tSep 30, 2025\t172"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "AtlasCloud",
+    "p50_throughput": "29.0tok/s",
+    "p50_latency": "0.81s",
+    "raw": "\t\nz-ai/glm-4.6\n\tAtlasCloud\t29.0tok/s\t0.81s\t4.04s\t$0.44\t$1.74\t203K\tSep 30, 2025\t1,035"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Mancer",
+    "p50_throughput": "34.0tok/s",
+    "p50_latency": "0.65s",
+    "raw": "\t\nz-ai/glm-4.6\n\tMancer\t34.0tok/s\t0.65s\t1.86s\t$0.44\t$2.00\t131K\tSep 30, 2025\t226"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "DeepInfra",
+    "p50_throughput": "71.0tok/s",
+    "p50_latency": "0.57s",
+    "raw": "\t\nz-ai/glm-4.6\n\tDeepInfra\t71.0tok/s\t0.57s\t1.35s\t$0.43\t$1.75\t203K\tSep 30, 2025\t246"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "SiliconFlow",
+    "p50_throughput": "10.0tok/s",
+    "p50_latency": "2.32s",
+    "raw": "\t\nz-ai/glm-4.6\n\tSiliconFlow\t10.0tok/s\t2.32s\t7.31s\t$0.39\t$1.90\t205K\tSep 30, 2025\t105"
+  },
+  {
+    "model_name": "z-ai/glm-4.6",
+    "provider": "Chutes",
+    "p50_throughput": "12.0tok/s",
+    "p50_latency": "3.93s",
+    "raw": "\t\nz-ai/glm-4.6\n\tChutes\t12.0tok/s\t3.93s\t12.89s\t$0.35\t$1.50\t203K\tSep 30, 2025\t81"
+  },
+  {
+    "model_name": "z-ai/glm-4.6v",
+    "provider": "Chutes",
+    "p50_throughput": "57.0tok/s",
+    "p50_latency": "1.46s",
+    "raw": "\t\nz-ai/glm-4.6v\n\tChutes\t57.0tok/s\t1.46s\t6.54s\t$0.30\t$0.90\t131K\tDec 9, 2025\t135"
+  },
+  {
+    "model_name": "z-ai/glm-4.6v",
+    "provider": "NovitaAI",
+    "p50_throughput": "38.0tok/s",
+    "p50_latency": "0.79s",
+    "raw": "\t\nz-ai/glm-4.6v\n\tNovitaAI\t38.0tok/s\t0.79s\t5.66s\t$0.30\t$0.90\t131K\tDec 9, 2025\t49"
+  },
+  {
+    "model_name": "z-ai/glm-4.6v",
+    "provider": "Parasail",
+    "p50_throughput": "67.0tok/s",
+    "p50_latency": "4.16s",
+    "raw": "\t\nz-ai/glm-4.6v\n\tParasail\t67.0tok/s\t4.16s\t6.06s\t$0.30\t$0.90\t131K\tDec 9, 2025\t25"
+  },
+  {
+    "model_name": "z-ai/glm-4.6v",
+    "provider": "DeepInfra",
+    "p50_throughput": "80.0tok/s",
+    "p50_latency": "4.42s",
+    "raw": "\t\nz-ai/glm-4.6v\n\tDeepInfra\t80.0tok/s\t4.42s\t7.59s\t$0.30\t$0.90\t131K\tDec 9, 2025\t35"
+  },
+  {
+    "model_name": "z-ai/glm-4.6v",
+    "provider": "Z.ai",
+    "p50_throughput": "44.5tok/s",
+    "p50_latency": "2.60s",
+    "raw": "\t\nz-ai/glm-4.6v\n\tZ.ai\t44.5tok/s\t2.60s\t6.92s\t$0.30\t$0.90\t131K\tDec 9, 2025\t6"
+  },
+  {
+    "model_name": "z-ai/glm-4.6v",
+    "provider": "SiliconFlow",
+    "p50_throughput": "30.0tok/s",
+    "p50_latency": "2.04s",
+    "raw": "\t\nz-ai/glm-4.6v\n\tSiliconFlow\t30.0tok/s\t2.04s\t2.38s\t$0.30\t$0.90\t131K\tDec 9, 2025\t2"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "Cerebras",
+    "p50_throughput": "167.0tok/s",
+    "p50_latency": "0.91s",
+    "raw": "\t\nz-ai/glm-4.7\n\tCerebras\t167.0tok/s\t0.91s\t2.90s\t$2.25\t$2.75\t200K\tDec 22, 2025\t4,045"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "Z.ai",
+    "p50_throughput": "17.0tok/s",
+    "p50_latency": "6.87s",
+    "raw": "\t\nz-ai/glm-4.7\n\tZ.ai\t17.0tok/s\t6.87s\t31.77s\t$0.60\t$2.20\t200K\tDec 22, 2025\t5,190"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "NovitaAI",
+    "p50_throughput": "16.0tok/s",
+    "p50_latency": "3.64s",
+    "raw": "\t\nz-ai/glm-4.7\n\tNovitaAI\t16.0tok/s\t3.64s\t19.22s\t$0.54\t$1.98\t205K\tDec 22, 2025\t2,278"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "AtlasCloud",
+    "p50_throughput": "32.0tok/s",
+    "p50_latency": "3.27s",
+    "raw": "\t\nz-ai/glm-4.7\n\tAtlasCloud\t32.0tok/s\t3.27s\t10.71s\t$0.52\t$1.95\t203K\tDec 22, 2025\t279"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "Mancer",
+    "p50_throughput": "22.0tok/s",
+    "p50_latency": "2.56s",
+    "raw": "\t\nz-ai/glm-4.7\n\tMancer\t22.0tok/s\t2.56s\t13.45s\t$0.47\t$2.00\t131K\tDec 22, 2025\t189"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "Parasail",
+    "p50_throughput": "55.0tok/s",
+    "p50_latency": "0.71s",
+    "raw": "\t\nz-ai/glm-4.7\n\tParasail\t55.0tok/s\t0.71s\t4.83s\t$0.45\t$2.10\t203K\tDec 22, 2025\t637"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "DeepInfra",
+    "p50_throughput": "43.0tok/s",
+    "p50_latency": "1.29s",
+    "raw": "\t\nz-ai/glm-4.7\n\tDeepInfra\t43.0tok/s\t1.29s\t3.79s\t$0.43\t$1.75\t203K\tDec 22, 2025\t751"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "SiliconFlow",
+    "p50_throughput": "52.0tok/s",
+    "p50_latency": "3.03s",
+    "raw": "\t\nz-ai/glm-4.7\n\tSiliconFlow\t52.0tok/s\t3.03s\t14.62s\t$0.42\t$2.20\t205K\tDec 22, 2025\t310"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "GMICloud",
+    "p50_throughput": "48.5tok/s",
+    "p50_latency": "1.48s",
+    "raw": "\t\nz-ai/glm-4.7\n\tGMICloud\t48.5tok/s\t1.48s\t9.89s\t$0.40\t$2.00\t203K\tDec 22, 2025\t52"
+  },
+  {
+    "model_name": "z-ai/glm-4.7",
+    "provider": "Chutes",
+    "p50_throughput": "19.0tok/s",
+    "p50_latency": "2.39s",
+    "raw": "\t\nz-ai/glm-4.7\n\tChutes\t19.0tok/s\t2.39s\t8.39s\t$0.40\t$1.50\t203K\tDec 22, 2025\t188"
+  }
+]

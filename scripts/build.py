@@ -81,12 +81,10 @@ def compute_provider_options(data) -> list[str]:
 
 def generate_dashboard():
     # Paths
-    # scripts/build.py
     base_dir = pathlib.Path(__file__).resolve().parent
     root_dir = base_dir.parent
     
     templates_dir = base_dir / "templates"
-    # UPDATED: File name
     data_file = root_dir / "data" / "openrouter_data.json"
     output_file = root_dir / "docs" / "index.html"
     
