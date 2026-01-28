@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-01-28 05:07)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-01-28 11:07)</div>
         </header>
 
         <div class="controls">
@@ -701,6 +701,51 @@
         window.openRouterModels = {
   "text": [
     {
+      "id": "arcee-ai/trinity-large-preview:free",
+      "canonical_slug": "arcee-ai/trinity-large-preview",
+      "hugging_face_id": "arcee-ai/Trinity-Large-Preview",
+      "name": "Arcee AI: Trinity Large Preview (free)",
+      "created": 1769552670,
+      "description": "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. \n\nIt excels in creative writing, storytelling, role-play, chat scenarios, and real-time voice assistance, better than your average reasoning model usually can. But we\u2019re also introducing some of our newer agentic performance. It was trained to navigate well in agent harnesses like OpenCode, Cline, and Kilo Code, and to handle complex toolchains and long, constraint-filled prompts. \n\nThe architecture natively supports very long context windows up to 512k tokens, with the Preview API currently served at 128k context using 8-bit quantization for practical deployment. Trinity-Large-Preview reflects Arcee\u2019s efficiency-first design philosophy, offering a production-oriented frontier model with open weights and permissive licensing suitable for real-world applications and experimentation.",
+      "context_length": 131000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131000,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.8,
+        "top_p": 0.8,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
       "id": "moonshotai/kimi-k2.5",
       "canonical_slug": "moonshotai/kimi-k2.5-0127",
       "hugging_face_id": "moonshotai/Kimi-K2.5",
@@ -722,8 +767,7 @@
       },
       "pricing": {
         "prompt": "0.0000006",
-        "completion": "0.000003",
-        "input_cache_read": "0.0000001"
+        "completion": "0.0000003"
       },
       "top_provider": {
         "context_length": 262144,
@@ -734,14 +778,22 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
+        "temperature",
         "tool_choice",
-        "tools"
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
       ],
       "default_parameters": {
         "temperature": null,
@@ -3933,7 +3985,6 @@
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -4919,7 +4970,8 @@
       },
       "pricing": {
         "prompt": "0.00000021",
-        "completion": "0.00000032"
+        "completion": "0.00000032",
+        "input_cache_read": "0.00000021"
       },
       "top_provider": {
         "context_length": 163840,
@@ -5903,7 +5955,8 @@
       },
       "pricing": {
         "prompt": "0.0000002",
-        "completion": "0.0000008"
+        "completion": "0.0000008",
+        "input_cache_read": "0.0000002"
       },
       "top_provider": {
         "context_length": 131072,
@@ -10152,7 +10205,8 @@
       },
       "pricing": {
         "prompt": "0.00000005",
-        "completion": "0.00000025"
+        "completion": "0.00000025",
+        "input_cache_read": "0.00000005"
       },
       "top_provider": {
         "context_length": 32000,
@@ -16085,20 +16139,18 @@
         "instruct_type": "llama3"
       },
       "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.0000004"
+        "prompt": "0.00000051",
+        "completion": "0.00000074"
       },
       "top_provider": {
         "context_length": 8192,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 8000,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -16662,20 +16714,12 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
-        "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
-        "top_a",
-        "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -18509,7 +18553,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'moonshotai', 'nousresearch', 'allenai', 'arcee-ai', 'tngtech', 'amazon', 'baidu', 'sao10k', 'sentence-transformers', 'perplexity', 'minimax', 'deepcogito', 'cohere', 'liquid', 'thedrummer', 'baai', 'aion-labs', 'intfloat', 'inflection', 'thenlper', 'neversleep', 'openrouter', 'morph', 'relace', 'ai21', 'microsoft', 'bytedance-seed', 'inception', 'essentialai', 'opengvlab', 'cognitivecomputations', 'nex-agi', 'stepfun-ai', 'alfredpros', 'prime-intellect', 'alibaba', 'alpindale', 'upstage', 'switchpoint', 'kwaipilot', 'meituan', 'tencent', 'eleutherai', 'gryphe', 'writer', 'ibm-granite', 'mancer', 'undi95', 'xiaomi', 'raifle', 'anthracite-org', 'bytedance'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'moonshotai', 'allenai', 'arcee-ai', 'nousresearch', 'tngtech', 'baidu', 'sao10k', 'minimax', 'sentence-transformers', 'perplexity', 'amazon', 'liquid', 'cohere', 'deepcogito', 'thedrummer', 'aion-labs', 'intfloat', 'baai', 'bytedance-seed', 'morph', 'inception', 'microsoft', 'neversleep', 'ai21', 'openrouter', 'relace', 'thenlper', 'inflection', 'anthracite-org', 'nex-agi', 'opengvlab', 'alibaba', 'essentialai', 'writer', 'undi95', 'ibm-granite', 'gryphe', 'tencent', 'cognitivecomputations', 'upstage', 'bytedance', 'raifle', 'switchpoint', 'alpindale', 'alfredpros', 'eleutherai', 'xiaomi', 'stepfun-ai', 'mancer', 'meituan', 'prime-intellect', 'kwaipilot'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
