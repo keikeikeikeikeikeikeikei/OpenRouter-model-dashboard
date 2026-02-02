@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-02 05:40)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-02 11:41)</div>
         </header>
 
         <div class="controls">
@@ -731,6 +731,52 @@
       },
       "per_request_limits": null,
       "supported_parameters": [],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
+      "id": "stepfun/step-3.5-flash:free",
+      "canonical_slug": "stepfun/step-3.5-flash",
+      "hugging_face_id": "stepfun-ai/Step-3.5-Flash",
+      "name": "StepFun: Step 3.5 Flash (free)",
+      "created": 1769728337,
+      "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token. It is a reasoning model that is incredibly speed efficient even at long contexts.",
+      "context_length": 256000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0"
+      },
+      "top_provider": {
+        "context_length": 256000,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature"
+      ],
       "default_parameters": {
         "temperature": null,
         "top_p": null,
@@ -7954,7 +8000,6 @@
         "frequency_penalty",
         "max_tokens",
         "presence_penalty",
-        "seed",
         "stop",
         "temperature",
         "tool_choice",
@@ -8261,44 +8306,6 @@
         "temperature",
         "top_k",
         "top_p"
-      ],
-      "default_parameters": {},
-      "expiration_date": null
-    },
-    {
-      "id": "moonshotai/kimi-k2:free",
-      "canonical_slug": "moonshotai/kimi-k2",
-      "hugging_face_id": "moonshotai/Kimi-K2-Instruct",
-      "name": "MoonshotAI: Kimi K2 0711 (free)",
-      "created": 1752263252,
-      "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. Kimi K2 excels across a broad range of benchmarks, particularly in coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) tasks. It supports long-context inference up to 128K tokens and is designed with a novel training stack that includes the MuonClip optimizer for stable large-scale MoE training.",
-      "context_length": 32768,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": 4096,
-        "is_moderated": true
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "seed",
-        "stop",
-        "temperature"
       ],
       "default_parameters": {},
       "expiration_date": null
@@ -13073,8 +13080,6 @@
         "stop",
         "structured_outputs",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_k",
         "top_p"
       ],
@@ -18554,7 +18559,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'moonshotai', 'nousresearch', 'arcee-ai', 'tngtech', 'sentence-transformers', 'perplexity', 'baidu', 'minimax', 'sao10k', 'amazon', 'liquid', 'cohere', 'thedrummer', 'deepcogito', 'openrouter', 'intfloat', 'aion-labs', 'baai', 'microsoft', 'thenlper', 'inception', 'bytedance-seed', 'ai21', 'relace', 'inflection', 'neversleep', 'morph', 'opengvlab', 'alibaba', 'cognitivecomputations', 'switchpoint', 'writer', 'alfredpros', 'nex-agi', 'eleutherai', 'tencent', 'alpindale', 'stepfun-ai', 'prime-intellect', 'kwaipilot', 'essentialai', 'anthracite-org', 'meituan', 'undi95', 'ibm-granite', 'bytedance', 'xiaomi', 'mancer', 'gryphe', 'upstage', 'raifle'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'arcee-ai', 'allenai', 'moonshotai', 'tngtech', 'amazon', 'sentence-transformers', 'perplexity', 'baidu', 'minimax', 'sao10k', 'deepcogito', 'thedrummer', 'cohere', 'liquid', 'openrouter', 'baai', 'aion-labs', 'intfloat', 'microsoft', 'bytedance-seed', 'thenlper', 'ai21', 'morph', 'inception', 'inflection', 'neversleep', 'relace', 'bytedance', 'eleutherai', 'prime-intellect', 'stepfun-ai', 'gryphe', 'meituan', 'tencent', 'alibaba', 'kwaipilot', 'alfredpros', 'undi95', 'mancer', 'nex-agi', 'raifle', 'upstage', 'stepfun', 'opengvlab', 'xiaomi', 'cognitivecomputations', 'writer', 'essentialai', 'ibm-granite', 'anthracite-org', 'alpindale', 'switchpoint'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
