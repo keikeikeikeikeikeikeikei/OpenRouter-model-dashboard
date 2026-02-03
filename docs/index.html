@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-03 06:19)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-03 13:20)</div>
         </header>
 
         <div class="controls">
@@ -704,7 +704,7 @@
       "id": "openrouter/free",
       "canonical_slug": "openrouter/free",
       "hugging_face_id": "",
-      "name": "Free Router",
+      "name": "Free Models Router",
       "created": 1769917427,
       "description": "The simplest way to get free inference. openrouter/free is a router that selects free models at random from the models available on OpenRouter. The router smartly filters for models that support features needed for your request such as image understanding, tool calling, structured outputs and more. ",
       "context_length": 200000,
@@ -721,8 +721,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "-1",
-        "completion": "-1"
+        "prompt": "0",
+        "completion": "0"
       },
       "top_provider": {
         "context_length": null,
@@ -730,7 +730,25 @@
         "is_moderated": false
       },
       "per_request_limits": null,
-      "supported_parameters": [],
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
       "default_parameters": {
         "temperature": null,
         "top_p": null,
@@ -17514,7 +17532,29 @@
         "is_moderated": false
       },
       "per_request_limits": null,
-      "supported_parameters": [],
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p",
+        "web_search_options"
+      ],
       "default_parameters": {
         "temperature": null,
         "top_p": null,
@@ -18560,7 +18600,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'arcee-ai', 'allenai', 'tngtech', 'moonshotai', 'amazon', 'sao10k', 'baidu', 'sentence-transformers', 'minimax', 'perplexity', 'deepcogito', 'cohere', 'thedrummer', 'liquid', 'aion-labs', 'baai', 'intfloat', 'openrouter', 'microsoft', 'relace', 'inflection', 'morph', 'neversleep', 'bytedance-seed', 'inception', 'thenlper', 'ai21', 'gryphe', 'cognitivecomputations', 'anthracite-org', 'switchpoint', 'stepfun-ai', 'bytedance', 'undi95', 'tencent', 'alibaba', 'upstage', 'alfredpros', 'opengvlab', 'eleutherai', 'writer', 'xiaomi', 'essentialai', 'prime-intellect', 'stepfun', 'ibm-granite', 'kwaipilot', 'alpindale', 'meituan', 'raifle', 'nex-agi', 'mancer'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'allenai', 'arcee-ai', 'tngtech', 'moonshotai', 'sao10k', 'sentence-transformers', 'baidu', 'perplexity', 'minimax', 'amazon', 'deepcogito', 'thedrummer', 'cohere', 'liquid', 'openrouter', 'aion-labs', 'intfloat', 'baai', 'relace', 'neversleep', 'ai21', 'morph', 'inception', 'inflection', 'microsoft', 'bytedance-seed', 'thenlper', 'stepfun', 'meituan', 'opengvlab', 'xiaomi', 'undi95', 'anthracite-org', 'alpindale', 'mancer', 'prime-intellect', 'upstage', 'writer', 'alibaba', 'ibm-granite', 'gryphe', 'switchpoint', 'raifle', 'bytedance', 'kwaipilot', 'stepfun-ai', 'eleutherai', 'cognitivecomputations', 'essentialai', 'alfredpros', 'nex-agi', 'tencent'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
