@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-04 14:40)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-05 06:16)</div>
         </header>
 
         <div class="controls">
@@ -786,7 +786,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -1404,10 +1403,10 @@
       "expiration_date": null
     },
     {
-      "id": "allenai/molmo-2-8b:free",
+      "id": "allenai/molmo-2-8b",
       "canonical_slug": "allenai/molmo-2-8b-20260109",
       "hugging_face_id": "allenai/Molmo2-8B",
-      "name": "AllenAI: Molmo2 8B (free)",
+      "name": "AllenAI: Molmo2 8B",
       "created": 1767996672,
       "description": "Molmo2-8B is an open vision-language model developed by the Allen Institute for AI (Ai2) as part of the Molmo2 family, supporting image, video, and multi-image understanding and grounding. It is based on Qwen3-8B and uses SigLIP 2 as its vision backbone, outperforming other open-weight, open-data models on short videos, counting, and captioning, while remaining competitive on long-video tasks.",
       "context_length": 36864,
@@ -1425,8 +1424,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0"
+        "prompt": "0.0000002",
+        "completion": "0.0000002"
       },
       "top_provider": {
         "context_length": 36864,
@@ -1440,7 +1439,6 @@
         "max_tokens",
         "presence_penalty",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -1629,11 +1627,12 @@
       },
       "pricing": {
         "prompt": "0.00000027",
-        "completion": "0.0000011"
+        "completion": "0.00000095",
+        "input_cache_read": "0.0000000299999997"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": 196608,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5443,7 +5442,8 @@
       },
       "pricing": {
         "prompt": "0.0000002",
-        "completion": "0.0000012"
+        "completion": "0.0000012",
+        "input_cache_read": "0.00000011"
       },
       "top_provider": {
         "context_length": 262144,
@@ -15199,7 +15199,7 @@
         "top_p"
       ],
       "default_parameters": {},
-      "expiration_date": null
+      "expiration_date": "2026-02-17"
     },
     {
       "id": "sao10k/l3-lunaris-8b",
@@ -18570,7 +18570,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'tngtech', 'moonshotai', 'amazon', 'baidu', 'sao10k', 'sentence-transformers', 'minimax', 'perplexity', 'deepcogito', 'cohere', 'thedrummer', 'liquid', 'openrouter', 'baai', 'intfloat', 'aion-labs', 'morph', 'inflection', 'neversleep', 'bytedance-seed', 'thenlper', 'ai21', 'microsoft', 'relace', 'inception', 'gryphe', 'meituan', 'xiaomi', 'ibm-granite', 'bytedance', 'stepfun', 'switchpoint', 'kwaipilot', 'alfredpros', 'essentialai', 'alibaba', 'stepfun-ai', 'upstage', 'nex-agi', 'undi95', 'tencent', 'cognitivecomputations', 'eleutherai', 'anthracite-org', 'mancer', 'raifle', 'prime-intellect', 'opengvlab', 'alpindale', 'writer'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'nousresearch', 'arcee-ai', 'moonshotai', 'tngtech', 'sao10k', 'amazon', 'minimax', 'baidu', 'sentence-transformers', 'perplexity', 'thedrummer', 'deepcogito', 'cohere', 'liquid', 'openrouter', 'baai', 'intfloat', 'aion-labs', 'relace', 'neversleep', 'morph', 'inflection', 'microsoft', 'thenlper', 'bytedance-seed', 'inception', 'ai21', 'alpindale', 'bytedance', 'ibm-granite', 'essentialai', 'opengvlab', 'writer', 'eleutherai', 'mancer', 'tencent', 'meituan', 'cognitivecomputations', 'alfredpros', 'upstage', 'alibaba', 'xiaomi', 'undi95', 'prime-intellect', 'anthracite-org', 'raifle', 'stepfun', 'kwaipilot', 'switchpoint', 'nex-agi', 'gryphe', 'stepfun-ai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
