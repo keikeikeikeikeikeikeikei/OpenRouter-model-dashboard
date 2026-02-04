@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-04 08:40)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-04 14:40)</div>
         </header>
 
         <div class="controls">
@@ -700,6 +700,59 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "qwen/qwen3-coder-next",
+      "canonical_slug": "qwen/qwen3-coder-next-2025-02-03",
+      "hugging_face_id": "Qwen/Qwen3-Coder-Next",
+      "name": "Qwen: Qwen3 Coder Next",
+      "created": 1770164101,
+      "description": "Qwen3-Coder-Next is an open-weight causal language model optimized for coding agents and local development workflows. It uses a sparse MoE design with 80B total parameters and only 3B activated per token, delivering performance comparable to models with 10 to 20x higher active compute, which makes it well suited for cost-sensitive, always-on agent deployment.\n\nThe model is trained with a strong agentic focus and performs reliably on long-horizon coding tasks, complex tool usage, and recovery from execution failures. With a native 256k context window, it integrates cleanly into real-world CLI and IDE environments and adapts well to common agent scaffolds used by modern coding tools. The model operates exclusively in non-thinking mode and does not emit <think> blocks, simplifying integration for production coding agents.",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.0000015"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
     {
       "id": "openrouter/free",
       "canonical_slug": "openrouter/free",
@@ -18517,7 +18570,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'arcee-ai', 'allenai', 'tngtech', 'moonshotai', 'minimax', 'baidu', 'sao10k', 'amazon', 'perplexity', 'sentence-transformers', 'cohere', 'thedrummer', 'deepcogito', 'liquid', 'openrouter', 'baai', 'aion-labs', 'intfloat', 'bytedance-seed', 'neversleep', 'microsoft', 'inception', 'ai21', 'relace', 'inflection', 'morph', 'thenlper', 'kwaipilot', 'alibaba', 'stepfun', 'xiaomi', 'switchpoint', 'gryphe', 'stepfun-ai', 'raifle', 'opengvlab', 'mancer', 'alpindale', 'meituan', 'bytedance', 'anthracite-org', 'alfredpros', 'essentialai', 'undi95', 'cognitivecomputations', 'writer', 'eleutherai', 'ibm-granite', 'nex-agi', 'tencent', 'upstage', 'prime-intellect'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'tngtech', 'moonshotai', 'amazon', 'baidu', 'sao10k', 'sentence-transformers', 'minimax', 'perplexity', 'deepcogito', 'cohere', 'thedrummer', 'liquid', 'openrouter', 'baai', 'intfloat', 'aion-labs', 'morph', 'inflection', 'neversleep', 'bytedance-seed', 'thenlper', 'ai21', 'microsoft', 'relace', 'inception', 'gryphe', 'meituan', 'xiaomi', 'ibm-granite', 'bytedance', 'stepfun', 'switchpoint', 'kwaipilot', 'alfredpros', 'essentialai', 'alibaba', 'stepfun-ai', 'upstage', 'nex-agi', 'undi95', 'tencent', 'cognitivecomputations', 'eleutherai', 'anthracite-org', 'mancer', 'raifle', 'prime-intellect', 'opengvlab', 'alpindale', 'writer'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
