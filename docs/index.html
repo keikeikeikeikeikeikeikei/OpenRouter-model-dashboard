@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-12 20:20)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-13 02:33)</div>
         </header>
 
         <div class="controls">
@@ -701,6 +701,53 @@
         window.openRouterModels = {
   "text": [
     {
+      "id": "minimax/minimax-m2.5",
+      "canonical_slug": "minimax/minimax-m2.5-20260211",
+      "hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
+      "name": "MiniMax: MiniMax M2.5",
+      "created": 1770908502,
+      "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
+      "context_length": 204800,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.00000003"
+      },
+      "top_provider": {
+        "context_length": 204800,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
       "id": "z-ai/glm-5",
       "canonical_slug": "z-ai/glm-5-20260211",
       "hugging_face_id": "zai-org/GLM-5",
@@ -720,12 +767,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000001",
-        "completion": "0.0000032"
+        "prompt": "0.0000008",
+        "completion": "0.00000256",
+        "input_cache_read": "0.00000016"
       },
       "top_provider": {
         "context_length": 202752,
-        "max_completion_tokens": 202752,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -1640,20 +1688,14 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
-        "logprobs",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
         "response_format",
         "seed",
-        "stop",
         "structured_outputs",
         "tool_choice",
-        "tools",
-        "top_logprobs"
+        "tools"
       ],
       "default_parameters": {
         "temperature": null,
@@ -5169,7 +5211,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -5182,9 +5223,7 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_a",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -5650,7 +5689,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -5663,7 +5701,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -8103,7 +8140,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -8116,7 +8152,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -10415,7 +10450,7 @@
       "name": "Qwen: Qwen3 235B A22B",
       "created": 1745875757,
       "description": "Qwen3-235B-A22B is a 235B parameter mixture-of-experts (MoE) model developed by Qwen, activating 22B parameters per forward pass. It supports seamless switching between a \"thinking\" mode for complex reasoning, math, and code tasks, and a \"non-thinking\" mode for general conversational efficiency. The model demonstrates strong reasoning ability, multilingual support (100+ languages and dialects), advanced instruction-following, and agent tool-calling capabilities. It natively handles a 32K token context window and extends up to 131K tokens using YaRN-based scaling.",
-      "context_length": 131072,
+      "context_length": 40960,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -10428,21 +10463,19 @@
         "instruct_type": "qwen3"
       },
       "pricing": {
-        "prompt": "0.00000022",
-        "completion": "0.00000088",
-        "input_cache_read": "0.00000011"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.00000015"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
+        "context_length": 40960,
+        "max_completion_tokens": 40960,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
-        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -10455,7 +10488,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -12742,7 +12774,6 @@
         "frequency_penalty",
         "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -15779,7 +15810,7 @@
         "top_p"
       ],
       "default_parameters": {},
-      "expiration_date": null
+      "expiration_date": "2026-02-25"
     },
     {
       "id": "openai/gpt-4o-2024-05-13",
@@ -18347,7 +18378,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'nousresearch', 'tngtech', 'amazon', 'perplexity', 'moonshotai', 'sentence-transformers', 'minimax', 'baidu', 'sao10k', 'openrouter', 'cohere', 'liquid', 'thedrummer', 'aion-labs', 'baai', 'intfloat', 'bytedance-seed', 'stepfun', 'inception', 'neversleep', 'relace', 'inflection', 'thenlper', 'morph', 'microsoft', 'deepcogito', 'opengvlab', 'upstage', 'essentialai', 'anthracite-org', 'mancer', 'kwaipilot', 'ai21', 'ibm-granite', 'bytedance', 'alpindale', 'switchpoint', 'alibaba', 'eleutherai', 'meituan', 'undi95', 'prime-intellect', 'gryphe', 'alfredpros', 'raifle', 'cognitivecomputations', 'writer', 'nex-agi', 'tencent', 'xiaomi'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'arcee-ai', 'allenai', 'tngtech', 'minimax', 'moonshotai', 'perplexity', 'baidu', 'sentence-transformers', 'amazon', 'sao10k', 'liquid', 'thedrummer', 'cohere', 'openrouter', 'baai', 'intfloat', 'aion-labs', 'stepfun', 'microsoft', 'bytedance-seed', 'thenlper', 'neversleep', 'relace', 'morph', 'inception', 'inflection', 'xiaomi', 'alibaba', 'essentialai', 'cognitivecomputations', 'anthracite-org', 'bytedance', 'writer', 'switchpoint', 'gryphe', 'prime-intellect', 'ibm-granite', 'kwaipilot', 'eleutherai', 'raifle', 'meituan', 'opengvlab', 'alfredpros', 'alpindale', 'deepcogito', 'upstage', 'tencent', 'undi95', 'ai21', 'nex-agi', 'mancer'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
