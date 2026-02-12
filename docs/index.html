@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-12 03:38)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-12 20:20)</div>
         </header>
 
         <div class="controls">
@@ -707,7 +707,7 @@
       "name": "Z.ai: GLM 5",
       "created": 1770829182,
       "description": "GLM-5 is Z.ai\u2019s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-      "context_length": 202800,
+      "context_length": 202752,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -721,18 +721,18 @@
       },
       "pricing": {
         "prompt": "0.000001",
-        "completion": "0.0000032",
-        "input_cache_read": "0.0000002"
+        "completion": "0.0000032"
       },
       "top_provider": {
-        "context_length": 202800,
-        "max_completion_tokens": 131072,
+        "context_length": 202752,
+        "max_completion_tokens": 202752,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -780,7 +780,7 @@
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 32768,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3103,21 +3103,15 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -16088,7 +16082,7 @@
       "name": "WizardLM-2 8x22B",
       "created": 1713225600,
       "description": "WizardLM-2 8x22B is Microsoft AI's most advanced Wizard model. It demonstrates highly competitive performance compared to leading proprietary models, and it consistently outperforms all existing state-of-the-art opensource models.\n\nIt is an instruct finetune of [Mixtral 8x22B](/models/mistralai/mixtral-8x22b).\n\nTo read more about the model release, [click here](https://wizardlm.github.io/WizardLM2/).\n\n#moe",
-      "context_length": 65536,
+      "context_length": 65535,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -16101,22 +16095,20 @@
         "instruct_type": "vicuna"
       },
       "pricing": {
-        "prompt": "0.00000048",
-        "completion": "0.00000048"
+        "prompt": "0.00000062",
+        "completion": "0.00000062"
       },
       "top_provider": {
-        "context_length": 65536,
-        "max_completion_tokens": 16384,
+        "context_length": 65535,
+        "max_completion_tokens": 8000,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -18355,7 +18347,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'tngtech', 'sao10k', 'sentence-transformers', 'moonshotai', 'perplexity', 'baidu', 'amazon', 'minimax', 'cohere', 'thedrummer', 'liquid', 'openrouter', 'intfloat', 'baai', 'aion-labs', 'bytedance-seed', 'morph', 'thenlper', 'neversleep', 'inflection', 'relace', 'stepfun', 'microsoft', 'inception', 'prime-intellect', 'alfredpros', 'alibaba', 'bytedance', 'mancer', 'raifle', 'gryphe', 'eleutherai', 'anthracite-org', 'cognitivecomputations', 'alpindale', 'kwaipilot', 'meituan', 'ibm-granite', 'undi95', 'nex-agi', 'switchpoint', 'opengvlab', 'ai21', 'xiaomi', 'deepcogito', 'essentialai', 'tencent', 'upstage', 'writer'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'nousresearch', 'tngtech', 'amazon', 'perplexity', 'moonshotai', 'sentence-transformers', 'minimax', 'baidu', 'sao10k', 'openrouter', 'cohere', 'liquid', 'thedrummer', 'aion-labs', 'baai', 'intfloat', 'bytedance-seed', 'stepfun', 'inception', 'neversleep', 'relace', 'inflection', 'thenlper', 'morph', 'microsoft', 'deepcogito', 'opengvlab', 'upstage', 'essentialai', 'anthracite-org', 'mancer', 'kwaipilot', 'ai21', 'ibm-granite', 'bytedance', 'alpindale', 'switchpoint', 'alibaba', 'eleutherai', 'meituan', 'undi95', 'prime-intellect', 'gryphe', 'alfredpros', 'raifle', 'cognitivecomputations', 'writer', 'nex-agi', 'tencent', 'xiaomi'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
