@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-13 02:33)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-13 12:18)</div>
         </header>
 
         <div class="controls">
@@ -664,7 +664,7 @@
                                 <option value="31744">31k+</option>
                                 <option value="65536">64k+</option>
                                 <option value="131072">128k+</option>
-                                <option value="204800">200k+</option>
+                                <option value="202752">198k+</option>
                                 <option value="400384">391k+</option>
                                 <option value="1040384">1016k+</option>
                                 <option value="1999872">1.9M+</option>
@@ -731,13 +731,19 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -781,6 +787,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -794,6 +801,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -4466,7 +4474,7 @@
       "name": "Qwen: Qwen3 VL 32B Instruct",
       "created": 1761231332,
       "description": "Qwen3-VL-32B-Instruct is a large-scale multimodal vision-language model designed for high-precision understanding and reasoning across text, images, and video. With 32 billion parameters, it combines deep visual perception with advanced text comprehension, enabling fine-grained spatial reasoning, document and scene analysis, and long-horizon video understanding.Robust OCR in 32 languages, and enhanced multimodal fusion through Interleaved-MRoPE and DeepStack architectures. Optimized for agentic interaction and visual tool use, Qwen3-VL-32B delivers state-of-the-art performance for complex real-world multimodal tasks.",
-      "context_length": 262144,
+      "context_length": 131072,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -4480,12 +4488,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000005",
-        "completion": "0.0000015"
+        "prompt": "0.000000104",
+        "completion": "0.000000416"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": null,
+        "context_length": 131072,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4497,9 +4505,12 @@
         "presence_penalty",
         "repetition_penalty",
         "response_format",
+        "seed",
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_p"
       ],
@@ -4726,8 +4737,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000018",
-        "completion": "0.0000021"
+        "prompt": "0.000000117",
+        "completion": "0.000001365"
       },
       "top_provider": {
         "context_length": 131072,
@@ -5043,8 +5054,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000002",
-        "completion": "0.000001"
+        "prompt": "0",
+        "completion": "0",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0"
       },
       "top_provider": {
         "context_length": 131072,
@@ -5082,7 +5097,7 @@
       "name": "Qwen: Qwen3 VL 30B A3B Instruct",
       "created": 1759794476,
       "description": "Qwen3-VL-30B-A3B-Instruct is a multimodal model that unifies strong text generation with visual understanding for images and videos. Its Instruct variant optimizes instruction-following for general multimodal tasks. It excels in perception of real-world/synthetic categories, 2D/3D spatial grounding, and long-form visual comprehension, achieving competitive multimodal benchmark results. For agentic use, it handles multi-image multi-turn instructions, video timeline alignments, GUI automation, and visual coding from sketches to debugged UI. Text performance matches flagship Qwen3 models, suiting document AI, OCR, UI assistance, spatial tasks, and agent research.",
-      "context_length": 262144,
+      "context_length": 131072,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -5096,12 +5111,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000006"
+        "prompt": "0.00000013",
+        "completion": "0.00000052"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": null,
+        "context_length": 131072,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5608,7 +5623,7 @@
       "name": "Qwen: Qwen3 VL 235B A22B Thinking",
       "created": 1758668690,
       "description": "Qwen3-VL-235B-A22B Thinking is a multimodal model that unifies strong text generation with visual understanding across images and video. The Thinking model is optimized for multimodal reasoning in STEM and math. The series emphasizes robust perception (recognition of diverse real-world and synthetic categories), spatial understanding (2D/3D grounding), and long-form visual comprehension, with competitive results on public multimodal benchmarks for both perception and reasoning.\n\nBeyond analysis, Qwen3-VL supports agentic interaction and tool use: it can follow complex instructions over multi-image, multi-turn dialogues; align text to video timelines for precise temporal queries; and operate GUI elements for automation tasks. The models also enable visual coding workflows, turning sketches or mockups into code and assisting with UI debugging, while maintaining strong text-only performance comparable to the flagship Qwen3 language models. This makes Qwen3-VL suitable for production scenarios spanning document AI, multilingual OCR, software/UI assistance, spatial/embodied tasks, and research on vision-language agents.",
-      "context_length": 262144,
+      "context_length": 131072,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -5622,12 +5637,16 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000045",
-        "completion": "0.0000035"
+        "prompt": "0",
+        "completion": "0",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "context_length": 131072,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -14646,54 +14665,6 @@
       "expiration_date": null
     },
     {
-      "id": "mistralai/pixtral-12b",
-      "canonical_slug": "mistralai/pixtral-12b",
-      "hugging_face_id": "mistralai/Pixtral-12B-2409",
-      "name": "Mistral: Pixtral 12B",
-      "created": 1725926400,
-      "description": "The first multi-modal, text+image-to-text model from Mistral AI. Its weights were launched via torrent: https://x.com/mistralai/status/1833758285167722836.",
-      "context_length": 32768,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.0000001"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "expiration_date": null
-    },
-    {
       "id": "cohere/command-r-08-2024",
       "canonical_slug": "cohere/command-r-08-2024",
       "hugging_face_id": null,
@@ -18378,7 +18349,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'arcee-ai', 'allenai', 'tngtech', 'minimax', 'moonshotai', 'perplexity', 'baidu', 'sentence-transformers', 'amazon', 'sao10k', 'liquid', 'thedrummer', 'cohere', 'openrouter', 'baai', 'intfloat', 'aion-labs', 'stepfun', 'microsoft', 'bytedance-seed', 'thenlper', 'neversleep', 'relace', 'morph', 'inception', 'inflection', 'xiaomi', 'alibaba', 'essentialai', 'cognitivecomputations', 'anthracite-org', 'bytedance', 'writer', 'switchpoint', 'gryphe', 'prime-intellect', 'ibm-granite', 'kwaipilot', 'eleutherai', 'raifle', 'meituan', 'opengvlab', 'alfredpros', 'alpindale', 'deepcogito', 'upstage', 'tencent', 'undi95', 'ai21', 'nex-agi', 'mancer'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'tngtech', 'baidu', 'amazon', 'sao10k', 'sentence-transformers', 'moonshotai', 'perplexity', 'cohere', 'thedrummer', 'liquid', 'openrouter', 'baai', 'intfloat', 'aion-labs', 'inflection', 'inception', 'morph', 'thenlper', 'bytedance-seed', 'relace', 'microsoft', 'stepfun', 'neversleep', 'anthracite-org', 'opengvlab', 'cognitivecomputations', 'essentialai', 'prime-intellect', 'alpindale', 'writer', 'mancer', 'deepcogito', 'nex-agi', 'upstage', 'bytedance', 'xiaomi', 'switchpoint', 'kwaipilot', 'raifle', 'gryphe', 'alibaba', 'tencent', 'alfredpros', 'meituan', 'ibm-granite', 'eleutherai', 'undi95', 'ai21'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
