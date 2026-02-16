@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-16 02:08)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-16 14:53)</div>
         </header>
 
         <div class="controls">
@@ -664,7 +664,7 @@
                                 <option value="31744">31k+</option>
                                 <option value="65536">64k+</option>
                                 <option value="131072">128k+</option>
-                                <option value="202752">198k+</option>
+                                <option value="199680">195k+</option>
                                 <option value="400384">391k+</option>
                                 <option value="1040384">1016k+</option>
                                 <option value="1999872">1.9M+</option>
@@ -1240,8 +1240,8 @@
       },
       "pricing": {
         "prompt": "0.00000045",
-        "completion": "0.00000044",
-        "input_cache_read": "0.0000001125"
+        "completion": "0.0000022",
+        "input_cache_read": "0.000000225"
       },
       "top_provider": {
         "context_length": 262144,
@@ -2622,7 +2622,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -3210,7 +3209,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -6514,7 +6512,7 @@
       "name": "MoonshotAI: Kimi K2 0905",
       "created": 1757021147,
       "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It supports long-context inference up to 256k tokens, extended from the previous 128k.\n\nThis update improves agentic coding with higher accuracy and better generalization across scaffolds, and enhances frontend coding with more aesthetic and functional outputs for web, 3D, and related tasks. Kimi K2 is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. It excels across coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) benchmarks. The model is trained with a novel stack incorporating the MuonClip optimizer for stable large-scale MoE training.",
-      "context_length": 262144,
+      "context_length": 131072,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -6527,13 +6525,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000039",
-        "completion": "0.0000019",
-        "input_cache_read": "0.000000195"
+        "prompt": "0.0000004",
+        "completion": "0.000002",
+        "input_cache_read": "0.00000015"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "context_length": 131072,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10403,7 +10401,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -10417,7 +10414,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -12134,57 +12130,6 @@
       "expiration_date": "2026-03-03"
     },
     {
-      "id": "anthropic/claude-3.7-sonnet:thinking",
-      "canonical_slug": "anthropic/claude-3-7-sonnet-20250219",
-      "hugging_face_id": "",
-      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
-      "created": 1740422110,
-      "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
-      "context_length": 200000,
-      "architecture": {
-        "modality": "text+image+file->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Claude",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000003",
-        "completion": "0.000015",
-        "web_search": "0.01",
-        "input_cache_read": "0.0000003",
-        "input_cache_write": "0.00000375"
-      },
-      "top_provider": {
-        "context_length": 200000,
-        "max_completion_tokens": 64000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "expiration_date": null
-    },
-    {
       "id": "anthropic/claude-3.7-sonnet",
       "canonical_slug": "anthropic/claude-3-7-sonnet-20250219",
       "hugging_face_id": "",
@@ -12234,7 +12179,58 @@
         "top_p": null,
         "frequency_penalty": null
       },
-      "expiration_date": null
+      "expiration_date": "2026-05-05"
+    },
+    {
+      "id": "anthropic/claude-3.7-sonnet:thinking",
+      "canonical_slug": "anthropic/claude-3-7-sonnet-20250219",
+      "hugging_face_id": "",
+      "name": "Anthropic: Claude 3.7 Sonnet (thinking)",
+      "created": 1740422110,
+      "description": "Claude 3.7 Sonnet is an advanced large language model with improved reasoning, coding, and problem-solving capabilities. It introduces a hybrid reasoning approach, allowing users to choose between rapid responses and extended, step-by-step processing for complex tasks. The model demonstrates notable improvements in coding, particularly in front-end development and full-stack updates, and excels in agentic workflows, where it can autonomously navigate multi-step processes. \n\nClaude 3.7 Sonnet maintains performance parity with its predecessor in standard mode while offering an extended reasoning mode for enhanced accuracy in math, coding, and instruction-following tasks.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-3-7-sonnet)",
+      "context_length": 200000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000003",
+        "completion": "0.000015",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000003",
+        "input_cache_write": "0.00000375"
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 64000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": "2026-05-05"
     },
     {
       "id": "mistralai/mistral-saba",
@@ -18269,7 +18265,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'nousresearch', 'allenai', 'minimax', 'sao10k', 'baidu', 'moonshotai', 'amazon', 'perplexity', 'sentence-transformers', 'thedrummer', 'openrouter', 'cohere', 'liquid', 'aion-labs', 'baai', 'intfloat', 'tngtech', 'bytedance-seed', 'thenlper', 'morph', 'neversleep', 'microsoft', 'stepfun', 'inception', 'relace', 'inflection', 'kwaipilot', 'raifle', 'bytedance', 'anthracite-org', 'essentialai', 'meituan', 'eleutherai', 'deepcogito', 'switchpoint', 'cognitivecomputations', 'opengvlab', 'alibaba', 'mancer', 'nex-agi', 'alfredpros', 'tencent', 'undi95', 'xiaomi', 'gryphe', 'alpindale', 'ibm-granite', 'writer', 'prime-intellect', 'upstage', 'ai21'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'nousresearch', 'allenai', 'arcee-ai', 'minimax', 'amazon', 'sentence-transformers', 'sao10k', 'baidu', 'moonshotai', 'perplexity', 'thedrummer', 'openrouter', 'liquid', 'cohere', 'baai', 'tngtech', 'intfloat', 'aion-labs', 'microsoft', 'inception', 'relace', 'bytedance-seed', 'morph', 'stepfun', 'neversleep', 'thenlper', 'inflection', 'prime-intellect', 'alibaba', 'opengvlab', 'gryphe', 'switchpoint', 'eleutherai', 'deepcogito', 'anthracite-org', 'undi95', 'ibm-granite', 'tencent', 'ai21', 'bytedance', 'xiaomi', 'meituan', 'kwaipilot', 'writer', 'nex-agi', 'upstage', 'raifle', 'mancer', 'cognitivecomputations', 'essentialai', 'alfredpros', 'alpindale'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
