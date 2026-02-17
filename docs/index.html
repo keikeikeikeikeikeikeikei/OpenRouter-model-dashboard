@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-16 23:14)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-17 12:33)</div>
         </header>
 
         <div class="controls">
@@ -727,7 +727,7 @@
       },
       "top_provider": {
         "context_length": 1000000,
-        "max_completion_tokens": 64000,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -758,7 +758,7 @@
       "name": "Qwen: Qwen3.5 397B A17B",
       "created": 1771223018,
       "description": "The Qwen3.5 series 397B-A17B native vision-language model is built on a hybrid architecture that integrates a linear attention mechanism with a sparse mixture-of-experts model, achieving higher inference efficiency. It delivers state-of-the-art performance comparable to leading-edge models across a wide range of tasks, including language understanding, logical reasoning, code generation, agent-based tasks, image understanding, video understanding, and graphical user interface (GUI) interactions. With its robust code-generation and agent capabilities, the model exhibits strong generalization across diverse agent.",
-      "context_length": 256000,
+      "context_length": 262144,
       "architecture": {
         "modality": "text+image+video->text",
         "input_modalities": [
@@ -777,8 +777,8 @@
         "completion": "0.0000036"
       },
       "top_provider": {
-        "context_length": 256000,
-        "max_completion_tokens": 64000,
+        "context_length": 262144,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -795,8 +795,8 @@
         "top_p"
       ],
       "default_parameters": {
-        "temperature": null,
-        "top_p": null,
+        "temperature": 0.6,
+        "top_p": 0.95,
         "frequency_penalty": null
       },
       "expiration_date": null
@@ -3349,13 +3349,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000025",
+        "prompt": "0.00000026",
         "completion": "0.00000038",
-        "input_cache_read": "0.000000125"
+        "input_cache_read": "0.00000013"
       },
       "top_provider": {
         "context_length": 163840,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -18366,7 +18366,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'perplexity', 'amazon', 'sao10k', 'sentence-transformers', 'baidu', 'moonshotai', 'thedrummer', 'liquid', 'openrouter', 'cohere', 'intfloat', 'tngtech', 'baai', 'aion-labs', 'inflection', 'morph', 'relace', 'bytedance-seed', 'inception', 'microsoft', 'thenlper', 'stepfun', 'neversleep', 'cognitivecomputations', 'eleutherai', 'ai21', 'prime-intellect', 'meituan', 'alpindale', 'gryphe', 'raifle', 'writer', 'opengvlab', 'upstage', 'alibaba', 'switchpoint', 'alfredpros', 'deepcogito', 'anthracite-org', 'bytedance', 'ibm-granite', 'mancer', 'xiaomi', 'nex-agi', 'essentialai', 'kwaipilot', 'tencent', 'undi95'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'nousresearch', 'minimax', 'sao10k', 'amazon', 'moonshotai', 'perplexity', 'sentence-transformers', 'baidu', 'liquid', 'openrouter', 'thedrummer', 'cohere', 'baai', 'tngtech', 'intfloat', 'aion-labs', 'inflection', 'thenlper', 'inception', 'microsoft', 'neversleep', 'morph', 'stepfun', 'relace', 'bytedance-seed', 'anthracite-org', 'deepcogito', 'upstage', 'nex-agi', 'bytedance', 'undi95', 'raifle', 'writer', 'tencent', 'ibm-granite', 'eleutherai', 'prime-intellect', 'switchpoint', 'alfredpros', 'alibaba', 'mancer', 'opengvlab', 'gryphe', 'cognitivecomputations', 'xiaomi', 'kwaipilot', 'meituan', 'alpindale', 'essentialai', 'ai21'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
