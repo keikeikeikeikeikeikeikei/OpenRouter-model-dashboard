@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-18 00:33)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-18 06:33)</div>
         </header>
 
         <div class="controls">
@@ -700,6 +700,60 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "anthropic/claude-sonnet-4.6",
+      "canonical_slug": "anthropic/claude-4.6-sonnet-20260217",
+      "hugging_face_id": "",
+      "name": "Anthropic: Claude Sonnet 4.6",
+      "created": 1771342990,
+      "description": "Sonnet 4.6 is Anthropic's most capable Sonnet-class model yet, with frontier performance across coding, agents, and professional work. It excels at iterative development, complex codebase navigation, end-to-end project management with memory, polished document creation, and confident computer use for web QA and workflow automation.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000003",
+        "completion": "0.000015",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000003",
+        "input_cache_write": "0.00000375"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p",
+        "verbosity"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
     {
       "id": "qwen/qwen3.5-plus-02-15",
       "canonical_slug": "qwen/qwen3.5-plus-20260216",
@@ -774,7 +828,8 @@
       },
       "pricing": {
         "prompt": "0.00000015",
-        "completion": "0.000001"
+        "completion": "0.000001",
+        "input_cache_read": "0.00000015"
       },
       "top_provider": {
         "context_length": 262144,
@@ -828,12 +883,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0"
+        "prompt": "0.0000003",
+        "completion": "0.0000011",
+        "input_cache_read": "0.00000015"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": 196608,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -2621,13 +2677,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.00000022",
-        "input_cache_read": "0.000000025"
+        "prompt": "0.0000004",
+        "completion": "0.000002"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -2635,7 +2690,6 @@
         "frequency_penalty",
         "max_tokens",
         "presence_penalty",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -2643,7 +2697,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -18375,7 +18428,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'nousresearch', 'minimax', 'perplexity', 'baidu', 'sao10k', 'moonshotai', 'amazon', 'sentence-transformers', 'openrouter', 'liquid', 'thedrummer', 'cohere', 'baai', 'aion-labs', 'intfloat', 'tngtech', 'relace', 'stepfun', 'thenlper', 'microsoft', 'morph', 'inception', 'inflection', 'neversleep', 'bytedance-seed', 'meituan', 'alpindale', 'alibaba', 'nex-agi', 'eleutherai', 'undi95', 'gryphe', 'ai21', 'prime-intellect', 'deepcogito', 'tencent', 'opengvlab', 'ibm-granite', 'switchpoint', 'upstage', 'cognitivecomputations', 'xiaomi', 'writer', 'kwaipilot', 'alfredpros', 'raifle', 'mancer', 'bytedance', 'anthracite-org', 'essentialai'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'nousresearch', 'arcee-ai', 'minimax', 'sentence-transformers', 'baidu', 'moonshotai', 'amazon', 'perplexity', 'sao10k', 'thedrummer', 'liquid', 'cohere', 'openrouter', 'aion-labs', 'tngtech', 'baai', 'intfloat', 'inception', 'neversleep', 'microsoft', 'stepfun', 'relace', 'inflection', 'bytedance-seed', 'thenlper', 'morph', 'nex-agi', 'alpindale', 'upstage', 'eleutherai', 'alfredpros', 'xiaomi', 'raifle', 'meituan', 'mancer', 'ai21', 'switchpoint', 'alibaba', 'deepcogito', 'tencent', 'prime-intellect', 'essentialai', 'kwaipilot', 'gryphe', 'writer', 'anthracite-org', 'bytedance', 'undi95', 'opengvlab', 'cognitivecomputations', 'ibm-granite'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
