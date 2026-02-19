@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-19 14:22)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-19 20:22)</div>
         </header>
 
         <div class="controls">
@@ -664,7 +664,7 @@
                                 <option value="31744">31k+</option>
                                 <option value="65536">64k+</option>
                                 <option value="131072">128k+</option>
-                                <option value="199680">195k+</option>
+                                <option value="202752">198k+</option>
                                 <option value="400384">391k+</option>
                                 <option value="1000448">977k+</option>
                                 <option value="1999872">1.9M+</option>
@@ -743,6 +743,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p",
         "verbosity"
       ],
@@ -1109,7 +1110,7 @@
       "top_provider": {
         "context_length": 1000000,
         "max_completion_tokens": 128000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -1122,6 +1123,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p",
         "verbosity"
       ],
@@ -1527,6 +1529,49 @@
       "default_parameters": {
         "temperature": 1,
         "top_p": 0.95,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
+      "id": "writer/palmyra-x5",
+      "canonical_slug": "writer/palmyra-x5-20250428",
+      "hugging_face_id": "",
+      "name": "Writer: Palmyra X5",
+      "created": 1769003823,
+      "description": "Palmyra X5 is Writer's most advanced model, purpose-built for building and scaling AI agents across the enterprise. It delivers industry-leading speed and efficiency on context windows up to 1 million tokens, powered by a novel transformer architecture and hybrid attention mechanisms. This enables faster inference and expanded memory for processing large volumes of enterprise data, critical for scaling AI agents.",
+      "context_length": 1040000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000006",
+        "completion": "0.000006"
+      },
+      "top_provider": {
+        "context_length": 1040000,
+        "max_completion_tokens": 8192,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
         "frequency_penalty": null
       },
       "expiration_date": null
@@ -2940,6 +2985,56 @@
       "expiration_date": null
     },
     {
+      "id": "amazon/nova-2-lite-v1",
+      "canonical_slug": "amazon/nova-2-lite-v1",
+      "hugging_face_id": "",
+      "name": "Amazon: Nova 2 Lite",
+      "created": 1764696672,
+      "description": "Nova 2 Lite is a fast, cost-effective reasoning model for everyday workloads that can process text, images, and videos to generate text. \n\nNova 2 Lite demonstrates standout capabilities in processing documents, extracting information from videos, generating code, providing accurate grounded answers, and automating multi-step agentic workflows.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+file+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Nova",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000003",
+        "completion": "0.0000025"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 65535,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
       "id": "mistralai/ministral-14b-2512",
       "canonical_slug": "mistralai/ministral-14b-2512",
       "hugging_face_id": "mistralai/Ministral-3-14B-Instruct-2512",
@@ -3439,6 +3534,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "verbosity"
       ],
       "default_parameters": {
@@ -4068,6 +4164,52 @@
       "expiration_date": null
     },
     {
+      "id": "amazon/nova-premier-v1",
+      "canonical_slug": "amazon/nova-premier-v1",
+      "hugging_face_id": "",
+      "name": "Amazon: Nova Premier 1.0",
+      "created": 1761950332,
+      "description": "Amazon Nova Premier is the most capable of Amazon\u2019s multimodal models for complex reasoning tasks and for use as the best teacher for distilling custom models.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Nova",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000025",
+        "completion": "0.0000125",
+        "input_cache_read": "0.000000625"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 32000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
       "id": "perplexity/sonar-pro-search",
       "canonical_slug": "perplexity/sonar-pro-search",
       "hugging_face_id": "",
@@ -4598,7 +4740,7 @@
       "top_provider": {
         "context_length": 200000,
         "max_completion_tokens": 64000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -7506,7 +7648,7 @@
       "top_provider": {
         "context_length": 200000,
         "max_completion_tokens": 32000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -7519,6 +7661,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -9416,7 +9559,7 @@
       "top_provider": {
         "context_length": 200000,
         "max_completion_tokens": 32000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -9427,6 +9570,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -9478,6 +9622,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -11895,6 +12040,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -13215,6 +13361,128 @@
       "expiration_date": null
     },
     {
+      "id": "amazon/nova-lite-v1",
+      "canonical_slug": "amazon/nova-lite-v1",
+      "hugging_face_id": "",
+      "name": "Amazon: Nova Lite 1.0",
+      "created": 1733437363,
+      "description": "Amazon Nova Lite 1.0 is a very low-cost multimodal model from Amazon that focused on fast processing of image, video, and text inputs to generate text output. Amazon Nova Lite can handle real-time customer interactions, document analysis, and visual question-answering tasks with high accuracy.\n\nWith an input context of 300K tokens, it can analyze multiple images or up to 30 minutes of video in a single input.",
+      "context_length": 300000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Nova",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000006",
+        "completion": "0.00000024"
+      },
+      "top_provider": {
+        "context_length": 300000,
+        "max_completion_tokens": 5120,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "expiration_date": null
+    },
+    {
+      "id": "amazon/nova-micro-v1",
+      "canonical_slug": "amazon/nova-micro-v1",
+      "hugging_face_id": "",
+      "name": "Amazon: Nova Micro 1.0",
+      "created": 1733437237,
+      "description": "Amazon Nova Micro 1.0 is a text-only model that delivers the lowest latency responses in the Amazon Nova family of models at a very low cost. With a context length of 128K tokens and optimized for speed and cost, Amazon Nova Micro excels at tasks such as text summarization, translation, content classification, interactive chat, and brainstorming. It has  simple mathematical reasoning and coding abilities.",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Nova",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000035",
+        "completion": "0.00000014"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": 5120,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "expiration_date": null
+    },
+    {
+      "id": "amazon/nova-pro-v1",
+      "canonical_slug": "amazon/nova-pro-v1",
+      "hugging_face_id": "",
+      "name": "Amazon: Nova Pro 1.0",
+      "created": 1733436303,
+      "description": "Amazon Nova Pro 1.0 is a capable multimodal model from Amazon focused on providing a combination of accuracy, speed, and cost for a wide range of tasks. As of December 2024, it achieves state-of-the-art performance on key benchmarks including visual question answering (TextVQA) and video understanding (VATEX).\n\nAmazon Nova Pro demonstrates strong capabilities in processing both visual and textual information and at analyzing financial documents.\n\n**NOTE**: Video input is not supported at this time.",
+      "context_length": 300000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Nova",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000008",
+        "completion": "0.0000032"
+      },
+      "top_provider": {
+        "context_length": 300000,
+        "max_completion_tokens": 5120,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "expiration_date": null
+    },
+    {
       "id": "openai/gpt-4o-2024-11-20",
       "canonical_slug": "openai/gpt-4o-2024-11-20",
       "hugging_face_id": "",
@@ -13635,6 +13903,51 @@
         "top_a",
         "top_k",
         "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "expiration_date": null
+    },
+    {
+      "id": "anthropic/claude-3.5-sonnet",
+      "canonical_slug": "anthropic/claude-3.5-sonnet",
+      "hugging_face_id": null,
+      "name": "Anthropic: Claude 3.5 Sonnet",
+      "created": 1729555200,
+      "description": "New Claude 3.5 Sonnet delivers better-than-Opus capabilities, faster-than-Sonnet speeds, at the same Sonnet prices. Sonnet is particularly good at:\n\n- Coding: Scores ~49% on SWE-Bench Verified, higher than the last best score, and without any fancy prompt scaffolding\n- Data science: Augments human data science expertise; navigates unstructured data while using multiple tools for insights\n- Visual processing: excelling at interpreting charts, graphs, and images, accurately transcribing text to derive insights beyond just the text alone\n- Agentic tasks: exceptional tool use, making it great at agentic tasks (i.e. complex, multi-step problem solving tasks that require engaging with other systems)\n\n#multimodal",
+      "context_length": 200000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000006",
+        "completion": "0.00003",
+        "input_cache_read": "0.0000006",
+        "input_cache_write": "0.0000075"
+      },
+      "top_provider": {
+        "context_length": 200000,
+        "max_completion_tokens": 8192,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {},
@@ -17768,7 +18081,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'nousresearch', 'minimax', 'sentence-transformers', 'perplexity', 'moonshotai', 'baidu', 'sao10k', 'openrouter', 'thedrummer', 'cohere', 'liquid', 'aion-labs', 'intfloat', 'baai', 'inflection', 'neversleep', 'thenlper', 'microsoft', 'inception', 'stepfun', 'bytedance-seed', 'relace', 'morph', 'ai21', 'essentialai', 'switchpoint', 'tngtech', 'alpindale', 'cognitivecomputations', 'nex-agi', 'alibaba', 'prime-intellect', 'ibm-granite', 'opengvlab', 'tencent', 'meituan', 'alfredpros', 'undi95', 'kwaipilot', 'eleutherai', 'anthracite-org', 'bytedance', 'raifle', 'upstage', 'deepcogito', 'mancer', 'xiaomi', 'gryphe'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'sentence-transformers', 'baidu', 'moonshotai', 'sao10k', 'perplexity', 'amazon', 'cohere', 'openrouter', 'liquid', 'thedrummer', 'aion-labs', 'intfloat', 'baai', 'stepfun', 'inception', 'neversleep', 'relace', 'microsoft', 'thenlper', 'bytedance-seed', 'inflection', 'morph', 'prime-intellect', 'meituan', 'alpindale', 'tngtech', 'alibaba', 'ibm-granite', 'anthracite-org', 'xiaomi', 'ai21', 'mancer', 'writer', 'nex-agi', 'opengvlab', 'cognitivecomputations', 'switchpoint', 'upstage', 'undi95', 'deepcogito', 'bytedance', 'eleutherai', 'essentialai', 'raifle', 'kwaipilot', 'gryphe', 'tencent', 'alfredpros'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
