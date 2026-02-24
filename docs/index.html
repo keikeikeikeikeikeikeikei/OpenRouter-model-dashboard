@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-24 18:52)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-25 00:53)</div>
         </header>
 
         <div class="controls">
@@ -664,9 +664,9 @@
                                 <option value="31744">31k+</option>
                                 <option value="65536">64k+</option>
                                 <option value="131072">128k+</option>
-                                <option value="202752">198k+</option>
+                                <option value="204800">200k+</option>
                                 <option value="400384">391k+</option>
-                                <option value="1040384">1016k+</option>
+                                <option value="1047552">1023k+</option>
                                 <option value="1999872">1.9M+</option>
                             </select>
                         </div>
@@ -2160,7 +2160,7 @@
       "name": "Z.ai: GLM 4.7",
       "created": 1766378014,
       "description": "GLM-4.7 is Z.ai\u2019s latest flagship model, featuring upgrades in two key areas: enhanced programming capabilities and more stable multi-step reasoning/execution. It demonstrates significant improvements in executing complex agent tasks while delivering more natural conversational experiences and superior front-end aesthetics.",
-      "context_length": 202752,
+      "context_length": 200000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -2173,13 +2173,18 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000038",
-        "completion": "0.0000017",
-        "input_cache_read": "0.00000019"
+        "prompt": "0.0000003",
+        "completion": "0.0000014",
+        "request": "0",
+        "image": "0",
+        "web_search": "0",
+        "internal_reasoning": "0",
+        "input_cache_read": "0.00000015",
+        "input_cache_write": "0.0000006"
       },
       "top_provider": {
-        "context_length": 202752,
-        "max_completion_tokens": 65535,
+        "context_length": 200000,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3405,13 +3410,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000026",
-        "completion": "0.00000038",
-        "input_cache_read": "0.00000013"
+        "prompt": "0.00000025",
+        "completion": "0.0000004"
       },
       "top_provider": {
         "context_length": 163840,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 163840,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -9429,55 +9433,6 @@
       "expiration_date": null
     },
     {
-      "id": "deepseek/deepseek-r1-0528:free",
-      "canonical_slug": "deepseek/deepseek-r1-0528",
-      "hugging_face_id": "deepseek-ai/DeepSeek-R1-0528",
-      "name": "DeepSeek: R1 0528 (free)",
-      "created": 1748455170,
-      "description": "May 28th update to the [original DeepSeek R1](/deepseek/deepseek-r1) Performance on par with [OpenAI o1](/openai/o1), but open-sourced and with fully open reasoning tokens. It's 671B parameters in size, with 37B active in an inference pass.\n\nFully open-source model.",
-      "context_length": 163840,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "DeepSeek",
-        "instruct_type": "deepseek-r1"
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 163840,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "expiration_date": "2026-02-24"
-    },
-    {
       "id": "deepseek/deepseek-r1-0528",
       "canonical_slug": "deepseek/deepseek-r1-0528",
       "hugging_face_id": "deepseek-ai/DeepSeek-R1-0528",
@@ -11932,14 +11887,10 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
-        "seed",
         "stop",
         "structured_outputs",
         "temperature",
@@ -18087,7 +18038,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'minimax', 'nousresearch', 'perplexity', 'baidu', 'moonshotai', 'amazon', 'sao10k', 'sentence-transformers', 'cohere', 'thedrummer', 'liquid', 'baai', 'aion-labs', 'openrouter', 'intfloat', 'relace', 'thenlper', 'bytedance-seed', 'neversleep', 'inception', 'stepfun', 'inflection', 'morph', 'microsoft', 'writer', 'raifle', 'essentialai', 'deepcogito', 'upstage', 'nex-agi', 'anthracite-org', 'meituan', 'bytedance', 'ai21', 'tngtech', 'undi95', 'gryphe', 'opengvlab', 'cognitivecomputations', 'alfredpros', 'alpindale', 'kwaipilot', 'alibaba', 'xiaomi', 'prime-intellect', 'eleutherai', 'mancer', 'switchpoint', 'tencent', 'ibm-granite'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'minimax', 'nousresearch', 'sao10k', 'baidu', 'perplexity', 'sentence-transformers', 'moonshotai', 'amazon', 'liquid', 'thedrummer', 'cohere', 'intfloat', 'baai', 'openrouter', 'aion-labs', 'thenlper', 'microsoft', 'bytedance-seed', 'inflection', 'relace', 'neversleep', 'morph', 'stepfun', 'inception', 'deepcogito', 'upstage', 'tngtech', 'mancer', 'ai21', 'raifle', 'prime-intellect', 'ibm-granite', 'alibaba', 'xiaomi', 'eleutherai', 'tencent', 'alfredpros', 'opengvlab', 'bytedance', 'essentialai', 'cognitivecomputations', 'anthracite-org', 'switchpoint', 'nex-agi', 'kwaipilot', 'undi95', 'meituan', 'alpindale', 'writer', 'gryphe'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
