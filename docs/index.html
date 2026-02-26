@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-26 20:04)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-27 07:02)</div>
         </header>
 
         <div class="controls">
@@ -700,6 +700,57 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "bytedance-seed/seed-2.0-mini",
+      "canonical_slug": "bytedance-seed/seed-2.0-mini-20260224",
+      "hugging_face_id": "",
+      "name": "ByteDance Seed: Seed-2.0-Mini",
+      "created": 1772131107,
+      "description": "Seed-2.0-mini targets latency-sensitive, high-concurrency, and cost-sensitive scenarios, emphasizing fast response and flexible inference deployment. It delivers performance comparable to ByteDance-Seed-1.6, supports 256k context, four reasoning effort modes (minimal/low/medium/high), multimodal understanding, and is optimized for lightweight tasks where cost and speed take priority.",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000004"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
     {
       "id": "qwen/qwen3.5-35b-a3b",
       "canonical_slug": "qwen/qwen3.5-35b-a3b-20260224",
@@ -1906,7 +1957,7 @@
         "top_p": null,
         "frequency_penalty": null
       },
-      "expiration_date": "2026-03-02"
+      "expiration_date": "2026-03-22"
     },
     {
       "id": "minimax/minimax-m2-her",
@@ -3781,6 +3832,8 @@
         "include_reasoning",
         "max_tokens",
         "reasoning",
+        "response_format",
+        "structured_outputs",
         "temperature",
         "top_p"
       ],
@@ -4219,7 +4272,7 @@
         "top_p": null,
         "frequency_penalty": null
       },
-      "expiration_date": null
+      "expiration_date": "2026-03-09"
     },
     {
       "id": "deepcogito/cogito-v2.1-671b",
@@ -4841,8 +4894,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000007",
-        "completion": "0.0000002"
+        "prompt": "0.0000002",
+        "completion": "0.0000006"
       },
       "top_provider": {
         "context_length": 131072,
@@ -5846,7 +5899,9 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -8828,7 +8883,7 @@
       "name": "MoonshotAI: Kimi K2 0711",
       "created": 1752263252,
       "description": "Kimi K2 Instruct is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32 billion active per forward pass. It is optimized for agentic capabilities, including advanced tool use, reasoning, and code synthesis. Kimi K2 excels across a broad range of benchmarks, particularly in coding (LiveCodeBench, SWE-bench), reasoning (ZebraLogic, GPQA), and tool-use (Tau2, AceBench) tasks. It supports long-context inference up to 128K tokens and is designed with a novel training stack that includes the MuonClip optimizer for stable large-scale MoE training.",
-      "context_length": 131072,
+      "context_length": 131000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -8841,11 +8896,11 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000005",
-        "completion": "0.0000024"
+        "prompt": "0.00000055",
+        "completion": "0.0000022"
       },
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 131000,
         "max_completion_tokens": null,
         "is_moderated": false
       },
@@ -17028,6 +17083,55 @@
   ],
   "image": [
     {
+      "id": "google/gemini-3.1-flash-image-preview",
+      "canonical_slug": "google/gemini-3.1-flash-image-preview-20260226",
+      "hugging_face_id": "",
+      "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image Preview)",
+      "created": 1772119558,
+      "description": "Gemini 3.1 Flash Image Preview, a.k.a. \"Nano Banana 2,\" is Google\u2019s latest state of the art image generation and editing model, delivering Pro-level visual quality at Flash speed. It combines advanced contextual understanding with fast, cost-efficient inference, making complex image generation and iterative edits significantly more accessible. Aspect ratios can be controlled with the [image_config API Parameter](https://openrouter.ai/docs/features/multimodal/image-generation#image-aspect-ratio-configuration)",
+      "context_length": 65536,
+      "architecture": {
+        "modality": "text+image->text+image",
+        "input_modalities": [
+          "image",
+          "text"
+        ],
+        "output_modalities": [
+          "image",
+          "text"
+        ],
+        "tokenizer": "Gemini",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000025",
+        "completion": "0.0000015"
+      },
+      "top_provider": {
+        "context_length": 65536,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
       "id": "google/gemini-3-pro-image-preview",
       "canonical_slug": "google/gemini-3-pro-image-preview-20251120",
       "hugging_face_id": "",
@@ -17203,7 +17307,7 @@
       "id": "google/gemini-2.5-flash-image",
       "canonical_slug": "google/gemini-2.5-flash-image",
       "hugging_face_id": "",
-      "name": "Google: Gemini 2.5 Flash Image (Nano Banana)",
+      "name": "Google: Nano Banana (Gemini 2.5 Flash Image)",
       "created": 1759870431,
       "description": "Gemini 2.5 Flash Image, a.k.a. \"Nano Banana,\" is now generally available. It is a state of the art image generation model with contextual understanding. It is capable of image generation, edits, and multi-turn conversations. Aspect ratios can be controlled with the [image_config API Parameter](https://openrouter.ai/docs/features/multimodal/image-generation#image-aspect-ratio-configuration)",
       "context_length": 32768,
@@ -18400,7 +18504,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'amazon', 'liquid', 'perplexity', 'moonshotai', 'sao10k', 'sentence-transformers', 'baidu', 'thedrummer', 'cohere', 'aion-labs', 'intfloat', 'baai', 'openrouter', 'neversleep', 'thenlper', 'relace', 'inception', 'bytedance-seed', 'microsoft', 'inflection', 'morph', 'stepfun', 'upstage', 'prime-intellect', 'nex-agi', 'undi95', 'cognitivecomputations', 'deepcogito', 'gryphe', 'alpindale', 'meituan', 'anthracite-org', 'bytedance', 'tencent', 'ibm-granite', 'essentialai', 'eleutherai', 'ai21', 'tngtech', 'kwaipilot', 'xiaomi', 'alibaba', 'alfredpros', 'raifle', 'switchpoint', 'mancer', 'writer', 'opengvlab'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'sentence-transformers', 'perplexity', 'sao10k', 'moonshotai', 'baidu', 'amazon', 'liquid', 'cohere', 'aion-labs', 'thedrummer', 'openrouter', 'baai', 'intfloat', 'bytedance-seed', 'microsoft', 'stepfun', 'inception', 'inflection', 'thenlper', 'relace', 'neversleep', 'morph', 'anthracite-org', 'alfredpros', 'switchpoint', 'cognitivecomputations', 'tngtech', 'alibaba', 'deepcogito', 'bytedance', 'eleutherai', 'ibm-granite', 'kwaipilot', 'tencent', 'writer', 'essentialai', 'meituan', 'gryphe', 'prime-intellect', 'alpindale', 'ai21', 'xiaomi', 'upstage', 'undi95', 'nex-agi', 'mancer', 'raifle', 'opengvlab'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
