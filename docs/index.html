@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-02-26 07:15)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-02-26 20:04)</div>
         </header>
 
         <div class="controls">
@@ -952,7 +952,7 @@
         "top_p"
       ],
       "default_parameters": {
-        "temperature": null,
+        "temperature": 0.1,
         "top_p": null,
         "frequency_penalty": null
       },
@@ -3483,11 +3483,8 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -3495,7 +3492,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -14660,7 +14656,6 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -16408,52 +16403,6 @@
         "top_p"
       ],
       "default_parameters": {},
-      "expiration_date": null
-    },
-    {
-      "id": "mistralai/mistral-7b-instruct-v0.2",
-      "canonical_slug": "mistralai/mistral-7b-instruct-v0.2",
-      "hugging_face_id": "mistralai/Mistral-7B-Instruct-v0.2",
-      "name": "Mistral: Mistral 7B Instruct v0.2",
-      "created": 1703721600,
-      "description": "A high-performing, industry-standard 7.3B parameter model, with optimizations for speed and context length.\n\nAn improved version of [Mistral 7B Instruct](/modelsmistralai/mistral-7b-instruct-v0.1), with the following changes:\n\n- 32k context window (vs 8k context in v0.1)\n- Rope-theta = 1e6\n- No Sliding-Window Attention",
-      "context_length": 32768,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": "mistral"
-      },
-      "pricing": {
-        "prompt": "0.0000002",
-        "completion": "0.0000002"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
       "expiration_date": null
     },
     {
@@ -18451,7 +18400,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'baidu', 'liquid', 'amazon', 'sao10k', 'moonshotai', 'sentence-transformers', 'perplexity', 'aion-labs', 'cohere', 'thedrummer', 'intfloat', 'openrouter', 'baai', 'microsoft', 'neversleep', 'morph', 'inflection', 'bytedance-seed', 'relace', 'inception', 'stepfun', 'thenlper', 'bytedance', 'tngtech', 'kwaipilot', 'meituan', 'alfredpros', 'anthracite-org', 'ibm-granite', 'upstage', 'tencent', 'switchpoint', 'undi95', 'writer', 'ai21', 'opengvlab', 'raifle', 'deepcogito', 'eleutherai', 'gryphe', 'nex-agi', 'prime-intellect', 'mancer', 'alpindale', 'cognitivecomputations', 'alibaba', 'xiaomi', 'essentialai'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'amazon', 'liquid', 'perplexity', 'moonshotai', 'sao10k', 'sentence-transformers', 'baidu', 'thedrummer', 'cohere', 'aion-labs', 'intfloat', 'baai', 'openrouter', 'neversleep', 'thenlper', 'relace', 'inception', 'bytedance-seed', 'microsoft', 'inflection', 'morph', 'stepfun', 'upstage', 'prime-intellect', 'nex-agi', 'undi95', 'cognitivecomputations', 'deepcogito', 'gryphe', 'alpindale', 'meituan', 'anthracite-org', 'bytedance', 'tencent', 'ibm-granite', 'essentialai', 'eleutherai', 'ai21', 'tngtech', 'kwaipilot', 'xiaomi', 'alibaba', 'alfredpros', 'raifle', 'switchpoint', 'mancer', 'writer', 'opengvlab'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
