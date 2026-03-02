@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-02 06:19)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-03 00:34)</div>
         </header>
 
         <div class="controls">
@@ -665,7 +665,7 @@
                                 <option value="65536">64k+</option>
                                 <option value="131072">128k+</option>
                                 <option value="256000">250k+</option>
-                                <option value="1000448">977k+</option>
+                                <option value="400384">391k+</option>
                                 <option value="1047552">1023k+</option>
                                 <option value="1999872">1.9M+</option>
                             </select>
@@ -2773,6 +2773,58 @@
       "expiration_date": null
     },
     {
+      "id": "allenai/olmo-3.1-32b-think",
+      "canonical_slug": "allenai/olmo-3.1-32b-think-20251215",
+      "hugging_face_id": "allenai/Olmo-3.1-32B-Think",
+      "name": "AllenAI: Olmo 3.1 32B Think",
+      "created": 1765907719,
+      "description": "Olmo 3.1 32B Think is a large-scale, 32-billion-parameter model designed for deep reasoning, complex multi-step logic, and advanced instruction following. Building on the Olmo 3 series, version 3.1 delivers refined reasoning behavior and stronger performance across demanding evaluations and nuanced conversational tasks. Developed by Ai2 under the Apache 2.0 license, Olmo 3.1 32B Think continues the Olmo initiative\u2019s commitment to openness, providing full transparency across model weights, code, and training methodology.",
+      "context_length": 65536,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000005"
+      },
+      "top_provider": {
+        "context_length": 65536,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
       "id": "xiaomi/mimo-v2-flash",
       "canonical_slug": "xiaomi/mimo-v2-flash-20251210",
       "hugging_face_id": "XiaomiMiMo/MiMo-V2-Flash",
@@ -3781,12 +3833,20 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "structured_outputs",
         "temperature",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -3821,7 +3881,7 @@
       },
       "top_provider": {
         "context_length": 163840,
-        "max_completion_tokens": 163840,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4504,7 +4564,9 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -4910,7 +4972,9 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -6367,6 +6431,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6473,14 +6538,22 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -6717,12 +6790,20 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {},
@@ -7055,12 +7136,15 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
         "response_format",
         "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -8180,11 +8264,14 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
         "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -10566,16 +10653,22 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
         "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -18427,7 +18520,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'minimax', 'nousresearch', 'allenai', 'sentence-transformers', 'amazon', 'moonshotai', 'baidu', 'liquid', 'perplexity', 'sao10k', 'cohere', 'thedrummer', 'aion-labs', 'baai', 'bytedance-seed', 'openrouter', 'intfloat', 'inception', 'stepfun', 'neversleep', 'morph', 'inflection', 'thenlper', 'microsoft', 'relace', 'prime-intellect', 'kwaipilot', 'alfredpros', 'tencent', 'tngtech', 'nex-agi', 'ibm-granite', 'gryphe', 'bytedance', 'xiaomi', 'alibaba', 'essentialai', 'ai21', 'mancer', 'meituan', 'alpindale', 'switchpoint', 'deepcogito', 'cognitivecomputations', 'anthracite-org', 'raifle', 'writer', 'upstage', 'undi95', 'eleutherai'];
+        window.providerOptions = ['openai', 'qwen', 'mistralai', 'google', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'minimax', 'nousresearch', 'perplexity', 'sao10k', 'amazon', 'sentence-transformers', 'moonshotai', 'liquid', 'baidu', 'cohere', 'thedrummer', 'aion-labs', 'openrouter', 'intfloat', 'baai', 'bytedance-seed', 'stepfun', 'relace', 'inception', 'microsoft', 'thenlper', 'morph', 'inflection', 'neversleep', 'alfredpros', 'alpindale', 'alibaba', 'deepcogito', 'cognitivecomputations', 'writer', 'essentialai', 'xiaomi', 'ibm-granite', 'anthracite-org', 'upstage', 'switchpoint', 'gryphe', 'meituan', 'mancer', 'nex-agi', 'bytedance', 'eleutherai', 'tngtech', 'ai21', 'undi95', 'raifle', 'kwaipilot', 'prime-intellect', 'tencent'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
