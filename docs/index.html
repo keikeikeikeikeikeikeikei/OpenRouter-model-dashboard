@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-06 06:04)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-06 12:59)</div>
         </header>
 
         <div class="controls">
@@ -1767,9 +1767,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006",
-        "completion": "0.0000018999999999999998",
-        "input_cache_read": "0.000000119"
+        "prompt": "0.0000008",
+        "completion": "0.00000256",
+        "input_cache_read": "0.00000016"
       },
       "top_provider": {
         "context_length": 202752,
@@ -2180,13 +2180,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000041",
-        "completion": "0.00000206",
-        "input_cache_read": "0.00000007"
+        "prompt": "0.00000045",
+        "completion": "0.0000022",
+        "input_cache_read": "0.000000225"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 65535,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10310,7 +10310,7 @@
       "name": "Anthropic: Claude Sonnet 4",
       "created": 1747930371,
       "description": "Claude Sonnet 4 significantly enhances the capabilities of its predecessor, Sonnet 3.7, excelling in both coding and reasoning tasks with improved precision and controllability. Achieving state-of-the-art performance on SWE-bench (72.7%), Sonnet 4 balances capability and computational efficiency, making it suitable for a broad range of applications from routine coding tasks to complex software development projects. Key enhancements include improved autonomous codebase navigation, reduced error rates in agent-driven workflows, and increased reliability in following intricate instructions. Sonnet 4 is optimized for practical everyday use, providing advanced reasoning capabilities while maintaining efficiency and responsiveness in diverse internal and external scenarios.\n\nRead more at the [blog post here](https://www.anthropic.com/news/claude-4)",
-      "context_length": 1000000,
+      "context_length": 200000,
       "architecture": {
         "modality": "text+image+file->text",
         "input_modalities": [
@@ -10332,9 +10332,9 @@
         "input_cache_write": "0.00000375"
       },
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 200000,
         "max_completion_tokens": 64000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -11798,11 +11798,11 @@
       "pricing": {
         "prompt": "0.0000002",
         "completion": "0.00000077",
-        "input_cache_read": "0.000000135"
+        "input_cache_read": "0.00000013"
       },
       "top_provider": {
         "context_length": 163840,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 163840,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -18736,7 +18736,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'allenai', 'arcee-ai', 'minimax', 'nousresearch', 'baidu', 'sao10k', 'liquid', 'sentence-transformers', 'amazon', 'moonshotai', 'perplexity', 'cohere', 'aion-labs', 'thedrummer', 'bytedance-seed', 'baai', 'inception', 'openrouter', 'intfloat', 'inflection', 'thenlper', 'neversleep', 'microsoft', 'relace', 'stepfun', 'morph', 'kwaipilot', 'tencent', 'cognitivecomputations', 'undi95', 'upstage', 'eleutherai', 'alibaba', 'bytedance', 'tngtech', 'xiaomi', 'ai21', 'writer', 'alpindale', 'mancer', 'raifle', 'gryphe', 'anthracite-org', 'ibm-granite', 'nex-agi', 'alfredpros', 'switchpoint', 'essentialai', 'deepcogito', 'prime-intellect', 'meituan'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'amazon', 'moonshotai', 'liquid', 'baidu', 'sentence-transformers', 'perplexity', 'sao10k', 'cohere', 'thedrummer', 'aion-labs', 'openrouter', 'intfloat', 'inception', 'baai', 'bytedance-seed', 'morph', 'neversleep', 'inflection', 'relace', 'thenlper', 'stepfun', 'microsoft', 'nex-agi', 'cognitivecomputations', 'alibaba', 'alpindale', 'tngtech', 'tencent', 'raifle', 'meituan', 'eleutherai', 'bytedance', 'alfredpros', 'kwaipilot', 'undi95', 'switchpoint', 'essentialai', 'ibm-granite', 'upstage', 'writer', 'gryphe', 'ai21', 'deepcogito', 'mancer', 'anthracite-org', 'prime-intellect', 'xiaomi'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
