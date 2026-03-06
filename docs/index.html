@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-06 19:44)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-07 05:07)</div>
         </header>
 
         <div class="controls">
@@ -8754,7 +8754,7 @@
       "name": "Qwen: Qwen3 235B A22B Thinking 2507",
       "created": 1753449557,
       "description": "Qwen3-235B-A22B-Thinking-2507 is a high-performance, open-weight Mixture-of-Experts (MoE) language model optimized for complex reasoning tasks. It activates 22B of its 235B parameters per forward pass and natively supports up to 262,144 tokens of context. This \"thinking-only\" variant enhances structured logical reasoning, mathematics, science, and long-form generation, showing strong benchmark performance across AIME, SuperGPQA, LiveCodeBench, and MMLU-Redux. It enforces a special reasoning mode (</think>) and is designed for high-token outputs (up to 81,920 tokens) in challenging domains.\n\nThe model is instruction-tuned and excels at step-by-step reasoning, tool use, agentic workflows, and multilingual tasks. This release represents the most capable open-source variant in the Qwen3-235B series, surpassing many closed models in structured reasoning use cases.",
-      "context_length": 131072,
+      "context_length": 262144,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -8767,16 +8767,13 @@
         "instruct_type": "qwen3"
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "prompt": "0.00000011",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000055"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -18736,7 +18733,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'amazon', 'liquid', 'moonshotai', 'sao10k', 'sentence-transformers', 'perplexity', 'baidu', 'thedrummer', 'aion-labs', 'cohere', 'bytedance-seed', 'intfloat', 'baai', 'inception', 'openrouter', 'relace', 'morph', 'inflection', 'microsoft', 'neversleep', 'stepfun', 'thenlper', 'deepcogito', 'bytedance', 'cognitivecomputations', 'upstage', 'writer', 'prime-intellect', 'xiaomi', 'ai21', 'eleutherai', 'gryphe', 'essentialai', 'alpindale', 'alibaba', 'raifle', 'meituan', 'ibm-granite', 'undi95', 'tngtech', 'nex-agi', 'kwaipilot', 'switchpoint', 'anthracite-org', 'tencent', 'mancer', 'alfredpros'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'arcee-ai', 'allenai', 'minimax', 'nousresearch', 'perplexity', 'sao10k', 'sentence-transformers', 'amazon', 'liquid', 'baidu', 'moonshotai', 'aion-labs', 'thedrummer', 'cohere', 'bytedance-seed', 'inception', 'baai', 'openrouter', 'intfloat', 'neversleep', 'inflection', 'thenlper', 'morph', 'stepfun', 'microsoft', 'relace', 'undi95', 'deepcogito', 'upstage', 'writer', 'nex-agi', 'ai21', 'bytedance', 'mancer', 'switchpoint', 'ibm-granite', 'meituan', 'essentialai', 'cognitivecomputations', 'alibaba', 'anthracite-org', 'alfredpros', 'xiaomi', 'prime-intellect', 'tngtech', 'eleutherai', 'kwaipilot', 'gryphe', 'alpindale', 'raifle', 'tencent'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
