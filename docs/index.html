@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-14 00:02)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-14 19:45)</div>
         </header>
 
         <div class="controls">
@@ -1041,7 +1041,7 @@
       "name": "Qwen: Qwen3.5-9B",
       "created": 1773152396,
       "description": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, designed to deliver strong reasoning, coding, and visual understanding in an efficient 9B-parameter architecture. It uses a unified vision-language design with early fusion of multimodal tokens, allowing the model to process and reason across text and images within the same context.",
-      "context_length": 262144,
+      "context_length": 256000,
       "architecture": {
         "modality": "text+image+video->text",
         "input_modalities": [
@@ -1056,11 +1056,11 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
+        "prompt": "0.00000005",
         "completion": "0.00000015"
       },
       "top_provider": {
-        "context_length": 262144,
+        "context_length": 256000,
         "max_completion_tokens": null,
         "is_moderated": false
       },
@@ -1069,6 +1069,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -1081,6 +1082,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -6849,6 +6851,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6861,6 +6864,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -18719,7 +18723,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'x-ai', 'nvidia', 'z-ai', 'arcee-ai', 'allenai', 'nousresearch', 'minimax', 'sao10k', 'perplexity', 'baidu', 'openrouter', 'amazon', 'sentence-transformers', 'liquid', 'bytedance-seed', 'aion-labs', 'thedrummer', 'cohere', 'moonshotai', 'baai', 'inception', 'intfloat', 'thenlper', 'stepfun', 'relace', 'microsoft', 'inflection', 'morph', 'ai21', 'upstage', 'meituan', 'tencent', 'alpindale', 'cognitivecomputations', 'deepcogito', 'mancer', 'switchpoint', 'nex-agi', 'essentialai', 'alfredpros', 'gryphe', 'kwaipilot', 'prime-intellect', 'xiaomi', 'ibm-granite', 'undi95', 'eleutherai', 'bytedance', 'anthracite-org', 'tngtech', 'alibaba', 'writer'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'x-ai', 'z-ai', 'nvidia', 'arcee-ai', 'allenai', 'minimax', 'nousresearch', 'liquid', 'amazon', 'sentence-transformers', 'baidu', 'openrouter', 'sao10k', 'perplexity', 'aion-labs', 'thedrummer', 'cohere', 'moonshotai', 'bytedance-seed', 'inception', 'intfloat', 'baai', 'stepfun', 'microsoft', 'morph', 'relace', 'inflection', 'thenlper', 'nex-agi', 'cognitivecomputations', 'gryphe', 'undi95', 'writer', 'tencent', 'switchpoint', 'anthracite-org', 'eleutherai', 'ibm-granite', 'essentialai', 'tngtech', 'bytedance', 'ai21', 'mancer', 'deepcogito', 'alfredpros', 'upstage', 'alpindale', 'xiaomi', 'kwaipilot', 'alibaba', 'meituan', 'prime-intellect'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
