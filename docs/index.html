@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-15 01:45)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-16 02:08)</div>
         </header>
 
         <div class="controls">
@@ -700,6 +700,56 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "z-ai/glm-5-turbo",
+      "canonical_slug": "z-ai/glm-5-turbo-20260315",
+      "hugging_face_id": "",
+      "name": "Z.ai: GLM 5 Turbo",
+      "created": 1773583573,
+      "description": "GLM-5 Turbo is a new model from Z.ai designed for fast inference and strong performance in agent-driven environments such as OpenClaw scenarios. It is deeply optimized for real-world agent workflows involving long execution chains, with improved complex instruction decomposition, tool use, scheduled and persistent execution, and overall stability across extended tasks.",
+      "context_length": 202752,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000096",
+        "completion": "0.0000032",
+        "input_cache_read": "0.000000192"
+      },
+      "top_provider": {
+        "context_length": 202752,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "expiration_date": null
+    },
     {
       "id": "x-ai/grok-4.20-multi-agent-beta",
       "canonical_slug": "x-ai/grok-4.20-multi-agent-beta-20260309",
@@ -2083,6 +2133,52 @@
       ],
       "default_parameters": {
         "temperature": 0.6,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      },
+      "expiration_date": null
+    },
+    {
+      "id": "minimax/minimax-m2.5:free",
+      "canonical_slug": "minimax/minimax-m2.5-20260211",
+      "hugging_face_id": "MiniMaxAI/MiniMax-M2.5",
+      "name": "MiniMax: MiniMax M2.5 (free)",
+      "created": 1770908502,
+      "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
+      "context_length": 196608,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 196608,
+        "max_completion_tokens": 196608,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": 1,
         "top_p": 0.95,
         "frequency_penalty": null
       },
@@ -18722,7 +18818,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'x-ai', 'nvidia', 'arcee-ai', 'allenai', 'minimax', 'nousresearch', 'liquid', 'sentence-transformers', 'sao10k', 'baidu', 'perplexity', 'amazon', 'openrouter', 'cohere', 'thedrummer', 'moonshotai', 'aion-labs', 'bytedance-seed', 'intfloat', 'inception', 'baai', 'morph', 'stepfun', 'microsoft', 'inflection', 'thenlper', 'relace', 'kwaipilot', 'tngtech', 'prime-intellect', 'mancer', 'ibm-granite', 'meituan', 'essentialai', 'ai21', 'xiaomi', 'nex-agi', 'tencent', 'upstage', 'alpindale', 'switchpoint', 'gryphe', 'undi95', 'deepcogito', 'anthracite-org', 'bytedance', 'alibaba', 'eleutherai', 'writer', 'alfredpros', 'cognitivecomputations'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'minimax', 'allenai', 'arcee-ai', 'nousresearch', 'openrouter', 'baidu', 'liquid', 'amazon', 'perplexity', 'sao10k', 'sentence-transformers', 'thedrummer', 'bytedance-seed', 'cohere', 'aion-labs', 'moonshotai', 'baai', 'intfloat', 'inception', 'inflection', 'relace', 'microsoft', 'stepfun', 'thenlper', 'morph', 'alfredpros', 'switchpoint', 'xiaomi', 'prime-intellect', 'ai21', 'nex-agi', 'cognitivecomputations', 'meituan', 'anthracite-org', 'mancer', 'deepcogito', 'writer', 'bytedance', 'gryphe', 'essentialai', 'undi95', 'alpindale', 'alibaba', 'ibm-granite', 'kwaipilot', 'tencent', 'eleutherai', 'tngtech', 'upstage'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
