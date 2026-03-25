@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-25 07:02)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-25 15:39)</div>
         </header>
 
         <div class="controls">
@@ -2519,7 +2519,7 @@
       "name": "Z.ai: GLM 5",
       "created": 1770829182,
       "description": "GLM-5 is Z.ai\u2019s flagship open-source foundation model engineered for complex systems design and long-horizon agent workflows. Built for expert developers, it delivers production-grade performance on large-scale programming tasks, rivaling leading closed-source models. With advanced agentic planning, deep backend reasoning, and iterative self-correction, GLM-5 moves beyond code generation to full-system construction and autonomous execution.",
-      "context_length": 202752,
+      "context_length": 80000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -2532,13 +2532,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000008",
-        "completion": "0.00000256",
-        "input_cache_read": "0.00000016"
+        "prompt": "0.00000072",
+        "completion": "0.0000023"
       },
       "top_provider": {
-        "context_length": 202752,
-        "max_completion_tokens": null,
+        "context_length": 80000,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5001,14 +5000,11 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
         "response_format",
-        "seed",
-        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -19011,7 +19007,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'sao10k', 'baidu', 'amazon', 'liquid', 'sentence-transformers', 'moonshotai', 'allenai', 'bytedance-seed', 'aion-labs', 'cohere', 'thedrummer', 'inception', 'intfloat', 'baai', 'openrouter', 'xiaomi', 'microsoft', 'inflection', 'stepfun', 'morph', 'relace', 'thenlper', 'alpindale', 'switchpoint', 'deepcogito', 'tngtech', 'cognitivecomputations', 'gryphe', 'writer', 'upstage', 'essentialai', 'ai21', 'bytedance', 'meituan', 'nex-agi', 'ibm-granite', 'tencent', 'undi95', 'mancer', 'alfredpros', 'anthracite-org', 'prime-intellect', 'alibaba', 'kwaipilot', 'eleutherai'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'amazon', 'baidu', 'sentence-transformers', 'sao10k', 'liquid', 'thedrummer', 'bytedance-seed', 'allenai', 'cohere', 'aion-labs', 'moonshotai', 'baai', 'xiaomi', 'inception', 'intfloat', 'openrouter', 'thenlper', 'microsoft', 'morph', 'stepfun', 'relace', 'inflection', 'deepcogito', 'gryphe', 'meituan', 'ai21', 'eleutherai', 'kwaipilot', 'switchpoint', 'anthracite-org', 'bytedance', 'cognitivecomputations', 'alfredpros', 'upstage', 'writer', 'alpindale', 'nex-agi', 'prime-intellect', 'ibm-granite', 'tencent', 'tngtech', 'essentialai', 'undi95', 'mancer', 'alibaba'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
