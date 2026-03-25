@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-03-25 15:39)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-03-26 03:39)</div>
         </header>
 
         <div class="controls">
@@ -700,6 +700,60 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "reka/reka-edge",
+      "canonical_slug": "rekaai/reka-edge-2603",
+      "hugging_face_id": "RekaAI/reka-edge-2603",
+      "name": "Reka Edge",
+      "created": 1774026965,
+      "description": "Reka Edge is an extremely efficient 7B multimodal vision-language model that accepts image/video+text inputs and generates text outputs. This model is optimized specifically to deliver industry-leading performance in image understanding, video analysis, object detection, and agentic tool-use.",
+      "context_length": 16384,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0.0000002"
+      },
+      "top_provider": {
+        "context_length": 16384,
+        "max_completion_tokens": 16384,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "expiration_date": null
+    },
     {
       "id": "xiaomi/mimo-v2-omni",
       "canonical_slug": "xiaomi/mimo-v2-omni-20260318",
@@ -1060,13 +1114,21 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
         "reasoning",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -2927,7 +2989,7 @@
         "presence_penalty": null,
         "repetition_penalty": null
       },
-      "expiration_date": null
+      "expiration_date": "2026-03-31"
     },
     {
       "id": "moonshotai/kimi-k2.5",
@@ -19007,7 +19069,7 @@
   ],
   "other": []
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'amazon', 'baidu', 'sentence-transformers', 'sao10k', 'liquid', 'thedrummer', 'bytedance-seed', 'allenai', 'cohere', 'aion-labs', 'moonshotai', 'baai', 'xiaomi', 'inception', 'intfloat', 'openrouter', 'thenlper', 'microsoft', 'morph', 'stepfun', 'relace', 'inflection', 'deepcogito', 'gryphe', 'meituan', 'ai21', 'eleutherai', 'kwaipilot', 'switchpoint', 'anthracite-org', 'bytedance', 'cognitivecomputations', 'alfredpros', 'upstage', 'writer', 'alpindale', 'nex-agi', 'prime-intellect', 'ibm-granite', 'tencent', 'tngtech', 'essentialai', 'undi95', 'mancer', 'alibaba'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'liquid', 'sao10k', 'sentence-transformers', 'baidu', 'amazon', 'cohere', 'thedrummer', 'aion-labs', 'allenai', 'bytedance-seed', 'moonshotai', 'openrouter', 'intfloat', 'baai', 'inception', 'xiaomi', 'morph', 'relace', 'thenlper', 'microsoft', 'inflection', 'stepfun', 'alfredpros', 'tencent', 'kwaipilot', 'switchpoint', 'alibaba', 'undi95', 'eleutherai', 'tngtech', 'ai21', 'essentialai', 'ibm-granite', 'reka', 'mancer', 'anthracite-org', 'nex-agi', 'deepcogito', 'cognitivecomputations', 'meituan', 'writer', 'prime-intellect', 'bytedance', 'alpindale', 'upstage', 'gryphe'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
