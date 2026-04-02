@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-02 22:31)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-03 04:32)</div>
         </header>
 
         <div class="controls">
@@ -700,6 +700,64 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "google/gemma-4-31b-it",
+      "canonical_slug": "google/gemma-4-31b-it-20260402",
+      "hugging_face_id": "google/gemma-4-31B-it",
+      "name": "Google: Gemma 4 31B",
+      "created": 1775148486,
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function calling, and multilingual support across 140+ languages. Strong on coding, reasoning, and document understanding tasks. Apache 2.0 license.",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemini",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000014",
+        "completion": "0.0000004"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": 64,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null
+    },
     {
       "id": "qwen/qwen3.6-plus:free",
       "canonical_slug": "qwen/qwen3.6-plus-04-02",
@@ -2821,7 +2879,7 @@
       "name": "MiniMax: MiniMax M2.5",
       "created": 1770908502,
       "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1 to extend into general office work, reaching fluency in generating and operating Word, Excel, and Powerpoint files, context switching between diverse software environments, and working across different agent and human teams. Scoring 80.2% on SWE-Bench Verified, 51.3% on Multi-SWE-Bench, and 76.3% on BrowseComp, M2.5 is also more token efficient than previous generations, having been trained to optimize its actions and output through planning.",
-      "context_length": 196600,
+      "context_length": 196608,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -2835,12 +2893,12 @@
       },
       "pricing": {
         "prompt": "0.000000118",
-        "completion": "0.00000125",
-        "input_cache_read": "0.0000001"
+        "completion": "0.000001",
+        "input_cache_read": "0.000000059"
       },
       "top_provider": {
-        "context_length": 196600,
-        "max_completion_tokens": 196600,
+        "context_length": 196608,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3327,12 +3385,12 @@
       },
       "pricing": {
         "prompt": "0.0000003827",
-        "completion": "0.0000019092",
-        "input_cache_read": "0.0000001935"
+        "completion": "0.000001909",
+        "input_cache_read": "0.00000019135"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 65535,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -19665,7 +19723,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'baidu', 'liquid', 'amazon', 'sentence-transformers', 'sao10k', 'aion-labs', 'allenai', 'bytedance-seed', 'moonshotai', 'cohere', 'thedrummer', 'inception', 'xiaomi', 'baai', 'intfloat', 'openrouter', 'relace', 'morph', 'rekaai', 'stepfun', 'inflection', 'thenlper', 'microsoft', 'nex-agi', 'tngtech', 'ibm-granite', 'cognitivecomputations', 'eleutherai', 'ai21', 'writer', 'tencent', 'alibaba', 'deepcogito', 'essentialai', 'undi95', 'alpindale', 'kwaipilot', 'switchpoint', 'gryphe', 'mancer', 'anthracite-org', 'alfredpros', 'meituan', 'bytedance', 'upstage', 'prime-intellect'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'arcee-ai', 'minimax', 'perplexity', 'nousresearch', 'baidu', 'sao10k', 'sentence-transformers', 'liquid', 'amazon', 'cohere', 'allenai', 'aion-labs', 'moonshotai', 'bytedance-seed', 'thedrummer', 'intfloat', 'openrouter', 'xiaomi', 'baai', 'inception', 'microsoft', 'inflection', 'rekaai', 'thenlper', 'morph', 'stepfun', 'relace', 'alibaba', 'gryphe', 'meituan', 'alfredpros', 'ibm-granite', 'anthracite-org', 'prime-intellect', 'kwaipilot', 'switchpoint', 'tencent', 'upstage', 'eleutherai', 'nex-agi', 'cognitivecomputations', 'deepcogito', 'alpindale', 'writer', 'mancer', 'ai21', 'essentialai', 'tngtech', 'bytedance', 'undi95'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
