@@ -634,7 +634,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-03 04:32)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-03 10:34)</div>
         </header>
 
         <div class="controls">
@@ -1036,59 +1036,6 @@
       },
       "knowledge_cutoff": "2025-09-01",
       "expiration_date": null
-    },
-    {
-      "id": "qwen/qwen3.6-plus-preview:free",
-      "canonical_slug": "qwen/qwen3.6-plus-preview",
-      "hugging_face_id": "",
-      "name": "Qwen: Qwen3.6 Plus Preview (free)",
-      "created": 1774891569,
-      "description": "Qwen 3.6 Plus Preview is the next-generation evolution of the Qwen Plus series, featuring an advanced hybrid architecture that improves efficiency and scalability. It delivers stronger reasoning and more reliable agentic behavior compared to the 3.5 series. In benchmarks, it performs at or above leading state-of-the-art models. Designed as a flagship preview, it excels in agentic coding, front-end development, and complex problem-solving.\n\nNote: The model collects prompt and completion data that can be used to improve the model. ",
-      "context_length": 1000000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen3",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 32000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "seed",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 1,
-        "top_p": 1,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": 0,
-        "repetition_penalty": null
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-04-03"
     },
     {
       "id": "kwaipilot/kat-coder-pro-v2",
@@ -3361,7 +3308,7 @@
         "repetition_penalty": null
       },
       "knowledge_cutoff": null,
-      "expiration_date": "2026-04-10"
+      "expiration_date": null
     },
     {
       "id": "moonshotai/kimi-k2.5",
@@ -5278,7 +5225,7 @@
         "frequency_penalty": null
       },
       "knowledge_cutoff": null,
-      "expiration_date": null
+      "expiration_date": "2026-04-10"
     },
     {
       "id": "arcee-ai/trinity-mini",
@@ -6389,104 +6336,6 @@
         "frequency_penalty": null,
         "presence_penalty": null,
         "repetition_penalty": 1
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": null
-    },
-    {
-      "id": "liquid/lfm2-8b-a1b",
-      "canonical_slug": "liquid/lfm2-8b-a1b",
-      "hugging_face_id": "LiquidAI/LFM2-8B-A1B",
-      "name": "LiquidAI: LFM2-8B-A1B",
-      "created": 1760970984,
-      "description": "LFM2-8B-A1B is an efficient on-device Mixture-of-Experts (MoE) model from Liquid AI\u2019s LFM2 family, built for fast, high-quality inference on edge hardware. It uses 8.3B total parameters with only ~1.5B active per token, delivering strong performance while keeping compute and memory usage low\u2014making it ideal for phones, tablets, and laptops.",
-      "context_length": 32768,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000001",
-        "completion": "0.00000002"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": null
-    },
-    {
-      "id": "liquid/lfm-2.2-6b",
-      "canonical_slug": "liquid/lfm-2.2-6b",
-      "hugging_face_id": "LiquidAI/LFM2-2.6B",
-      "name": "LiquidAI: LFM2-2.6B",
-      "created": 1760970889,
-      "description": "LFM2 is a new generation of hybrid models developed by Liquid AI, specifically designed for edge AI and on-device deployment. It sets a new standard in terms of quality, speed, and memory efficiency.",
-      "context_length": 32768,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000001",
-        "completion": "0.00000002"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
       },
       "knowledge_cutoff": null,
       "expiration_date": null
@@ -9176,6 +9025,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -9190,6 +9040,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -19723,7 +19574,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'arcee-ai', 'minimax', 'perplexity', 'nousresearch', 'baidu', 'sao10k', 'sentence-transformers', 'liquid', 'amazon', 'cohere', 'allenai', 'aion-labs', 'moonshotai', 'bytedance-seed', 'thedrummer', 'intfloat', 'openrouter', 'xiaomi', 'baai', 'inception', 'microsoft', 'inflection', 'rekaai', 'thenlper', 'morph', 'stepfun', 'relace', 'alibaba', 'gryphe', 'meituan', 'alfredpros', 'ibm-granite', 'anthracite-org', 'prime-intellect', 'kwaipilot', 'switchpoint', 'tencent', 'upstage', 'eleutherai', 'nex-agi', 'cognitivecomputations', 'deepcogito', 'alpindale', 'writer', 'mancer', 'ai21', 'essentialai', 'tngtech', 'bytedance', 'undi95'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'deepseek', 'x-ai', 'arcee-ai', 'minimax', 'perplexity', 'nousresearch', 'baidu', 'sentence-transformers', 'amazon', 'sao10k', 'bytedance-seed', 'aion-labs', 'cohere', 'moonshotai', 'thedrummer', 'allenai', 'baai', 'liquid', 'openrouter', 'xiaomi', 'intfloat', 'inception', 'inflection', 'morph', 'thenlper', 'stepfun', 'rekaai', 'relace', 'microsoft', 'deepcogito', 'tngtech', 'meituan', 'cognitivecomputations', 'essentialai', 'writer', 'alibaba', 'mancer', 'prime-intellect', 'eleutherai', 'undi95', 'tencent', 'bytedance', 'kwaipilot', 'upstage', 'gryphe', 'ibm-granite', 'alfredpros', 'switchpoint', 'nex-agi', 'ai21', 'anthracite-org', 'alpindale'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
