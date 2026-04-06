@@ -42,18 +42,52 @@
         }
 
         @media (max-width: 768px) {
-            body { padding: 15px 8px; }
-            h1 { font-size: 1.6rem; }
-            .controls { padding: 15px; gap: 15px; }
-            .main-controls { flex-direction: column; align-items: stretch; gap: 15px; }
+            body { padding: 10px 4px; }
+            .container { width: 100%; padding: 0; }
+            header { margin-bottom: 15px; text-align: center; }
+            h1 { font-size: 1.4rem; }
+            .meta { font-size: 0.75rem; }
+            .controls { padding: 12px; gap: 12px; margin-bottom: 15px; border-radius: 8px; }
+            .main-controls { flex-direction: column; align-items: stretch; gap: 12px; }
+            .tabs { width: 100%; display: flex; }
+            .tab-btn { padding: 8px 4px; font-size: 0.8rem; flex: 1; text-align: center; }
             .search-box { max-width: none; }
-            .filter-bar { gap: 10px; }
-            .filter-group { flex-direction: row; align-items: center; gap: 8px; }
-            .filter-group-label { min-width: 0; font-size: 0.6rem; opacity: 0.7; border-right: 1px solid var(--border-color); padding-right: 8px; margin-right: 2px; }
-            .range-controls { flex-direction: column; align-items: stretch; gap: 20px; }
-            .range-item { flex: 1; }
-            .range-group div { flex-wrap: wrap; }
-            .tab-btn { padding: 8px 12px; font-size: 0.85rem; flex: 1; text-align: center; }
+            .search-box input { padding: 10px 12px 10px 36px; font-size: 0.9rem; }
+            .ghost-btn { padding: 8px 10px; font-size: 0.75rem; }
+            
+            .filter-bar { gap: 8px; }
+            .filter-group { gap: 6px; }
+            .filter-group-label { font-size: 0.6rem; min-width: 60px; padding-right: 4px; }
+            .filter-item { padding: 4px 10px; font-size: 0.75rem; }
+            .filter-segment-item { padding: 4px 10px; font-size: 0.75rem; }
+            
+            .range-controls { gap: 15px; padding-top: 12px; }
+            .range-group select, .range-group input { min-width: 0; flex: 1; font-size: 0.85rem; padding: 6px 10px; }
+            
+            .table-container { border-radius: 0; border-left: none; border-right: none; }
+            table { min-width: 500px; table-layout: auto; }
+            th, td { padding: 10px 6px; }
+            th { font-size: 0.6rem; }
+            
+            .col-model { width: 45%; }
+            .col-combined-price { width: 35%; }
+            .col-cache { display: none; }
+            .col-ctx { width: 20%; }
+            .col-caps { display: none; }
+            
+            .model-name { font-size: 0.85rem; white-space: normal; line-height: 1.2; word-break: break-word; }
+            .model-id { font-size: 0.55rem; white-space: normal; }
+            .model-description { font-size: 0.75rem; -webkit-line-clamp: 1; }
+            
+            .price-bridge { min-width: 90px; gap: 4px; }
+            .price-bridge-avg-info { font-size: 0.75rem; font-weight: 700; }
+            .price-value-num { font-size: 0.7rem; }
+            .price-value-label { font-size: 0.5rem; }
+            .rel-bar-container { gap: 4px; }
+            .rel-bar-bg { height: 4px; }
+            
+            .details-content { padding: 15px; }
+            .provider-table th, .provider-table td { padding: 8px 10px; font-size: 0.75rem; }
         }
 
         * {
