@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-07 05:27)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-09 05:46)</div>
         </header>
 
         <div class="controls">
@@ -735,6 +735,184 @@
         window.openRouterModels = {
   "text": [
     {
+      "id": "anthropic/claude-opus-4.6-fast",
+      "canonical_slug": "anthropic/claude-4.6-opus-fast-20260407",
+      "hugging_face_id": null,
+      "name": "Anthropic: Claude Opus 4.6 (Fast)",
+      "created": 1775592472,
+      "description": "Fast-mode variant of [Opus 4.6](/anthropic/claude-opus-4.6) - identical capabilities with higher output speed at premium 6x pricing.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Claude",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00003",
+        "completion": "0.00015",
+        "web_search": "0.01",
+        "input_cache_read": "0.000003",
+        "input_cache_write": "0.0000375"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p",
+        "verbosity"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/anthropic/claude-4.6-opus-fast-20260407/endpoints"
+      }
+    },
+    {
+      "id": "z-ai/glm-5.1",
+      "canonical_slug": "z-ai/glm-5.1-20260406",
+      "hugging_face_id": "zai-org/GLM-5.1",
+      "name": "Z.ai: GLM 5.1",
+      "created": 1775578025,
+      "description": "GLM-5.1 delivers a major leap in coding capability, with particularly significant gains in handling long-horizon tasks. Unlike previous models built around minute-level interactions, GLM-5.1 can work independently and continuously on...",
+      "context_length": 202752,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000001395",
+        "completion": "0.0000044",
+        "input_cache_read": "0.00000026"
+      },
+      "top_provider": {
+        "context_length": 202752,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/z-ai/glm-5.1-20260406/endpoints"
+      }
+    },
+    {
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
+      "hugging_face_id": "google/gemma-4-26B-A4B-it",
+      "name": "Google: Gemma 4 26B A4B  (free)",
+      "created": 1775227989,
+      "description": "Gemma 4 26B A4B IT is an instruction-tuned Mixture-of-Experts (MoE) model from Google DeepMind. Despite 25.2B total parameters, only 3.8B activate per token during inference \u2014 delivering near-31B quality at...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemma",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": 64
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
+      }
+    },
+    {
       "id": "google/gemma-4-26b-a4b-it",
       "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
       "hugging_face_id": "google/gemma-4-26B-A4B-it",
@@ -794,6 +972,62 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/google/gemma-4-26b-a4b-it-20260403/endpoints"
+      }
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "canonical_slug": "google/gemma-4-31b-it-20260402",
+      "hugging_face_id": "google/gemma-4-31B-it",
+      "name": "Google: Gemma 4 31B (free)",
+      "created": 1775148486,
+      "description": "Gemma 4 31B Instruct is Google DeepMind's 30.7B dense multimodal model supporting text and image input with text output. Features a 256K token context window, configurable thinking/reasoning mode, native function...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "image",
+          "text",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Gemma",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "top_k": 64,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/google/gemma-4-31b-it-20260402/endpoints"
       }
     },
     {
@@ -862,10 +1096,10 @@
       }
     },
     {
-      "id": "qwen/qwen3.6-plus:free",
+      "id": "qwen/qwen3.6-plus",
       "canonical_slug": "qwen/qwen3.6-plus-04-02",
       "hugging_face_id": "",
-      "name": "Qwen: Qwen3.6 Plus (free)",
+      "name": "Qwen: Qwen3.6 Plus",
       "created": 1775133557,
       "description": "Qwen 3.6 Plus builds on a hybrid architecture that combines efficient linear attention with sparse mixture-of-experts routing, enabling strong scalability and high-performance inference. Compared to the 3.5 series, it delivers...",
       "context_length": 1000000,
@@ -883,8 +1117,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0"
+        "prompt": "0.000000325",
+        "completion": "0.00000195"
       },
       "top_provider": {
         "context_length": 1000000,
@@ -1481,6 +1715,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -1538,6 +1773,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -1955,6 +2191,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -2012,6 +2249,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -2123,6 +2361,7 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_completion_tokens",
         "max_tokens",
         "response_format",
         "seed",
@@ -2669,6 +2908,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -2836,6 +3076,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -3250,6 +3491,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -3438,7 +3680,7 @@
         "frequency_penalty": null
       },
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-04-09",
       "links": {
         "details": "/api/v1/models/stepfun/step-3.5-flash/endpoints"
       }
@@ -3547,7 +3789,7 @@
         "repetition_penalty": null
       },
       "knowledge_cutoff": null,
-      "expiration_date": null,
+      "expiration_date": "2026-04-22",
       "links": {
         "details": "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
       }
@@ -3575,11 +3817,11 @@
       "pricing": {
         "prompt": "0.0000003827",
         "completion": "0.00000172",
-        "input_cache_read": "0.0000001935"
+        "input_cache_read": "0.00000019135"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 65535,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4080,6 +4322,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -4285,13 +4528,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000027",
+        "prompt": "0.00000029",
         "completion": "0.00000095",
-        "input_cache_read": "0.0000000290000007"
+        "input_cache_read": "0.00000003"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 196608,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -4697,6 +4940,7 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_completion_tokens",
         "max_tokens",
         "response_format",
         "seed",
@@ -4803,6 +5047,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -5169,6 +5414,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -6022,6 +6268,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -6078,6 +6325,7 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_completion_tokens",
         "max_tokens",
         "response_format",
         "seed",
@@ -6129,6 +6377,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -6184,6 +6433,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -6213,7 +6463,7 @@
       "name": "MoonshotAI: Kimi K2 Thinking",
       "created": 1762440622,
       "description": "Kimi K2 Thinking is Moonshot AI\u2019s most advanced open reasoning model to date, extending the K2 series into agentic, long-horizon reasoning. Built on the trillion-parameter Mixture-of-Experts (MoE) architecture introduced in...",
-      "context_length": 131072,
+      "context_length": 262144,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -6226,12 +6476,11 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000047",
-        "completion": "0.000002",
-        "input_cache_read": "0.000000141"
+        "prompt": "0.0000006",
+        "completion": "0.0000025"
       },
       "top_provider": {
-        "context_length": 131072,
+        "context_length": 262144,
         "max_completion_tokens": null,
         "is_moderated": false
       },
@@ -8608,7 +8857,7 @@
       "name": "MoonshotAI: Kimi K2 0905",
       "created": 1757021147,
       "description": "Kimi K2 0905 is the September update of [Kimi K2 0711](moonshotai/kimi-k2). It is a large-scale Mixture-of-Experts (MoE) language model developed by Moonshot AI, featuring 1 trillion total parameters with 32...",
-      "context_length": 131072,
+      "context_length": 262144,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -8622,12 +8871,11 @@
       },
       "pricing": {
         "prompt": "0.0000004",
-        "completion": "0.000002",
-        "input_cache_read": "0.00000015"
+        "completion": "0.000002"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -9319,6 +9567,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -9376,6 +9625,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -9433,6 +9683,7 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "reasoning",
         "response_format",
@@ -12771,6 +13022,7 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_completion_tokens",
         "max_tokens",
         "response_format",
         "seed",
@@ -12821,6 +13073,7 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_completion_tokens",
         "max_tokens",
         "response_format",
         "seed",
@@ -12871,6 +13124,7 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "max_completion_tokens",
         "max_tokens",
         "response_format",
         "seed",
@@ -15304,6 +15558,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -17201,6 +17456,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -17472,6 +17728,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -17717,6 +17974,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -17827,6 +18085,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -18231,7 +18490,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
-        "max_tokens",
+        "max_completion_tokens",
         "presence_penalty",
         "response_format",
         "seed",
@@ -18592,6 +18851,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -18909,6 +19169,7 @@
         "frequency_penalty",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -19265,6 +19526,7 @@
         "include_reasoning",
         "logit_bias",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -19318,11 +19580,7 @@
       },
       "pricing": {
         "prompt": "0.00000003",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 32000,
@@ -19374,11 +19632,7 @@
       },
       "pricing": {
         "prompt": "0.000000004",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 32000,
@@ -19431,11 +19685,7 @@
       },
       "pricing": {
         "prompt": "0",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 131072,
@@ -20170,8 +20420,7 @@
       },
       "pricing": {
         "prompt": "0.0000001",
-        "completion": "0",
-        "input_cache_read": "0.00000001"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 8192,
@@ -20222,9 +20471,7 @@
       },
       "pricing": {
         "prompt": "0.00000015",
-        "completion": "0",
-        "image": "0",
-        "audio": "0"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 20000,
@@ -20271,11 +20518,7 @@
       },
       "pricing": {
         "prompt": "0.0000001",
-        "completion": "0",
-        "request": "0",
-        "image": "0",
-        "web_search": "0",
-        "internal_reasoning": "0"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 8192,
@@ -20329,8 +20572,7 @@
       },
       "pricing": {
         "prompt": "0.00000015",
-        "completion": "0",
-        "input_cache_read": "0.000000015"
+        "completion": "0"
       },
       "top_provider": {
         "context_length": 8192,
@@ -20685,7 +20927,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'amazon', 'sao10k', 'sentence-transformers', 'baidu', 'cohere', 'bytedance-seed', 'thedrummer', 'aion-labs', 'moonshotai', 'intfloat', 'allenai', 'baai', 'openrouter', 'inception', 'liquid', 'xiaomi', 'relace', 'thenlper', 'stepfun', 'rekaai', 'morph', 'inflection', 'microsoft', 'anthracite-org', 'upstage', 'gryphe', 'mancer', 'alpindale', 'ibm-granite', 'tngtech', 'nex-agi', 'ai21', 'alfredpros', 'undi95', 'essentialai', 'meituan', 'eleutherai', 'alibaba', 'prime-intellect', 'deepcogito', 'cognitivecomputations', 'switchpoint', 'kwaipilot', 'bytedance', 'writer', 'tencent'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'z-ai', 'anthropic', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'sao10k', 'amazon', 'sentence-transformers', 'baidu', 'thedrummer', 'moonshotai', 'bytedance-seed', 'cohere', 'aion-labs', 'xiaomi', 'liquid', 'intfloat', 'baai', 'allenai', 'inception', 'openrouter', 'rekaai', 'morph', 'microsoft', 'stepfun', 'relace', 'inflection', 'thenlper', 'anthracite-org', 'gryphe', 'alibaba', 'undi95', 'nex-agi', 'ibm-granite', 'tngtech', 'upstage', 'mancer', 'essentialai', 'cognitivecomputations', 'tencent', 'switchpoint', 'writer', 'bytedance', 'ai21', 'deepcogito', 'alpindale', 'prime-intellect', 'kwaipilot', 'alfredpros', 'eleutherai', 'meituan'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
