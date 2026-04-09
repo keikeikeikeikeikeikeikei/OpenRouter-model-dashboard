@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-09 05:46)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-09 11:55)</div>
         </header>
 
         <div class="controls">
@@ -1840,6 +1840,7 @@
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -3633,56 +3634,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openrouter/free/endpoints"
-      }
-    },
-    {
-      "id": "stepfun/step-3.5-flash:free",
-      "canonical_slug": "stepfun/step-3.5-flash",
-      "hugging_face_id": "stepfun-ai/Step-3.5-Flash",
-      "name": "StepFun: Step 3.5 Flash (free)",
-      "created": 1769728337,
-      "description": "Step 3.5 Flash is StepFun's most capable open-source foundation model. Built on a sparse Mixture of Experts (MoE) architecture, it selectively activates only 11B of its 196B parameters per token....",
-      "context_length": 256000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 256000,
-        "max_completion_tokens": 256000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "stop",
-        "temperature",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-04-09",
-      "links": {
-        "details": "/api/v1/models/stepfun/step-3.5-flash/endpoints"
       }
     },
     {
@@ -20927,7 +20878,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'z-ai', 'anthropic', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'sao10k', 'amazon', 'sentence-transformers', 'baidu', 'thedrummer', 'moonshotai', 'bytedance-seed', 'cohere', 'aion-labs', 'xiaomi', 'liquid', 'intfloat', 'baai', 'allenai', 'inception', 'openrouter', 'rekaai', 'morph', 'microsoft', 'stepfun', 'relace', 'inflection', 'thenlper', 'anthracite-org', 'gryphe', 'alibaba', 'undi95', 'nex-agi', 'ibm-granite', 'tngtech', 'upstage', 'mancer', 'essentialai', 'cognitivecomputations', 'tencent', 'switchpoint', 'writer', 'bytedance', 'ai21', 'deepcogito', 'alpindale', 'prime-intellect', 'kwaipilot', 'alfredpros', 'eleutherai', 'meituan'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'baidu', 'sao10k', 'amazon', 'sentence-transformers', 'thedrummer', 'bytedance-seed', 'cohere', 'moonshotai', 'aion-labs', 'openrouter', 'intfloat', 'allenai', 'baai', 'xiaomi', 'inception', 'liquid', 'morph', 'relace', 'thenlper', 'inflection', 'rekaai', 'microsoft', 'writer', 'tencent', 'alibaba', 'essentialai', 'alfredpros', 'ai21', 'eleutherai', 'prime-intellect', 'ibm-granite', 'bytedance', 'undi95', 'cognitivecomputations', 'deepcogito', 'tngtech', 'upstage', 'kwaipilot', 'mancer', 'alpindale', 'nex-agi', 'switchpoint', 'stepfun', 'meituan', 'anthracite-org', 'gryphe'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
