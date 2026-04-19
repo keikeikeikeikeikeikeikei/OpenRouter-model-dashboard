@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-18 12:54)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-19 10:03)</div>
         </header>
 
         <div class="controls">
@@ -3884,7 +3884,7 @@
       "name": "MoonshotAI: Kimi K2.5",
       "created": 1769487076,
       "description": "Kimi K2.5 is Moonshot AI's native multimodal model, delivering state-of-the-art visual coding capability and a self-directed agent swarm paradigm. Built on Kimi K2 with continued pretraining over approximately 15T mixed...",
-      "context_length": 256000,
+      "context_length": 262144,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -3898,15 +3898,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0",
-        "audio": "0",
-        "web_search": "0",
-        "input_cache_read": "0"
+        "prompt": "0.0000003827",
+        "completion": "0.00000172",
+        "input_cache_read": "0.00000019135"
       },
       "top_provider": {
-        "context_length": 256000,
-        "max_completion_tokens": null,
+        "context_length": 262144,
+        "max_completion_tokens": 65535,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10637,14 +10635,11 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "include_reasoning",
         "logit_bias",
         "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
-        "reasoning",
-        "reasoning_effort",
         "repetition_penalty",
         "response_format",
         "seed",
@@ -13175,8 +13170,6 @@
         "stop",
         "structured_outputs",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_k",
         "top_p"
       ],
@@ -13273,7 +13266,6 @@
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -13286,7 +13278,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -13562,7 +13553,6 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -13570,7 +13560,6 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "top_k",
         "top_p"
@@ -14448,7 +14437,7 @@
       "name": "Google: Gemini 2.0 Flash",
       "created": 1738769413,
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "architecture": {
         "modality": "text+image+file+audio+video->text",
         "input_modalities": [
@@ -14474,7 +14463,7 @@
         "input_cache_write": "0.00000008333333333333334"
       },
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048576,
         "max_completion_tokens": 8192,
         "is_moderated": false
       },
@@ -15654,19 +15643,18 @@
         "instruct_type": "llama3"
       },
       "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.00000032"
+        "prompt": "0.00000012",
+        "completion": "0.00000038"
       },
       "top_provider": {
         "context_length": 131072,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -15679,7 +15667,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -17217,6 +17204,7 @@
         "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -17577,61 +17565,6 @@
         "logit_bias",
         "logprobs",
         "max_completion_tokens",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p",
-        "web_search_options"
-      ],
-      "default_parameters": {},
-      "knowledge_cutoff": "2023-10-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/openai/gpt-4o/endpoints"
-      }
-    },
-    {
-      "id": "openai/gpt-4o:extended",
-      "canonical_slug": "openai/gpt-4o",
-      "hugging_face_id": null,
-      "name": "OpenAI: GPT-4o (extended)",
-      "created": 1715558400,
-      "description": "GPT-4o (\"o\" for \"omni\") is OpenAI's latest AI model, supporting both text and image inputs with text outputs. It maintains the intelligence level of [GPT-4 Turbo](/models/openai/gpt-4-turbo) while being twice as...",
-      "context_length": 128000,
-      "architecture": {
-        "modality": "text+image+file->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000006",
-        "completion": "0.000018"
-      },
-      "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": 64000,
-        "is_moderated": true
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
         "max_tokens",
         "presence_penalty",
         "response_format",
@@ -20098,53 +20031,6 @@
       }
     },
     {
-      "id": "google/gemini-embedding-001",
-      "canonical_slug": "google/gemini-embedding-001",
-      "hugging_face_id": "",
-      "name": "Google: Gemini Embedding 001",
-      "created": 1761943410,
-      "description": "gemini-embedding-001 provides a unified cutting edge experience across domains, including science, legal, finance, and coding. This embedding model has consistently held a top spot on the Massive Text Embedding Benchmark...",
-      "context_length": 20000,
-      "architecture": {
-        "modality": "text->embeddings",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "embeddings"
-        ],
-        "tokenizer": "Gemini",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 20000,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "response_format",
-        "seed",
-        "temperature",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/google/gemini-embedding-001/endpoints"
-      }
-    },
-    {
       "id": "openai/text-embedding-ada-002",
       "canonical_slug": "openai/text-embedding-ada-002",
       "hugging_face_id": "",
@@ -20574,7 +20460,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'nousresearch', 'amazon', 'sao10k', 'baidu', 'sentence-transformers', 'openrouter', 'bytedance-seed', 'thedrummer', 'moonshotai', 'cohere', 'aion-labs', 'xiaomi', 'liquid', 'baai', 'intfloat', 'allenai', 'morph', 'microsoft', 'relace', 'thenlper', 'rekaai', 'inflection', 'ibm-granite', 'nex-agi', 'tencent', 'prime-intellect', 'anthracite-org', 'alpindale', 'undi95', 'upstage', 'alfredpros', 'stepfun', 'gryphe', 'essentialai', 'ai21', 'inception', 'deepcogito', 'writer', 'cognitivecomputations', 'switchpoint', 'bytedance', 'tngtech', 'kwaipilot', 'alibaba', 'mancer'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'nousresearch', 'amazon', 'sao10k', 'sentence-transformers', 'baidu', 'bytedance-seed', 'cohere', 'thedrummer', 'openrouter', 'moonshotai', 'aion-labs', 'xiaomi', 'intfloat', 'baai', 'liquid', 'inflection', 'morph', 'microsoft', 'rekaai', 'allenai', 'thenlper', 'relace', 'deepcogito', 'essentialai', 'alibaba', 'anthracite-org', 'writer', 'tencent', 'mancer', 'stepfun', 'switchpoint', 'cognitivecomputations', 'undi95', 'prime-intellect', 'gryphe', 'inception', 'nex-agi', 'alpindale', 'upstage', 'tngtech', 'kwaipilot', 'bytedance', 'ai21', 'alfredpros', 'ibm-granite'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
