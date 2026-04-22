@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-22 17:55)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-23 00:08)</div>
         </header>
 
         <div class="controls">
@@ -930,8 +930,10 @@
         "include_reasoning",
         "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
+        "reasoning_effort",
         "repetition_penalty",
         "response_format",
         "seed",
@@ -5031,9 +5033,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
-        "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -14624,7 +14624,7 @@
       "name": "Google: Gemini 2.0 Flash",
       "created": 1738769413,
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "architecture": {
         "modality": "text+image+file+audio+video->text",
         "input_modalities": [
@@ -14651,7 +14651,7 @@
         "input_cache_write": "0.00000008333333333333334"
       },
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1000000,
         "max_completion_tokens": 8192,
         "is_moderated": false
       },
@@ -20759,7 +20759,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'amazon', 'sao10k', 'baidu', 'moonshotai', 'sentence-transformers', 'aion-labs', 'openrouter', 'bytedance-seed', 'thedrummer', 'cohere', 'liquid', 'baai', 'intfloat', 'xiaomi', 'microsoft', 'rekaai', 'allenai', 'thenlper', 'morph', 'relace', 'inflection', 'mancer', 'tngtech', 'alpindale', 'ibm-granite', 'stepfun', 'essentialai', 'prime-intellect', 'tencent', 'writer', 'alibaba', 'switchpoint', 'upstage', 'inception', 'bytedance', 'alfredpros', 'anthracite-org', 'ai21', 'nex-agi', 'undi95', 'gryphe', '~anthropic', 'deepcogito', 'inclusionai', 'kwaipilot', 'cognitivecomputations'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'nousresearch', 'amazon', 'moonshotai', 'baidu', 'sao10k', 'sentence-transformers', 'bytedance-seed', 'cohere', 'aion-labs', 'openrouter', 'thedrummer', 'baai', 'liquid', 'intfloat', 'xiaomi', 'allenai', 'inflection', 'microsoft', 'relace', 'rekaai', 'thenlper', 'morph', 'essentialai', 'ai21', '~anthropic', 'gryphe', 'tencent', 'upstage', 'inception', 'writer', 'tngtech', 'ibm-granite', 'alibaba', 'nex-agi', 'alfredpros', 'undi95', 'cognitivecomputations', 'anthracite-org', 'bytedance', 'switchpoint', 'inclusionai', 'kwaipilot', 'prime-intellect', 'mancer', 'deepcogito', 'stepfun', 'alpindale'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
