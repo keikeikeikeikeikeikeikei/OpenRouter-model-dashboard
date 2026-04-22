@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-22 03:38)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-22 17:55)</div>
         </header>
 
         <div class="controls">
@@ -793,6 +793,64 @@
       }
     },
     {
+      "id": "~anthropic/claude-opus-latest",
+      "canonical_slug": "~anthropic/claude-opus-latest",
+      "hugging_face_id": "",
+      "name": "Anthropic: Claude Opus Latest",
+      "created": 1776795361,
+      "description": "This model always redirects to the latest model in the Claude Opus family.",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Router",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000005",
+        "completion": "0.000025",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000005",
+        "input_cache_write": "0.00000625"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/~anthropic/claude-opus-latest/endpoints"
+      }
+    },
+    {
       "id": "openrouter/pareto-code",
       "canonical_slug": "openrouter/pareto-code",
       "hugging_face_id": "",
@@ -857,8 +915,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006",
-        "completion": "0.0000028",
+        "prompt": "0.0000008",
+        "completion": "0.0000035",
         "input_cache_read": "0.0000002"
       },
       "top_provider": {
@@ -872,7 +930,6 @@
         "include_reasoning",
         "logit_bias",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -956,58 +1013,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/anthropic/claude-4.7-opus-20260416/endpoints"
-      }
-    },
-    {
-      "id": "openrouter/elephant-alpha",
-      "canonical_slug": "openrouter/elephant-alpha",
-      "hugging_face_id": null,
-      "name": "Elephant",
-      "created": 1776052598,
-      "description": "Elephant Alpha is a 100B-parameter text model focused on intelligence efficiency, delivering strong performance while minimizing token usage. It supports a 256K context window with up to 32K output tokens,...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/openrouter/elephant-alpha/endpoints"
       }
     },
     {
@@ -10515,7 +10520,7 @@
         "frequency_penalty": null
       },
       "knowledge_cutoff": "2025-06-30",
-      "expiration_date": null,
+      "expiration_date": "2026-04-22",
       "links": {
         "details": "/api/v1/models/qwen/qwen3-235b-a22b-thinking-2507/endpoints"
       }
@@ -14281,7 +14286,7 @@
       ],
       "default_parameters": {},
       "knowledge_cutoff": "2024-06-30",
-      "expiration_date": null,
+      "expiration_date": "2026-04-29",
       "links": {
         "details": "/api/v1/models/qwen/qwq-32b/endpoints"
       }
@@ -15826,12 +15831,12 @@
         "instruct_type": "llama3"
       },
       "pricing": {
-        "prompt": "0.00000012",
-        "completion": "0.00000038"
+        "prompt": "0.0000001",
+        "completion": "0.00000032"
       },
       "top_provider": {
         "context_length": 131072,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -18909,6 +18914,68 @@
   ],
   "image": [
     {
+      "id": "openai/gpt-5.4-image-2",
+      "canonical_slug": "openai/gpt-5.4-image-2-20260421",
+      "hugging_face_id": "",
+      "name": "OpenAI: GPT-5.4 Image 2",
+      "created": 1776797528,
+      "description": "[GPT-5.4](https://openrouter.ai/openai/gpt-5.4) Image 2 combines OpenAI's GPT-5.4 model with state-of-the-art image generation capabilities from GPT Image 2. It enables rich multimodal workflows, allowing users to seamlessly move between reasoning, coding, and...",
+      "context_length": 272000,
+      "architecture": {
+        "modality": "text+image+file->text+image",
+        "input_modalities": [
+          "image",
+          "text",
+          "file"
+        ],
+        "output_modalities": [
+          "image",
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000008",
+        "completion": "0.000015",
+        "web_search": "0.01",
+        "input_cache_read": "0.000002"
+      },
+      "top_provider": {
+        "context_length": 272000,
+        "max_completion_tokens": 128000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "top_logprobs"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-5.4-image-2-20260421/endpoints"
+      }
+    },
+    {
       "id": "google/gemini-3.1-flash-image-preview",
       "canonical_slug": "google/gemini-3.1-flash-image-preview-20260226",
       "hugging_face_id": "",
@@ -19071,8 +19138,6 @@
         "stop",
         "structured_outputs",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_logprobs",
         "top_p"
       ],
@@ -19134,8 +19199,6 @@
         "stop",
         "structured_outputs",
         "temperature",
-        "tool_choice",
-        "tools",
         "top_logprobs",
         "top_p"
       ],
@@ -20696,7 +20759,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'openrouter', 'sao10k', 'sentence-transformers', 'baidu', 'moonshotai', 'amazon', 'cohere', 'bytedance-seed', 'aion-labs', 'thedrummer', 'liquid', 'xiaomi', 'baai', 'intfloat', 'inflection', 'relace', 'rekaai', 'allenai', 'microsoft', 'thenlper', 'morph', 'alibaba', 'anthracite-org', 'undi95', 'alfredpros', 'inception', 'bytedance', 'deepcogito', 'tngtech', 'alpindale', 'tencent', 'writer', 'prime-intellect', 'switchpoint', 'kwaipilot', 'essentialai', 'inclusionai', 'nex-agi', 'cognitivecomputations', 'upstage', 'ibm-granite', 'mancer', 'gryphe', 'stepfun', 'ai21'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'amazon', 'sao10k', 'baidu', 'moonshotai', 'sentence-transformers', 'aion-labs', 'openrouter', 'bytedance-seed', 'thedrummer', 'cohere', 'liquid', 'baai', 'intfloat', 'xiaomi', 'microsoft', 'rekaai', 'allenai', 'thenlper', 'morph', 'relace', 'inflection', 'mancer', 'tngtech', 'alpindale', 'ibm-granite', 'stepfun', 'essentialai', 'prime-intellect', 'tencent', 'writer', 'alibaba', 'switchpoint', 'upstage', 'inception', 'bytedance', 'alfredpros', 'anthracite-org', 'ai21', 'nex-agi', 'undi95', 'gryphe', '~anthropic', 'deepcogito', 'inclusionai', 'kwaipilot', 'cognitivecomputations'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
