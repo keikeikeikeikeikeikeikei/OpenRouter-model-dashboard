@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-23 23:57)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-24 05:58)</div>
         </header>
 
         <div class="controls">
@@ -735,9 +735,67 @@
         window.openRouterModels = {
   "text": [
     {
+      "id": "inclusionai/ling-2.6-1t:free",
+      "canonical_slug": "inclusionai/ling-2.6-1t-20260423",
+      "hugging_face_id": null,
+      "name": "inclusionAI: Ling-2.6-1T (free)",
+      "created": 1776948238,
+      "description": "Ling-2.6-1T is an instant (instruct) model from inclusionAI and the company\u2019s trillion-parameter flagship, designed for real-world agents that require fast execution and high efficiency at scale. It uses a \u201cfast...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": "2026-04-30",
+      "links": {
+        "details": "/api/v1/models/inclusionai/ling-2.6-1t-20260423/endpoints"
+      }
+    },
+    {
       "id": "tencent/hy3-preview:free",
       "canonical_slug": "tencent/hy3-preview-20260421",
-      "hugging_face_id": null,
+      "hugging_face_id": "tencent/Hy3-preview",
       "name": "Tencent: Hy3 preview (free)",
       "created": 1776878150,
       "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
@@ -775,14 +833,7 @@
         "top_k",
         "top_p"
       ],
-      "default_parameters": {
-        "temperature": 0.9,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
+      "default_parameters": null,
       "knowledge_cutoff": null,
       "expiration_date": null,
       "links": {
@@ -1143,9 +1194,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000056",
-        "completion": "0.0000035",
-        "input_cache_read": "0.00000011"
+        "prompt": "0.0000007448",
+        "completion": "0.000004655",
+        "input_cache_read": "0.0000001463"
       },
       "top_provider": {
         "context_length": 256000,
@@ -1582,6 +1633,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -1595,6 +1647,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -3899,9 +3952,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000065",
+        "prompt": "0.0000006",
         "completion": "0.00000208",
-        "input_cache_read": "0.00000013"
+        "input_cache_read": "0.00000012"
       },
       "top_provider": {
         "context_length": 202752,
@@ -20934,7 +20987,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'baidu', 'xiaomi', 'sao10k', 'sentence-transformers', 'moonshotai', 'amazon', 'cohere', 'aion-labs', 'bytedance-seed', 'openrouter', 'thedrummer', 'liquid', 'baai', 'intfloat', 'tencent', 'inflection', 'microsoft', 'rekaai', 'morph', 'relace', 'allenai', 'thenlper', 'kwaipilot', 'mancer', 'inclusionai', 'alfredpros', 'ai21', 'upstage', 'cognitivecomputations', 'switchpoint', 'tngtech', 'alibaba', 'nex-agi', 'anthracite-org', 'writer', 'prime-intellect', 'gryphe', 'undi95', 'ibm-granite', 'stepfun', '~anthropic', 'inception', 'alpindale', 'bytedance', 'essentialai'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'baidu', 'nousresearch', 'xiaomi', 'amazon', 'moonshotai', 'sao10k', 'sentence-transformers', 'aion-labs', 'bytedance-seed', 'openrouter', 'cohere', 'thedrummer', 'baai', 'intfloat', 'liquid', 'inflection', 'thenlper', 'morph', 'microsoft', 'rekaai', 'tencent', 'allenai', 'relace', 'inclusionai', 'prime-intellect', 'alibaba', 'tngtech', 'undi95', 'upstage', 'anthracite-org', '~anthropic', 'nex-agi', 'cognitivecomputations', 'mancer', 'gryphe', 'bytedance', 'writer', 'kwaipilot', 'alfredpros', 'stepfun', 'alpindale', 'ibm-granite', 'ai21', 'inception', 'switchpoint', 'essentialai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
