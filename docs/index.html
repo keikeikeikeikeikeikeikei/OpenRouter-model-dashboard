@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-23 17:57)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-23 23:57)</div>
         </header>
 
         <div class="controls">
@@ -740,7 +740,7 @@
       "hugging_face_id": null,
       "name": "Tencent: Hy3 preview (free)",
       "created": 1776878150,
-      "description": "Hy3 Preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
+      "description": "Hy3 preview is a high-efficiency Mixture-of-Experts model from Tencent designed for agentic workflows and production use. It supports configurable reasoning levels across disabled, low, and high modes, allowing it to...",
       "context_length": 262144,
       "architecture": {
         "modality": "text->text",
@@ -1129,7 +1129,7 @@
       "name": "MoonshotAI: Kimi K2.6",
       "created": 1776699402,
       "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
-      "context_length": 262144,
+      "context_length": 256000,
       "architecture": {
         "modality": "text+image->text",
         "input_modalities": [
@@ -1143,13 +1143,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000075",
+        "prompt": "0.00000056",
         "completion": "0.0000035",
-        "input_cache_read": "0.00000015"
+        "input_cache_read": "0.00000011"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": null,
+        "context_length": 256000,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -1450,8 +1450,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000007",
-        "completion": "0.00000034"
+        "prompt": "0.00000006",
+        "completion": "0.00000033"
       },
       "top_provider": {
         "context_length": 262144,
@@ -17596,17 +17596,19 @@
         "instruct_type": "mistral"
       },
       "pricing": {
-        "prompt": "0.00000002",
-        "completion": "0.00000004"
+        "prompt": "0.00000001",
+        "completion": "0.00000003"
       },
       "top_provider": {
         "context_length": 131072,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
+        "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -17619,6 +17621,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -20931,7 +20934,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'baidu', 'amazon', 'moonshotai', 'sentence-transformers', 'xiaomi', 'sao10k', 'bytedance-seed', 'thedrummer', 'openrouter', 'aion-labs', 'cohere', 'liquid', 'intfloat', 'baai', 'tencent', 'thenlper', 'allenai', 'relace', 'microsoft', 'rekaai', 'inflection', 'morph', 'inception', 'kwaipilot', 'upstage', 'inclusionai', 'writer', 'essentialai', 'ai21', 'cognitivecomputations', 'alpindale', 'gryphe', '~anthropic', 'nex-agi', 'bytedance', 'anthracite-org', 'undi95', 'ibm-granite', 'alibaba', 'mancer', 'tngtech', 'prime-intellect', 'alfredpros', 'stepfun', 'switchpoint'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'deepseek', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'baidu', 'xiaomi', 'sao10k', 'sentence-transformers', 'moonshotai', 'amazon', 'cohere', 'aion-labs', 'bytedance-seed', 'openrouter', 'thedrummer', 'liquid', 'baai', 'intfloat', 'tencent', 'inflection', 'microsoft', 'rekaai', 'morph', 'relace', 'allenai', 'thenlper', 'kwaipilot', 'mancer', 'inclusionai', 'alfredpros', 'ai21', 'upstage', 'cognitivecomputations', 'switchpoint', 'tngtech', 'alibaba', 'nex-agi', 'anthracite-org', 'writer', 'prime-intellect', 'gryphe', 'undi95', 'ibm-granite', 'stepfun', '~anthropic', 'inception', 'alpindale', 'bytedance', 'essentialai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
