@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-24 05:58)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-24 16:34)</div>
         </header>
 
         <div class="controls">
@@ -734,6 +734,124 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "deepseek/deepseek-v4-pro",
+      "canonical_slug": "deepseek/deepseek-v4-pro-20260423",
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4-Pro",
+      "name": "DeepSeek: DeepSeek V4 Pro",
+      "created": 1777000679,
+      "description": "DeepSeek V4 Pro is a large-scale Mixture-of-Experts model from DeepSeek with 1.6T total parameters and 49B activated parameters, supporting a 1M-token context window. It is designed for advanced reasoning, coding,...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000174",
+        "completion": "0.00000348",
+        "input_cache_read": "0.000000145"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 384000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 1,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/deepseek/deepseek-v4-pro-20260423/endpoints"
+      }
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash",
+      "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
+      "name": "DeepSeek: DeepSeek V4 Flash",
+      "created": 1777000666,
+      "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000014",
+        "completion": "0.00000028",
+        "input_cache_read": "0.000000028"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 384000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+      }
+    },
     {
       "id": "inclusionai/ling-2.6-1t:free",
       "canonical_slug": "inclusionai/ling-2.6-1t-20260423",
@@ -3886,12 +4004,12 @@
       },
       "pricing": {
         "prompt": "0.00000015",
-        "completion": "0.0000012",
-        "input_cache_read": "0.000000075"
+        "completion": "0.00000115",
+        "input_cache_read": "0.00000003"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5745,14 +5863,11 @@
         "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -6402,7 +6517,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -6416,7 +6530,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -6664,6 +6777,62 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/x-ai/grok-4.1-fast/endpoints"
+      }
+    },
+    {
+      "id": "deepcogito/cogito-v2.1-671b",
+      "canonical_slug": "deepcogito/cogito-v2.1-671b-20251118",
+      "hugging_face_id": "",
+      "name": "Deep Cogito: Cogito v2.1 671B",
+      "created": 1763071233,
+      "description": "Cogito v2.1 671B MoE represents one of the strongest open models globally, matching performance of frontier closed and open models. This model is trained using self play with reinforcement learning...",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000125",
+        "completion": "0.00000125"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/deepcogito/cogito-v2.1-671b-20251118/endpoints"
       }
     },
     {
@@ -14845,7 +15014,7 @@
       "name": "Google: Gemini 2.0 Flash",
       "created": 1738769413,
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "architecture": {
         "modality": "text+image+file+audio+video->text",
         "input_modalities": [
@@ -14872,7 +15041,7 @@
         "input_cache_write": "0.00000008333333333333334"
       },
       "top_provider": {
-        "context_length": 1000000,
+        "context_length": 1048576,
         "max_completion_tokens": 8192,
         "is_moderated": false
       },
@@ -20612,57 +20781,6 @@
       }
     },
     {
-      "id": "mistralai/codestral-embed-2505",
-      "canonical_slug": "mistralai/codestral-embed-2505",
-      "hugging_face_id": "",
-      "name": "Mistral: Codestral Embed 2505",
-      "created": 1761864460,
-      "description": "Mistral Codestral Embed is specially designed for code, perfect for embedding code databases, repositories, and powering coding assistants with state-of-the-art retrieval.",
-      "context_length": 8192,
-      "architecture": {
-        "modality": "text->embeddings",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "embeddings"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 8192,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/mistralai/codestral-embed-2505/endpoints"
-      }
-    },
-    {
       "id": "openai/text-embedding-3-large",
       "canonical_slug": "openai/text-embedding-3-large",
       "hugging_face_id": "",
@@ -20987,7 +21105,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'baidu', 'nousresearch', 'xiaomi', 'amazon', 'moonshotai', 'sao10k', 'sentence-transformers', 'aion-labs', 'bytedance-seed', 'openrouter', 'cohere', 'thedrummer', 'baai', 'intfloat', 'liquid', 'inflection', 'thenlper', 'morph', 'microsoft', 'rekaai', 'tencent', 'allenai', 'relace', 'inclusionai', 'prime-intellect', 'alibaba', 'tngtech', 'undi95', 'upstage', 'anthracite-org', '~anthropic', 'nex-agi', 'cognitivecomputations', 'mancer', 'gryphe', 'bytedance', 'writer', 'kwaipilot', 'alfredpros', 'stepfun', 'alpindale', 'ibm-granite', 'ai21', 'inception', 'switchpoint', 'essentialai'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'nousresearch', 'baidu', 'sao10k', 'sentence-transformers', 'amazon', 'xiaomi', 'moonshotai', 'thedrummer', 'aion-labs', 'bytedance-seed', 'openrouter', 'cohere', 'liquid', 'baai', 'intfloat', 'inclusionai', 'rekaai', 'inflection', 'thenlper', 'relace', 'allenai', 'tencent', 'morph', 'microsoft', 'prime-intellect', 'undi95', '~anthropic', 'switchpoint', 'inception', 'kwaipilot', 'anthracite-org', 'alibaba', 'ibm-granite', 'alpindale', 'stepfun', 'tngtech', 'upstage', 'gryphe', 'mancer', 'nex-agi', 'ai21', 'essentialai', 'bytedance', 'cognitivecomputations', 'alfredpros', 'deepcogito', 'writer'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
