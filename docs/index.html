@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-04-28 20:35)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-04-29 14:22)</div>
         </header>
 
         <div class="controls">
@@ -734,6 +734,164 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+      "canonical_slug": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428",
+      "hugging_face_id": null,
+      "name": "NVIDIA: Nemotron 3 Nano Omni (free)",
+      "created": 1777393095,
+      "description": "NVIDIA Nemotron\u2122 3 Nano Omni is a 30B-A3B open multimodal model designed to function as a perception and context sub-agent in enterprise agent systems. It accepts text, image, video, and...",
+      "context_length": 256000,
+      "architecture": {
+        "modality": "text+image+audio+video->text",
+        "input_modalities": [
+          "text",
+          "audio",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 256000,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "seed",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.6,
+        "top_p": 0.95,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428/endpoints"
+      }
+    },
+    {
+      "id": "poolside/laguna-xs.2:free",
+      "canonical_slug": "poolside/laguna-xs.2-20260421",
+      "hugging_face_id": "poolside/Laguna-XS.2",
+      "name": "Poolside: Laguna XS.2 (free)",
+      "created": 1777389604,
+      "description": "Laguna XS.2 is the second-generation model in the XS size class from [Poolside](https://poolside.ai), their efficient coding agent series. It combines tool calling and reasoning capabilities with a compact footprint, offering...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_p": 0.9,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/poolside/laguna-xs.2-20260421/endpoints"
+      }
+    },
+    {
+      "id": "poolside/laguna-m.1:free",
+      "canonical_slug": "poolside/laguna-m.1-20260312",
+      "hugging_face_id": null,
+      "name": "Poolside: Laguna M.1 (free)",
+      "created": 1777388504,
+      "description": "Laguna M.1 is the flagship coding agent model from [Poolside](https://poolside.ai), optimized for complex software engineering tasks. Designed for agentic coding workflows, it supports tool calling and reasoning, with a 128K...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/poolside/laguna-m.1-20260312/endpoints"
+      }
+    },
     {
       "id": "~anthropic/claude-haiku-latest",
       "canonical_slug": "~anthropic/claude-haiku-latest",
@@ -1929,10 +2087,10 @@
       }
     },
     {
-      "id": "inclusionai/ling-2.6-flash:free",
+      "id": "inclusionai/ling-2.6-flash",
       "canonical_slug": "inclusionai/ling-2.6-flash-20260421",
       "hugging_face_id": "",
-      "name": "inclusionAI: Ling-2.6-flash (free)",
+      "name": "inclusionAI: Ling-2.6-flash",
       "created": 1776795886,
       "description": "Ling-2.6-flash is an instant (instruct) model from inclusionAI with 104B total parameters and 7.4B active parameters, designed for real-world agents that require fast responses, strong execution, and high token efficiency....",
       "context_length": 262144,
@@ -1948,8 +2106,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0"
+        "prompt": "0.00000008",
+        "completion": "0.00000024",
+        "input_cache_read": "0.000000016"
       },
       "top_provider": {
         "context_length": 262144,
@@ -1981,7 +2140,7 @@
         "repetition_penalty": null
       },
       "knowledge_cutoff": null,
-      "expiration_date": "2026-04-29",
+      "expiration_date": null,
       "links": {
         "details": "/api/v1/models/inclusionai/ling-2.6-flash-20260421/endpoints"
       }
@@ -2016,7 +2175,7 @@
       "top_provider": {
         "context_length": 1000000,
         "max_completion_tokens": 128000,
-        "is_moderated": true
+        "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -2242,7 +2401,7 @@
       "top_provider": {
         "context_length": 1000000,
         "max_completion_tokens": 128000,
-        "is_moderated": true
+        "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -5051,7 +5210,7 @@
       "top_provider": {
         "context_length": 1000000,
         "max_completion_tokens": 128000,
-        "is_moderated": true
+        "is_moderated": false
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -9146,7 +9305,7 @@
       "top_provider": {
         "context_length": 1000000,
         "max_completion_tokens": 64000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -15525,53 +15684,6 @@
       }
     },
     {
-      "id": "qwen/qwq-32b",
-      "canonical_slug": "qwen/qwq-32b",
-      "hugging_face_id": "Qwen/QwQ-32B",
-      "name": "Qwen: QwQ 32B",
-      "created": 1741208814,
-      "description": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks,...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen",
-        "instruct_type": "qwq"
-      },
-      "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.00000058"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 131072,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "reasoning",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "knowledge_cutoff": "2024-06-30",
-      "expiration_date": "2026-04-29",
-      "links": {
-        "details": "/api/v1/models/qwen/qwq-32b/endpoints"
-      }
-    },
-    {
       "id": "google/gemini-2.0-flash-lite-001",
       "canonical_slug": "google/gemini-2.0-flash-lite-001",
       "hugging_face_id": "",
@@ -18728,11 +18840,11 @@
       },
       "pricing": {
         "prompt": "0.00000002",
-        "completion": "0.00000004"
+        "completion": "0.00000003"
       },
       "top_provider": {
         "context_length": 131072,
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -20658,7 +20770,7 @@
       "hugging_face_id": null,
       "name": "Google: Gemini Embedding 2 Preview",
       "created": 1776436465,
-      "description": "Gemini Embedding 2 Preview is Google's first multimodal embedding model, mapping text, images, video, audio, and PDFs into a unified vector space for semantic search and retrieval-augmented generation (RAG). It...",
+      "description": "Gemini Embedding 2 Preview is Google's first multimodal embedding model. We currently support mapping text and images into a unified vector space for semantic search and retrieval-augmented generation (RAG). It...",
       "context_length": 8192,
       "architecture": {
         "modality": "text+image->embeddings",
@@ -20691,7 +20803,14 @@
         "temperature",
         "top_p"
       ],
-      "default_parameters": {},
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
       "knowledge_cutoff": null,
       "expiration_date": null,
       "links": {
@@ -22067,7 +22186,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'nousresearch', 'baidu', 'xiaomi', 'amazon', 'sao10k', 'moonshotai', 'sentence-transformers', 'aion-labs', 'bytedance-seed', 'cohere', 'openrouter', 'thedrummer', 'intfloat', 'liquid', 'baai', '~anthropic', 'morph', 'inclusionai', 'microsoft', 'thenlper', 'relace', '~google', 'tencent', '~openai', 'rekaai', 'inflection', 'allenai', 'prime-intellect', 'deepcogito', 'essentialai', 'alibaba', 'ai21', 'alpindale', 'stepfun', 'tngtech', 'writer', 'switchpoint', 'nex-agi', 'undi95', 'inception', 'bytedance', 'kwaipilot', 'alfredpros', 'cognitivecomputations', '~moonshotai', 'ibm-granite', 'mancer', 'upstage', 'anthracite-org', 'gryphe'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'deepseek', 'z-ai', 'nvidia', 'x-ai', 'minimax', 'arcee-ai', 'perplexity', 'nousresearch', 'baidu', 'amazon', 'xiaomi', 'sao10k', 'moonshotai', 'sentence-transformers', 'aion-labs', 'cohere', 'thedrummer', 'bytedance-seed', 'openrouter', 'liquid', '~anthropic', 'baai', 'intfloat', 'poolside', 'microsoft', 'thenlper', 'allenai', 'relace', '~openai', 'rekaai', 'tencent', 'inflection', 'inclusionai', '~google', 'morph', 'nex-agi', 'undi95', 'alfredpros', 'stepfun', 'writer', 'deepcogito', 'gryphe', 'essentialai', 'inception', 'tngtech', 'ai21', 'kwaipilot', 'prime-intellect', 'switchpoint', 'alpindale', 'cognitivecomputations', '~moonshotai', 'ibm-granite', 'alibaba', 'anthracite-org', 'upstage', 'bytedance', 'mancer'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
