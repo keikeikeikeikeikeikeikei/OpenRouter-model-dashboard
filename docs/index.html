@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-08 16:13)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-08 23:49)</div>
         </header>
 
         <div class="controls">
@@ -2653,7 +2653,7 @@
       "hugging_face_id": "",
       "name": "Pareto Code Router",
       "created": 1776747900,
-      "description": "The Pareto Router is a way to have OpenRouter always pick a strong coding model for your needs without committing to a specific one. You express a single `min_coding_score` preference...",
+      "description": "The Pareto Router maintains a tiered shortlist of strong coding models, ranked by [Artificial Analysis](https://artificialanalysis.ai/) coding percentiles. Set min_coding_score between 0 and 1 on the [pareto-router plugin](https://openrouter.ai/docs/guides/routing/routers/pareto-router#the-min_coding_score-parameter) to control how...",
       "context_length": 200000,
       "architecture": {
         "modality": "text->text",
@@ -3810,12 +3810,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000299",
-        "completion": "0.0000012"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000059"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -6855,9 +6856,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.00000029",
-        "input_cache_read": "0.000000045"
+        "prompt": "0.0000001",
+        "completion": "0.0000003",
+        "input_cache_read": "0.00000001"
       },
       "top_provider": {
         "context_length": 262144,
@@ -6875,7 +6876,6 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -13151,61 +13151,6 @@
       }
     },
     {
-      "id": "tngtech/deepseek-r1t2-chimera",
-      "canonical_slug": "tngtech/deepseek-r1t2-chimera",
-      "hugging_face_id": "tngtech/DeepSeek-TNG-R1T2-Chimera",
-      "name": "TNG: DeepSeek R1T2 Chimera",
-      "created": 1751986985,
-      "description": "DeepSeek-TNG-R1T2-Chimera is the second-generation Chimera model from TNG Tech. It is a 671 B-parameter mixture-of-experts text-generation model assembled from DeepSeek-AI\u2019s R1-0528, R1, and V3-0324 checkpoints with an Assembly-of-Experts merge. The...",
-      "context_length": 163840,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "DeepSeek",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.0000011",
-        "input_cache_read": "0.00000015"
-      },
-      "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 163840,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-07-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/tngtech/deepseek-r1t2-chimera/endpoints"
-      }
-    },
-    {
       "id": "morph/morph-v3-large",
       "canonical_slug": "morph/morph-v3-large",
       "hugging_face_id": "",
@@ -14666,12 +14611,11 @@
       },
       "pricing": {
         "prompt": "0.00000008",
-        "completion": "0.00000024",
-        "input_cache_read": "0.00000004"
+        "completion": "0.00000028"
       },
       "top_provider": {
         "context_length": 40960,
-        "max_completion_tokens": 40960,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -22555,7 +22499,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'x-ai', 'nvidia', 'minimax', 'baidu', 'perplexity', 'arcee-ai', 'nousresearch', 'sentence-transformers', 'sao10k', 'openrouter', 'amazon', 'moonshotai', 'xiaomi', 'cohere', 'thedrummer', 'bytedance-seed', 'aion-labs', 'intfloat', 'microsoft', 'liquid', '~anthropic', 'baai', 'poolside', '~google', 'inflection', '~openai', 'morph', 'rekaai', 'thenlper', 'relace', 'ibm-granite', 'inclusionai', 'tencent', 'upstage', 'switchpoint', 'tngtech', 'mancer', 'undi95', 'gryphe', 'prime-intellect', 'alfredpros', 'deepcogito', 'cognitivecomputations', 'writer', 'stepfun', 'alpindale', 'essentialai', '~moonshotai', 'nex-agi', 'ai21', 'kwaipilot', 'inception', 'allenai', 'alibaba', 'anthracite-org', 'bytedance'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'x-ai', 'nvidia', 'minimax', 'baidu', 'perplexity', 'arcee-ai', 'nousresearch', 'openrouter', 'sentence-transformers', 'xiaomi', 'sao10k', 'amazon', 'moonshotai', 'thedrummer', 'aion-labs', 'cohere', 'bytedance-seed', 'baai', 'microsoft', '~anthropic', 'liquid', 'intfloat', 'rekaai', 'tencent', 'poolside', 'thenlper', 'morph', 'inflection', 'inclusionai', 'ibm-granite', '~openai', 'relace', '~google', 'stepfun', 'switchpoint', 'kwaipilot', 'anthracite-org', 'ai21', 'undi95', 'bytedance', 'mancer', 'essentialai', 'gryphe', 'alibaba', 'inception', 'prime-intellect', 'writer', '~moonshotai', 'nex-agi', 'upstage', 'alfredpros', 'allenai', 'alpindale', 'cognitivecomputations', 'deepcogito'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
