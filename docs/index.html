@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-08 02:31)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-08 16:13)</div>
         </header>
 
         <div class="controls">
@@ -3494,7 +3494,7 @@
       "hugging_face_id": "",
       "name": "xAI: Grok 4.20",
       "created": 1774979019,
-      "description": "Grok 4.20 is xAI's newest flagship model with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering consistently...",
+      "description": "Grok 4.20 is a reasoning model from xAI with industry-leading speed and agentic tool calling capabilities. It combines the lowest hallucination rate on the market with strict prompt adherance, delivering...",
       "context_length": 2000000,
       "architecture": {
         "modality": "text+image+file->text",
@@ -3810,13 +3810,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.0000012",
-        "input_cache_read": "0.000000059"
+        "prompt": "0.000000299",
+        "completion": "0.0000012"
       },
       "top_provider": {
         "context_length": 196608,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -6726,12 +6725,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000038",
-        "completion": "0.00000174"
+        "prompt": "0.0000004",
+        "completion": "0.00000175",
+        "input_cache_read": "0.00000008"
       },
       "top_provider": {
         "context_length": 202752,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -17421,10 +17421,8 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -17432,7 +17430,6 @@
         "stop",
         "structured_outputs",
         "temperature",
-        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -18269,59 +18266,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/qwen/qwen-2.5-7b-instruct/endpoints"
-      }
-    },
-    {
-      "id": "nvidia/llama-3.1-nemotron-70b-instruct",
-      "canonical_slug": "nvidia/llama-3.1-nemotron-70b-instruct",
-      "hugging_face_id": "nvidia/Llama-3.1-Nemotron-70B-Instruct-HF",
-      "name": "NVIDIA: Llama 3.1 Nemotron 70B Instruct",
-      "created": 1728950400,
-      "description": "NVIDIA's Llama 3.1 Nemotron 70B is a language model designed for generating precise and useful responses. Leveraging [Llama 3.1 70B](/models/meta-llama/llama-3.1-70b-instruct) architecture and Reinforcement Learning from Human Feedback (RLHF), it excels...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3",
-        "instruct_type": "llama3"
-      },
-      "pricing": {
-        "prompt": "0.0000012",
-        "completion": "0.0000012"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 16384,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-12-31",
-      "expiration_date": "2026-05-07",
-      "links": {
-        "details": "/api/v1/models/nvidia/llama-3.1-nemotron-70b-instruct/endpoints"
       }
     },
     {
@@ -20133,62 +20077,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/gpt-3.5-turbo-0613/endpoints"
-      }
-    },
-    {
-      "id": "mistralai/mixtral-8x7b-instruct",
-      "canonical_slug": "mistralai/mixtral-8x7b-instruct",
-      "hugging_face_id": "mistralai/Mixtral-8x7B-Instruct-v0.1",
-      "name": "Mistral: Mixtral 8x7B Instruct",
-      "created": 1702166400,
-      "description": "Mixtral 8x7B Instruct is a pretrained generative Sparse Mixture of Experts, by Mistral AI, for chat and instruction use. Incorporates 8 experts (feed-forward networks) for a total of 47 billion...",
-      "context_length": 32768,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": "mistral"
-      },
-      "pricing": {
-        "prompt": "0.00000054",
-        "completion": "0.00000054"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": 16384,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-12-31",
-      "expiration_date": "2026-05-07",
-      "links": {
-        "details": "/api/v1/models/mistralai/mixtral-8x7b-instruct/endpoints"
       }
     },
     {
@@ -22667,7 +22555,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'minimax', 'perplexity', 'arcee-ai', 'baidu', 'nousresearch', 'amazon', 'sentence-transformers', 'xiaomi', 'moonshotai', 'sao10k', 'openrouter', 'thedrummer', 'aion-labs', 'bytedance-seed', 'cohere', '~anthropic', 'baai', 'liquid', 'microsoft', 'intfloat', 'poolside', 'thenlper', 'tencent', 'ibm-granite', 'relace', 'morph', 'inflection', '~openai', 'inclusionai', '~google', 'rekaai', 'undi95', 'prime-intellect', 'ai21', 'writer', 'anthracite-org', 'alpindale', 'bytedance', 'cognitivecomputations', 'nex-agi', '~moonshotai', 'inception', 'gryphe', 'mancer', 'upstage', 'essentialai', 'switchpoint', 'stepfun', 'deepcogito', 'allenai', 'kwaipilot', 'alibaba', 'alfredpros', 'tngtech'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'x-ai', 'nvidia', 'minimax', 'baidu', 'perplexity', 'arcee-ai', 'nousresearch', 'sentence-transformers', 'sao10k', 'openrouter', 'amazon', 'moonshotai', 'xiaomi', 'cohere', 'thedrummer', 'bytedance-seed', 'aion-labs', 'intfloat', 'microsoft', 'liquid', '~anthropic', 'baai', 'poolside', '~google', 'inflection', '~openai', 'morph', 'rekaai', 'thenlper', 'relace', 'ibm-granite', 'inclusionai', 'tencent', 'upstage', 'switchpoint', 'tngtech', 'mancer', 'undi95', 'gryphe', 'prime-intellect', 'alfredpros', 'deepcogito', 'cognitivecomputations', 'writer', 'stepfun', 'alpindale', 'essentialai', '~moonshotai', 'nex-agi', 'ai21', 'kwaipilot', 'inception', 'allenai', 'alibaba', 'anthracite-org', 'bytedance'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
