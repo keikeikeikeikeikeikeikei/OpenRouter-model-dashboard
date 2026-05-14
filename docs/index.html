@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-14 05:01)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-14 21:07)</div>
         </header>
 
         <div class="controls">
@@ -2405,6 +2405,56 @@
       }
     },
     {
+      "id": "deepseek/deepseek-v4-flash:free",
+      "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
+      "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
+      "name": "DeepSeek: DeepSeek V4 Flash (free)",
+      "created": 1777000666,
+      "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
+      "context_length": 256000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "DeepSeek",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 256000,
+        "max_completion_tokens": 256000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "reasoning",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
+      }
+    },
+    {
       "id": "deepseek/deepseek-v4-flash",
       "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
       "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
@@ -4052,7 +4102,7 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000028",
+        "prompt": "0.00000026",
         "completion": "0.0000012"
       },
       "top_provider": {
@@ -9919,7 +9969,7 @@
       "name": "Z.ai: GLM 4.6",
       "created": 1759235576,
       "description": "Compared with GLM-4.5, this generation brings several key improvements: Longer context window: The context window has been expanded from 128K to 200K tokens, enabling the model to handle more complex...",
-      "context_length": 204800,
+      "context_length": 202752,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -9932,12 +9982,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000039",
-        "completion": "0.0000019"
+        "prompt": "0.00000043",
+        "completion": "0.00000174",
+        "input_cache_read": "0.00000008"
       },
       "top_provider": {
-        "context_length": 204800,
-        "max_completion_tokens": 204800,
+        "context_length": 202752,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -9970,7 +10021,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": "2025-03-31",
-      "expiration_date": "2026-05-14",
+      "expiration_date": null,
       "links": {
         "details": "/api/v1/models/z-ai/glm-4.6/endpoints"
       }
@@ -11183,8 +11234,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.000002"
+        "prompt": "0.0000006",
+        "completion": "0.0000025"
       },
       "top_provider": {
         "context_length": 262144,
@@ -11212,7 +11263,7 @@
       "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": "2024-12-31",
-      "expiration_date": "2026-05-14",
+      "expiration_date": null,
       "links": {
         "details": "/api/v1/models/moonshotai/kimi-k2-0905/endpoints"
       }
@@ -20933,10 +20984,13 @@
       "description": "Gemini Embedding 2 Preview is Google's first multimodal embedding model. We currently support mapping text and images into a unified vector space for semantic search and retrieval-augmented generation (RAG). It...",
       "context_length": 8192,
       "architecture": {
-        "modality": "text+image->embeddings",
+        "modality": "text+image+file+audio+video->embeddings",
         "input_modalities": [
           "text",
-          "image"
+          "image",
+          "file",
+          "audio",
+          "video"
         ],
         "output_modalities": [
           "embeddings"
@@ -22375,7 +22429,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'anthropic', 'deepseek', 'z-ai', 'x-ai', 'nvidia', 'minimax', 'arcee-ai', 'perplexity', 'baidu', 'nousresearch', 'moonshotai', 'amazon', 'openrouter', 'xiaomi', 'sentence-transformers', 'sao10k', 'cohere', 'thedrummer', 'bytedance-seed', 'aion-labs', 'intfloat', 'liquid', 'microsoft', '~anthropic', 'inclusionai', 'baai', 'rekaai', 'morph', 'inflection', 'ibm-granite', '~google', 'poolside', 'relace', '~openai', 'tencent', 'thenlper', 'essentialai', 'alfredpros', 'prime-intellect', 'deepcogito', 'switchpoint', 'perceptron', 'kwaipilot', 'upstage', 'stepfun', 'bytedance', 'allenai', 'gryphe', 'undi95', 'ai21', '~moonshotai', 'mancer', 'cognitivecomputations', 'anthracite-org', 'alibaba', 'inception', 'nex-agi', 'writer'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'z-ai', 'anthropic', 'x-ai', 'nvidia', 'minimax', 'arcee-ai', 'baidu', 'perplexity', 'nousresearch', 'sao10k', 'sentence-transformers', 'amazon', 'moonshotai', 'xiaomi', 'openrouter', 'cohere', 'bytedance-seed', 'thedrummer', 'aion-labs', 'intfloat', 'liquid', 'microsoft', 'baai', 'inclusionai', '~anthropic', 'thenlper', 'rekaai', 'inflection', '~google', 'relace', 'ibm-granite', 'tencent', 'morph', 'poolside', '~openai', '~moonshotai', 'cognitivecomputations', 'alfredpros', 'allenai', 'switchpoint', 'gryphe', 'writer', 'stepfun', 'essentialai', 'ai21', 'bytedance', 'perceptron', 'upstage', 'deepcogito', 'undi95', 'alibaba', 'anthracite-org', 'nex-agi', 'mancer', 'kwaipilot', 'prime-intellect', 'inception'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
