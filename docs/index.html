@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-15 20:53)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-16 02:53)</div>
         </header>
 
         <div class="controls">
@@ -852,10 +852,10 @@
       }
     },
     {
-      "id": "inclusionai/ring-2.6-1t:free",
+      "id": "inclusionai/ring-2.6-1t",
       "canonical_slug": "inclusionai/ring-2.6-1t-20260508",
       "hugging_face_id": null,
-      "name": "inclusionAI: Ring-2.6-1T (free)",
+      "name": "inclusionAI: Ring-2.6-1T",
       "created": 1778247440,
       "description": "Ring-2.6-1T is a 1T-parameter-scale thinking model with 63B active parameters, built for real-world agent workflows that require both strong capability and operational efficiency. It is optimized for coding agents, tool...",
       "context_length": 262144,
@@ -871,8 +871,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0",
-        "completion": "0"
+        "prompt": "0.000000075",
+        "completion": "0.000000625",
+        "input_cache_read": "0.000000015"
       },
       "top_provider": {
         "context_length": 262144,
@@ -887,6 +888,7 @@
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -2462,7 +2464,7 @@
       "name": "DeepSeek: DeepSeek V4 Flash",
       "created": 1777000666,
       "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
-      "context_length": 1048576,
+      "context_length": 1048575,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -2475,13 +2477,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000126",
-        "completion": "0.000000252",
-        "input_cache_read": "0.0000000252"
+        "prompt": "0.000000112",
+        "completion": "0.000000224",
+        "input_cache_read": "0.000000022"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "context_length": 1048575,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -8841,8 +8843,7 @@
       },
       "pricing": {
         "prompt": "0.0000006",
-        "completion": "0.0000025",
-        "input_cache_read": "0.00000015"
+        "completion": "0.0000025"
       },
       "top_provider": {
         "context_length": 262144,
@@ -17094,8 +17095,10 @@
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
+        "response_format",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -19639,6 +19642,7 @@
         "repetition_penalty",
         "seed",
         "stop",
+        "structured_outputs",
         "temperature",
         "top_k",
         "top_p"
@@ -22441,7 +22445,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'anthropic', 'z-ai', 'x-ai', 'nvidia', 'minimax', 'arcee-ai', 'baidu', 'perplexity', 'nousresearch', 'xiaomi', 'openrouter', 'amazon', 'sentence-transformers', 'moonshotai', 'sao10k', 'bytedance-seed', 'cohere', 'aion-labs', 'thedrummer', 'liquid', 'inclusionai', '~anthropic', 'intfloat', 'baai', 'microsoft', 'rekaai', 'morph', 'relace', '~google', '~openai', 'inflection', 'thenlper', 'ibm-granite', 'poolside', 'tencent', 'nex-agi', 'stepfun', 'upstage', 'anthracite-org', '~moonshotai', 'mancer', 'kwaipilot', 'alfredpros', 'switchpoint', 'gryphe', 'ai21', 'undi95', 'deepcogito', 'prime-intellect', 'cognitivecomputations', 'allenai', 'alibaba', 'bytedance', 'inception', 'writer', 'essentialai', 'perceptron'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'z-ai', 'anthropic', 'x-ai', 'nvidia', 'arcee-ai', 'minimax', 'perplexity', 'baidu', 'nousresearch', 'sao10k', 'openrouter', 'xiaomi', 'moonshotai', 'amazon', 'sentence-transformers', 'thedrummer', 'aion-labs', 'bytedance-seed', 'cohere', 'inclusionai', '~anthropic', 'liquid', 'microsoft', 'intfloat', 'baai', '~openai', 'tencent', '~google', 'poolside', 'relace', 'rekaai', 'inflection', 'morph', 'thenlper', 'ibm-granite', 'perceptron', 'inception', 'nex-agi', 'allenai', 'deepcogito', 'writer', 'alibaba', 'ai21', 'mancer', 'alfredpros', 'undi95', '~moonshotai', 'kwaipilot', 'bytedance', 'cognitivecomputations', 'gryphe', 'upstage', 'anthracite-org', 'prime-intellect', 'essentialai', 'stepfun', 'switchpoint'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
