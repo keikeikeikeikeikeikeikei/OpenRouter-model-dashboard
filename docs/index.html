@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-20 12:06)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-20 18:06)</div>
         </header>
 
         <div class="controls">
@@ -2124,13 +2124,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.000001",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.000000149",
+        "completion": "0.000001"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -2138,6 +2137,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -2151,6 +2151,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -16107,7 +16108,7 @@
       "name": "Google: Gemini 2.0 Flash",
       "created": 1738769413,
       "description": "Gemini Flash 2.0 offers a significantly faster time to first token (TTFT) compared to [Gemini Flash 1.5](/google/gemini-flash-1.5), while maintaining quality on par with larger models like [Gemini Pro 1.5](/google/gemini-pro-1.5). It...",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "architecture": {
         "modality": "text+image+file+audio+video->text",
         "input_modalities": [
@@ -16134,7 +16135,7 @@
         "input_cache_write": "0.00000008333333333333334"
       },
       "top_provider": {
-        "context_length": 1048576,
+        "context_length": 1000000,
         "max_completion_tokens": 8192,
         "is_moderated": false
       },
@@ -22058,7 +22059,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'arcee-ai', 'minimax', 'baidu', 'perplexity', 'nousresearch', 'moonshotai', 'sentence-transformers', 'sao10k', 'xiaomi', 'amazon', 'openrouter', 'bytedance-seed', 'cohere', 'thedrummer', 'aion-labs', 'intfloat', 'liquid', 'baai', '~anthropic', 'microsoft', 'x-ai', 'inclusionai', 'poolside', 'rekaai', 'morph', 'tencent', 'relace', '~google', 'thenlper', 'inflection', '~openai', 'ibm-granite', 'stepfun', 'cognitivecomputations', 'switchpoint', 'undi95', 'kwaipilot', 'alibaba', 'allenai', 'anthracite-org', 'prime-intellect', 'ai21', 'mancer', 'writer', 'gryphe', '~moonshotai', 'alfredpros', 'upstage', 'essentialai', 'inception', 'nex-agi', 'deepcogito', 'perceptron', 'bytedance'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'minimax', 'arcee-ai', 'perplexity', 'baidu', 'nousresearch', 'openrouter', 'sentence-transformers', 'xiaomi', 'moonshotai', 'amazon', 'sao10k', 'cohere', 'aion-labs', 'bytedance-seed', 'thedrummer', 'inclusionai', 'intfloat', 'liquid', 'baai', 'x-ai', 'microsoft', '~anthropic', 'tencent', 'relace', 'inflection', 'thenlper', '~google', 'poolside', '~openai', 'ibm-granite', 'rekaai', 'morph', 'kwaipilot', 'ai21', 'writer', 'anthracite-org', 'gryphe', 'stepfun', 'allenai', '~moonshotai', 'undi95', 'alibaba', 'essentialai', 'cognitivecomputations', 'inception', 'mancer', 'deepcogito', 'nex-agi', 'bytedance', 'perceptron', 'upstage', 'switchpoint', 'prime-intellect', 'alfredpros'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
