@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-21 00:07)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-21 22:13)</div>
         </header>
 
         <div class="controls">
@@ -734,6 +734,70 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "x-ai/grok-build-0.1",
+      "canonical_slug": "x-ai/grok-build-0.1-20260520",
+      "hugging_face_id": null,
+      "name": "xAI: Grok Build 0.1",
+      "created": 1779298123,
+      "description": "Grok Build 0.1 is xAI\u2019s fast coding model trained specifically for agentic software engineering workflows. It supports text and image inputs with text output, and is optimized for interactive coding...",
+      "context_length": 256000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Grok",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000001",
+        "completion": "0.000002",
+        "web_search": "0.005",
+        "input_cache_read": "0.0000002"
+      },
+      "top_provider": {
+        "context_length": 256000,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/x-ai/grok-build-0.1-20260520/endpoints"
+      }
+    },
     {
       "id": "google/gemini-3.5-flash",
       "canonical_slug": "google/gemini-3.5-flash-20260519",
@@ -2124,12 +2188,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000149",
-        "completion": "0.000001"
+        "prompt": "0.00000015",
+        "completion": "0.000001",
+        "input_cache_read": "0.00000005"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5749,8 +5814,7 @@
       },
       "pricing": {
         "prompt": "0.00000039",
-        "completion": "0.00000234",
-        "input_cache_read": "0.000000195"
+        "completion": "0.00000234"
       },
       "top_provider": {
         "context_length": 262144,
@@ -6233,12 +6297,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.0000003"
+        "prompt": "0.00000009",
+        "completion": "0.0000003",
+        "input_cache_read": "0.00000002"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -6270,59 +6335,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/stepfun/step-3.5-flash/endpoints"
-      }
-    },
-    {
-      "id": "arcee-ai/trinity-large-preview",
-      "canonical_slug": "arcee-ai/trinity-large-preview",
-      "hugging_face_id": "arcee-ai/Trinity-Large-Preview",
-      "name": "Arcee AI: Trinity Large Preview",
-      "created": 1769552670,
-      "description": "Trinity-Large-Preview is a frontier-scale open-weight language model from Arcee, built as a 400B-parameter sparse Mixture-of-Experts with 13B active parameters per token using 4-of-256 expert routing. It excels in creative writing,...",
-      "context_length": 131000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.00000045"
-      },
-      "top_provider": {
-        "context_length": 131000,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "max_tokens",
-        "response_format",
-        "structured_outputs",
-        "temperature",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.8,
-        "top_p": 0.8,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-05-21",
-      "links": {
-        "details": "/api/v1/models/arcee-ai/trinity-large-preview/endpoints"
       }
     },
     {
@@ -6854,6 +6866,7 @@
       "pricing": {
         "prompt": "0.00000175",
         "completion": "0.000014",
+        "web_search": "0.01",
         "input_cache_read": "0.000000175"
       },
       "top_provider": {
@@ -7380,6 +7393,7 @@
       "pricing": {
         "prompt": "0.00000175",
         "completion": "0.000014",
+        "web_search": "0.01",
         "input_cache_read": "0.000000175"
       },
       "top_provider": {
@@ -7487,6 +7501,7 @@
       "pricing": {
         "prompt": "0.00000175",
         "completion": "0.000014",
+        "web_search": "0.01",
         "input_cache_read": "0.000000175"
       },
       "top_provider": {
@@ -8618,6 +8633,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
+        "web_search": "0.01",
         "input_cache_read": "0.00000013"
       },
       "top_provider": {
@@ -8729,6 +8745,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
+        "web_search": "0.01",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -8786,6 +8803,7 @@
       "pricing": {
         "prompt": "0.00000025",
         "completion": "0.000002",
+        "web_search": "0.01",
         "input_cache_read": "0.00000003"
       },
       "top_provider": {
@@ -10568,6 +10586,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
+        "web_search": "0.01",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -11821,6 +11840,7 @@
       "pricing": {
         "prompt": "0.00000125",
         "completion": "0.00001",
+        "web_search": "0.01",
         "input_cache_read": "0.000000125"
       },
       "top_provider": {
@@ -11938,6 +11958,7 @@
       "pricing": {
         "prompt": "0.00000005",
         "completion": "0.0000004",
+        "web_search": "0.01",
         "input_cache_read": "0.00000001"
       },
       "top_provider": {
@@ -14883,6 +14904,7 @@
       "pricing": {
         "prompt": "0.000002",
         "completion": "0.000008",
+        "web_search": "0.01",
         "input_cache_read": "0.0000005"
       },
       "top_provider": {
@@ -15249,7 +15271,8 @@
       },
       "pricing": {
         "prompt": "0.00015",
-        "completion": "0.0006"
+        "completion": "0.0006",
+        "web_search": "0.01"
       },
       "top_provider": {
         "context_length": 200000,
@@ -16071,6 +16094,7 @@
       "pricing": {
         "prompt": "0.0000011",
         "completion": "0.0000044",
+        "web_search": "0.01",
         "input_cache_read": "0.00000055"
       },
       "top_provider": {
@@ -16417,6 +16441,7 @@
       "pricing": {
         "prompt": "0.0000011",
         "completion": "0.0000044",
+        "web_search": "0.01",
         "input_cache_read": "0.00000055"
       },
       "top_provider": {
@@ -17002,6 +17027,7 @@
       "pricing": {
         "prompt": "0.000015",
         "completion": "0.00006",
+        "web_search": "0.01",
         "input_cache_read": "0.0000075"
       },
       "top_provider": {
@@ -19652,7 +19678,8 @@
       },
       "pricing": {
         "prompt": "0.00001",
-        "completion": "0.00003"
+        "completion": "0.00003",
+        "web_search": "0.01"
       },
       "top_provider": {
         "context_length": 128000,
@@ -22059,7 +22086,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'minimax', 'arcee-ai', 'perplexity', 'baidu', 'nousresearch', 'xiaomi', 'sentence-transformers', 'openrouter', 'amazon', 'sao10k', 'moonshotai', 'cohere', 'bytedance-seed', 'aion-labs', 'thedrummer', 'inclusionai', '~anthropic', 'intfloat', 'microsoft', 'baai', 'liquid', 'x-ai', 'poolside', 'morph', 'relace', '~openai', '~google', 'inflection', 'ibm-granite', 'rekaai', 'thenlper', 'tencent', 'deepcogito', 'ai21', 'inception', 'alibaba', 'gryphe', 'upstage', 'anthracite-org', 'alfredpros', 'writer', 'bytedance', 'mancer', 'kwaipilot', 'undi95', '~moonshotai', 'stepfun', 'nex-agi', 'switchpoint', 'cognitivecomputations', 'essentialai', 'allenai', 'prime-intellect', 'perceptron'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'minimax', 'baidu', 'perplexity', 'arcee-ai', 'nousresearch', 'moonshotai', 'sentence-transformers', 'amazon', 'sao10k', 'openrouter', 'xiaomi', 'aion-labs', 'thedrummer', 'bytedance-seed', 'cohere', 'x-ai', 'baai', 'intfloat', '~anthropic', 'inclusionai', 'liquid', 'microsoft', 'morph', 'tencent', 'relace', 'thenlper', 'inflection', 'rekaai', 'poolside', 'ibm-granite', '~openai', '~google', 'deepcogito', 'cognitivecomputations', 'undi95', 'ai21', 'anthracite-org', 'prime-intellect', 'bytedance', 'inception', 'essentialai', 'alfredpros', 'gryphe', '~moonshotai', 'writer', 'upstage', 'perceptron', 'stepfun', 'allenai', 'alibaba', 'nex-agi', 'switchpoint', 'mancer', 'kwaipilot'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
