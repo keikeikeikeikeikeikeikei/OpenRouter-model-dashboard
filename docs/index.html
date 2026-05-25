@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-23 16:18)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-25 18:20)</div>
         </header>
 
         <div class="controls">
@@ -10736,67 +10736,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/deepseek/deepseek-v3.1-terminus/endpoints"
-      }
-    },
-    {
-      "id": "alibaba/tongyi-deepresearch-30b-a3b",
-      "canonical_slug": "alibaba/tongyi-deepresearch-30b-a3b",
-      "hugging_face_id": "Alibaba-NLP/Tongyi-DeepResearch-30B-A3B",
-      "name": "Tongyi DeepResearch 30B A3B",
-      "created": 1758210804,
-      "description": "Tongyi DeepResearch is an agentic large language model developed by Tongyi Lab, with 30 billion total parameters activating only 3 billion per token. It's optimized for long-horizon, deep information-seeking tasks...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.00000045",
-        "input_cache_read": "0.00000009"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 131072,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2025-03-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/alibaba/tongyi-deepresearch-30b-a3b/endpoints"
       }
     },
     {
@@ -22146,7 +22085,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'deepseek', 'meta-llama', 'anthropic', 'z-ai', 'nvidia', 'minimax', 'arcee-ai', 'perplexity', 'baidu', 'nousresearch', 'moonshotai', 'sentence-transformers', 'openrouter', 'amazon', 'sao10k', 'xiaomi', 'aion-labs', 'cohere', 'bytedance-seed', 'x-ai', 'thedrummer', 'intfloat', 'baai', 'microsoft', '~anthropic', 'liquid', 'inclusionai', 'relace', 'thenlper', 'ibm-granite', 'poolside', '~openai', '~google', 'inflection', 'morph', 'rekaai', 'tencent', 'prime-intellect', 'deepcogito', 'kwaipilot', 'essentialai', 'switchpoint', 'undi95', 'writer', 'bytedance', 'ai21', 'inception', 'alfredpros', 'perceptron', 'upstage', 'anthracite-org', 'cognitivecomputations', '~moonshotai', 'nex-agi', 'allenai', 'stepfun', 'mancer', 'gryphe', 'alibaba'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'deepseek', 'z-ai', 'anthropic', 'nvidia', 'minimax', 'perplexity', 'arcee-ai', 'baidu', 'nousresearch', 'moonshotai', 'amazon', 'sentence-transformers', 'sao10k', 'openrouter', 'xiaomi', 'x-ai', 'cohere', 'thedrummer', 'bytedance-seed', 'aion-labs', 'microsoft', 'intfloat', 'inclusionai', 'baai', '~anthropic', 'liquid', '~openai', 'thenlper', 'morph', 'poolside', 'inflection', 'relace', 'ibm-granite', 'rekaai', '~google', 'tencent', 'deepcogito', 'allenai', 'kwaipilot', 'nex-agi', 'prime-intellect', 'ai21', 'bytedance', 'switchpoint', 'stepfun', 'essentialai', 'undi95', 'cognitivecomputations', 'mancer', 'upstage', 'alfredpros', 'writer', 'perceptron', 'anthracite-org', 'gryphe', 'inception', '~moonshotai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
