@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-28 00:54)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-28 07:13)</div>
         </header>
 
         <div class="controls">
@@ -3129,6 +3129,57 @@
       "expiration_date": "2026-05-28",
       "links": {
         "details": "/api/v1/models/baidu/qianfan-ocr-fast-20260420/endpoints"
+      }
+    },
+    {
+      "id": "moonshotai/kimi-k2.6:free",
+      "canonical_slug": "moonshotai/kimi-k2.6-20260420",
+      "hugging_face_id": "moonshotai/Kimi-K2.6",
+      "name": "MoonshotAI: Kimi K2.6 (free)",
+      "created": 1776699402,
+      "description": "Kimi K2.6 is Moonshot AI's next-generation multimodal model, designed for long-horizon coding, coding-driven UI/UX generation, and multi-agent orchestration. It handles complex end-to-end coding tasks across Python, Rust, and Go, and...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "reasoning",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/moonshotai/kimi-k2.6-20260420/endpoints"
       }
     },
     {
@@ -5827,7 +5878,7 @@
       "name": "MiniMax: MiniMax M2.5 (free)",
       "created": 1770908502,
       "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
-      "context_length": 204800,
+      "context_length": 262144,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -5844,7 +5895,7 @@
         "completion": "0"
       },
       "top_provider": {
-        "context_length": 196608,
+        "context_length": 262144,
         "max_completion_tokens": 8192,
         "is_moderated": true
       },
@@ -17881,6 +17932,108 @@
       }
     },
     {
+      "id": "meta-llama/llama-3.2-11b-vision-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-11b-vision-instruct",
+      "hugging_face_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
+      "name": "Meta: Llama 3.2 11B Vision Instruct",
+      "created": 1727222400,
+      "description": "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "pricing": {
+        "prompt": "0.000000245",
+        "completion": "0.000000245"
+      },
+      "top_provider": {
+        "context_length": 131072,
+        "max_completion_tokens": 16384,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/meta-llama/llama-3.2-11b-vision-instruct/endpoints"
+      }
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
+      "hugging_face_id": "meta-llama/Llama-3.2-1B-Instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "created": 1727222400,
+      "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "pricing": {
+        "prompt": "0.000000027",
+        "completion": "0.000000201"
+      },
+      "top_provider": {
+        "context_length": 60000,
+        "max_completion_tokens": 60000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
+      }
+    },
+    {
       "id": "meta-llama/llama-3.2-3b-instruct:free",
       "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
       "hugging_face_id": "meta-llama/Llama-3.2-3B-Instruct",
@@ -17977,108 +18130,6 @@
       }
     },
     {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "hugging_face_id": "meta-llama/Llama-3.2-1B-Instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "created": 1727222400,
-      "description": "Llama 3.2 1B is a 1-billion-parameter language model focused on efficiently performing natural language tasks, such as summarization, dialogue, and multilingual text analysis. Its smaller size allows it to operate...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3",
-        "instruct_type": "llama3"
-      },
-      "pricing": {
-        "prompt": "0.000000027",
-        "completion": "0.000000201"
-      },
-      "top_provider": {
-        "context_length": 60000,
-        "max_completion_tokens": 60000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-12-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/meta-llama/llama-3.2-1b-instruct/endpoints"
-      }
-    },
-    {
-      "id": "meta-llama/llama-3.2-11b-vision-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-11b-vision-instruct",
-      "hugging_face_id": "meta-llama/Llama-3.2-11B-Vision-Instruct",
-      "name": "Meta: Llama 3.2 11B Vision Instruct",
-      "created": 1727222400,
-      "description": "Llama 3.2 11B Vision is a multimodal model with 11 billion parameters, designed to handle tasks combining visual and textual data. It excels in tasks such as image captioning and...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text+image->text",
-        "input_modalities": [
-          "text",
-          "image"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3",
-        "instruct_type": "llama3"
-      },
-      "pricing": {
-        "prompt": "0.000000245",
-        "completion": "0.000000245"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 16384,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-12-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/meta-llama/llama-3.2-11b-vision-instruct/endpoints"
-      }
-    },
-    {
       "id": "qwen/qwen-2.5-72b-instruct",
       "canonical_slug": "qwen/qwen-2.5-72b-instruct",
       "hugging_face_id": "Qwen/Qwen2.5-72B-Instruct",
@@ -18133,57 +18184,6 @@
       }
     },
     {
-      "id": "cohere/command-r-08-2024",
-      "canonical_slug": "cohere/command-r-08-2024",
-      "hugging_face_id": null,
-      "name": "Cohere: Command R (08-2024)",
-      "created": 1724976000,
-      "description": "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and...",
-      "context_length": 128000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Cohere",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000006"
-      },
-      "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": 4000,
-        "is_moderated": true
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-03-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/cohere/command-r-08-2024/endpoints"
-      }
-    },
-    {
       "id": "cohere/command-r-plus-08-2024",
       "canonical_slug": "cohere/command-r-plus-08-2024",
       "hugging_face_id": null,
@@ -18232,6 +18232,57 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/cohere/command-r-plus-08-2024/endpoints"
+      }
+    },
+    {
+      "id": "cohere/command-r-08-2024",
+      "canonical_slug": "cohere/command-r-08-2024",
+      "hugging_face_id": null,
+      "name": "Cohere: Command R (08-2024)",
+      "created": 1724976000,
+      "description": "command-r-08-2024 is an update of the [Command R](/models/cohere/command-r) with improved performance for multilingual retrieval-augmented generation (RAG) and tool use. More broadly, it is better at math, code and reasoning and...",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Cohere",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": 4000,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2024-03-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/cohere/command-r-08-2024/endpoints"
       }
     },
     {
@@ -18549,60 +18600,6 @@
       }
     },
     {
-      "id": "meta-llama/llama-3.1-8b-instruct",
-      "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
-      "hugging_face_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
-      "name": "Meta: Llama 3.1 8B Instruct",
-      "created": 1721692800,
-      "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3",
-        "instruct_type": "llama3"
-      },
-      "pricing": {
-        "prompt": "0.00000002",
-        "completion": "0.00000005"
-      },
-      "top_provider": {
-        "context_length": 16384,
-        "max_completion_tokens": 16384,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-12-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
-      }
-    },
-    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "canonical_slug": "meta-llama/llama-3.1-70b-instruct",
       "hugging_face_id": "meta-llama/Meta-Llama-3.1-70B-Instruct",
@@ -18654,6 +18651,60 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/meta-llama/llama-3.1-70b-instruct/endpoints"
+      }
+    },
+    {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
+      "hugging_face_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "created": 1721692800,
+      "description": "Meta's latest class of model (Llama 3.1) launched with a variety of sizes & flavors. This 8B instruct-tuned version is fast and efficient. It has demonstrated strong performance compared to...",
+      "context_length": 131072,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "pricing": {
+        "prompt": "0.00000002",
+        "completion": "0.00000005"
+      },
+      "top_provider": {
+        "context_length": 16384,
+        "max_completion_tokens": 16384,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/meta-llama/llama-3.1-8b-instruct/endpoints"
       }
     },
     {
@@ -18713,6 +18764,63 @@
       }
     },
     {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "created": 1721260800,
+      "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more affordable...",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text+image+file->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "file"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000075"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": 16384,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p",
+        "web_search_options"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-10-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-4o-mini-2024-07-18/endpoints"
+      }
+    },
+    {
       "id": "openai/gpt-4o-mini",
       "canonical_slug": "openai/gpt-4o-mini",
       "hugging_face_id": null,
@@ -18768,63 +18876,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/gpt-4o-mini/endpoints"
-      }
-    },
-    {
-      "id": "openai/gpt-4o-mini-2024-07-18",
-      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
-      "hugging_face_id": null,
-      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
-      "created": 1721260800,
-      "description": "GPT-4o mini is OpenAI's newest model after [GPT-4 Omni](/models/openai/gpt-4o), supporting both text and image inputs with text outputs. As their most advanced small model, it is many multiples more affordable...",
-      "context_length": 128000,
-      "architecture": {
-        "modality": "text+image+file->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000075"
-      },
-      "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": 16384,
-        "is_moderated": true
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p",
-        "web_search_options"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-10-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/openai/gpt-4o-mini-2024-07-18/endpoints"
       }
     },
     {
@@ -19091,55 +19142,6 @@
       }
     },
     {
-      "id": "meta-llama/llama-3-70b-instruct",
-      "canonical_slug": "meta-llama/llama-3-70b-instruct",
-      "hugging_face_id": "meta-llama/Meta-Llama-3-70B-Instruct",
-      "name": "Meta: Llama 3 70B Instruct",
-      "created": 1713398400,
-      "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
-      "context_length": 8192,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Llama3",
-        "instruct_type": "llama3"
-      },
-      "pricing": {
-        "prompt": "0.00000051",
-        "completion": "0.00000074"
-      },
-      "top_provider": {
-        "context_length": 8192,
-        "max_completion_tokens": 8000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2023-12-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/meta-llama/llama-3-70b-instruct/endpoints"
-      }
-    },
-    {
       "id": "meta-llama/llama-3-8b-instruct",
       "canonical_slug": "meta-llama/llama-3-8b-instruct",
       "hugging_face_id": "meta-llama/Meta-Llama-3-8B-Instruct",
@@ -19188,6 +19190,55 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/meta-llama/llama-3-8b-instruct/endpoints"
+      }
+    },
+    {
+      "id": "meta-llama/llama-3-70b-instruct",
+      "canonical_slug": "meta-llama/llama-3-70b-instruct",
+      "hugging_face_id": "meta-llama/Meta-Llama-3-70B-Instruct",
+      "name": "Meta: Llama 3 70B Instruct",
+      "created": 1713398400,
+      "description": "Meta's latest class of model (Llama 3) launched with a variety of sizes & flavors. This 70B instruct-tuned version was optimized for high quality dialogue usecases. It has demonstrated strong...",
+      "context_length": 8192,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Llama3",
+        "instruct_type": "llama3"
+      },
+      "pricing": {
+        "prompt": "0.00000051",
+        "completion": "0.00000074"
+      },
+      "top_provider": {
+        "context_length": 8192,
+        "max_completion_tokens": 8000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "max_tokens",
+        "presence_penalty",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2023-12-31",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/meta-llama/llama-3-70b-instruct/endpoints"
       }
     },
     {
@@ -19451,59 +19502,6 @@
       }
     },
     {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "canonical_slug": "openai/gpt-3.5-turbo-0613",
-      "hugging_face_id": null,
-      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
-      "created": 1706140800,
-      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-      "context_length": 4095,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000001",
-        "completion": "0.000002"
-      },
-      "top_provider": {
-        "context_length": 4095,
-        "max_completion_tokens": 4096,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_completion_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2021-09-30",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/openai/gpt-3.5-turbo-0613/endpoints"
-      }
-    },
-    {
       "id": "openai/gpt-4-turbo-preview",
       "canonical_slug": "openai/gpt-4-turbo-preview",
       "hugging_face_id": null,
@@ -19554,6 +19552,59 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/gpt-4-turbo-preview/endpoints"
+      }
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "canonical_slug": "openai/gpt-3.5-turbo-0613",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "created": 1706140800,
+      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+      "context_length": 4095,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000001",
+        "completion": "0.000002"
+      },
+      "top_provider": {
+        "context_length": 4095,
+        "max_completion_tokens": 4096,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "logprobs",
+        "max_completion_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2021-09-30",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-3.5-turbo-0613/endpoints"
       }
     },
     {
@@ -19985,6 +20036,59 @@
       }
     },
     {
+      "id": "openai/gpt-3.5-turbo",
+      "canonical_slug": "openai/gpt-3.5-turbo",
+      "hugging_face_id": null,
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "created": 1685232000,
+      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
+      "context_length": 16385,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "GPT",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000005",
+        "completion": "0.0000015"
+      },
+      "top_provider": {
+        "context_length": 16385,
+        "max_completion_tokens": 4096,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": "2021-09-30",
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
+      }
+    },
+    {
       "id": "openai/gpt-4",
       "canonical_slug": "openai/gpt-4",
       "hugging_face_id": null,
@@ -20036,59 +20140,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/openai/gpt-4/endpoints"
-      }
-    },
-    {
-      "id": "openai/gpt-3.5-turbo",
-      "canonical_slug": "openai/gpt-3.5-turbo",
-      "hugging_face_id": null,
-      "name": "OpenAI: GPT-3.5 Turbo",
-      "created": 1685232000,
-      "description": "GPT-3.5 Turbo is OpenAI's fastest model. It can understand and generate natural language or code, and is optimized for chat and traditional completion tasks.\n\nTraining data up to Sep 2021.",
-      "context_length": 16385,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "GPT",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000005",
-        "completion": "0.0000015"
-      },
-      "top_provider": {
-        "context_length": 16385,
-        "max_completion_tokens": 4096,
-        "is_moderated": true
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "logit_bias",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_logprobs",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2021-09-30",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/openai/gpt-3.5-turbo/endpoints"
       }
     }
   ],
@@ -20531,6 +20582,56 @@
   ],
   "video": [],
   "embedding": [
+    {
+      "id": "google/gemini-embedding-2",
+      "canonical_slug": "google/gemini-embedding-2",
+      "hugging_face_id": null,
+      "name": "Google: Gemini Embedding 2",
+      "created": 1779290135,
+      "description": "Gemini Embedding 2 is Google's first multimodal embedding model. We currently support mapping text and images into a unified vector space for semantic search and retrieval-augmented generation (RAG). It supports...",
+      "context_length": 8192,
+      "architecture": {
+        "modality": "text+image+file+audio+video->embeddings",
+        "input_modalities": [
+          "text",
+          "image",
+          "file",
+          "audio",
+          "video"
+        ],
+        "output_modalities": [
+          "embeddings"
+        ],
+        "tokenizer": "Gemini",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000002",
+        "completion": "0",
+        "image": "0.00000045",
+        "audio": "0.0000065"
+      },
+      "top_provider": {
+        "context_length": 8192,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "response_format",
+        "seed",
+        "temperature",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/google/gemini-embedding-2/endpoints"
+      }
+    },
     {
       "id": "google/gemini-embedding-2-preview",
       "canonical_slug": "google/gemini-embedding-2-preview",
@@ -21985,7 +22086,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'deepseek', 'anthropic', 'z-ai', 'nvidia', 'minimax', 'perplexity', 'arcee-ai', 'baidu', 'nousresearch', 'moonshotai', 'openrouter', 'xiaomi', 'sao10k', 'amazon', 'sentence-transformers', 'thedrummer', 'x-ai', 'aion-labs', 'cohere', 'bytedance-seed', 'microsoft', '~anthropic', 'intfloat', 'inclusionai', 'liquid', 'baai', 'inflection', 'ibm-granite', '~openai', 'tencent', 'rekaai', 'morph', 'thenlper', 'poolside', '~google', 'relace', 'perceptron', 'nex-agi', 'bytedance', '~moonshotai', 'undi95', 'stepfun', 'alfredpros', 'deepcogito', 'mancer', 'writer', 'prime-intellect', 'anthracite-org', 'ai21', 'switchpoint', 'gryphe', 'kwaipilot', 'cognitivecomputations', 'upstage', 'essentialai', 'allenai', 'inception'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'meta-llama', 'deepseek', 'z-ai', 'anthropic', 'nvidia', 'minimax', 'perplexity', 'nousresearch', 'arcee-ai', 'baidu', 'moonshotai', 'openrouter', 'amazon', 'sentence-transformers', 'xiaomi', 'sao10k', 'cohere', 'x-ai', 'thedrummer', 'aion-labs', 'bytedance-seed', 'baai', 'liquid', 'inclusionai', '~anthropic', 'intfloat', 'microsoft', 'tencent', 'morph', 'rekaai', 'poolside', 'relace', 'thenlper', 'ibm-granite', '~google', 'inflection', '~openai', 'deepcogito', 'mancer', 'cognitivecomputations', 'switchpoint', 'nex-agi', 'inception', 'gryphe', 'kwaipilot', 'essentialai', 'bytedance', 'anthracite-org', 'alfredpros', 'stepfun', 'allenai', 'perceptron', 'writer', 'undi95', 'ai21', 'upstage', '~moonshotai', 'prime-intellect'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
