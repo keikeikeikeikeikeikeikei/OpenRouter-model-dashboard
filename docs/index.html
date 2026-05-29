@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-29 09:38)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-05-29 21:13)</div>
         </header>
 
         <div class="controls">
@@ -8394,65 +8394,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/arcee-ai/trinity-mini-20251201/endpoints"
-      }
-    },
-    {
-      "id": "deepseek/deepseek-v3.2-speciale",
-      "canonical_slug": "deepseek/deepseek-v3.2-speciale-20251201",
-      "hugging_face_id": "deepseek-ai/DeepSeek-V3.2-Speciale",
-      "name": "DeepSeek: DeepSeek V3.2 Speciale",
-      "created": 1764594837,
-      "description": "DeepSeek-V3.2-Speciale is a high-compute variant of DeepSeek-V3.2 optimized for maximum reasoning and agentic performance. It builds on DeepSeek Sparse Attention (DSA) for efficient long-context processing, then scales post-training reinforcement learning...",
-      "context_length": 163840,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "DeepSeek",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000000287",
-        "completion": "0.000000431",
-        "input_cache_read": "0.000000058"
-      },
-      "top_provider": {
-        "context_length": 163840,
-        "max_completion_tokens": 163840,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 1,
-        "top_p": 0.95,
-        "frequency_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/deepseek/deepseek-v3.2-speciale-20251201/endpoints"
       }
     },
     {
@@ -22216,7 +22157,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'deepseek', 'z-ai', 'nvidia', 'minimax', 'perplexity', 'nousresearch', 'moonshotai', 'arcee-ai', 'xiaomi', 'openrouter', 'baidu', 'amazon', 'sao10k', 'sentence-transformers', 'thedrummer', 'x-ai', 'bytedance-seed', 'aion-labs', 'cohere', 'inclusionai', 'intfloat', 'baai', '~anthropic', 'microsoft', 'liquid', 'stepfun', 'ibm-granite', '~openai', 'rekaai', 'morph', 'thenlper', 'relace', 'inflection', 'tencent', '~google', 'poolside', 'switchpoint', 'gryphe', 'anthracite-org', 'upstage', 'nex-agi', 'prime-intellect', 'deepcogito', 'perceptron', 'kwaipilot', 'bytedance', 'cognitivecomputations', 'mancer', 'undi95', 'essentialai', 'inception', '~moonshotai', 'ai21', 'writer', 'allenai', 'alfredpros'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'perplexity', 'nousresearch', 'moonshotai', 'arcee-ai', 'xiaomi', 'sentence-transformers', 'openrouter', 'sao10k', 'amazon', 'baidu', 'bytedance-seed', 'thedrummer', 'cohere', 'x-ai', 'aion-labs', 'intfloat', 'baai', 'liquid', 'inclusionai', 'microsoft', '~anthropic', 'thenlper', 'tencent', 'ibm-granite', 'morph', 'stepfun', '~google', 'relace', 'rekaai', 'inflection', 'poolside', '~openai', 'writer', 'anthracite-org', 'alfredpros', 'cognitivecomputations', 'kwaipilot', 'ai21', 'switchpoint', 'undi95', 'prime-intellect', 'perceptron', 'bytedance', 'mancer', 'deepcogito', 'essentialai', 'allenai', 'nex-agi', '~moonshotai', 'gryphe', 'upstage', 'inception'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
