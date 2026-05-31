@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-05-31 19:06)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-06-01 03:11)</div>
         </header>
 
         <div class="controls">
@@ -699,6 +699,7 @@
                                 <option value="131072">128k+</option>
                                 <option value="199680">195k+</option>
                                 <option value="300032">293k+</option>
+                                <option value="1047552">1023k+</option>
                                 <option value="1048576">1M+</option>
                                 <option value="10000384">9.5M+</option>
                             </select>
@@ -1243,9 +1244,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000075",
-        "completion": "0.000000625",
-        "input_cache_read": "0.000000015"
+        "prompt": "0.0000003",
+        "completion": "0.0000025",
+        "input_cache_read": "0.00000006"
       },
       "top_provider": {
         "context_length": 262144,
@@ -2731,56 +2732,6 @@
       }
     },
     {
-      "id": "deepseek/deepseek-v4-flash:free",
-      "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
-      "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
-      "name": "DeepSeek: DeepSeek V4 Flash (free)",
-      "created": 1777000666,
-      "description": "DeepSeek V4 Flash is an efficiency-optimized Mixture-of-Experts model from DeepSeek with 284B total parameters and 13B activated parameters, supporting a 1M-token context window. It is designed for fast inference and...",
-      "context_length": 1048576,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "DeepSeek",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 384000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "include_reasoning",
-        "reasoning",
-        "tool_choice",
-        "tools"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/deepseek/deepseek-v4-flash-20260423/endpoints"
-      }
-    },
-    {
       "id": "deepseek/deepseek-v4-flash",
       "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
       "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash",
@@ -4229,125 +4180,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/rekaai/reka-edge-2603/endpoints"
-      }
-    },
-    {
-      "id": "xiaomi/mimo-v2-omni",
-      "canonical_slug": "xiaomi/mimo-v2-omni-20260318",
-      "hugging_face_id": "",
-      "name": "Xiaomi: MiMo-V2-Omni",
-      "created": 1773863703,
-      "description": "MiMo-V2-Omni is a frontier omni-modal model that natively processes image, video, and audio inputs within a unified architecture. It combines strong multimodal perception with agentic capability - visual grounding, multi-step...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text+image+audio+video->text",
-        "input_modalities": [
-          "text",
-          "audio",
-          "image",
-          "video"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.000002",
-        "input_cache_read": "0.00000008"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 65536,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 1,
-        "top_p": 0.95,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-05-31",
-      "links": {
-        "details": "/api/v1/models/xiaomi/mimo-v2-omni-20260318/endpoints"
-      }
-    },
-    {
-      "id": "xiaomi/mimo-v2-pro",
-      "canonical_slug": "xiaomi/mimo-v2-pro-20260318",
-      "hugging_face_id": "",
-      "name": "Xiaomi: MiMo-V2-Pro",
-      "created": 1773863643,
-      "description": "MiMo-V2-Pro is Xiaomi's flagship foundation model, featuring over 1T total parameters and a 1M context length, deeply optimized for agentic scenarios. It is highly adaptable to general agent frameworks like...",
-      "context_length": 1048576,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000001",
-        "completion": "0.000003",
-        "input_cache_read": "0.0000002"
-      },
-      "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 131072,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "response_format",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 1,
-        "top_p": 0.95,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-05-31",
-      "links": {
-        "details": "/api/v1/models/xiaomi/mimo-v2-pro-20260318/endpoints"
       }
     },
     {
@@ -12832,114 +12664,6 @@
       }
     },
     {
-      "id": "mistralai/devstral-medium",
-      "canonical_slug": "mistralai/devstral-medium-2507",
-      "hugging_face_id": "",
-      "name": "Mistral: Devstral Medium",
-      "created": 1752161321,
-      "description": "Devstral Medium is a high-performance code generation and agentic reasoning model developed jointly by Mistral AI and All Hands AI. Positioned as a step up from Devstral Small, it achieves...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text+file->text",
-        "input_modalities": [
-          "text",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.000002",
-        "input_cache_read": "0.00000004"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2025-06-30",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/mistralai/devstral-medium-2507/endpoints"
-      }
-    },
-    {
-      "id": "mistralai/devstral-small",
-      "canonical_slug": "mistralai/devstral-small-2507",
-      "hugging_face_id": "mistralai/Devstral-Small-2507",
-      "name": "Mistral: Devstral Small 1.1",
-      "created": 1752160751,
-      "description": "Devstral Small 1.1 is a 24B parameter open-weight language model for software engineering agents, developed by Mistral AI in collaboration with All Hands AI. Finetuned from Mistral Small 3.1 and...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text+file->text",
-        "input_modalities": [
-          "text",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.0000001",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000001"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2025-03-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/mistralai/devstral-small-2507/endpoints"
-      }
-    },
-    {
       "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
       "canonical_slug": "venice/uncensored",
       "hugging_face_id": "cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition",
@@ -17110,60 +16834,6 @@
       }
     },
     {
-      "id": "mistralai/mistral-large-2411",
-      "canonical_slug": "mistralai/mistral-large-2411",
-      "hugging_face_id": "",
-      "name": "Mistral Large 2411",
-      "created": 1731978685,
-      "description": "Mistral Large 2 2411 is an update of [Mistral Large 2](/mistralai/mistral-large) released together with [Pixtral Large 2411](/mistralai/pixtral-large-2411) It provides a significant upgrade on the previous [Mistral Large 24.07](/mistralai/mistral-large-2407), with notable...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text+file->text",
-        "input_modalities": [
-          "text",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000002",
-        "completion": "0.000006",
-        "input_cache_read": "0.0000002"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-07-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/mistralai/mistral-large-2411/endpoints"
-      }
-    },
-    {
       "id": "mistralai/mistral-large-2407",
       "canonical_slug": "mistralai/mistral-large-2407",
       "hugging_face_id": "",
@@ -17215,61 +16885,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mistral-large-2407/endpoints"
-      }
-    },
-    {
-      "id": "mistralai/pixtral-large-2411",
-      "canonical_slug": "mistralai/pixtral-large-2411",
-      "hugging_face_id": "",
-      "name": "Mistral: Pixtral Large 2411",
-      "created": 1731977388,
-      "description": "Pixtral Large is a 124B parameter, open-weight, multimodal model built on top of [Mistral Large 2](/mistralai/mistral-large-2411). The model is able to understand documents, charts and natural images. The model is...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text+image+file->text",
-        "input_modalities": [
-          "text",
-          "image",
-          "file"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.000002",
-        "completion": "0.000006",
-        "input_cache_read": "0.0000002"
-      },
-      "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-07-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/mistralai/pixtral-large-2411/endpoints"
       }
     },
     {
@@ -21782,7 +21397,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'perplexity', 'minimax', 'arcee-ai', 'nousresearch', 'moonshotai', 'amazon', 'openrouter', 'sao10k', 'sentence-transformers', 'xiaomi', 'x-ai', 'aion-labs', 'bytedance-seed', 'cohere', 'thedrummer', 'inclusionai', '~anthropic', 'microsoft', 'baidu', 'intfloat', 'liquid', 'baai', 'thenlper', '~openai', 'poolside', '~google', 'rekaai', 'stepfun', 'morph', 'relace', 'inflection', 'ibm-granite', 'tencent', 'kwaipilot', 'anthracite-org', 'nex-agi', '~moonshotai', 'inception', 'deepcogito', 'ai21', 'gryphe', 'writer', 'perceptron', 'switchpoint', 'cognitivecomputations', 'bytedance', 'allenai', 'prime-intellect', 'mancer', 'essentialai', 'undi95'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'perplexity', 'arcee-ai', 'moonshotai', 'nousresearch', 'sentence-transformers', 'openrouter', 'amazon', 'sao10k', 'x-ai', 'bytedance-seed', 'thedrummer', 'cohere', 'aion-labs', 'intfloat', 'liquid', 'microsoft', 'xiaomi', '~anthropic', 'inclusionai', 'baidu', 'baai', 'rekaai', 'poolside', 'relace', '~openai', 'tencent', 'thenlper', 'stepfun', 'inflection', 'ibm-granite', '~google', 'morph', 'allenai', 'bytedance', 'deepcogito', 'prime-intellect', 'nex-agi', 'essentialai', '~moonshotai', 'anthracite-org', 'perceptron', 'mancer', 'ai21', 'kwaipilot', 'undi95', 'writer', 'gryphe', 'cognitivecomputations', 'inception', 'switchpoint'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
