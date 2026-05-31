@@ -31,3 +31,6 @@ Thumbs.db
 
 # Build artifacts (docs/ is kept for GitHub Pages)
 # But we keep docs/ for deployment
+
+# Local-only pages (not pushed to GitHub)
+docs/free_models.html
