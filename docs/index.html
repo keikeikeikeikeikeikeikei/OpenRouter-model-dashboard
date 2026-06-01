@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-06-01 03:11)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-06-01 09:12)</div>
         </header>
 
         <div class="controls">
@@ -6322,6 +6322,61 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/moonshotai/kimi-k2.5-0127/endpoints"
+      }
+    },
+    {
+      "id": "upstage/solar-pro-3",
+      "canonical_slug": "upstage/solar-pro-3",
+      "hugging_face_id": "",
+      "name": "Upstage: Solar Pro 3",
+      "created": 1769481200,
+      "description": "Solar Pro 3 is Upstage's powerful Mixture-of-Experts (MoE) language model. With 102B total parameters and 12B active parameters per forward pass, it delivers exceptional performance while maintaining computational efficiency. Optimized...",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000015"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": null,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "top_k": null,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/upstage/solar-pro-3/endpoints"
       }
     },
     {
@@ -21397,7 +21452,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'perplexity', 'arcee-ai', 'moonshotai', 'nousresearch', 'sentence-transformers', 'openrouter', 'amazon', 'sao10k', 'x-ai', 'bytedance-seed', 'thedrummer', 'cohere', 'aion-labs', 'intfloat', 'liquid', 'microsoft', 'xiaomi', '~anthropic', 'inclusionai', 'baidu', 'baai', 'rekaai', 'poolside', 'relace', '~openai', 'tencent', 'thenlper', 'stepfun', 'inflection', 'ibm-granite', '~google', 'morph', 'allenai', 'bytedance', 'deepcogito', 'prime-intellect', 'nex-agi', 'essentialai', '~moonshotai', 'anthracite-org', 'perceptron', 'mancer', 'ai21', 'kwaipilot', 'undi95', 'writer', 'gryphe', 'cognitivecomputations', 'inception', 'switchpoint'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'perplexity', 'moonshotai', 'nousresearch', 'arcee-ai', 'openrouter', 'sentence-transformers', 'amazon', 'sao10k', 'thedrummer', 'x-ai', 'bytedance-seed', 'aion-labs', 'cohere', 'baai', 'intfloat', '~anthropic', 'microsoft', 'inclusionai', 'xiaomi', 'liquid', 'baidu', 'inflection', 'stepfun', 'relace', 'tencent', 'morph', 'rekaai', 'ibm-granite', '~openai', 'thenlper', '~google', 'poolside', 'gryphe', 'ai21', 'allenai', 'kwaipilot', 'cognitivecomputations', 'mancer', 'writer', 'upstage', 'bytedance', 'anthracite-org', 'switchpoint', 'essentialai', 'perceptron', 'inception', 'nex-agi', 'undi95', 'prime-intellect', '~moonshotai', 'deepcogito'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
