@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-06-02 07:06)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-06-03 01:25)</div>
         </header>
 
         <div class="controls">
@@ -1301,9 +1301,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.0000025",
-        "input_cache_read": "0.00000006"
+        "prompt": "0.000000075",
+        "completion": "0.000000625",
+        "input_cache_read": "0.000000015"
       },
       "top_provider": {
         "context_length": 262144,
@@ -5919,7 +5919,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "parallel_tool_calls",
@@ -5935,7 +5934,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -13011,55 +13009,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/baidu/ernie-4.5-vl-424b-a47b/endpoints"
-      }
-    },
-    {
-      "id": "baidu/ernie-4.5-300b-a47b",
-      "canonical_slug": "baidu/ernie-4.5-300b-a47b",
-      "hugging_face_id": "baidu/ERNIE-4.5-300B-A47B-PT",
-      "name": "Baidu: ERNIE 4.5 300B A47B ",
-      "created": 1751300139,
-      "description": "ERNIE-4.5-300B-A47B is a 300B parameter Mixture-of-Experts (MoE) language model developed by Baidu as part of the ERNIE 4.5 series. It activates 47B parameters per token and supports text generation in...",
-      "context_length": 131072,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000028",
-        "completion": "0.0000011"
-      },
-      "top_provider": {
-        "context_length": 123000,
-        "max_completion_tokens": 12000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "temperature",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2025-03-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/baidu/ernie-4.5-300b-a47b/endpoints"
       }
     },
     {
@@ -21386,7 +21335,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'perplexity', 'moonshotai', 'arcee-ai', 'nousresearch', 'sentence-transformers', 'sao10k', 'openrouter', 'amazon', 'x-ai', 'aion-labs', 'cohere', 'thedrummer', 'bytedance-seed', '~anthropic', 'liquid', 'microsoft', 'xiaomi', 'intfloat', 'inclusionai', 'baai', 'baidu', 'ibm-granite', 'thenlper', 'morph', '~openai', 'tencent', 'rekaai', 'relace', 'inflection', 'poolside', 'stepfun', '~google', 'deepcogito', 'perceptron', 'anthracite-org', 'nex-agi', 'prime-intellect', 'upstage', 'bytedance', 'cognitivecomputations', 'undi95', 'inception', 'allenai', 'gryphe', 'switchpoint', 'kwaipilot', 'essentialai', 'ai21', 'mancer', 'writer', '~moonshotai'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'perplexity', 'arcee-ai', 'moonshotai', 'nousresearch', 'amazon', 'sentence-transformers', 'openrouter', 'sao10k', 'aion-labs', 'cohere', 'x-ai', 'thedrummer', 'bytedance-seed', '~anthropic', 'inclusionai', 'baai', 'liquid', 'intfloat', 'xiaomi', 'microsoft', 'ibm-granite', '~google', 'inflection', 'baidu', 'poolside', '~openai', 'thenlper', 'rekaai', 'stepfun', 'morph', 'tencent', 'relace', 'cognitivecomputations', 'anthracite-org', 'switchpoint', 'bytedance', 'kwaipilot', 'upstage', 'undi95', 'allenai', 'essentialai', 'writer', 'deepcogito', 'inception', 'nex-agi', 'mancer', 'ai21', 'perceptron', '~moonshotai', 'gryphe', 'prime-intellect'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
