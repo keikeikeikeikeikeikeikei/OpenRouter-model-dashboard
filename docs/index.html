@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-06-09 01:19)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-06-09 11:25)</div>
         </header>
 
         <div class="controls">
@@ -734,6 +734,69 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "nex-agi/nex-n2-pro:free",
+      "canonical_slug": "nex-agi/nex-n2-pro",
+      "hugging_face_id": "nex-agi/Nex-N2-Pro",
+      "name": "Nex AGI: Nex-N2-Pro (free)",
+      "created": 1780937140,
+      "description": "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen3",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.7,
+        "top_p": 0.95,
+        "top_k": 40,
+        "frequency_penalty": null,
+        "presence_penalty": null,
+        "repetition_penalty": null
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/nex-agi/nex-n2-pro/endpoints"
+      }
+    },
     {
       "id": "nvidia/nemotron-3.5-content-safety:free",
       "canonical_slug": "nvidia/nemotron-3.5-content-safety-20260604",
@@ -3813,10 +3876,8 @@
         "logprobs",
         "max_tokens",
         "min_p",
-        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
-        "reasoning_effort",
         "repetition_penalty",
         "response_format",
         "seed",
@@ -6496,6 +6557,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -21241,7 +21303,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'nvidia', 'deepseek', 'minimax', 'perplexity', 'openrouter', 'moonshotai', 'nousresearch', 'amazon', 'arcee-ai', 'sentence-transformers', 'bytedance-seed', 'cohere', 'sao10k', 'x-ai', 'thedrummer', 'aion-labs', 'xiaomi', 'liquid', 'inclusionai', 'intfloat', '~anthropic', 'baai', 'microsoft', 'poolside', 'morph', 'inflection', '~google', 'thenlper', 'stepfun', '~openai', 'tencent', 'rekaai', 'ibm-granite', 'relace', 'mancer', 'essentialai', 'deepcogito', 'prime-intellect', 'writer', 'gryphe', 'bytedance', 'anthracite-org', 'inception', 'perceptron', 'baidu', 'upstage', 'kwaipilot', 'undi95', '~moonshotai', 'cognitivecomputations', 'allenai', 'switchpoint', 'ai21'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'z-ai', 'nvidia', 'deepseek', 'minimax', 'perplexity', 'moonshotai', 'openrouter', 'sentence-transformers', 'nousresearch', 'arcee-ai', 'amazon', 'aion-labs', 'cohere', 'bytedance-seed', 'x-ai', 'thedrummer', 'sao10k', 'liquid', 'intfloat', 'xiaomi', 'baai', 'microsoft', '~anthropic', 'inclusionai', 'morph', '~openai', 'tencent', 'thenlper', '~google', 'stepfun', 'poolside', 'relace', 'inflection', 'ibm-granite', 'rekaai', 'writer', 'gryphe', 'prime-intellect', 'upstage', 'anthracite-org', 'ai21', 'kwaipilot', 'mancer', 'undi95', 'deepcogito', 'switchpoint', 'perceptron', 'bytedance', 'allenai', 'nex-agi', 'inception', 'cognitivecomputations', 'baidu', '~moonshotai', 'essentialai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
