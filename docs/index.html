@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-06-11 04:21)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-06-11 18:16)</div>
         </header>
 
         <div class="controls">
@@ -2896,12 +2896,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000014",
-        "completion": "0.000001"
+        "prompt": "0.00000015",
+        "completion": "0.000001",
+        "input_cache_read": "0.00000005"
       },
       "top_provider": {
-        "context_length": 262140,
-        "max_completion_tokens": 262140,
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -6684,13 +6685,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.0000019",
-        "input_cache_read": "0.00000009"
+        "prompt": "0.00000035",
+        "completion": "0.00000189"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "context_length": 256000,
+        "max_completion_tokens": null,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -12463,6 +12463,7 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logprobs",
         "max_tokens",
         "presence_penalty",
         "reasoning",
@@ -12474,6 +12475,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -21172,7 +21174,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'nvidia', 'deepseek', 'z-ai', 'minimax', 'perplexity', 'openrouter', 'moonshotai', 'amazon', 'sentence-transformers', 'nousresearch', '~anthropic', 'x-ai', 'bytedance-seed', 'sao10k', 'arcee-ai', 'aion-labs', 'thedrummer', 'cohere', 'liquid', 'baai', 'xiaomi', 'inclusionai', 'intfloat', 'microsoft', 'ibm-granite', '~openai', 'morph', 'stepfun', 'tencent', '~google', 'relace', 'inflection', 'rekaai', 'poolside', 'thenlper', '~moonshotai', 'mancer', 'anthracite-org', 'gryphe', 'deepcogito', 'switchpoint', 'essentialai', 'prime-intellect', 'upstage', 'undi95', 'kwaipilot', 'writer', 'inception', 'nex-agi', 'baidu', 'bytedance', 'cognitivecomputations', 'allenai', 'perceptron', 'ai21'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'nvidia', 'deepseek', 'z-ai', 'minimax', 'perplexity', 'openrouter', 'sentence-transformers', 'nousresearch', 'amazon', 'moonshotai', 'thedrummer', 'bytedance-seed', 'aion-labs', 'x-ai', '~anthropic', 'cohere', 'arcee-ai', 'sao10k', 'intfloat', 'microsoft', 'inclusionai', 'baai', 'xiaomi', 'liquid', 'thenlper', 'tencent', 'ibm-granite', 'morph', 'rekaai', '~google', 'stepfun', 'poolside', '~openai', 'inflection', 'relace', 'ai21', 'mancer', 'essentialai', 'anthracite-org', 'deepcogito', 'perceptron', 'writer', 'upstage', 'gryphe', 'cognitivecomputations', 'switchpoint', 'nex-agi', 'baidu', '~moonshotai', 'bytedance', 'kwaipilot', 'allenai', 'prime-intellect', 'undi95', 'inception'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
