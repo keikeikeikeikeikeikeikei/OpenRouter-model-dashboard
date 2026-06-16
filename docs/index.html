@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-06-16 13:36)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-06-16 20:43)</div>
         </header>
 
         <div class="controls">
@@ -4592,13 +4592,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000063",
-        "completion": "0.00000021",
-        "input_cache_read": "0.000000021"
+        "prompt": "0.000000066",
+        "completion": "0.00000026",
+        "input_cache_read": "0.000000029"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": null,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -5545,8 +5545,10 @@
         "logprobs",
         "max_tokens",
         "min_p",
+        "parallel_tool_calls",
         "presence_penalty",
         "reasoning",
+        "reasoning_effort",
         "repetition_penalty",
         "response_format",
         "seed",
@@ -18135,13 +18137,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000125",
+        "prompt": "0.00000013",
         "completion": "0.00000085",
-        "input_cache_read": "0.00000006"
+        "input_cache_read": "0.000000025"
       },
       "top_provider": {
-        "context_length": 131070,
-        "max_completion_tokens": 131070,
+        "context_length": 131072,
+        "max_completion_tokens": 98304,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -18152,7 +18154,6 @@
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
-        "response_format",
         "seed",
         "stop",
         "temperature",
@@ -22782,59 +22783,6 @@
       "expiration_date": null,
       "links": {
         "details": "/api/v1/models/mistralai/mistral-small-24b-instruct-2501/endpoints"
-      }
-    },
-    {
-      "id": "deepseek/deepseek-r1-distill-qwen-32b",
-      "canonical_slug": "deepseek/deepseek-r1-distill-qwen-32b",
-      "hugging_face_id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
-      "name": "DeepSeek: R1 Distill Qwen 32B",
-      "created": 1738194830,
-      "description": "DeepSeek R1 Distill Qwen 32B is a distilled large language model based on [Qwen 2.5 32B](https://huggingface.co/Qwen/Qwen2.5-32B), using outputs from [DeepSeek R1](/deepseek/deepseek-r1). It outperforms OpenAI's o1-mini across various benchmarks, achieving new...",
-      "context_length": 128000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Qwen",
-        "instruct_type": "deepseek-r1"
-      },
-      "pricing": {
-        "prompt": "0.00000029",
-        "completion": "0.00000029"
-      },
-      "top_provider": {
-        "context_length": 32768,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_logprobs",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-07-31",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/deepseek/deepseek-r1-distill-qwen-32b/endpoints"
       }
     },
     {
@@ -28475,7 +28423,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'deepseek', 'nvidia', 'z-ai', 'minimax', 'perplexity', 'moonshotai', 'openrouter', 'sentence-transformers', 'nousresearch', 'amazon', 'x-ai', 'thedrummer', 'sao10k', 'bytedance-seed', '~anthropic', 'cohere', 'aion-labs', 'arcee-ai', 'liquid', 'microsoft', 'baai', 'xiaomi', 'inclusionai', 'intfloat', 'relace', 'ibm-granite', 'stepfun', 'inflection', 'rekaai', 'morph', '~google', '~openai', 'poolside', 'tencent', 'thenlper', 'inception', 'mancer', 'perceptron', 'undi95', '~moonshotai', 'essentialai', 'prime-intellect', 'nex-agi', 'cognitivecomputations', 'deepcogito', 'upstage', 'allenai', 'baidu', 'writer', 'anthracite-org', 'ai21', 'switchpoint', 'bytedance', 'gryphe', 'kwaipilot'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'meta-llama', 'nvidia', 'deepseek', 'z-ai', 'minimax', 'perplexity', 'openrouter', 'moonshotai', 'amazon', 'nousresearch', 'sentence-transformers', 'cohere', 'arcee-ai', 'sao10k', 'aion-labs', 'x-ai', '~anthropic', 'thedrummer', 'bytedance-seed', 'liquid', 'intfloat', 'baai', 'inclusionai', 'microsoft', 'xiaomi', 'relace', 'poolside', 'morph', 'inflection', 'ibm-granite', 'thenlper', 'tencent', '~openai', 'stepfun', 'rekaai', '~google', 'undi95', 'prime-intellect', 'gryphe', 'writer', 'anthracite-org', 'inception', 'deepcogito', 'essentialai', 'switchpoint', 'ai21', 'bytedance', 'baidu', 'allenai', 'nex-agi', 'mancer', 'perceptron', 'upstage', 'cognitivecomputations', 'kwaipilot', '~moonshotai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
