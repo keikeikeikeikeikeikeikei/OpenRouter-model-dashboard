@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-07-20 02:08)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-07-20 08:08)</div>
         </header>
 
         <div class="controls">
@@ -907,11 +907,14 @@
         }
       },
       "reasoning": {
-        "mandatory": true,
+        "mandatory": false,
         "default_enabled": true,
         "supported_efforts": [
-          "max"
-        ]
+          "max",
+          "high",
+          "low"
+        ],
+        "default_effort": "max"
       }
     },
     {
@@ -2850,9 +2853,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000002436",
-        "completion": "0.0000007656",
-        "input_cache_read": "0.00000004524"
+        "prompt": "0.0000002786",
+        "completion": "0.0000008756",
+        "input_cache_read": "0.00000005174"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6427,11 +6430,14 @@
         "details": "/api/v1/models/~moonshotai/kimi-latest/endpoints"
       },
       "reasoning": {
-        "mandatory": true,
+        "mandatory": false,
         "default_enabled": true,
         "supported_efforts": [
-          "max"
-        ]
+          "max",
+          "high",
+          "low"
+        ],
+        "default_effort": "max"
       }
     },
     {
@@ -9084,13 +9090,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000022",
-        "completion": "0.00000055",
-        "input_cache_read": "0.00000012"
+        "prompt": "0.00000012",
+        "completion": "0.00000037"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -31230,7 +31235,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'openrouter', 'x-ai', 'sentence-transformers', 'amazon', 'cohere', 'thedrummer', 'bytedance-seed', 'poolside', 'tencent', 'nousresearch', 'aion-labs', '~anthropic', 'inclusionai', 'kwaipilot', 'sao10k', 'intfloat', 'baai', 'stepfun', 'microsoft', '~openai', 'rekaai', 'inflection', 'nex-agi', '~google', 'arcee-ai', 'ibm-granite', 'relace', 'morph', 'thenlper', 'xiaomi', 'sakana', 'allenai', 'undi95', 'inception', 'perceptron', 'deepcogito', 'mancer', 'ai21', 'upstage', 'anthracite-org', 'thinkingmachines', 'bytedance', 'baidu', 'cognitivecomputations', 'writer', 'gryphe', '~moonshotai', '~x-ai', 'meta'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'openrouter', 'x-ai', 'cohere', 'amazon', 'sentence-transformers', '~anthropic', 'nousresearch', 'bytedance-seed', 'aion-labs', 'tencent', 'thedrummer', 'poolside', 'intfloat', 'baai', 'kwaipilot', 'sao10k', 'inclusionai', '~google', 'inflection', 'xiaomi', 'microsoft', 'nex-agi', 'stepfun', 'relace', 'morph', 'arcee-ai', 'thenlper', 'ibm-granite', '~openai', 'rekaai', 'allenai', 'upstage', 'deepcogito', '~moonshotai', 'sakana', 'mancer', 'anthracite-org', 'ai21', 'writer', 'bytedance', 'thinkingmachines', 'perceptron', 'inception', 'undi95', 'cognitivecomputations', 'meta', 'baidu', 'gryphe', '~x-ai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
