@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-07-30 03:12)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-07-30 09:12)</div>
         </header>
 
         <div class="controls">
@@ -864,14 +864,7 @@
         "tools",
         "verbosity"
       ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "top_k": null,
-        "frequency_penalty": null,
-        "presence_penalty": null,
-        "repetition_penalty": null
-      },
+      "default_parameters": {},
       "supported_voices": null,
       "knowledge_cutoff": null,
       "expiration_date": null,
@@ -2942,6 +2935,10 @@
     {
       "id": "~x-ai/grok-latest",
       "canonical_slug": "~x-ai/grok-latest",
+      "alias_target": {
+        "name": "xAI: Grok 4.5",
+        "slug": "x-ai/grok-4.5"
+      },
       "hugging_face_id": null,
       "name": "xAI: Grok Latest",
       "created": 1783519360,
@@ -3977,9 +3974,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000006958",
-        "completion": "0.0000021868",
-        "input_cache_read": "0.00000012922"
+        "prompt": "0.0000006776",
+        "completion": "0.0000021296",
+        "input_cache_read": "0.00000012584"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -4396,6 +4393,10 @@
     {
       "id": "~anthropic/claude-fable-latest",
       "canonical_slug": "~anthropic/claude-fable-latest",
+      "alias_target": {
+        "name": "Anthropic: Claude Fable 5",
+        "slug": "anthropic/claude-fable-5"
+      },
       "hugging_face_id": null,
       "name": "Anthropic: Claude Fable Latest",
       "created": 1781029944,
@@ -8132,6 +8133,10 @@
     {
       "id": "~anthropic/claude-haiku-latest",
       "canonical_slug": "~anthropic/claude-haiku-latest",
+      "alias_target": {
+        "name": "Anthropic: Claude Haiku 4.5",
+        "slug": "anthropic/claude-haiku-4.5"
+      },
       "hugging_face_id": null,
       "name": "Anthropic Claude Haiku Latest",
       "created": 1777318492,
@@ -8199,6 +8204,10 @@
     {
       "id": "~openai/gpt-mini-latest",
       "canonical_slug": "~openai/gpt-mini-latest",
+      "alias_target": {
+        "name": "OpenAI: GPT-5.4 Mini",
+        "slug": "openai/gpt-5.4-mini"
+      },
       "hugging_face_id": null,
       "name": "OpenAI GPT Mini Latest",
       "created": 1777318471,
@@ -8271,6 +8280,10 @@
     {
       "id": "~google/gemini-pro-latest",
       "canonical_slug": "~google/gemini-pro-latest",
+      "alias_target": {
+        "name": "Google: Gemini 3.1 Pro Preview",
+        "slug": "google/gemini-3.1-pro-preview"
+      },
       "hugging_face_id": null,
       "name": "Google Gemini Pro Latest",
       "created": 1777318451,
@@ -8359,6 +8372,10 @@
     {
       "id": "~moonshotai/kimi-latest",
       "canonical_slug": "~moonshotai/kimi-latest",
+      "alias_target": {
+        "name": "MoonshotAI: Kimi K3",
+        "slug": "moonshotai/kimi-k3"
+      },
       "hugging_face_id": null,
       "name": "MoonshotAI Kimi Latest",
       "created": 1777318428,
@@ -8437,6 +8454,10 @@
     {
       "id": "~google/gemini-flash-latest",
       "canonical_slug": "~google/gemini-flash-latest",
+      "alias_target": {
+        "name": "Google: Gemini 3.6 Flash",
+        "slug": "google/gemini-3.6-flash"
+      },
       "hugging_face_id": null,
       "name": "Google Gemini Flash Latest",
       "created": 1777318398,
@@ -8517,6 +8538,10 @@
     {
       "id": "~anthropic/claude-sonnet-latest",
       "canonical_slug": "~anthropic/claude-sonnet-latest",
+      "alias_target": {
+        "name": "Anthropic: Claude Sonnet 5",
+        "slug": "anthropic/claude-sonnet-5"
+      },
       "hugging_face_id": null,
       "name": "Anthropic Claude Sonnet Latest",
       "created": 1777318368,
@@ -8592,6 +8617,10 @@
     {
       "id": "~openai/gpt-latest",
       "canonical_slug": "~openai/gpt-latest",
+      "alias_target": {
+        "name": "OpenAI: GPT-5.6 Sol",
+        "slug": "openai/gpt-5.6-sol"
+      },
       "hugging_face_id": null,
       "name": "OpenAI GPT Latest",
       "created": 1777318334,
@@ -10361,6 +10390,10 @@
     {
       "id": "~anthropic/claude-opus-latest",
       "canonical_slug": "~anthropic/claude-opus-latest",
+      "alias_target": {
+        "name": "Claude Opus 5",
+        "slug": "anthropic/claude-opus-5"
+      },
       "hugging_face_id": "",
       "name": "Anthropic: Claude Opus Latest",
       "created": 1776795361,
@@ -11552,8 +11585,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000014",
-        "completion": "0.0000004"
+        "prompt": "0.0000001",
+        "completion": "0.00000034",
+        "input_cache_read": "0.0000001"
       },
       "top_provider": {
         "context_length": 262144,
@@ -12881,7 +12915,7 @@
       "top_provider": {
         "context_length": 400000,
         "max_completion_tokens": 128000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -19249,10 +19283,8 @@
       "per_request_limits": null,
       "supported_parameters": [
         "frequency_penalty",
-        "logprobs",
         "max_tokens",
         "presence_penalty",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
@@ -19260,7 +19292,6 @@
         "temperature",
         "tool_choice",
         "tools",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -21899,12 +21930,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000013",
-        "completion": "0.00000052"
+        "prompt": "0.00000015",
+        "completion": "0.0000006"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 32768,
+        "context_length": 262144,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -25785,7 +25816,6 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
-        "min_p",
         "presence_penalty",
         "repetition_penalty",
         "response_format",
@@ -28401,7 +28431,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -28410,12 +28439,10 @@
         "response_format",
         "seed",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -33709,7 +33736,7 @@
       },
       "top_provider": {
         "context_length": 65536,
-        "max_completion_tokens": 66000,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -34481,7 +34508,7 @@
       "hugging_face_id": null,
       "name": "VoyageAI by MongoDB: voyage-multimodal-3.5",
       "created": 1785188629,
-      "description": "Voyage Multimodal 3.5 is a multimodal embedding model from Voyage AI by MongoDB. It maps interleaved text and visual content into a shared embedding space for cross-modal retrieval over documents,...",
+      "description": "voyage-multimodal-3.5 is a state-of-the-art multimodal embedding model capable of vectorizing not only text, images, and video individually, but also content that interleaves all three modalities. It delivers excellent performance for...",
       "context_length": 32000,
       "architecture": {
         "modality": "text+image->embeddings",
@@ -34520,7 +34547,7 @@
       "hugging_face_id": null,
       "name": "VoyageAI by MongoDB: voyage-4-lite",
       "created": 1785188627,
-      "description": "Voyage 4 Lite is an efficiency-focused general-purpose embedding model from Voyage AI by MongoDB, optimized for low-latency and cost-sensitive retrieval. It supports Matryoshka embeddings at 2048, 1024, 512, and 256...",
+      "description": "voyage-4-lite is a lightweight, general-purpose embedding model optimized for low latency and cost. Enabled by Matryoshka learning and quantization-aware training, voyage-4-lite supports embeddings in 2048, 1024, 512, and 256 dimensions,...",
       "context_length": 32000,
       "architecture": {
         "modality": "text->embeddings",
@@ -34558,7 +34585,7 @@
       "hugging_face_id": null,
       "name": "VoyageAI by MongoDB: voyage-4",
       "created": 1785188626,
-      "description": "Voyage 4 is a general-purpose multilingual embedding model from Voyage AI by MongoDB. It is suited for retrieval, semantic search, and RAG applications, with Matryoshka embeddings at 2048, 1024, 512,...",
+      "description": "voyage-4 is a general-purpose (including multilingual) embedding model optimized for retrieval/search and AI applications. voyage-4 supports embeddings in 2048, 1024, 512, and 256 dimensions, with multiple quantization options. Learn more...",
       "context_length": 32000,
       "architecture": {
         "modality": "text->embeddings",
@@ -34596,7 +34623,7 @@
       "hugging_face_id": null,
       "name": "VoyageAI by MongoDB: voyage-4-large",
       "created": 1785188624,
-      "description": "Voyage 4 Large is a general-purpose multilingual embedding model from Voyage AI by MongoDB, optimized for retrieval quality. It supports Matryoshka embeddings at 2048, 1024, 512, and 256 dimensions, with...",
+      "description": "voyage-4-large is a state-of-the-art general-purpose and multilingual embedding optimized for retrieval quality. Enabled by Matryoshka learning and quantization-aware training, voyage-4-large supports embeddings in 2048, 1024, 512, and 256 dimensions, with...",
       "context_length": 32000,
       "architecture": {
         "modality": "text->embeddings",
@@ -36182,7 +36209,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'z-ai', 'nvidia', 'deepseek', 'minimax', 'meta-llama', 'perplexity', 'moonshotai', 'openrouter', 'cohere', 'amazon', 'x-ai', 'sentence-transformers', 'bytedance-seed', 'nousresearch', 'poolside', 'inclusionai', 'voyageai', 'thedrummer', 'aion-labs', '~anthropic', 'intfloat', 'sao10k', 'tencent', 'kwaipilot', 'baai', 'ibm-granite', '~google', 'microsoft', 'thenlper', 'arcee-ai', 'xiaomi', 'relace', 'nex-agi', 'stepfun', '~openai', 'morph', 'rekaai', 'cognitivecomputations', '~x-ai', '~moonshotai', 'ai21', 'baidu', 'mancer', 'meituan', 'anthracite-org', 'gryphe', 'inception', 'undi95', 'deepcogito', 'thinkingmachines', 'perceptron', 'sakana', 'writer', 'bytedance', 'meta', 'allenai', 'upstage'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'openrouter', 'sentence-transformers', 'cohere', 'x-ai', 'amazon', 'poolside', 'aion-labs', 'inclusionai', 'nousresearch', 'voyageai', 'bytedance-seed', '~anthropic', 'thedrummer', 'tencent', 'kwaipilot', 'baai', 'sao10k', 'intfloat', 'arcee-ai', 'ibm-granite', 'relace', 'stepfun', 'xiaomi', '~google', 'rekaai', 'thenlper', 'nex-agi', 'microsoft', 'morph', '~openai', 'meta', '~x-ai', 'deepcogito', 'writer', 'meituan', 'baidu', 'allenai', 'anthracite-org', 'perceptron', 'cognitivecomputations', 'inception', 'mancer', 'gryphe', 'thinkingmachines', 'upstage', 'bytedance', 'undi95', '~moonshotai', 'sakana', 'ai21'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
