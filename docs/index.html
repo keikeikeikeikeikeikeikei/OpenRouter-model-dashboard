@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-02 00:55)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-02 06:55)</div>
         </header>
 
         <div class="controls">
@@ -735,6 +735,81 @@
         window.openRouterModels = {
   "text": [
     {
+      "id": "~deepseek/deepseek-v4-flash-latest",
+      "canonical_slug": "~deepseek/deepseek-v4-flash-latest",
+      "alias_target": {
+        "name": "DeepSeek: DeepSeek V4 Flash 0731",
+        "slug": "deepseek/deepseek-v4-flash-0731"
+      },
+      "hugging_face_id": null,
+      "name": "DeepSeek V4 Flash Latest",
+      "created": 1785606009,
+      "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Router",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000009",
+        "completion": "0.00000018",
+        "input_cache_read": "0.000000018"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": [],
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/~deepseek/deepseek-v4-flash-latest/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true,
+        "supported_efforts": [
+          "max",
+          "high",
+          "low"
+        ],
+        "default_effort": "high"
+      }
+    },
+    {
       "id": "deepseek/deepseek-v4-flash-0731",
       "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
       "hugging_face_id": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -754,13 +829,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000014",
-        "completion": "0.00000028",
-        "input_cache_read": "0.0000000028"
+        "prompt": "0.00000009",
+        "completion": "0.00000018",
+        "input_cache_read": "0.000000018"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 384000,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3719,13 +3794,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000007168",
-        "completion": "0.0000022528",
-        "input_cache_read": "0.00000013312"
+        "prompt": "0.00000042",
+        "completion": "0.00000132",
+        "input_cache_read": "0.000000078"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "context_length": 1024000,
+        "max_completion_tokens": 128000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -31752,7 +31827,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'z-ai', 'deepseek', 'nvidia', 'meta-llama', 'minimax', 'moonshotai', 'perplexity', 'openrouter', 'amazon', 'sentence-transformers', 'x-ai', 'cohere', 'voyageai', '~anthropic', 'bytedance-seed', 'aion-labs', 'thedrummer', 'poolside', 'inclusionai', 'nousresearch', 'kwaipilot', 'baai', 'tencent', 'intfloat', 'sao10k', 'thinkingmachines', 'morph', 'stepfun', 'relace', 'ibm-granite', 'arcee-ai', 'microsoft', 'nex-agi', '~openai', 'xiaomi', 'thenlper', '~google', 'rekaai', 'undi95', 'perceptron', 'ai21', 'meituan', 'allenai', 'inception', 'cognitivecomputations', 'deepcogito', 'bytedance', 'anthracite-org', 'gryphe', 'writer', '~moonshotai', 'mancer', 'sakana', 'upstage', '~x-ai', 'baidu', 'meta'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'deepseek', 'nvidia', 'z-ai', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'openrouter', 'x-ai', 'cohere', 'sentence-transformers', 'amazon', 'bytedance-seed', 'aion-labs', 'nousresearch', 'voyageai', 'poolside', 'thedrummer', 'inclusionai', '~anthropic', 'kwaipilot', 'sao10k', 'baai', 'intfloat', 'tencent', 'thenlper', 'thinkingmachines', 'rekaai', 'relace', 'arcee-ai', '~openai', 'microsoft', 'stepfun', 'morph', 'ibm-granite', '~google', 'xiaomi', 'nex-agi', 'cognitivecomputations', 'undi95', 'meituan', 'upstage', 'writer', 'bytedance', 'sakana', 'gryphe', 'meta', '~x-ai', 'perceptron', '~deepseek', 'anthracite-org', 'deepcogito', 'inception', '~moonshotai', 'mancer', 'baidu', 'ai21', 'allenai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
