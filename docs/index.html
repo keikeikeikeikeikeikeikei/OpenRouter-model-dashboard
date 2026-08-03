@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-03 21:29)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-04 04:29)</div>
         </header>
 
         <div class="controls">
@@ -734,6 +734,78 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "qwen/qwen3.8-max",
+      "canonical_slug": "qwen/qwen3.8-max-20260803",
+      "hugging_face_id": null,
+      "name": "Qwen: Qwen3.8 Max",
+      "created": 1785731612,
+      "description": "Qwen3.8 Max is the flagship model in Alibaba's Qwen3.8 series, the general-availability successor to the Qwen3.8 Max Preview. It is a multimodal reasoning model intended for complex reasoning, visual understanding,...",
+      "context_length": 1000000,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006",
+        "input_cache_read": "0.00000025",
+        "input_cache_write": "0.0000025"
+      },
+      "top_provider": {
+        "context_length": 1000000,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/qwen/qwen3.8-max-20260803/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "xhigh"
+      }
+    },
     {
       "id": "~deepseek/deepseek-v4-flash-latest",
       "canonical_slug": "~deepseek/deepseek-v4-flash-latest",
@@ -1449,7 +1521,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000075",
         "input_cache_read": "0.00000015",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -1601,7 +1673,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000025",
         "input_cache_read": "0.00000003",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3801,9 +3873,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000707",
-        "completion": "0.000002222",
-        "input_cache_read": "0.0000001313"
+        "prompt": "0.0000006286",
+        "completion": "0.0000019756",
+        "input_cache_read": "0.00000011674"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6019,7 +6091,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.000009",
         "input_cache_read": "0.00000015",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -6467,7 +6539,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000015",
         "input_cache_read": "0.000000025",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -7387,7 +7459,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000075",
         "input_cache_read": "0.00000015",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -7905,13 +7977,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.000002",
-        "input_cache_read": "0.00000015"
+        "prompt": "0.000000289",
+        "completion": "0.0000024"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 65536,
+        "context_length": 131072,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -12314,7 +12385,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000015",
         "input_cache_read": "0.000000025",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -12670,8 +12741,8 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000004",
-        "completion": "0.0000032"
+        "prompt": "0.00000026",
+        "completion": "0.00000208"
       },
       "top_provider": {
         "context_length": 262144,
@@ -15614,7 +15685,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.000003",
         "input_cache_read": "0.00000005",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -21664,11 +21735,11 @@
       },
       "pricing": {
         "prompt": "0.00000007",
-        "completion": "0.00000028"
+        "completion": "0.00000027"
       },
       "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 262144,
+        "context_length": 160000,
+        "max_completion_tokens": 32768,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -22296,7 +22367,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000004",
         "input_cache_read": "0.00000001",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -22960,7 +23031,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000025",
         "input_cache_read": "0.00000003",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -29996,7 +30067,7 @@
         "web_search": "0.014",
         "internal_reasoning": "0.0000025",
         "input_cache_read": "0.00000003",
-        "input_cache_write": "0.00000008333333333333334"
+        "input_cache_write": "0.0000000833333333333333"
       },
       "top_provider": {
         "context_length": 32768,
@@ -31834,7 +31905,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'deepseek', 'nvidia', 'z-ai', 'minimax', 'meta-llama', 'perplexity', 'moonshotai', 'openrouter', 'x-ai', 'amazon', 'cohere', 'sentence-transformers', '~anthropic', 'voyageai', 'inclusionai', 'bytedance-seed', 'aion-labs', 'poolside', 'nousresearch', 'thedrummer', 'baai', 'tencent', 'sao10k', 'intfloat', 'kwaipilot', '~openai', 'arcee-ai', 'microsoft', 'xiaomi', 'nex-agi', 'ibm-granite', 'relace', 'morph', 'stepfun', 'thinkingmachines', 'rekaai', 'thenlper', '~google', 'meituan', 'anthracite-org', 'inception', 'writer', 'mancer', 'meta', 'gryphe', 'cognitivecomputations', 'bytedance', 'sakana', '~moonshotai', 'allenai', 'perceptron', '~x-ai', 'undi95', '~deepseek', 'ai21', 'deepcogito', 'baidu', 'upstage'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'mistralai', 'anthropic', 'deepseek', 'z-ai', 'nvidia', 'minimax', 'meta-llama', 'perplexity', 'moonshotai', 'openrouter', 'x-ai', 'cohere', 'amazon', 'sentence-transformers', '~anthropic', 'aion-labs', 'inclusionai', 'bytedance-seed', 'poolside', 'nousresearch', 'voyageai', 'thedrummer', 'sao10k', 'intfloat', 'tencent', 'baai', 'kwaipilot', 'xiaomi', 'microsoft', 'rekaai', 'stepfun', 'morph', 'arcee-ai', '~openai', 'thinkingmachines', 'ibm-granite', 'relace', 'thenlper', '~google', 'nex-agi', 'anthracite-org', 'undi95', 'baidu', 'meituan', 'deepcogito', 'writer', 'meta', '~x-ai', 'sakana', 'inception', 'ai21', 'upstage', '~deepseek', 'gryphe', 'perceptron', '~moonshotai', 'bytedance', 'cognitivecomputations', 'mancer', 'allenai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
