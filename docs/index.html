@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-06 23:53)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-07 05:53)</div>
         </header>
 
         <div class="controls">
@@ -734,6 +734,64 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "inclusionai/ling-3.0-tiny:free",
+      "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
+      "hugging_face_id": null,
+      "name": "inclusionAI: Ling 3.0 Tiny (free)",
+      "created": 1786034890,
+      "description": "Ling 3.0 Tiny is a mixture-of-experts model from InclusionAI, with 1.3B active parameters out of 7.9B total. It is designed for responsive agents, instruction following, and multi-turn conversations, with switchable...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "seed",
+        "stop",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/inclusionai/ling-3.0-tiny-20260806/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      }
+    },
     {
       "id": "meta/muse-spark-1.2",
       "canonical_slug": "meta/muse-spark-1.2-20260805",
@@ -1576,7 +1634,7 @@
       "name": "Ling-3.0-flash",
       "created": 1784818580,
       "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
-      "context_length": 131072,
+      "context_length": 262144,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -1603,73 +1661,9 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "max_tokens",
-        "min_p",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {},
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/inclusionai/ling-3.0-flash-20260723/endpoints"
-      },
-      "benchmarks": {
-        "design_arena": [],
-        "artificial_analysis": {
-          "intelligence_index": 37.4,
-          "coding_index": 50.6,
-          "agentic_index": 29.6
-        }
-      },
-      "reasoning": {
-        "mandatory": false,
-        "default_enabled": true
-      }
-    },
-    {
-      "id": "inclusionai/ling-3.0-flash:free",
-      "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
-      "hugging_face_id": "inclusionAI/Ling-3.0-flash",
-      "name": "Ling-3.0-flash (free)",
-      "created": 1784818580,
-      "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "repetition_penalty",
@@ -5282,13 +5276,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000056",
-        "completion": "0.00000176",
-        "input_cache_read": "0.000000104"
+        "prompt": "0.000000546",
+        "completion": "0.000001716",
+        "input_cache_read": "0.0000001014"
       },
       "top_provider": {
-        "context_length": 1024000,
-        "max_completion_tokens": 128000,
+        "context_length": 1048576,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -10692,7 +10686,8 @@
       },
       "pricing": {
         "prompt": "0.00000014",
-        "completion": "0.000001"
+        "completion": "0.000001",
+        "input_cache_read": "0.00000005"
       },
       "top_provider": {
         "context_length": 262144,
@@ -20072,7 +20067,7 @@
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 65535,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -20236,7 +20231,7 @@
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 65535,
+        "max_completion_tokens": 65536,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -27367,12 +27362,9 @@
       "per_request_limits": null,
       "supported_parameters": [
         "include_reasoning",
-        "max_completion_tokens",
         "max_tokens",
         "reasoning",
-        "response_format",
         "stop",
-        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
@@ -39351,7 +39343,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'openrouter', 'amazon', 'cohere', 'x-ai', 'inclusionai', 'sentence-transformers', 'thedrummer', '~anthropic', 'bytedance-seed', 'poolside', 'nousresearch', 'voyageai', 'aion-labs', 'intfloat', 'tencent', 'baai', 'kwaipilot', 'sao10k', 'thinkingmachines', 'nex-agi', 'arcee-ai', '~openai', 'relace', 'xiaomi', 'ibm-granite', 'meta', 'morph', 'thenlper', '~google', 'microsoft', 'rekaai', 'stepfun', 'gryphe', '~moonshotai', '~deepseek', 'meituan', '~x-ai', 'upstage', 'undi95', 'perceptron', 'mancer', 'anthracite-org', 'baidu', 'bytedance', 'writer', 'cognitivecomputations', 'allenai', 'sakana', 'deepcogito', 'inception', 'ai21'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'moonshotai', 'meta-llama', 'perplexity', 'openrouter', 'inclusionai', 'sentence-transformers', 'amazon', 'x-ai', 'cohere', 'thedrummer', 'voyageai', '~anthropic', 'aion-labs', 'bytedance-seed', 'poolside', 'nousresearch', 'thinkingmachines', 'kwaipilot', 'intfloat', 'tencent', 'sao10k', 'baai', 'thenlper', '~openai', 'xiaomi', 'relace', 'stepfun', 'nex-agi', '~google', 'arcee-ai', 'ibm-granite', 'morph', 'meta', 'rekaai', 'microsoft', 'baidu', 'meituan', 'mancer', 'sakana', '~deepseek', 'anthracite-org', 'upstage', 'ai21', '~x-ai', 'inception', 'allenai', 'deepcogito', 'writer', 'bytedance', 'gryphe', 'perceptron', 'cognitivecomputations', '~moonshotai', 'undi95'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
