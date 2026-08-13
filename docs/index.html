@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-13 11:19)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-13 17:50)</div>
         </header>
 
         <div class="controls">
@@ -796,7 +796,7 @@
       "name": "Qwen: Qwen3.8 2.4T A95B",
       "created": 1786551702,
       "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
-      "context_length": 262144,
+      "context_length": 1000000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -1164,7 +1164,7 @@
       "name": "NVIDIA: Nemotron 3.5 Lightning",
       "created": 1786452751,
       "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
-      "context_length": 1000000,
+      "context_length": 1048576,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -1479,76 +1479,6 @@
           "low"
         ],
         "default_effort": "medium"
-      }
-    },
-    {
-      "id": "inclusionai/ling-3.0-tiny:free",
-      "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
-      "hugging_face_id": "inclusionAI/Ling-3.0-tiny",
-      "name": "inclusionAI: Ling 3.0 Tiny (free)",
-      "created": 1786034890,
-      "description": "Ling 3.0 Tiny is a mixture-of-experts model from InclusionAI, with 1.3B active parameters out of 7.9B total. It is designed for responsive agents, instruction following, and multi-turn conversations, with switchable...",
-      "context_length": 262144,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0",
-        "completion": "0"
-      },
-      "top_provider": {
-        "context_length": 262144,
-        "max_completion_tokens": 32768,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "logprobs",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_logprobs",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 1,
-        "top_p": 0.95,
-        "top_k": 20
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": null,
-      "expiration_date": "2026-08-13",
-      "links": {
-        "details": "/api/v1/models/inclusionai/ling-3.0-tiny-20260806/endpoints"
-      },
-      "benchmarks": {
-        "design_arena": [],
-        "artificial_analysis": {
-          "intelligence_index": 24.5,
-          "coding_index": 26.5,
-          "agentic_index": 16
-        }
-      },
-      "reasoning": {
-        "mandatory": false,
-        "default_enabled": true
       }
     },
     {
@@ -18867,13 +18797,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000045",
-        "completion": "0.000003",
-        "input_cache_read": "0.000000045"
+        "prompt": "0.0000005",
+        "completion": "0.0000036",
+        "input_cache_read": "0.0000003"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -35401,7 +35331,7 @@
       "name": "Magnum v4 72B",
       "created": 1729555200,
       "description": "This is a series of models designed to replicate the prose quality of the Claude 3 models, specifically Sonnet(https://openrouter.ai/anthropic/claude-3.5-sonnet) and Opus(https://openrouter.ai/anthropic/claude-3-opus).\n\nThe model is fine-tuned on top of [Qwen2.5 72B](https://openrouter.ai/qwen/qwen-2.5-72b-instruct).",
-      "context_length": 16384,
+      "context_length": 32768,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -35418,8 +35348,8 @@
         "completion": "0.000005"
       },
       "top_provider": {
-        "context_length": 16384,
-        "max_completion_tokens": 2048,
+        "context_length": 32768,
+        "max_completion_tokens": 4096,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -40258,7 +40188,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'deepseek', 'z-ai', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'bytedance-seed', 'x-ai', 'openrouter', 'amazon', 'cohere', 'sentence-transformers', 'inclusionai', '~anthropic', 'aion-labs', 'thedrummer', 'poolside', 'nousresearch', 'voyageai', 'thinkingmachines', 'tencent', 'baai', 'sao10k', 'meta', 'intfloat', 'kwaipilot', 'thenlper', 'xiaomi', 'ibm-granite', 'sakana', 'arcee-ai', 'upstage', 'relace', 'morph', '~google', 'nex-agi', 'stepfun', 'microsoft', 'rekaai', '~openai', 'perceptron', 'mancer', 'baidu', 'anthracite-org', 'meituan', '~moonshotai', 'ai21', 'writer', 'inception', 'gryphe', 'undi95', 'allenai', 'deepcogito', 'liquid', 'bytedance', '~x-ai', 'cognitivecomputations', '~deepseek'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'deepseek', 'z-ai', 'minimax', 'moonshotai', 'meta-llama', 'perplexity', 'x-ai', 'openrouter', 'bytedance-seed', 'amazon', 'sentence-transformers', 'cohere', 'inclusionai', 'voyageai', 'nousresearch', 'poolside', 'aion-labs', 'thedrummer', '~anthropic', 'sao10k', 'kwaipilot', 'tencent', 'thinkingmachines', 'baai', 'meta', 'intfloat', 'upstage', 'nex-agi', 'arcee-ai', 'relace', '~google', 'morph', 'stepfun', 'rekaai', 'microsoft', '~openai', 'sakana', 'xiaomi', 'ibm-granite', 'thenlper', 'inception', '~x-ai', '~moonshotai', 'bytedance', 'ai21', 'cognitivecomputations', 'baidu', '~deepseek', 'meituan', 'perceptron', 'writer', 'anthracite-org', 'mancer', 'undi95', 'gryphe', 'deepcogito', 'liquid', 'allenai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
