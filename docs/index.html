@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-15 13:09)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-15 18:57)</div>
         </header>
 
         <div class="controls">
@@ -779,6 +779,8 @@
         "stop",
         "structured_outputs",
         "temperature",
+        "tool_choice",
+        "tools",
         "top_k",
         "top_logprobs",
         "top_p"
@@ -803,6 +805,58 @@
           "low"
         ],
         "default_effort": "xhigh"
+      }
+    },
+    {
+      "id": "dots-studio/dots-3-note-preview:free",
+      "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
+      "hugging_face_id": null,
+      "name": "Dots Studio: Dots3-Note Preview (free)",
+      "created": 1786680361,
+      "description": "Dots3-Note Preview is an open-weight mixture-of-experts model from Dots Studio, with 16B active parameters out of 280B total. It is the lightest model in the Dots 3 family and is...",
+      "context_length": 512000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 512000,
+        "max_completion_tokens": 512000,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/dots-studio/dots-3-note-preview-20260813/endpoints"
+      },
+      "reasoning": {
+        "mandatory": false
       }
     },
     {
@@ -2098,9 +2152,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000007966",
-        "completion": "0.00000015932",
-        "input_cache_read": "0.000000015932"
+        "prompt": "0.00000006846",
+        "completion": "0.00000013692",
+        "input_cache_read": "0.000000013692"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -12950,9 +13004,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000007826",
-        "completion": "0.00000015652",
-        "input_cache_read": "0.000000015652"
+        "prompt": "0.00000006846",
+        "completion": "0.00000013692",
+        "input_cache_read": "0.000000013692"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -13142,9 +13196,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000063",
-        "completion": "0.00000021",
-        "input_cache_read": "0.000000021"
+        "prompt": "0.00000018",
+        "completion": "0.0000006",
+        "input_cache_read": "0.00000006"
       },
       "top_provider": {
         "context_length": 262144,
@@ -40622,7 +40676,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'x-ai', 'bytedance-seed', 'openrouter', 'sentence-transformers', 'cohere', 'amazon', 'voyageai', 'aion-labs', 'thedrummer', 'poolside', 'nousresearch', '~anthropic', 'inclusionai', 'kwaipilot', 'thinkingmachines', 'meta', 'sao10k', 'intfloat', 'baai', 'tencent', '~openai', '~google', 'thenlper', 'nex-agi', 'xiaomi', 'rekaai', 'upstage', 'sakana', 'stepfun', 'relace', 'microsoft', 'morph', 'arcee-ai', 'ibm-granite', 'inception', '~x-ai', 'undi95', 'mancer', 'meituan', '~moonshotai', 'ai21', '~deepseek', 'bytedance', 'allenai', 'deepcogito', 'writer', 'baidu', 'anthracite-org', 'gryphe', 'liquid', 'perceptron', 'cognitivecomputations'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'moonshotai', 'meta-llama', 'perplexity', 'openrouter', 'bytedance-seed', 'x-ai', 'cohere', 'voyageai', 'amazon', 'sentence-transformers', 'thedrummer', 'inclusionai', 'poolside', 'nousresearch', 'aion-labs', '~anthropic', 'thinkingmachines', 'baai', 'sao10k', 'meta', 'kwaipilot', 'intfloat', 'tencent', '~google', 'nex-agi', 'upstage', 'morph', 'microsoft', 'relace', 'stepfun', 'arcee-ai', 'sakana', 'thenlper', '~openai', 'ibm-granite', 'xiaomi', 'rekaai', 'anthracite-org', 'allenai', '~moonshotai', 'deepcogito', 'bytedance', 'dots-studio', 'liquid', 'baidu', 'mancer', 'perceptron', 'meituan', 'writer', 'cognitivecomputations', 'ai21', 'undi95', 'gryphe', '~deepseek', 'inception', '~x-ai'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
