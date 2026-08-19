@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-19 13:56)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-19 19:56)</div>
         </header>
 
         <div class="controls">
@@ -1663,6 +1663,71 @@
           "low"
         ],
         "default_effort": "high"
+      }
+    },
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
+      "hugging_face_id": "LiquidAI/LFM2.5-2.6B",
+      "name": "LiquidAI: LFM2.5-2.6B (free)",
+      "created": 1786470519,
+      "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text->text",
+        "input_modalities": [
+          "text"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0",
+        "completion": "0"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {
+        "temperature": 0.1,
+        "top_k": 50,
+        "repetition_penalty": 1.1
+      },
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/liquid/lfm-2.5-2.6b-20260811/endpoints"
+      },
+      "reasoning": {
+        "mandatory": true
       }
     },
     {
@@ -13187,43 +13252,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000066",
-        "completion": "0.00000198",
-        "input_cache_read": "0.000000022",
-        "overrides": [
-          {
-            "utc_start": 1000,
-            "utc_end": 100,
-            "prompt": "0.00000066",
-            "completion": "0.00000198",
-            "input_cache_read": "0.000000022"
-          },
-          {
-            "utc_start": 100,
-            "utc_end": 400,
-            "prompt": "0.00000132",
-            "completion": "0.00000396",
-            "input_cache_read": "0.000000044"
-          },
-          {
-            "utc_start": 400,
-            "utc_end": 600,
-            "prompt": "0.00000066",
-            "completion": "0.00000198",
-            "input_cache_read": "0.000000022"
-          },
-          {
-            "utc_start": 600,
-            "utc_end": 1000,
-            "prompt": "0.00000132",
-            "completion": "0.00000396",
-            "input_cache_read": "0.000000044"
-          }
-        ]
+        "prompt": "0.00000144",
+        "completion": "0.00000288",
+        "input_cache_read": "0.0000001215"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 384000,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -20438,6 +20473,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logprobs",
+        "max_completion_tokens",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -41033,7 +41069,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'z-ai', 'nvidia', 'deepseek', 'minimax', 'moonshotai', 'meta-llama', 'perplexity', 'bytedance-seed', 'openrouter', 'x-ai', 'amazon', 'sentence-transformers', 'voyageai', 'cohere', 'thedrummer', 'nousresearch', 'aion-labs', 'poolside', 'inclusionai', '~anthropic', 'intfloat', 'baai', 'sao10k', 'kwaipilot', 'thinkingmachines', 'meta', 'tencent', 'ibm-granite', 'xiaomi', 'stepfun', 'thenlper', 'rekaai', '~openai', 'nex-agi', 'arcee-ai', 'sakana', 'relace', '~google', 'morph', 'upstage', 'microsoft', 'perceptron', '~moonshotai', 'meituan', 'deepcogito', 'undi95', 'dots-studio', '~x-ai', 'inception', 'gryphe', '~deepseek', 'liquid', 'writer', 'bytedance', 'baidu', 'allenai', 'anthracite-org', 'cognitivecomputations', 'ai21', 'mancer'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'moonshotai', 'meta-llama', 'perplexity', 'openrouter', 'x-ai', 'bytedance-seed', 'cohere', 'amazon', 'sentence-transformers', 'voyageai', 'inclusionai', 'nousresearch', '~anthropic', 'aion-labs', 'thedrummer', 'poolside', 'meta', 'thinkingmachines', 'kwaipilot', 'baai', 'tencent', 'sao10k', 'intfloat', 'rekaai', 'thenlper', 'xiaomi', 'morph', 'microsoft', 'nex-agi', 'sakana', 'liquid', 'upstage', '~openai', 'arcee-ai', 'relace', 'ibm-granite', 'stepfun', '~google', '~moonshotai', 'gryphe', 'allenai', 'cognitivecomputations', 'bytedance', '~x-ai', 'ai21', 'dots-studio', 'meituan', 'baidu', 'mancer', 'inception', '~deepseek', 'anthracite-org', 'writer', 'undi95', 'perceptron', 'deepcogito'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
