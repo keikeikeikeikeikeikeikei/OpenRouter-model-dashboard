@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-08-20 10:38)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-08-20 16:51)</div>
         </header>
 
         <div class="controls">
@@ -2446,12 +2446,12 @@
       },
       "pricing": {
         "prompt": "0.000000065",
-        "completion": "0.00000018",
-        "input_cache_read": "0.00000002"
+        "completion": "0.00000014",
+        "input_cache_read": "0.000000014"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 1048576,
+        "context_length": 262144,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -12609,13 +12609,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.000002",
-        "input_cache_read": "0.00000003"
+        "prompt": "0.0000006",
+        "completion": "0.0000036",
+        "input_cache_read": "0.00000012"
       },
       "top_provider": {
         "context_length": 262144,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -13306,9 +13306,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000144",
-        "completion": "0.00000288",
-        "input_cache_read": "0.0000001215"
+        "prompt": "0.0000016",
+        "completion": "0.0000032",
+        "input_cache_read": "0.000000135"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -13464,9 +13464,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000826",
-        "completion": "0.0000001652",
-        "input_cache_read": "0.00000001652"
+        "prompt": "0.000000088606",
+        "completion": "0.000000177212",
+        "input_cache_read": "0.0000000177212"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -36182,56 +36182,6 @@
       }
     },
     {
-      "id": "mistralai/ministral-8b",
-      "canonical_slug": "mistralai/ministral-8b",
-      "hugging_face_id": null,
-      "name": "Mistral: Ministral 8B",
-      "created": 1729123200,
-      "description": "Ministral 8B is an 8B parameter model featuring a unique interleaved sliding-window attention pattern for faster, memory-efficient inference. Designed for edge use cases, it supports up to 128k context length...",
-      "context_length": 128000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Mistral",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000011",
-        "completion": "0.00000011"
-      },
-      "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": null,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "max_tokens",
-        "presence_penalty",
-        "response_format",
-        "seed",
-        "stop",
-        "structured_outputs",
-        "temperature",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": 0.3
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-09-30",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/mistralai/ministral-8b/endpoints"
-      }
-    },
-    {
       "id": "qwen/qwen-2.5-7b-instruct",
       "canonical_slug": "qwen/qwen-2.5-7b-instruct",
       "hugging_face_id": "Qwen/Qwen2.5-7B-Instruct",
@@ -41072,7 +41022,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'z-ai', 'nvidia', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'x-ai', 'bytedance-seed', 'openrouter', 'cohere', 'voyageai', 'amazon', 'sentence-transformers', 'nousresearch', 'aion-labs', 'inclusionai', '~anthropic', 'poolside', 'thedrummer', 'intfloat', 'baai', 'thinkingmachines', 'tencent', 'sao10k', 'meta', 'kwaipilot', 'liquid', 'xiaomi', '~google', 'relace', 'stepfun', 'sakana', 'arcee-ai', 'microsoft', 'rekaai', 'ibm-granite', 'morph', 'upstage', '~openai', 'thenlper', 'nex-agi', 'undi95', 'dots-studio', '~z-ai', 'writer', '~deepseek', 'gryphe', '~moonshotai', 'deepcogito', 'anthracite-org', 'allenai', 'meituan', 'inception', 'cognitivecomputations', '~x-ai', 'perceptron', 'bytedance', 'baidu'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'nvidia', 'z-ai', 'deepseek', 'minimax', 'meta-llama', 'moonshotai', 'perplexity', 'x-ai', 'bytedance-seed', 'openrouter', 'sentence-transformers', 'cohere', 'voyageai', 'amazon', 'inclusionai', 'thedrummer', 'nousresearch', '~anthropic', 'aion-labs', 'poolside', 'sao10k', 'meta', 'intfloat', 'baai', 'tencent', 'kwaipilot', 'thinkingmachines', 'ibm-granite', 'sakana', 'liquid', '~google', 'rekaai', 'thenlper', 'relace', 'upstage', 'nex-agi', 'microsoft', 'arcee-ai', '~openai', 'stepfun', 'morph', 'xiaomi', 'baidu', 'gryphe', 'anthracite-org', 'undi95', '~z-ai', 'bytedance', 'cognitivecomputations', 'perceptron', '~deepseek', 'inception', 'allenai', '~moonshotai', 'writer', 'meituan', '~x-ai', 'deepcogito', 'dots-studio'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
