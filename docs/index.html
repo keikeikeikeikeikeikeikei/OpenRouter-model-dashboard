@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-09-03 13:13)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-09-03 19:13)</div>
         </header>
 
         <div class="controls">
@@ -1358,8 +1358,10 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -1920,9 +1922,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000022",
-        "completion": "0.00000066",
-        "input_cache_read": "0.000000007",
+        "prompt": "0.00000044",
+        "completion": "0.00000132",
+        "input_cache_read": "0.000000014",
         "overrides": [
           {
             "utc_days": [
@@ -2017,6 +2019,7 @@
         "logit_bias",
         "logprobs",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
@@ -2162,9 +2165,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000001092",
-        "completion": "0.000003432",
-        "input_cache_read": "0.0000001794"
+        "prompt": "0.000001106",
+        "completion": "0.000003476",
+        "input_cache_read": "0.0000001817"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -2283,11 +2286,11 @@
       "pricing": {
         "prompt": "0.0000014",
         "completion": "0.0000044",
-        "input_cache_read": "0.00000026"
+        "input_cache_read": "0.00000014"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 262144,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -2320,7 +2323,7 @@
       },
       "supported_voices": null,
       "knowledge_cutoff": null,
-      "expiration_date": "2098-12-31",
+      "expiration_date": null,
       "links": {
         "details": "/api/v1/models/z-ai/glm-5.3-20260816/endpoints"
       },
@@ -33909,12 +33912,12 @@
         "instruct_type": "qwen3"
       },
       "pricing": {
-        "prompt": "0.0000002275",
-        "completion": "0.00000091"
+        "prompt": "0.00000012",
+        "completion": "0.00000024"
       },
       "top_provider": {
-        "context_length": 131072,
-        "max_completion_tokens": 8192,
+        "context_length": 40960,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -36830,12 +36833,12 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000002574",
-        "completion": "0.0000010287"
+        "prompt": "0.00000032",
+        "completion": "0.00000089"
       },
       "top_provider": {
-        "context_length": 128000,
-        "max_completion_tokens": 16000,
+        "context_length": 163840,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -42406,7 +42409,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'minimax', 'nvidia', 'meta-llama', 'moonshotai', 'meta', 'perplexity', 'tencent', 'x-ai', 'thinkingmachines', 'openrouter', 'bytedance-seed', 'amazon', 'sentence-transformers', 'voyageai', 'cohere', 'aion-labs', 'nousresearch', '~anthropic', 'poolside', 'intfloat', 'thedrummer', 'baai', 'sao10k', 'ibm-granite', 'morph', 'thenlper', 'sakana', 'inception', '~openai', 'microsoft', 'rekaai', '~google', '~z-ai', 'relace', 'kwaipilot', 'inclusionai', 'nex-agi', 'upstage', 'stepfun', 'liquid', 'xiaomi', 'baidu', 'meituan', 'undi95', 'gryphe', '~deepseek', 'dots-studio', 'anthracite-org', 'writer', 'bytedance', '~x-ai', 'perceptron', 'mancer', 'cognitivecomputations', '~moonshotai', 'arcee-ai'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'minimax', 'moonshotai', 'meta-llama', 'tencent', 'meta', 'perplexity', 'x-ai', 'thinkingmachines', 'openrouter', 'bytedance-seed', 'voyageai', 'amazon', 'cohere', 'sentence-transformers', '~anthropic', 'poolside', 'aion-labs', 'nousresearch', 'baai', 'intfloat', 'sao10k', 'ibm-granite', 'thedrummer', 'inception', 'nex-agi', '~openai', 'liquid', 'relace', 'thenlper', 'sakana', 'kwaipilot', 'upstage', 'stepfun', '~google', 'inclusionai', 'xiaomi', 'rekaai', 'microsoft', '~z-ai', 'morph', 'anthracite-org', 'mancer', 'perceptron', '~moonshotai', '~deepseek', '~x-ai', 'arcee-ai', 'writer', 'dots-studio', 'gryphe', 'bytedance', 'baidu', 'meituan', 'cognitivecomputations', 'undi95'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
