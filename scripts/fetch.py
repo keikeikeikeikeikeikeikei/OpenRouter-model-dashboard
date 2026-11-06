@@ -115,7 +115,7 @@ def main():
     
     if not success:
         print("❌ Failed to fetch data from OpenRouter.")
-        return
+        sys.exit(1)
 
     # 2. Process and Group
     if process_data(raw_filename):
