@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-11-09 22:06)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-11-10 04:06)</div>
         </header>
 
         <div class="controls">
@@ -733,6 +733,82 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "meta/muse-ember",
+      "canonical_slug": "meta/muse-ember-20261109",
+      "hugging_face_id": null,
+      "name": "Meta: Muse Ember",
+      "created": 1794247648,
+      "description": "Muse Ember is the smallest and most efficient model from Meta that\u2019s designed for complex reasoning execution and the work agents repeat all day: tool calls, coding agent subtasks, routing,...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image+file+audio+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.0025",
+        "input_cache_read": "0.000000004",
+        "input_cache_write": "0.000000125"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 943718,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/meta/muse-ember-20261109/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": true,
+        "supported_efforts": [
+          "max",
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "max"
+      }
+    },
     {
       "id": "liquid/lfm-3-1.7b",
       "canonical_slug": "liquid/lfm-3-1.7b-20261106",
@@ -907,13 +983,18 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
+        "include_reasoning",
         "logprobs",
         "max_tokens",
+        "reasoning",
         "response_format",
         "seed",
+        "stop",
+        "structured_outputs",
         "temperature",
         "tool_choice",
         "tools",
+        "top_k",
         "top_logprobs",
         "top_p"
       ],
@@ -1898,9 +1979,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000015",
+        "prompt": "0.000000075",
+        "completion": "0.0000003",
+        "input_cache_read": "0.0000000075",
         "overrides": [
           {
             "utc_start": 1500,
@@ -3894,7 +3975,7 @@
       "name": "StepFun: Step 5 Preview",
       "created": 1791462849,
       "description": "Step 5 Preview is StepFun's flagship model for agentic work, built on a sparse Mixture-of-Experts architecture (27B active / 600B total parameters). It performs strongly in software engineering and professional...",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "architecture": {
         "modality": "text+image+video->text",
         "input_modalities": [
@@ -8899,13 +8980,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000011",
-        "completion": "0.0000002",
-        "input_cache_read": "0.000000002"
+        "prompt": "0.000000112",
+        "completion": "0.000000336",
+        "input_cache_read": "0.00000000336"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -9492,6 +9573,87 @@
         "/api/v1/completions",
         "/api/v1/messages",
         "/api/v1/responses"
+      ],
+      "benchmarks": {
+        "design_arena": [],
+        "artificial_analysis": {
+          "intelligence_index": 33.7,
+          "coding_index": 76.2,
+          "agentic_index": 56
+        }
+      },
+      "reasoning": {
+        "mandatory": true,
+        "default_enabled": true,
+        "supported_efforts": [
+          "xhigh",
+          "high",
+          "medium",
+          "low",
+          "minimal"
+        ],
+        "default_effort": "xhigh"
+      }
+    },
+    {
+      "id": "qwen/qwen3.8-max-0902:batch",
+      "canonical_slug": "qwen/qwen3.8-max-20260902",
+      "hugging_face_id": null,
+      "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+      "created": 1788469704,
+      "description": "Qwen3.8 Max 0902 is an updated snapshot of Qwen3.8 Max from Alibaba's Qwen team. It is a 2.4-trillion-parameter mixture-of-experts model that accepts text, image, and video input and returns text,...",
+      "context_length": 262144,
+      "architecture": {
+        "modality": "text+image+video->text",
+        "input_modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Qwen",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.00000115",
+        "completion": "0.00000345"
+      },
+      "top_provider": {
+        "context_length": 262144,
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logprobs",
+        "max_tokens",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/qwen/qwen3.8-max-20260902/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/batches"
       ],
       "benchmarks": {
         "design_arena": [],
@@ -10695,9 +10857,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -10946,13 +11108,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000335",
-        "completion": "0.000000083",
+        "prompt": "0.00000015",
+        "completion": "0.0000005",
         "input_cache_read": "0.00000003"
       },
       "top_provider": {
-        "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "context_length": 1048575,
+        "max_completion_tokens": 943717,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -11093,13 +11255,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000005",
-        "completion": "0.00000018",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.00000003",
+        "completion": "0.000000061",
+        "input_cache_read": "0.000000013"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 943718,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -16660,13 +16822,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000917",
-        "completion": "0.000006",
-        "input_cache_read": "0.000000226"
+        "prompt": "0.00000228",
+        "completion": "0.0000114",
+        "input_cache_read": "0.000000228"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -16674,7 +16836,6 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
-        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -16689,7 +16850,6 @@
         "tool_choice",
         "tools",
         "top_k",
-        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -18636,9 +18796,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -24430,9 +24590,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000001824",
+        "prompt": "0.0000001548",
         "completion": "0.0000093388",
-        "input_cache_read": "0.00000018"
+        "input_cache_read": "0.00000015"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -25634,9 +25794,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000897318",
-        "completion": "0.000001794636",
-        "input_cache_read": "0.0000000747765"
+        "prompt": "0.000000894012",
+        "completion": "0.000001788024",
+        "input_cache_read": "0.000000074501"
       },
       "top_provider": {
         "context_length": 1024000,
@@ -26008,7 +26168,7 @@
       "name": "Xiaomi: MiMo-V2.5-Pro",
       "created": 1776874273,
       "description": "MiMo-V2.5-Pro is Xiaomi\u2019s flagship model, delivering strong performance in general agentic capabilities, complex software engineering, and long-horizon tasks, with top rankings on benchmarks such as ClawEval, GDPVal, and SWE-bench Pro....",
-      "context_length": 1050000,
+      "context_length": 1024000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -26037,7 +26197,6 @@
         "max_tokens",
         "reasoning",
         "response_format",
-        "seed",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -28025,7 +28184,7 @@
       "name": "MiniMax: MiniMax M2.7",
       "created": 1773836697,
       "description": "MiniMax-M2.7 is a next-generation large language model designed for autonomous, real-world productivity and continuous improvement. Built to actively participate in its own evolution, M2.7 integrates advanced agentic capabilities through multi-agent...",
-      "context_length": 204800,
+      "context_length": 196608,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -28049,19 +28208,15 @@
       },
       "per_request_limits": null,
       "supported_parameters": [
-        "frequency_penalty",
         "include_reasoning",
         "max_tokens",
-        "presence_penalty",
         "reasoning",
-        "repetition_penalty",
         "response_format",
         "seed",
         "stop",
         "temperature",
         "tool_choice",
         "tools",
-        "top_k",
         "top_p"
       ],
       "default_parameters": {
@@ -31551,7 +31706,7 @@
       "name": "MiniMax: MiniMax M2.5",
       "created": 1770908502,
       "description": "MiniMax-M2.5 is a SOTA large language model designed for real-world productivity. Trained in a diverse range of complex real-world digital working environments, M2.5 builds upon the coding expertise of M2.1...",
-      "context_length": 204800,
+      "context_length": 200000,
       "architecture": {
         "modality": "text->text",
         "input_modalities": [
@@ -41457,71 +41612,6 @@
       }
     },
     {
-      "id": "minimax/minimax-m1",
-      "canonical_slug": "minimax/minimax-m1",
-      "hugging_face_id": "",
-      "name": "MiniMax: MiniMax M1",
-      "created": 1750200414,
-      "description": "MiniMax-M1 is a large-scale, open-weight reasoning model designed for extended context and high-efficiency inference. It leverages a hybrid Mixture-of-Experts (MoE) architecture paired with a custom \"lightning attention\" mechanism, allowing it...",
-      "context_length": 1000000,
-      "architecture": {
-        "modality": "text->text",
-        "input_modalities": [
-          "text"
-        ],
-        "output_modalities": [
-          "text"
-        ],
-        "tokenizer": "Other",
-        "instruct_type": null
-      },
-      "pricing": {
-        "prompt": "0.00000055",
-        "completion": "0.0000022"
-      },
-      "top_provider": {
-        "context_length": 1000000,
-        "max_completion_tokens": 40000,
-        "is_moderated": false
-      },
-      "per_request_limits": null,
-      "supported_parameters": [
-        "frequency_penalty",
-        "include_reasoning",
-        "max_tokens",
-        "presence_penalty",
-        "reasoning",
-        "repetition_penalty",
-        "seed",
-        "stop",
-        "temperature",
-        "tool_choice",
-        "tools",
-        "top_k",
-        "top_p"
-      ],
-      "default_parameters": {
-        "temperature": null,
-        "top_p": null,
-        "frequency_penalty": null
-      },
-      "supported_voices": null,
-      "knowledge_cutoff": "2024-06-30",
-      "expiration_date": null,
-      "links": {
-        "details": "/api/v1/models/minimax/minimax-m1/endpoints"
-      },
-      "endpoints": [
-        "/api/v1/chat/completions",
-        "/api/v1/completions",
-        "/api/v1/messages",
-        "/api/v1/responses"
-      ],
-      "reasoning": {
-        "mandatory": false
-      }
-    },
-    {
       "id": "google/gemini-2.5-flash",
       "canonical_slug": "google/gemini-2.5-flash",
       "hugging_face_id": "",
@@ -47361,7 +47451,7 @@
       },
       "top_provider": {
         "context_length": null,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 64000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -48645,7 +48735,7 @@
       },
       "top_provider": {
         "context_length": null,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 64000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -48719,7 +48809,7 @@
       },
       "top_provider": {
         "context_length": null,
-        "max_completion_tokens": 65536,
+        "max_completion_tokens": 64000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -50799,7 +50889,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'x-ai', 'meta', 'moonshotai', 'meta-llama', 'amazon', 'tencent', 'cohere', 'perplexity', 'openrouter', 'minimax', 'aion-labs', 'bytedance-seed', 'liquid', '~openai', 'mongodb', 'sentence-transformers', 'xiaomi', '~anthropic', 'sakana', 'morph', 'inclusionai', 'thedrummer', 'baai', 'stepfun', '~deepseek', 'intfloat', 'thinkingmachines', 'unbiased', 'upstage', 'moondream', '~z-ai', 'relace', 'scaledown', 'prism-ml', 'thenlper', '~google', 'sao10k', 'nex-agi', 'rekaai', 'perceptron', 'inference-net', '~unbiased', 'elorian', 'mancer', 'stealth', 'writer', '~x-ai', 'ricursiveai', 'undi95', 'fireworks', 'meituan', 'xingchen-agi', 'anthracite-org', 'typesafe', 'particle-ai', '~moonshotai', 'cognitivecomputations', 'reflection', 'gryphe', 'recursive', 'ibm-granite', 'nousresearch', 'bytedance', 'microsoft', 'dots-studio'];
+        window.providerOptions = ['openai', 'qwen', 'google', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'meta', 'x-ai', 'moonshotai', 'meta-llama', 'cohere', 'tencent', 'amazon', 'perplexity', 'openrouter', 'liquid', 'bytedance-seed', 'aion-labs', 'xiaomi', 'sentence-transformers', 'minimax', '~openai', 'mongodb', 'morph', 'inclusionai', 'sakana', '~anthropic', 'intfloat', '~deepseek', 'baai', 'stepfun', 'thinkingmachines', 'thedrummer', '~google', 'nex-agi', 'relace', 'prism-ml', 'perceptron', 'upstage', '~z-ai', 'rekaai', 'sao10k', 'inference-net', 'thenlper', 'moondream', 'scaledown', 'unbiased', '~moonshotai', 'microsoft', 'dots-studio', 'cognitivecomputations', 'xingchen-agi', 'reflection', 'mancer', 'meituan', 'fireworks', 'nousresearch', 'anthracite-org', 'stealth', 'ricursiveai', 'writer', 'gryphe', 'undi95', 'elorian', 'ibm-granite', '~x-ai', '~unbiased', 'particle-ai', 'recursive', 'bytedance', 'typesafe'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
