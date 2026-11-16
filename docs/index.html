@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-11-16 22:09)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-11-17 04:09)</div>
         </header>
 
         <div class="controls">
@@ -697,7 +697,7 @@
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
                                 <option value="199680">195k+</option>
-                                <option value="400384">391k+</option>
+                                <option value="499712">488k+</option>
                                 <option value="1048576">1M+</option>
                                 <option value="1049600">1.0M+</option>
                                 <option value="1999872">1.9M+</option>
@@ -734,6 +734,67 @@
         window.openRouterModels = {
   "text": [
     {
+      "id": "tencent/hy4-flash",
+      "canonical_slug": "tencent/hy4-flash-20261116",
+      "hugging_face_id": null,
+      "name": "Tencent: Hy4 flash",
+      "created": 1794838706,
+      "description": "Hy4 flash is a cost-efficient variant of [Hy4](https://openrouter.ai/tencent/hy4) from Tencent, served with roughly a quarter of the flagship's parameter count for lower latency and cost. It targets code assistance, agent...",
+      "context_length": 1048576,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000000035",
+        "completion": "0.0000001405",
+        "input_cache_read": "0.0000000015"
+      },
+      "top_provider": {
+        "context_length": 1048576,
+        "max_completion_tokens": 65536,
+        "is_moderated": false
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/tencent/hy4-flash-20261116/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ],
+      "reasoning": {
+        "mandatory": false,
+        "default_enabled": true
+      }
+    },
+    {
       "id": "qwen/qwen4-max",
       "canonical_slug": "qwen/qwen4-max-20261115",
       "hugging_face_id": null,
@@ -755,10 +816,10 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000015",
-        "completion": "0.0000045",
-        "input_cache_read": "0.000000075",
-        "input_cache_write": "0.000001875"
+        "prompt": "0.000001425",
+        "completion": "0.000004275",
+        "input_cache_read": "0.00000007125",
+        "input_cache_write": "0.00000178125"
       },
       "top_provider": {
         "context_length": 1000000,
@@ -3488,9 +3549,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000007",
-        "completion": "0.000006",
-        "input_cache_read": "0.0000001"
+        "prompt": "0.00000036",
+        "completion": "0.000005391",
+        "input_cache_read": "0.000000115"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -3501,14 +3562,18 @@
       "supported_parameters": [
         "frequency_penalty",
         "include_reasoning",
+        "logit_bias",
         "max_tokens",
+        "min_p",
         "presence_penalty",
         "reasoning",
         "reasoning_effort",
+        "repetition_penalty",
         "seed",
         "stop",
         "temperature",
-        "top_k"
+        "top_k",
+        "top_p"
       ],
       "default_parameters": {
         "top_p": 0.95
@@ -3736,9 +3801,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000015",
-        "completion": "0.0000006",
-        "input_cache_read": "0.000000015",
+        "prompt": "0.000000075",
+        "completion": "0.0000003",
+        "input_cache_read": "0.0000000075",
         "overrides": [
           {
             "utc_start": 1500,
@@ -3838,13 +3903,94 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000036",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000003",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -3990,9 +4136,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000037",
-        "completion": "0.000000328",
-        "input_cache_read": "0.000000004"
+        "prompt": "0.000000035",
+        "completion": "0.000000311",
+        "input_cache_read": "0.000000003"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -12745,9 +12891,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000834",
-        "completion": "0.000002501",
-        "input_cache_read": "0.000000042",
+        "prompt": "0.0000007506",
+        "completion": "0.0000022509",
+        "input_cache_read": "0.0000000378",
         "overrides": [
           {
             "utc_start": 0,
@@ -13850,13 +13996,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000245",
-        "completion": "0.000000754",
-        "input_cache_read": "0.000000083"
+        "prompt": "0.00000045",
+        "completion": "0.000002",
+        "input_cache_read": "0.0000001"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -20468,9 +20614,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000132",
-        "completion": "0.000000528",
-        "input_cache_read": "0.000000033",
+        "prompt": "0.0000000825",
+        "completion": "0.00000033",
+        "input_cache_read": "0.000000020625",
         "overrides": [
           {
             "utc_start": 0,
@@ -28656,9 +28802,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.00000009",
-        "completion": "0.0000003",
-        "input_cache_read": "0.00000005"
+        "prompt": "0.0000000765",
+        "completion": "0.000000255",
+        "input_cache_read": "0.0000000425"
       },
       "top_provider": {
         "context_length": 262144,
@@ -30534,9 +30680,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000068",
-        "completion": "0.000000099",
-        "input_cache_read": "0.000000061"
+        "prompt": "0.000000149",
+        "completion": "0.000000219",
+        "input_cache_read": "0.000000134"
       },
       "top_provider": {
         "context_length": 262144,
@@ -51885,7 +52031,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'moonshotai', 'x-ai', 'meta', 'cohere', 'amazon', 'meta-llama', 'openrouter', 'perplexity', 'tencent', 'aion-labs', 'thinkingmachines', 'sentence-transformers', '~openai', 'xiaomi', 'mongodb', 'inclusionai', 'minimax', 'sakana', '~anthropic', 'morph', '~deepseek', 'intfloat', 'bytedance-seed', 'baai', 'unbiased', 'nex-agi', 'liquid', 'thedrummer', 'scaledown', 'prism-ml', 'moondream', 'perceptron', 'sao10k', 'baidu', 'particle-ai', 'rekaai', 'thenlper', 'stepfun', 'relace', '~z-ai', 'upstage', 'inference-net', '~google', 'meituan', 'ricursiveai', 'bytedance', 'writer', 'typesafe', 'ibm-granite', 'gryphe', 'mancer', 'reflection', '~unbiased', 'nousresearch', 'undi95', 'kt', 'anthracite-org', 'cognitivecomputations', 'microsoft', 'motif-technologies', 'recursive', '~moonshotai', 'fireworks', '~x-ai', 'dots-studio', 'elorian'];
+        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'meta', 'x-ai', 'moonshotai', 'tencent', 'amazon', 'cohere', 'meta-llama', 'perplexity', 'openrouter', 'aion-labs', '~openai', 'xiaomi', 'sentence-transformers', 'mongodb', 'inclusionai', 'thinkingmachines', 'minimax', '~anthropic', 'sakana', 'morph', '~deepseek', 'bytedance-seed', 'liquid', 'intfloat', 'baai', 'unbiased', 'thedrummer', 'nex-agi', '~z-ai', 'relace', 'perceptron', '~google', 'baidu', 'sao10k', 'prism-ml', 'particle-ai', 'inference-net', 'moondream', 'thenlper', 'rekaai', 'stepfun', 'upstage', 'scaledown', 'ibm-granite', 'cognitivecomputations', 'gryphe', '~moonshotai', 'typesafe', 'motif-technologies', 'anthracite-org', '~unbiased', 'undi95', 'dots-studio', 'mancer', 'nousresearch', 'ricursiveai', 'kt', 'reflection', 'meituan', 'writer', 'recursive', 'bytedance', 'fireworks', '~x-ai', 'microsoft', 'elorian'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
