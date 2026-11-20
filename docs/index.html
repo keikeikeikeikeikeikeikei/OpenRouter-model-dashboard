@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-11-20 11:01)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-11-20 11:48)</div>
         </header>
 
         <div class="controls">
@@ -697,7 +697,7 @@
                                 <option value="0">Any</option>
                                 <option value="128000">125k+</option>
                                 <option value="199680">195k+</option>
-                                <option value="512000">500k+</option>
+                                <option value="499712">488k+</option>
                                 <option value="1048576">1M+</option>
                                 <option value="1049600">1.0M+</option>
                                 <option value="1999872">1.9M+</option>
@@ -733,6 +733,57 @@
     <script>
         window.openRouterModels = {
   "text": [
+    {
+      "id": "mistralai/pixtral-large-2502",
+      "canonical_slug": "mistralai/pixtral-large-2502",
+      "hugging_face_id": null,
+      "name": "Mistral: Pixtral Large 2502",
+      "created": 1795135865,
+      "description": "Pixtral Large 2502 is the February 2025 version of Mistral AI's large multimodal model, following [Pixtral Large 2411](https://openrouter.ai/mistralai/pixtral-large-2411). It accepts text and image input, including documents, charts, and natural images,...",
+      "context_length": 128000,
+      "architecture": {
+        "modality": "text+image->text",
+        "input_modalities": [
+          "text",
+          "image"
+        ],
+        "output_modalities": [
+          "text"
+        ],
+        "tokenizer": "Mistral",
+        "instruct_type": null
+      },
+      "pricing": {
+        "prompt": "0.000002",
+        "completion": "0.000006"
+      },
+      "top_provider": {
+        "context_length": 128000,
+        "max_completion_tokens": 102400,
+        "is_moderated": true
+      },
+      "per_request_limits": null,
+      "supported_parameters": [
+        "max_tokens",
+        "stop",
+        "temperature",
+        "top_k",
+        "top_p"
+      ],
+      "default_parameters": {},
+      "supported_voices": null,
+      "knowledge_cutoff": null,
+      "expiration_date": null,
+      "links": {
+        "details": "/api/v1/models/mistralai/pixtral-large-2502/endpoints"
+      },
+      "endpoints": [
+        "/api/v1/chat/completions",
+        "/api/v1/completions",
+        "/api/v1/messages",
+        "/api/v1/responses"
+      ]
+    },
     {
       "id": "google/gemini-4-neon",
       "canonical_slug": "google/gemini-4-neon-20261118",
@@ -5136,13 +5187,94 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000036",
-        "completion": "0.0000005",
-        "input_cache_read": "0.00000001"
+        "prompt": "0.0000003",
+        "completion": "0.0000012",
+        "input_cache_read": "0.000000006",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 393216,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -12454,9 +12586,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000003",
-        "completion": "0.0000012",
-        "input_cache_read": "0.000000006"
+        "prompt": "0.000000051",
+        "completion": "0.000000567",
+        "input_cache_read": "0.000000018"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -12552,13 +12684,13 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.000000112",
-        "completion": "0.000000336",
-        "input_cache_read": "0.00000000336"
+        "prompt": "0.00000005",
+        "completion": "0.00000015",
+        "input_cache_read": "0.000000004"
       },
       "top_provider": {
         "context_length": 1048576,
-        "max_completion_tokens": 131072,
+        "max_completion_tokens": 384000,
         "is_moderated": false
       },
       "per_request_limits": null,
@@ -55353,7 +55485,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'moonshotai', 'meta', 'x-ai', 'tencent', 'amazon', 'meta-llama', 'cohere', 'perplexity', 'openrouter', 'aion-labs', '~openai', 'sentence-transformers', 'inclusionai', 'mongodb', 'minimax', 'xiaomi', '~anthropic', 'sakana', 'thinkingmachines', 'morph', '~deepseek', 'nex-agi', 'intfloat', 'thedrummer', 'bytedance-seed', 'baai', 'liquid', 'unbiased', 'upstage', 'particle-ai', '~google', 'baidu', 'stepfun', 'moondream', 'prism-ml', 'sao10k', '~z-ai', 'perceptron', 'thenlper', 'rekaai', 'scaledown', 'inference-net', 'relace', 'writer', 'gryphe', '~x-ai', 'reflection', '~unbiased', '~moonshotai', 'ricursiveai', 'meituan', 'ibm-granite', 'recursive', 'undi95', 'typesafe', 'elorian', 'anthracite-org', 'mancer', 'nousresearch', 'kt', 'dots-studio', 'motif-technologies', 'bytedance', 'microsoft', 'cognitivecomputations', 'fireworks'];
+        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'meta', 'moonshotai', 'x-ai', 'tencent', 'amazon', 'meta-llama', 'perplexity', 'openrouter', 'cohere', 'aion-labs', 'sentence-transformers', '~openai', 'minimax', 'inclusionai', 'xiaomi', 'mongodb', '~anthropic', 'thinkingmachines', 'morph', 'sakana', 'intfloat', 'nex-agi', 'bytedance-seed', 'thedrummer', '~deepseek', 'baai', 'liquid', 'unbiased', 'scaledown', 'upstage', 'inference-net', 'particle-ai', 'relace', 'sao10k', '~z-ai', 'thenlper', 'baidu', '~google', 'stepfun', 'rekaai', 'perceptron', 'moondream', 'prism-ml', 'typesafe', 'cognitivecomputations', 'anthracite-org', 'elorian', 'ibm-granite', 'motif-technologies', 'fireworks', 'meituan', 'nousresearch', 'ricursiveai', 'dots-studio', 'undi95', 'gryphe', 'bytedance', 'writer', 'recursive', 'mancer', '~moonshotai', '~x-ai', '~unbiased', 'microsoft', 'kt', 'reflection'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
