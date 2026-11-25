@@ -668,7 +668,7 @@
     <div class="container">
         <header>
             <h1>OpenRouter Model Pricing</h1>
-            <div class="meta">Generated from Live OpenRouter API Data (2026-11-25 10:29)</div>
+            <div class="meta">Generated from Live OpenRouter API Data (2026-11-25 16:29)</div>
         </header>
 
         <div class="controls">
@@ -828,7 +828,7 @@
       "pricing": {
         "prompt": "0.00000009",
         "completion": "0.00000036",
-        "input_cache_read": "0.000000009"
+        "input_cache_read": "0.000000018"
       },
       "top_provider": {
         "context_length": 524288,
@@ -904,7 +904,7 @@
       "pricing": {
         "prompt": "0.00000015",
         "completion": "0.00000042",
-        "input_cache_read": "0.00000002"
+        "input_cache_read": "0.00000000216"
       },
       "top_provider": {
         "context_length": 1048576,
@@ -1866,7 +1866,7 @@
       "top_provider": {
         "context_length": 1050000,
         "max_completion_tokens": 128000,
-        "is_moderated": false
+        "is_moderated": true
       },
       "per_request_limits": null,
       "supported_parameters": [
@@ -2217,6 +2217,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_completion_tokens",
         "max_tokens",
         "min_p",
@@ -2231,6 +2232,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {},
@@ -20725,6 +20727,7 @@
         "frequency_penalty",
         "include_reasoning",
         "logit_bias",
+        "logprobs",
         "max_tokens",
         "min_p",
         "presence_penalty",
@@ -20736,6 +20739,7 @@
         "tool_choice",
         "tools",
         "top_k",
+        "top_logprobs",
         "top_p"
       ],
       "default_parameters": {
@@ -31102,9 +31106,9 @@
         "instruct_type": null
       },
       "pricing": {
-        "prompt": "0.0000000765",
-        "completion": "0.000000255",
-        "input_cache_read": "0.0000000425"
+        "prompt": "0.00000009",
+        "completion": "0.0000003",
+        "input_cache_read": "0.00000005"
       },
       "top_provider": {
         "context_length": 262144,
@@ -47821,7 +47825,12 @@
       "supported_parameters": [
         "frequency_penalty",
         "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "repetition_penalty",
         "response_format",
+        "seed",
+        "stop",
         "structured_outputs",
         "temperature",
         "tool_choice",
@@ -54942,7 +54951,7 @@
     }
   ]
 };
-        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'meta', 'perplexity', 'x-ai', 'amazon', 'moonshotai', 'cohere', 'tencent', 'meta-llama', 'openrouter', 'aion-labs', 'mongodb', 'thinkingmachines', 'sentence-transformers', 'minimax', '~openai', 'inclusionai', 'upstage', 'morph', 'sakana', '~anthropic', 'xiaomi', 'liquid', 'unbiased', 'nex-agi', 'bytedance-seed', 'intfloat', 'thedrummer', 'baai', '~deepseek', 'thenlper', 'prism-ml', 'particle-ai', 'relace', 'inference-net', '~z-ai', '~google', 'rekaai', 'baidu', 'moondream', 'stepfun', 'perceptron', 'sao10k', 'scaledown', '~unbiased', 'mancer', 'elorian', 'bytedance', 'reflection', 'ricursiveai', 'microsoft', 'fireworks', 'cognitivecomputations', '~x-ai', 'writer', 'typesafe', 'undi95', 'kt', '~moonshotai', 'recursive', 'motif-technologies', 'radixark', 'nousresearch', 'anthracite-org', 'gryphe', 'ibm-granite'];
+        window.providerOptions = ['openai', 'google', 'qwen', 'anthropic', 'mistralai', 'z-ai', 'deepseek', 'nvidia', 'meta', 'perplexity', 'x-ai', 'amazon', 'openrouter', 'tencent', 'moonshotai', 'meta-llama', 'cohere', 'aion-labs', 'inclusionai', '~openai', 'sentence-transformers', 'mongodb', 'minimax', 'thinkingmachines', 'upstage', 'sakana', 'xiaomi', 'morph', '~anthropic', 'baai', 'liquid', 'intfloat', 'unbiased', 'bytedance-seed', 'nex-agi', '~deepseek', 'thedrummer', 'scaledown', 'thenlper', 'rekaai', 'sao10k', '~google', 'baidu', '~z-ai', 'prism-ml', 'inference-net', 'relace', 'perceptron', 'moondream', 'stepfun', 'particle-ai', 'reflection', '~unbiased', 'microsoft', 'typesafe', '~x-ai', 'radixark', '~moonshotai', 'fireworks', 'nousresearch', 'bytedance', 'ricursiveai', 'cognitivecomputations', 'recursive', 'undi95', 'elorian', 'writer', 'ibm-granite', 'motif-technologies', 'anthracite-org', 'mancer', 'gryphe', 'kt'];
         let currentTab = 'text';
         let sortKey = 'price_avg';
         let sortAsc = true;
